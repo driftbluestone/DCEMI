@@ -4,8 +4,6 @@ DIR = Path(__file__).resolve().parent
 
 width = int(input("Gui Width: "))
 height = int(input("Gui Height: "))
-
-
 # base gui colors
 # border = (0, 0, 0)
 # background = (198, 198, 198)
