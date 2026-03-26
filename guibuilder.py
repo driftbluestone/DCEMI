@@ -2,12 +2,7 @@ import math
 from pathlib import Path
 from PIL import Image
 DIR = Path(__file__).resolve().parent
-with Image.open(f"{DIR}/gui/temp/widgets.png") as img:
-    img = img.crop((44,0,68,17))
-    img.save(f"{DIR}/gui/arrow.png")
 
-# width = int(input("Gui Width: "))
-# height = int(input("Gui Height: "))
 input_slots = int(input("Input Slots: "))
 output_slots = int(input("Output Slots: "))
 # base gui colors
@@ -99,6 +94,5 @@ def create_gui(input_slots: int, output_slots: int) -> Image.Image:
 basegui = create_gui(input_slots, output_slots)
 basegui = basegui.resize((8*basegui.width, 8*basegui.height), resample= Image.BOX)
 basegui.save(f"{DIR}/gui.png")
-
 
 basegui.show()
