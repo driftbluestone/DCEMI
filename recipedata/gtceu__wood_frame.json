@@ -1,5 +1,616 @@
 {
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/frame_wood",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "tag": "gtceu:iron_buzzsaw"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "minecraft:stick"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/assemble_wood_frame",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:stick",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_frame"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ]
+  },
   "input": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/dual_export_bus_uev_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:uev_input_bus"
+          },
+          {
+            "id": "gtceu:uev_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1584
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_dual_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_export_bus_uiv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:uiv_input_bus"
+          },
+          {
+            "id": "gtceu:uiv_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_dual_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_export_bus_uxv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:uxv_input_bus"
+          },
+          {
+            "id": "gtceu:uxv_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1872
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_dual_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_import_bus_uxv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:uxv_input_bus"
+          },
+          {
+            "id": "gtceu:uxv_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1872
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_dual_input_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_import_bus_uiv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:uiv_input_bus"
+          },
+          {
+            "id": "gtceu:uiv_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_dual_input_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_export_bus_max_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:max_input_bus"
+          },
+          {
+            "id": "gtceu:max_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 2160
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_dual_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_export_bus_opv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:opv_input_bus"
+          },
+          {
+            "id": "gtceu:opv_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 2016
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_dual_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_import_bus_opv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:opv_input_bus"
+          },
+          {
+            "id": "gtceu:opv_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 2016
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_dual_input_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_import_bus_uev_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:uev_input_bus"
+          },
+          {
+            "id": "gtceu:uev_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1584
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_dual_input_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_import_bus_max_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:max_input_bus"
+          },
+          {
+            "id": "gtceu:max_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 2160
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_dual_input_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
     "gtceu__macerator_recycling": [
       {
         "id": "gtceu:macerator/macerate_wood_frame",

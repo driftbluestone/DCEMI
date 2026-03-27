@@ -1,6 +1,411 @@
 {
-  "output": {
+  "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_metal_mixture",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_metal_mixture_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_metal_mixture",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_metal_mixture_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shapeless/brown_dye_from_metal_mixture",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:brown_dye"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_metal_mixture",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_metal_mixture_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_metal_mixture",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_metal_mixture_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__centrifuge": [
+      {
+        "id": "gtceu:centrifuge/metal_mixture_separation",
+        "category": "gtceu:centrifuge",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hematite_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:bauxite_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:pyrolusite_dust",
+            "chance": 0.22222222
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:chromite_dust",
+            "chance": 0.0855
+          },
+          {
+            "id": "gtceu:ilmenite_dust",
+            "chance": 0.0575
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_centrifuge",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_centrifuge",
+          "gtceu:iv_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:zpm_centrifuge",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_centrifuge",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      }
+    ],
     "gtceu__packer": [
+      {
+        "id": "gtceu:packer/unpackage_metal_mixture_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_metal_mixture_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_metal_mixture_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_metal_mixture_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_metal_mixture",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:small_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:small_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:small_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:small_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_metal_mixture",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__centrifuge": [
+      {
+        "id": "gtceu:centrifuge/stone_dust_separation",
+        "category": "gtceu:centrifuge",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:potassium_feldspar_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:marble_dust",
+            "chance": 0.22222222
+          },
+          {
+            "id": "gtceu:biotite_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:metal_mixture_dust",
+            "chance": 0.0925
+          },
+          {
+            "id": "gtceu:sodalite_dust",
+            "chance": 0.065
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_centrifuge",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_centrifuge",
+          "gtceu:iv_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:zpm_centrifuge",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_centrifuge",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/package_metal_mixture_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:small_metal_mixture_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
       {
         "id": "gtceu:packer/package_metal_mixture_tiny_dust",
         "category": "gtceu:packer",

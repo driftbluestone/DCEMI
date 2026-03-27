@@ -1,5 +1,155 @@
 {
+  "input": {
+    "gtceu__electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_glyceryl_trinitrate",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:glyceryl_trinitrate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 9000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dynamite",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "minecraft:paper"
+          },
+          {
+            "id": "minecraft:string"
+          },
+          {
+            "id": "gtceu:glyceryl_trinitrate",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dynamite"
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/dynamite",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:paper"
+          },
+          {
+            "id": "minecraft:string"
+          },
+          {
+            "id": "gtceu:glyceryl_trinitrate",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dynamite"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ]
+  },
   "output": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/glyceryl_trinitrate",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glyceryl_trinitrate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 3000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__chemical_reactor": [
       {
         "id": "gtceu:chemical_reactor/glyceryl_trinitrate",

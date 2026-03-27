@@ -1,6 +1,67 @@
 {
+  "input": {
+    "gtceu__vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/molybdenum_disilicide",
+        "category": "gtceu:vacuum_freezer",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:molten_molybdenum_disilicide",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_vacuum_freezer",
+          "gtceu:vacuum_freezer"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/molybdenum_disilicide",
+        "category": "gtceu:alloy_blast_smelter",
+        "width": 164,
+        "height": 135,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_dust"
+          },
+          {
+            "id": "gtceu:silicon_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_molybdenum_disilicide",
+            "amount": 432
+          }
+        ],
+        "workstations": [
+          "gtceu:alloy_blast_smelter"
+        ]
+      },
       {
         "id": "gtceu:alloy_blast_smelter/molybdenum_disilicide_gas",
         "category": "gtceu:alloy_blast_smelter",

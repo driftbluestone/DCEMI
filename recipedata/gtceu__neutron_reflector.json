@@ -1,5 +1,209 @@
 {
   "input": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/fusion_coil",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:superconducting_coil"
+          },
+          {
+            "id": "gtceu:iv_field_generator",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iv_electric_pump"
+          },
+          {
+            "id": "gtceu:neutron_reflector",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:europium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fusion_coil"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/fusion_glass",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "id": "gtceu:naquadah_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:neutron_reflector",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fusion_glass",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/fusion_casing",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_casing"
+          },
+          {
+            "id": "gtceu:superconducting_coil"
+          },
+          {
+            "id": "gtceu:neutron_reflector"
+          },
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fusion_casing",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_neutron_reflector",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:neutron_reflector"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_carbide_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_neutron_reflector",
@@ -43,6 +247,54 @@
           "gtceu:uxv_arc_furnace",
           "gtceu:opv_arc_furnace",
           "gtceu:large_arc_smelter"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/neutron_reflector",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_plate"
+          },
+          {
+            "id": "gtceu:double_beryllium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:double_tungsten_carbide_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tin_alloy",
+            "amount": 4608
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutron_reflector"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
         ]
       }
     ]

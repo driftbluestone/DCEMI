@@ -1,5 +1,50 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/prospector_luv_luv_vanadium_battery",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:luv_sensor"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:luv_vanadium_battery"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.luv"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
     "gtceu__extractor": [
       {
         "id": "gtceu:extractor/unpackage_luv_vanadium_battery",
@@ -32,6 +77,46 @@
           "gtceu:uiv_extractor",
           "gtceu:uxv_extractor",
           "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__canner": [
+      {
+        "id": "gtceu:canner/vanadium_battery_luv",
+        "category": "gtceu:canner",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:luv_battery_hull"
+          },
+          {
+            "id": "gtceu:vanadium_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_vanadium_battery"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_canner",
+          "gtceu:mv_canner",
+          "gtceu:hv_canner",
+          "gtceu:ev_canner",
+          "gtceu:iv_canner",
+          "gtceu:luv_canner",
+          "gtceu:zpm_canner",
+          "gtceu:uv_canner",
+          "gtceu:uhv_canner",
+          "gtceu:uev_canner",
+          "gtceu:uiv_canner",
+          "gtceu:uxv_canner",
+          "gtceu:opv_canner",
           "gtceu:large_extractor"
         ]
       }

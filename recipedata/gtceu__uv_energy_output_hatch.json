@@ -1,5 +1,97 @@
 {
+  "input": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_4a_uv",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:uv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:darmstadtium_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_energy_output_hatch_4a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_uv_energy_output_hatch",
+        "category": "gtceu:research_station",
+        "width": 150,
+        "height": 117,
+        "inputs": [
+          {
+            "id": "gtceu:data_module"
+          },
+          {
+            "id": "gtceu:uv_energy_output_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_energy_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:research_station"
+        ]
+      }
+    ]
+  },
   "output": {
+    "gtceu__research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_zpm_energy_output_hatch",
+        "category": "gtceu:research_station",
+        "width": 150,
+        "height": 117,
+        "inputs": [
+          {
+            "id": "gtceu:data_module"
+          },
+          {
+            "id": "gtceu:zpm_energy_output_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_energy_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:research_station"
+        ]
+      }
+    ],
     "gtceu__assembly_line": [
       {
         "id": "gtceu:assembly_line/dynamo_hatch_uv",

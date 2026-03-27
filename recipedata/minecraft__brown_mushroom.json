@@ -1,5 +1,119 @@
 {
   "input": {
+    "gtceu__mixer": [
+      {
+        "id": "gtceu:mixer/fermented_spider_eye_brown",
+        "category": "gtceu:mixer",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "minecraft:brown_mushroom"
+          },
+          {
+            "id": "minecraft:spider_eye"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:fermented_spider_eye"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_mixer",
+          "gtceu:mv_mixer",
+          "gtceu:hv_mixer",
+          "gtceu:ev_mixer",
+          "gtceu:iv_mixer",
+          "gtceu:luv_mixer",
+          "gtceu:zpm_mixer",
+          "gtceu:uv_mixer",
+          "gtceu:uhv_mixer",
+          "gtceu:uev_mixer",
+          "gtceu:uiv_mixer",
+          "gtceu:uxv_mixer",
+          "gtceu:opv_mixer",
+          "gtceu:large_mixer"
+        ]
+      }
+    ],
+    "gtceu__centrifuge": [
+      {
+        "id": "gtceu:centrifuge/brown_mushroom_separation",
+        "category": "gtceu:centrifuge",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "minecraft:brown_mushroom"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 18
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_centrifuge",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_centrifuge",
+          "gtceu:iv_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:zpm_centrifuge",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_centrifuge",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      }
+    ],
+    "gtceu__brewery": [
+      {
+        "id": "gtceu:brewery/biomass_from_brown_mushroom",
+        "category": "gtceu:brewery",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:brown_mushroom"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:biomass",
+            "amount": 20
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_brewery",
+          "gtceu:mv_brewery",
+          "gtceu:hv_brewery",
+          "gtceu:ev_brewery",
+          "gtceu:iv_brewery",
+          "gtceu:luv_brewery",
+          "gtceu:zpm_brewery",
+          "gtceu:uv_brewery",
+          "gtceu:uhv_brewery",
+          "gtceu:uev_brewery",
+          "gtceu:uiv_brewery",
+          "gtceu:uxv_brewery",
+          "gtceu:opv_brewery",
+          "gtceu:large_brewer"
+        ]
+      }
+    ],
     "gtceu__compressor": [
       {
         "id": "gtceu:compressor/plant_ball_from_brown_mushroom",
@@ -34,6 +148,55 @@
           "gtceu:uxv_compressor",
           "gtceu:opv_compressor",
           "gtceu:large_material_press"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__centrifuge": [
+      {
+        "id": "gtceu:centrifuge/mycelium_separation",
+        "category": "gtceu:centrifuge",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "minecraft:mycelium"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_mushroom",
+            "chance": 0.28
+          },
+          {
+            "id": "minecraft:brown_mushroom",
+            "chance": 0.28
+          },
+          {
+            "id": "minecraft:sand",
+            "chance": 0.62
+          },
+          {
+            "id": "gtceu:clay_dust",
+            "chance": 0.055
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_centrifuge",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_centrifuge",
+          "gtceu:iv_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:zpm_centrifuge",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_centrifuge",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_centrifuge",
+          "gtceu:large_centrifuge"
         ]
       }
     ]

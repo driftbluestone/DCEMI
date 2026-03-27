@@ -1,5 +1,117 @@
 {
+  "input": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/paracetamol",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:acetic_anhydride",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:paracetamol_dust"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/paracetamol",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:acetic_anhydride",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:paracetamol_dust"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ]
+  },
   "output": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/aminophenol",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__chemical_reactor": [
       {
         "id": "gtceu:chemical_reactor/aminophenol",

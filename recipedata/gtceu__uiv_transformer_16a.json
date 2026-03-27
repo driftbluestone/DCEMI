@@ -1,5 +1,146 @@
 {
   "input": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_uiv",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uiv_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_substation_input_hatch_64a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uiv",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uiv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_substation_output_hatch_64a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uiv_transformer_16a",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_uiv_transformer_16a",
@@ -47,6 +188,61 @@
           "gtceu:uxv_arc_furnace",
           "gtceu:opv_arc_furnace",
           "gtceu:large_arc_smelter"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/uiv_power_transformer",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_4a"
+          },
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:red_alloy_octal_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_hex_cable"
+          },
+          {
+            "id": "gtceu:small_red_alloy_spring"
+          },
+          {
+            "id": "gtceu:tin_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
         ]
       }
     ]

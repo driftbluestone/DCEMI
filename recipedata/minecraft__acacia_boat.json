@@ -1,5 +1,72 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shapeless/acacia_chest_boat",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "minecraft:acacia_boat"
+          },
+          {
+            "tag": "minecraft:chest"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:acacia_chest_boat"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/acacia_chest_boat",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:acacia_boat"
+          },
+          {
+            "tag": "minecraft:chest"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:acacia_chest_boat"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
     "gtceu__macerator_recycling": [
       {
         "id": "gtceu:macerator/macerate_acacia_boat",
@@ -38,6 +105,49 @@
           "gtceu:ev_large_miner",
           "gtceu:iv_large_miner",
           "gtceu:luv_large_miner"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/acacia_boat",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:acacia_planks",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:acacia_boat"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
         ]
       }
     ]

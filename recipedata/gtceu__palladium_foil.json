@@ -1,5 +1,504 @@
 {
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/foil_palladium",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "tag": "gtceu:iron_hammer"
+          },
+          {
+            "id": "gtceu:palladium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__bender": [
+      {
+        "id": "gtceu:bender/bend_palladium_plate_to_foil",
+        "category": "gtceu:bender",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:palladium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_bender",
+          "gtceu:mv_bender",
+          "gtceu:hv_bender",
+          "gtceu:ev_bender",
+          "gtceu:iv_bender",
+          "gtceu:luv_bender",
+          "gtceu:zpm_bender",
+          "gtceu:uv_bender",
+          "gtceu:uhv_bender",
+          "gtceu:uev_bender",
+          "gtceu:uiv_bender",
+          "gtceu:uxv_bender",
+          "gtceu:opv_bender",
+          "gtceu:large_material_press"
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_palladium_ingot_to_foil",
+        "category": "gtceu:bender",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:palladium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_bender",
+          "gtceu:mv_bender",
+          "gtceu:hv_bender",
+          "gtceu:ev_bender",
+          "gtceu:iv_bender",
+          "gtceu:luv_bender",
+          "gtceu:zpm_bender",
+          "gtceu:uv_bender",
+          "gtceu:uhv_bender",
+          "gtceu:uev_bender",
+          "gtceu:uiv_bender",
+          "gtceu:uxv_bender",
+          "gtceu:opv_bender",
+          "gtceu:large_material_press"
+        ]
+      }
+    ]
+  },
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_palladium",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_iron_wire_cutter"
+          },
+          {
+            "id": "gtceu:palladium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_palladium_wire"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/multilayer_fiber_board",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_circuit_board",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_circuit_board"
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/multilayer_fiber_board",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_circuit_board",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_circuit_board"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__assembly_line": [
+      {
+        "id": "gtceu:assembly_line/emitter_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:long_ruridit_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/emitter_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:long_ruridit_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:ruridit_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_sensor"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:ruridit_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_sensor"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_palladium_foil",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:palladium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_palladium_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_palladium_foil",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:palladium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium",
+            "amount": 36
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_palladium_foil",

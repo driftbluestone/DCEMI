@@ -1,5 +1,269 @@
 {
+  "input": {
+    "gtceu__fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/enriched_naquadah_and_radon_to_naquadria_plasma",
+        "category": "gtceu:fusion_reactor",
+        "width": 150,
+        "height": 71,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:luv_fusion_reactor",
+          "gtceu:zpm_fusion_reactor",
+          "gtceu:uv_fusion_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:fusion_reactor/gallium_and_radon_to_duranium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "width": 150,
+        "height": 71,
+        "inputs": [
+          {
+            "id": "gtceu:gallium",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:duranium",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:luv_fusion_reactor",
+          "gtceu:zpm_fusion_reactor",
+          "gtceu:uv_fusion_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/quantum_eye",
+        "category": "gtceu:chemical_bath",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "minecraft:ender_eye"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_eye"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/quantum_star",
+        "category": "gtceu:chemical_bath",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "minecraft:nether_star"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 1250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_star"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/qbit_cpu_wafer_radon",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:nano_cpu_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/qbit_cpu_wafer_radon",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:nano_cpu_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ]
+  },
   "output": {
+    "gtceu__fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/gold_and_mercury_to_radon_plasma",
+        "category": "gtceu:fusion_reactor",
+        "width": 150,
+        "height": 71,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "workstations": [
+          "gtceu:luv_fusion_reactor",
+          "gtceu:zpm_fusion_reactor",
+          "gtceu:uv_fusion_reactor"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/radon_from_uranium_238",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:plutonium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plutonium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__distillation_tower": [
       {
         "id": "gtceu:distillation_tower/distill_liquid_ender_air",

@@ -1,5 +1,625 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_polyethylene",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_polyethylene_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_polyethylene",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_polyethylene_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_polyethylene",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_polyethylene_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_polyethylene",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_polyethylene_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/gelled_toluene",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "minecraft:sugar",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 20
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/gelled_toluene",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:sugar",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 20
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__extruder": [
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_huge_pipe_dust",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_huge_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_small_pipe_dust",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:small_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_small_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_tiny_pipe_dust",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:tiny_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_tiny_fluid_pipe",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_dust_to_plate",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_plate"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_to_ingot",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_large_pipe_dust",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_dust_to_foil",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:foil_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_foil",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_pipe_dust",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:normal_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_normal_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/unpackage_polyethylene_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_polyethylene_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_polyethylene_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_polyethylene_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ],
+    "gtceu__extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_polyethylene_dust",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ],
+    "gtceu__arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_polyethylene_dust",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          },
+          {
+            "id": "gtceu:oxygen"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ash_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      }
+    ],
     "gtceu__ingot_molding": [
       {
         "id": "gtceu:alloy_smelter/alloy_smelt_polyethylene_dust_to_block",
@@ -40,6 +660,938 @@
           "gtceu:uxv_alloy_smelter",
           "gtceu:opv_alloy_smelter",
           "gtceu:multi_smelter"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_polyethylene",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:small_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:small_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:small_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:small_polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_polyethylene",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          },
+          {
+            "id": "gtceu:tiny_polyethylene_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__macerator": [
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_ingot",
+        "category": "gtceu:macerator",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/package_polyethylene_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:small_polyethylene_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_polyethylene_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tiny_polyethylene_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_block",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_large_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_hv_chemical_reactor",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hv_chemical_reactor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_ev_chemical_reactor",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:ev_chemical_reactor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_large_solidifier",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:large_solidifier"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 12
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_small_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_lv_hermetic_casing",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:lv_hermetic_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_plate",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_chemical_reactor",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:iv_chemical_reactor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_cleanroom_glass",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:cleanroom_glass"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:steel_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_nonuple_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_lv_super_tank",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:lv_super_tank"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:tiny_tin_dust",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 14
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_normal_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_normal_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 3
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_mask_filter",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:mask_filter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:activated_carbon_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_quadruple_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_quadruple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_plascrete",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:plascrete"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:steel_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_huge_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 12
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
         ]
       }
     ]

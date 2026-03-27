@@ -1,6 +1,238 @@
 {
   "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__distillery": [
+      {
+        "id": "gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid",
+        "category": "gtceu:distillery",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 200
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_distillery",
+          "gtceu:mv_distillery",
+          "gtceu:hv_distillery",
+          "gtceu:ev_distillery",
+          "gtceu:iv_distillery",
+          "gtceu:luv_distillery",
+          "gtceu:zpm_distillery",
+          "gtceu:uv_distillery",
+          "gtceu:uhv_distillery",
+          "gtceu:uev_distillery",
+          "gtceu:uiv_distillery",
+          "gtceu:uxv_distillery",
+          "gtceu:opv_distillery",
+          "gtceu:large_distillery"
+        ]
+      },
+      {
+        "id": "gtceu:distillery/acidic_osmium_solution_separation_to_water",
+        "category": "gtceu:distillery",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 200
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_distillery",
+          "gtceu:mv_distillery",
+          "gtceu:hv_distillery",
+          "gtceu:ev_distillery",
+          "gtceu:iv_distillery",
+          "gtceu:luv_distillery",
+          "gtceu:zpm_distillery",
+          "gtceu:uv_distillery",
+          "gtceu:uhv_distillery",
+          "gtceu:uev_distillery",
+          "gtceu:uiv_distillery",
+          "gtceu:uxv_distillery",
+          "gtceu:opv_distillery",
+          "gtceu:large_distillery"
+        ]
+      }
+    ],
+    "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/acidic_osmium_solution_separation",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:osmium_tetroxide_dust",
+            "amount": 5
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      }
+    ],
     "gtceu__packer": [
+      {
+        "id": "gtceu:packer/package_osmium_tetroxide_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
       {
         "id": "gtceu:packer/package_osmium_tetroxide_tiny_dust",
         "category": "gtceu:packer",
@@ -21,6 +253,243 @@
         "outputs": [
           {
             "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/osmium_tetroxide_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/osmium_tetroxide_separation",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/unpackage_osmium_tetroxide_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_osmium_tetroxide_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust",
+            "amount": 9
           }
         ],
         "workstations": [

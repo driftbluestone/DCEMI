@@ -1,6 +1,1145 @@
 {
+  "output": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/itnt_from_toluene",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:industrial_tnt"
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 150
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/itnt_from_toluene",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:industrial_tnt"
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 150
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ]
+  },
   "input": {
     "gtceu__implosion_compressor": [
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_flint_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:flint_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:flint",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_diamond_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:diamond_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:diamond",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_rock_salt_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:rock_salt_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rock_salt_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_sapphire_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:sapphire_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sapphire_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_sodalite_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:sodalite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sodalite_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_salt_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:salt_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_uvarovite_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:uvarovite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uvarovite_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_yellow_garnet_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:yellow_garnet_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yellow_garnet_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_monazite_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:monazite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:monazite_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_malachite_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:malachite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:malachite_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_pyrope_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:pyrope_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrope_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_glass_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:glass_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_star_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:nether_star_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_star",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_spessartine_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:spessartine_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:spessartine_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_opal_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:opal_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opal_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_ender_eye_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:ender_eye_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:ender_eye",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_rutile_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:rutile_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rutile_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_ender_pearl_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:ender_pearl",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_green_sapphire_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:green_sapphire_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_blue_topaz_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:blue_topaz_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_topaz_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_emerald_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_olivine_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:olivine_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:olivine_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_lapis_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:lapis_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:lapis_lazuli",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_ruby_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_cinnabar_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:cinnabar_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cinnabar_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_topaz_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:topaz_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:topaz_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_realgar_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:realgar_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:realgar_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_andradite_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:andradite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:andradite_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_red_garnet_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:red_garnet_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_garnet_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_quartzite_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:quartzite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quartzite_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_amethyst_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:amethyst_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:amethyst_shard",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_grossular_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:grossular_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:grossular_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_almandine_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:almandine_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:almandine_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_lazurite_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:lazurite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lazurite_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_echo_shard_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:echo_shard_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:echo_shard",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_certus_quartz_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:certus_quartz_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:certus_quartz_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_apatite_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:apatite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:apatite_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_sugar_itnt",
+        "category": "gtceu:implosion_compressor",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "minecraft:sugar",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sugar_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:implosion_compressor"
+        ]
+      },
       {
         "id": "gtceu:implosion_compressor/implode_dust_nether_quartz_itnt",
         "category": "gtceu:implosion_compressor",

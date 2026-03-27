@@ -1,6 +1,2215 @@
 {
   "output": {
+    "gtceu__centrifuge": [
+      {
+        "id": "gtceu:centrifuge/lava_separation",
+        "category": "gtceu:centrifuge",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "minecraft:lava",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.125
+          },
+          {
+            "id": "gtceu:magnesia_dust",
+            "chance": 0.025
+          },
+          {
+            "id": "gtceu:quicklime_dust",
+            "chance": 0.025
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "chance": 0.025
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.0315
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.0125
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_centrifuge",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_centrifuge",
+          "gtceu:iv_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:zpm_centrifuge",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_centrifuge",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      }
+    ],
+    "gtceu__macerator": [
+      {
+        "id": "gtceu:macerator/macerate_netherrack",
+        "category": "gtceu:macerator",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:netherrack"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherrack_dust"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "chance": 0.075
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      }
+    ],
+    "gtceu__electromagnetic_separator": [
+      {
+        "id": "gtceu:electromagnetic_separator/separate_granitic_mineral_sand_pure_dust_to_dust",
+        "category": "gtceu:electromagnetic_separator",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:pure_granitic_mineral_sand_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:large_electromagnet"
+        ]
+      },
+      {
+        "id": "gtceu:electromagnetic_separator/separate_magnetite_pure_dust_to_dust",
+        "category": "gtceu:electromagnetic_separator",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:large_electromagnet"
+        ]
+      },
+      {
+        "id": "gtceu:electromagnetic_separator/separate_vanadium_magnetite_pure_dust_to_dust",
+        "category": "gtceu:electromagnetic_separator",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:pure_vanadium_magnetite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:large_electromagnet"
+        ]
+      },
+      {
+        "id": "gtceu:electromagnetic_separator/separate_basaltic_mineral_sand_pure_dust_to_dust",
+        "category": "gtceu:electromagnetic_separator",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:pure_basaltic_mineral_sand_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:basaltic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:large_electromagnet"
+        ]
+      }
+    ],
+    "gtceu__arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_advanced_activity_detector_cover",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_activity_detector_cover"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 113
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_fine_gold_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:fine_gold_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 21
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_electrolyzer",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electrolyzer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1029
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_gold_tiny_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:gold_tiny_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 87
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_distillery",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_distillery"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1998
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 22
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_gold_single_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:gold_single_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 87
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_powered_rail",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "minecraft:powered_rail"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 87
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_transformer_1a",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:mv_transformer_1a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 493
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 7
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_gold_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:gold_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 43
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_gold_single_cable",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 88
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_canner",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_canner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1998
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 22
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_gold_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:gold_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 87
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_small_gold_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:small_gold_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 43
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_bender",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_bender"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5212
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 23
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 31
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_circuit_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_circuit_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 21
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 14
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 58
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_gold_screw",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:gold_screw"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 21
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_fermenter",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_fermenter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2194
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 31
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_robot_arm",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_robot_arm"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3428
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:stainless_steel_block"
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 22
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_golden_horse_armor",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "minecraft:golden_horse_armor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 413
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 19
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_gold_foil",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:gold_foil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 43
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_gold_bolt",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:gold_bolt"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 21
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_brewery",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_brewery"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1998
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 22
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_combustion",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hv_combustion"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5597
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 31
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      }
+    ],
+    "gtceu__ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_gold_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:gold_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_alloy_smelter",
+          "gtceu:hp_steam_alloy_smelter",
+          "gtceu:lv_alloy_smelter",
+          "gtceu:mv_alloy_smelter",
+          "gtceu:hv_alloy_smelter",
+          "gtceu:ev_alloy_smelter",
+          "gtceu:iv_alloy_smelter",
+          "gtceu:luv_alloy_smelter",
+          "gtceu:zpm_alloy_smelter",
+          "gtceu:uv_alloy_smelter",
+          "gtceu:uhv_alloy_smelter",
+          "gtceu:uev_alloy_smelter",
+          "gtceu:uiv_alloy_smelter",
+          "gtceu:uxv_alloy_smelter",
+          "gtceu:opv_alloy_smelter",
+          "gtceu:multi_smelter"
+        ]
+      }
+    ],
     "gtceu__ore_processing_diagram": [
+      {
+        "id": "gtceu:granitic_mineral_sand",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:diorite_granitic_mineral_sand_ore"
+          },
+          {
+            "tag": "gtceu:diorite_granitic_mineral_sand_ore"
+          },
+          {
+            "tag": "gtceu:diorite_granitic_mineral_sand_ore"
+          },
+          {
+            "tag": "gtceu:diorite_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:raw_granitic_mineral_sand"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_granitic_mineral_sand_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:purified_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:refined_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:pure_granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:crushed_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:purified_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:impure_granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:pure_granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_ingot"
+          },
+          {
+            "id": "gtceu:crushed_granitic_mineral_sand_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:deepslate_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:deepslate_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:deepslate_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:deepslate_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:purified_granitic_mineral_sand_ore"
+          },
+          {
+            "id": "gtceu:impure_granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:pure_granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:granitic_mineral_sand_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:vanadium_magnetite",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:vanadium_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:vanadium_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:vanadium_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:raw_vanadium_magnetite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_vanadium_magnetite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:purified_vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:refined_vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:pure_vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:crushed_vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:purified_vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:impure_vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:pure_vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:crushed_vanadium_magnetite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:vanadium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:purified_vanadium_magnetite_ore"
+          },
+          {
+            "id": "gtceu:impure_vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:pure_vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:vanadium_magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:magnetite",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:blackstone_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:blackstone_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:blackstone_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:blackstone_magnetite_ore"
+          },
+          {
+            "id": "gtceu:raw_magnetite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_magnetite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:refined_magnetite_ore"
+          },
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:crushed_magnetite_ore"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:impure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_ingot"
+          },
+          {
+            "id": "gtceu:crushed_magnetite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_magnetite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_magnetite_ore"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:impure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
       {
         "id": "gtceu:basaltic_mineral_sand",
         "category": "gtceu:ore_processing_diagram",
@@ -289,6 +2498,287 @@
           "gtceu:ev_large_miner",
           "gtceu:iv_large_miner",
           "gtceu:luv_large_miner"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/glistening_melon_slice",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glistering_melon_slice"
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/golden_carrot",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "minecraft:carrot"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:golden_carrot"
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/golden_carrot",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:carrot"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:golden_carrot"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/glistening_melon_slice",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glistering_melon_slice"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__compressor": [
+      {
+        "id": "gtceu:compressor/compress_gold_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "width": 150,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_compressor",
+          "gtceu:hp_steam_compressor",
+          "gtceu:lv_compressor",
+          "gtceu:mv_compressor",
+          "gtceu:hv_compressor",
+          "gtceu:ev_compressor",
+          "gtceu:iv_compressor",
+          "gtceu:luv_compressor",
+          "gtceu:zpm_compressor",
+          "gtceu:uv_compressor",
+          "gtceu:uhv_compressor",
+          "gtceu:uev_compressor",
+          "gtceu:uiv_compressor",
+          "gtceu:uxv_compressor",
+          "gtceu:opv_compressor",
+          "gtceu:large_material_press"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_gold_nugget",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:gold_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_gold_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_gold_nugget",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "minecraft:gold_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ],
+    "gtceu__ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_gold_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_alloy_smelter",
+          "gtceu:hp_steam_alloy_smelter",
+          "gtceu:lv_alloy_smelter",
+          "gtceu:mv_alloy_smelter",
+          "gtceu:hv_alloy_smelter",
+          "gtceu:ev_alloy_smelter",
+          "gtceu:iv_alloy_smelter",
+          "gtceu:luv_alloy_smelter",
+          "gtceu:zpm_alloy_smelter",
+          "gtceu:uv_alloy_smelter",
+          "gtceu:uhv_alloy_smelter",
+          "gtceu:uev_alloy_smelter",
+          "gtceu:uiv_alloy_smelter",
+          "gtceu:uxv_alloy_smelter",
+          "gtceu:opv_alloy_smelter",
+          "gtceu:multi_smelter"
         ]
       }
     ]

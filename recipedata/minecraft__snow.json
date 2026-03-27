@@ -1,6 +1,154 @@
 {
+  "input": {
+    "gtceu__extractor": [
+      {
+        "id": "gtceu:extractor/snow_block_extraction",
+        "category": "gtceu:extractor",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "minecraft:snow"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ],
+    "gtceu__compressor": [
+      {
+        "id": "gtceu:compressor/ice_from_snow",
+        "category": "gtceu:compressor",
+        "width": 150,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "minecraft:snow"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:ice"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_compressor",
+          "gtceu:hp_steam_compressor",
+          "gtceu:lv_compressor",
+          "gtceu:mv_compressor",
+          "gtceu:hv_compressor",
+          "gtceu:ev_compressor",
+          "gtceu:iv_compressor",
+          "gtceu:luv_compressor",
+          "gtceu:zpm_compressor",
+          "gtceu:uv_compressor",
+          "gtceu:uhv_compressor",
+          "gtceu:uev_compressor",
+          "gtceu:uiv_compressor",
+          "gtceu:uxv_compressor",
+          "gtceu:opv_compressor",
+          "gtceu:large_material_press"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__cutter": [
+      {
+        "id": "gtceu:cutter/snow_layer_distilled_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:snow_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:snow",
+            "amount": 12
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/snow_layer",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:snow_block"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:snow",
+            "amount": 12
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
       {
         "id": "gtceu:cutter/snow_layer_water",
         "category": "gtceu:cutter",

@@ -1,6 +1,310 @@
 {
-  "output": {
+  "input": {
+    "gtceu__electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_nitric_oxide",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/nitrosyl_chloride",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/nitrogen_dioxide_from_oxide",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/nitrogen_dioxide_from_oxide",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/nitrosyl_chloride",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/nitric_acid_from_dioxide_1",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 3000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/nitric_oxide_from_ammonia",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/nitric_acid_from_dioxide_1",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 3000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
       {
         "id": "gtceu:chemical_reactor/nitric_oxide_from_ammonia",
         "category": "gtceu:chemical_reactor",

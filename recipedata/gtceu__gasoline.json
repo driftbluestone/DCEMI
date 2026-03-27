@@ -1,5 +1,32 @@
 {
   "output": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/gasoline",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:raw_gasoline",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 11000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__chemical_reactor": [
       {
         "id": "gtceu:chemical_reactor/gasoline",
@@ -36,6 +63,53 @@
           "gtceu:uiv_chemical_reactor",
           "gtceu:uxv_chemical_reactor",
           "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/high_octane_gasoline",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 20000
+          },
+          {
+            "id": "gtceu:octane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitrous_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethyl_tertbutyl_ether",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:high_octane_gasoline",
+            "amount": 32000
+          }
+        ],
+        "workstations": [
           "gtceu:large_chemical_reactor"
         ]
       }

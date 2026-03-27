@@ -1,6 +1,162 @@
 {
   "output": {
+    "gtceu__distillery": [
+      {
+        "id": "gtceu:distillery/distill_charcoal_byproducts_to_dimethylbenzene",
+        "category": "gtceu:distillery",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_byproducts",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 100
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_distillery",
+          "gtceu:mv_distillery",
+          "gtceu:hv_distillery",
+          "gtceu:ev_distillery",
+          "gtceu:iv_distillery",
+          "gtceu:luv_distillery",
+          "gtceu:zpm_distillery",
+          "gtceu:uv_distillery",
+          "gtceu:uhv_distillery",
+          "gtceu:uev_distillery",
+          "gtceu:uiv_distillery",
+          "gtceu:uxv_distillery",
+          "gtceu:opv_distillery",
+          "gtceu:large_distillery"
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_tar_to_dimethylbenzene",
+        "category": "gtceu:distillery",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 40
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_distillery",
+          "gtceu:mv_distillery",
+          "gtceu:hv_distillery",
+          "gtceu:ev_distillery",
+          "gtceu:iv_distillery",
+          "gtceu:luv_distillery",
+          "gtceu:zpm_distillery",
+          "gtceu:uv_distillery",
+          "gtceu:uhv_distillery",
+          "gtceu:uev_distillery",
+          "gtceu:uiv_distillery",
+          "gtceu:uxv_distillery",
+          "gtceu:opv_distillery",
+          "gtceu:large_distillery"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dimethylbenzene",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_charcoal_byproducts",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_byproducts",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:charcoal_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      },
       {
         "id": "gtceu:distillation_tower/distill_wood_tar",
         "category": "gtceu:distillation_tower",
@@ -37,6 +193,74 @@
         "workstations": [
           "gtceu:distillation_tower",
           "gtceu:large_distillery"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/phthalic_acid_from_dimethylbenzene_9",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 18000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 9000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 18000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phthalic_acid_from_dimethylbenzene",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
         ]
       }
     ]

@@ -1,6 +1,1222 @@
 {
   "output": {
+    "gtceu__electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/soda_ash_from_bicarbonate",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_bicarbonate_dust",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:soda_ash_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
+        ]
+      },
+      {
+        "id": "gtceu:electrolyzer/acetic_acid_electrolysis",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
+        ]
+      }
+    ],
+    "gtceu__distillery": [
+      {
+        "id": "gtceu:distillery/distill_wood_gas_to_carbon_dioxide",
+        "category": "gtceu:distillery",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 49
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_distillery",
+          "gtceu:mv_distillery",
+          "gtceu:hv_distillery",
+          "gtceu:ev_distillery",
+          "gtceu:iv_distillery",
+          "gtceu:luv_distillery",
+          "gtceu:zpm_distillery",
+          "gtceu:uv_distillery",
+          "gtceu:uhv_distillery",
+          "gtceu:uev_distillery",
+          "gtceu:uiv_distillery",
+          "gtceu:uxv_distillery",
+          "gtceu:opv_distillery",
+          "gtceu:large_distillery"
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_carbon_dioxide",
+        "category": "gtceu:distillery",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 400
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_distillery",
+          "gtceu:mv_distillery",
+          "gtceu:hv_distillery",
+          "gtceu:ev_distillery",
+          "gtceu:iv_distillery",
+          "gtceu:luv_distillery",
+          "gtceu:zpm_distillery",
+          "gtceu:uv_distillery",
+          "gtceu:uhv_distillery",
+          "gtceu:uev_distillery",
+          "gtceu:uiv_distillery",
+          "gtceu:uxv_distillery",
+          "gtceu:opv_distillery",
+          "gtceu:large_distillery"
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_coal_gas_to_carbon_dioxide",
+        "category": "gtceu:distillery",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:coal_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_dust"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 250
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_distillery",
+          "gtceu:mv_distillery",
+          "gtceu:hv_distillery",
+          "gtceu:ev_distillery",
+          "gtceu:iv_distillery",
+          "gtceu:luv_distillery",
+          "gtceu:zpm_distillery",
+          "gtceu:uv_distillery",
+          "gtceu:uhv_distillery",
+          "gtceu:uev_distillery",
+          "gtceu:uiv_distillery",
+          "gtceu:uxv_distillery",
+          "gtceu:opv_distillery",
+          "gtceu:large_distillery"
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_dissolved_calcium_acetate_to_carbon_dioxide",
+        "category": "gtceu:distillery",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quicklime_dust"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 500
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_distillery",
+          "gtceu:mv_distillery",
+          "gtceu:hv_distillery",
+          "gtceu:ev_distillery",
+          "gtceu:iv_distillery",
+          "gtceu:luv_distillery",
+          "gtceu:zpm_distillery",
+          "gtceu:uv_distillery",
+          "gtceu:uhv_distillery",
+          "gtceu:uev_distillery",
+          "gtceu:uiv_distillery",
+          "gtceu:uxv_distillery",
+          "gtceu:opv_distillery",
+          "gtceu:large_distillery"
+        ]
+      }
+    ],
+    "gtceu__electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/rutile_from_ilmenite",
+        "category": "gtceu:electric_blast_furnace",
+        "width": 164,
+        "height": 99,
+        "inputs": [
+          {
+            "id": "gtceu:ilmenite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:carbon_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot"
+          },
+          {
+            "id": "gtceu:rutile_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_blast_furnace",
+          "gtceu:electric_blast_furnace"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dissolved_calcium_acetate_from_calcite",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/quicklime_from_calcite",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_dioxide_from_carbon",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_dioxide_from_coal_gem",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_dioxide_from_coal_dust",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_dioxide_from_methane",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/magnesia_from_magnesite",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:magnesite_dust",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesia_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/ruthenium_tetroxide_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_dust"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_dioxide_from_charcoal_gem",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_dioxide_from_charcoal_dust",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/quicklime_from_calcite",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/dissolved_calcium_acetate_from_calcite",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/ruthenium_tetroxide_separation",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_dust"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_dioxide_from_carbon",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_dioxide_from_coal_gem",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_dioxide_from_methane",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_dioxide_from_coal_dust",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_dioxide_from_charcoal_dust",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_dioxide_from_charcoal_gem",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/magnesia_from_magnesite",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:magnesite_dust",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesia_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_liquid_air",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:liquid_air",
+            "amount": 50000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:helium",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 35000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 11000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 2500
+          },
+          {
+            "id": "gtceu:ice_dust",
+            "chance": 0.9
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_wood_gas",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 340
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 490
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 130
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_dissolved_calcium_acetate",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_fermented_biomass",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 600
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 25
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 375
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:fertilizer"
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      },
       {
         "id": "gtceu:distillation_tower/distill_coal_gas",
         "category": "gtceu:distillation_tower",
@@ -37,6 +1253,692 @@
         "workstations": [
           "gtceu:distillation_tower",
           "gtceu:large_distillery"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "gtceu__electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_carbon_dioxide",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/ethylene_from_glycerol",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/soda_ash_from_carbon_dioxide",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:soda_ash_dust",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_monoxide_from_dioxide",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/sodium_bicarbonate_from_salt",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_bicarbonate_dust",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/calcite_from_quicklime",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/methanol_from_dioxide",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/formic_acid",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:formic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/potassium_carbonate",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_hydroxide_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_carbonate_dust",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/magnesite_from_magnesia",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:magnesia_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesite_dust",
+            "amount": 5
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/potassium_carbonate",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_hydroxide_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_carbonate_dust",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/formic_acid",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:formic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/soda_ash_from_carbon_dioxide",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:soda_ash_dust",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/methanol_from_dioxide",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/magnesite_from_magnesia",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:magnesia_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesite_dust",
+            "amount": 5
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/ethylene_from_glycerol",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/sodium_bicarbonate_from_salt",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_bicarbonate_dust",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/calcite_from_quicklime",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_monoxide_from_dioxide",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
         ]
       }
     ]

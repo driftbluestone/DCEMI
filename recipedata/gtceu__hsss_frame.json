@@ -1,5 +1,401 @@
 {
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/frame_hsss",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_rod"
+          },
+          {
+            "id": "gtceu:hsss_rod"
+          },
+          {
+            "id": "gtceu:hsss_rod"
+          },
+          {
+            "id": "gtceu:hsss_rod"
+          },
+          {
+            "tag": "gtceu:lv_iron_wrench"
+          },
+          {
+            "id": "gtceu:hsss_rod"
+          },
+          {
+            "id": "gtceu:hsss_rod"
+          },
+          {
+            "id": "gtceu:hsss_rod"
+          },
+          {
+            "id": "gtceu:hsss_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_frame",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/assemble_hsss_frame",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_rod",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ]
+  },
   "input": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/luv_large_miner",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:hsss_frame",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:luv_electric_motor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:luv_electric_pump",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:luv_conveyor_module",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ruridit_gear",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_large_miner"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__assembly_line": [
+      {
+        "id": "gtceu:assembly_line/emitter_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:long_ruridit_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:ruridit_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_sensor"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/field_generator_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:hsss_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "id": "gtceu:luv_emitter",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_indium_tin_barium_titanium_cuprate_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_indium_tin_barium_titanium_cuprate_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_field_generator"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hsss_frame",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_hsss_frame",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss",
+            "amount": 288
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_hsss_frame",

@@ -1,6 +1,308 @@
 {
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/flour_to_dough",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "minecraft:water_bucket"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dough",
+            "amount": 8
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__mixer": [
+      {
+        "id": "gtceu:mixer/flour_to_dough",
+        "category": "gtceu:mixer",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:wheat_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dough",
+            "amount": 3
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_mixer",
+          "gtceu:mv_mixer",
+          "gtceu:hv_mixer",
+          "gtceu:ev_mixer",
+          "gtceu:iv_mixer",
+          "gtceu:luv_mixer",
+          "gtceu:zpm_mixer",
+          "gtceu:uv_mixer",
+          "gtceu:uhv_mixer",
+          "gtceu:uev_mixer",
+          "gtceu:uiv_mixer",
+          "gtceu:uxv_mixer",
+          "gtceu:opv_mixer",
+          "gtceu:large_mixer"
+        ]
+      }
+    ]
+  },
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/cake_from_dough",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "minecraft:milk_bucket"
+          },
+          {
+            "id": "minecraft:milk_bucket"
+          },
+          {
+            "id": "minecraft:milk_bucket"
+          },
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "minecraft:egg"
+          },
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cake"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shapeless/cookie_from_dough",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          },
+          {
+            "id": "minecraft:cocoa_beans"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cookie",
+            "amount": 8
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shapeless/pumpkin_pie_from_dough",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_pie"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "minecraft__smelting": [
+      {
+        "id": "gtceu:smelting/dough_to_bread",
+        "category": "minecraft:smelting",
+        "width": 82,
+        "height": 38,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bread"
+          }
+        ],
+        "workstations": [
+          "minecraft:furnace",
+          "gtceu:lp_steam_furnace",
+          "gtceu:lv_electric_furnace",
+          "gtceu:hp_steam_furnace",
+          "gtceu:mv_electric_furnace",
+          "gtceu:hv_electric_furnace",
+          "gtceu:ev_electric_furnace",
+          "gtceu:iv_electric_furnace",
+          "gtceu:luv_electric_furnace",
+          "gtceu:zpm_electric_furnace",
+          "gtceu:uv_electric_furnace",
+          "gtceu:uhv_electric_furnace",
+          "gtceu:uev_electric_furnace",
+          "gtceu:uiv_electric_furnace",
+          "gtceu:uxv_electric_furnace",
+          "gtceu:opv_electric_furnace",
+          "gtceu:multi_smelter",
+          "gtceu:steam_oven"
+        ]
+      }
+    ],
+    "minecraft__smoking": [
+      {
+        "id": "gtceu:smoking/dough_to_bread",
+        "category": "minecraft:smoking",
+        "width": 82,
+        "height": 38,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bread"
+          }
+        ],
+        "workstations": [
+          "minecraft:smoker"
+        ]
+      }
+    ],
+    "minecraft__campfire_cooking": [
+      {
+        "id": "gtceu:campfire/dough_to_bread",
+        "category": "minecraft:campfire_cooking",
+        "width": 82,
+        "height": 38,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bread"
+          }
+        ],
+        "workstations": [
+          "minecraft:campfire",
+          "minecraft:soul_campfire"
+        ]
+      }
+    ],
     "gtceu__forming_press": [
+      {
+        "id": "gtceu:forming_press/pumpkin_pie",
+        "category": "gtceu:forming_press",
+        "width": 164,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:dough",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:sugar"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_pie",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_forming_press",
+          "gtceu:mv_forming_press",
+          "gtceu:hv_forming_press",
+          "gtceu:ev_forming_press",
+          "gtceu:iv_forming_press",
+          "gtceu:luv_forming_press",
+          "gtceu:zpm_forming_press",
+          "gtceu:uv_forming_press",
+          "gtceu:uhv_forming_press",
+          "gtceu:uev_forming_press",
+          "gtceu:uiv_forming_press",
+          "gtceu:uxv_forming_press",
+          "gtceu:opv_forming_press",
+          "gtceu:large_material_press"
+        ]
+      },
       {
         "id": "gtceu:forming_press/cookie",
         "category": "gtceu:forming_press",

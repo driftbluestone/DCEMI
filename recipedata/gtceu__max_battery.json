@@ -1,5 +1,72 @@
 {
   "output": {
+    "gtceu__research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_energy_cluster",
+        "category": "gtceu:research_station",
+        "width": 150,
+        "height": 117,
+        "inputs": [
+          {
+            "id": "gtceu:data_module"
+          },
+          {
+            "id": "gtceu:energy_cluster"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "workstations": [
+          "gtceu:research_station"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/unpackage_uhv_ultimate_battery",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:uhv_ultimate_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ],
     "gtceu__assembly_line": [
       {
         "id": "gtceu:assembly_line/ultimate_battery",
@@ -84,6 +151,45 @@
         ],
         "workstations": [
           "gtceu:assembly_line"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "gtceu__canner": [
+      {
+        "id": "gtceu:canner/uhv_ultimate_battery",
+        "category": "gtceu:canner",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_ultimate_battery"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_canner",
+          "gtceu:mv_canner",
+          "gtceu:hv_canner",
+          "gtceu:ev_canner",
+          "gtceu:iv_canner",
+          "gtceu:luv_canner",
+          "gtceu:zpm_canner",
+          "gtceu:uv_canner",
+          "gtceu:uhv_canner",
+          "gtceu:uev_canner",
+          "gtceu:uiv_canner",
+          "gtceu:uxv_canner",
+          "gtceu:opv_canner",
+          "gtceu:large_extractor"
         ]
       }
     ]

@@ -1,5 +1,305 @@
 {
+  "output": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/battery_hull_hv",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:gold_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:battery_alloy_plate",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_hv_cadmium_battery",
+        "category": "gtceu:extractor",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hv_cadmium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/unpackage_hv_sodium_battery",
+        "category": "gtceu:extractor",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hv_sodium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/unpackage_hv_lithium_battery",
+        "category": "gtceu:extractor",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hv_lithium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ]
+  },
   "input": {
+    "gtceu__canner": [
+      {
+        "id": "gtceu:canner/cadmium_battery_hv",
+        "category": "gtceu:canner",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          },
+          {
+            "id": "gtceu:cadmium_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_cadmium_battery"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_canner",
+          "gtceu:mv_canner",
+          "gtceu:hv_canner",
+          "gtceu:ev_canner",
+          "gtceu:iv_canner",
+          "gtceu:luv_canner",
+          "gtceu:zpm_canner",
+          "gtceu:uv_canner",
+          "gtceu:uhv_canner",
+          "gtceu:uev_canner",
+          "gtceu:uiv_canner",
+          "gtceu:uxv_canner",
+          "gtceu:opv_canner",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:canner/lithium_battery_hv",
+        "category": "gtceu:canner",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_lithium_battery"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_canner",
+          "gtceu:mv_canner",
+          "gtceu:hv_canner",
+          "gtceu:ev_canner",
+          "gtceu:iv_canner",
+          "gtceu:luv_canner",
+          "gtceu:zpm_canner",
+          "gtceu:uv_canner",
+          "gtceu:uhv_canner",
+          "gtceu:uev_canner",
+          "gtceu:uiv_canner",
+          "gtceu:uxv_canner",
+          "gtceu:opv_canner",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:canner/sodium_battery_hv",
+        "category": "gtceu:canner",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          },
+          {
+            "id": "gtceu:sodium_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_sodium_battery"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_canner",
+          "gtceu:mv_canner",
+          "gtceu:hv_canner",
+          "gtceu:ev_canner",
+          "gtceu:iv_canner",
+          "gtceu:luv_canner",
+          "gtceu:zpm_canner",
+          "gtceu:uv_canner",
+          "gtceu:uhv_canner",
+          "gtceu:uev_canner",
+          "gtceu:uiv_canner",
+          "gtceu:uxv_canner",
+          "gtceu:opv_canner",
+          "gtceu:large_extractor"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_battery_hull",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:battery_alloy_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_hv_battery_hull",

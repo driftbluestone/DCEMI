@@ -1,6 +1,239 @@
 {
+  "input": {
+    "gtceu__mixer": [
+      {
+        "id": "gtceu:mixer/rocket_fuel_from_dinitrogen_tetroxide",
+        "category": "gtceu:mixer",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:dimethylhydrazine",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rocket_fuel",
+            "amount": 6000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_mixer",
+          "gtceu:mv_mixer",
+          "gtceu:hv_mixer",
+          "gtceu:ev_mixer",
+          "gtceu:iv_mixer",
+          "gtceu:luv_mixer",
+          "gtceu:zpm_mixer",
+          "gtceu:uv_mixer",
+          "gtceu:uhv_mixer",
+          "gtceu:uev_mixer",
+          "gtceu:uiv_mixer",
+          "gtceu:uxv_mixer",
+          "gtceu:opv_mixer",
+          "gtceu:large_mixer"
+        ]
+      }
+    ],
+    "gtceu__electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_dinitrogen_tetroxide",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
+        ]
+      }
+    ]
+  },
   "output": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dinitrogen_tetroxide_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 6000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dinitrogen_tetroxide_from_dioxide",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dinitrogen_tetroxide_from_ammonia",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/dinitrogen_tetroxide_from_ammonia",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      },
       {
         "id": "gtceu:chemical_reactor/dinitrogen_tetroxide_from_dioxide",
         "category": "gtceu:chemical_reactor",

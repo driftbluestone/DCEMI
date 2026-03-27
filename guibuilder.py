@@ -40,7 +40,7 @@ def create_base_gui(width: int, height: int) -> Image.Image:
     
     return basegui
 
-def add_slots(gui: Image.Image, in_slots: int, out_slots: int) -> Image.Image:
+def add_slots(gui: Image.Image, in_slots: int, out_slots: int, progress_bar: str) -> Image.Image:
     vertical = 8
     horizontal = 8
     height = max([math.ceil(input_slots / 3), math.ceil(output_slots / 3)])
@@ -60,22 +60,25 @@ def add_slots(gui: Image.Image, in_slots: int, out_slots: int) -> Image.Image:
     if input_slots < 3:
         arrow_distance = input_slots*18 + 20
     arrow_height = (height * 9) -1
-    with Image.open(f"{DIR}/gui/arrow.png") as img:
-        gui.paste(im=img, box=(arrow_distance, arrow_height))
+    with Image.open(f"{DIR}/gui/gtceu/gui/progress_bar/progress_bar_{progress_bar}.png") as img:
+        img = img.convert("RGBA")
+        progress_bar_width = img.width
+        img = img.crop((0, (img.height // 2), img.width, img.height))
+        gui.paste(im=img, box=(arrow_distance, arrow_height), mask=img)
     
     vertical = 8
-    horizontal = arrow_distance + 24 + 12
+    horizontal = arrow_distance + progress_bar_width + 12
     with Image.open(f"{DIR}/gui/slot.png") as img:
         for i in range(out_slots):
             i += 1
             gui.paste(im=img, box=(horizontal, vertical))
             horizontal+=18
             if i % 3 == 0:
-                horizontal = arrow_distance + 24 + 12
+                horizontal = arrow_distance + progress_bar_width + 12
                 vertical += 18
     return gui
 
-def create_gui(input_slots: int, output_slots: int) -> Image.Image:
+def create_gui(input_slots: int, output_slots: int, progress_bar: str) -> Image.Image:
     width = 56
     height = (max([math.ceil(input_slots / 3), math.ceil(output_slots / 3)])) * 18 + 8
     if input_slots >= 3:
@@ -88,10 +91,10 @@ def create_gui(input_slots: int, output_slots: int) -> Image.Image:
         width += 18*output_slots
 
     gui = create_base_gui(width, height)
-    gui = add_slots(gui, input_slots, output_slots)
+    gui = add_slots(gui, input_slots, output_slots, progress_bar)
     return gui
 
-basegui = create_gui(input_slots, output_slots)
+basegui = create_gui(input_slots, output_slots, "bending")
 basegui = basegui.resize((8*basegui.width, 8*basegui.height), resample= Image.BOX)
 basegui.save(f"{DIR}/gui.png")
 

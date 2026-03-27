@@ -1,6 +1,143 @@
 {
   "input": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/stem_cells",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:osmiridium_dust"
+          },
+          {
+            "id": "gtceu:bacteria",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stem_cells",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 500
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/stem_cells",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:osmiridium_dust"
+          },
+          {
+            "id": "gtceu:bacteria",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stem_cells",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 500
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/neuro_processor",
+        "category": "gtceu:circuit_assembler",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:stem_cells",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:polybenzimidazole_small_fluid_pipe",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:electrum_plate",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silicone_rubber_foil",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hsse_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neuro_processing_unit"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_circuit_assembler",
+          "gtceu:mv_circuit_assembler",
+          "gtceu:hv_circuit_assembler",
+          "gtceu:ev_circuit_assembler",
+          "gtceu:iv_circuit_assembler",
+          "gtceu:luv_circuit_assembler",
+          "gtceu:zpm_circuit_assembler",
+          "gtceu:uv_circuit_assembler",
+          "gtceu:uhv_circuit_assembler",
+          "gtceu:uev_circuit_assembler",
+          "gtceu:uiv_circuit_assembler",
+          "gtceu:uxv_circuit_assembler",
+          "gtceu:opv_circuit_assembler",
+          "gtceu:large_circuit_assembler"
+        ]
+      },
       {
         "id": "gtceu:circuit_assembler/wetware_board",
         "category": "gtceu:circuit_assembler",
@@ -53,6 +190,50 @@
           "gtceu:uxv_circuit_assembler",
           "gtceu:opv_circuit_assembler",
           "gtceu:large_circuit_assembler"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__fluid_heater": [
+      {
+        "id": "gtceu:fluid_heater/sterile_growth_medium",
+        "category": "gtceu:fluid_heater",
+        "width": 150,
+        "height": 89,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:raw_growth_medium",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 100
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_heater",
+          "gtceu:mv_fluid_heater",
+          "gtceu:hv_fluid_heater",
+          "gtceu:ev_fluid_heater",
+          "gtceu:iv_fluid_heater",
+          "gtceu:luv_fluid_heater",
+          "gtceu:zpm_fluid_heater",
+          "gtceu:uv_fluid_heater",
+          "gtceu:uhv_fluid_heater",
+          "gtceu:uev_fluid_heater",
+          "gtceu:uiv_fluid_heater",
+          "gtceu:uxv_fluid_heater",
+          "gtceu:opv_fluid_heater",
+          "gtceu:large_brewer"
         ]
       }
     ]

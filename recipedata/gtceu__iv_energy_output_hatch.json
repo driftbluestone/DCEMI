@@ -1,5 +1,100 @@
 {
   "input": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_4a_iv",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:iv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:tungsten_quadruple_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_energy_output_hatch_4a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_energy_output_hatch",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:iv_energy_output_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_iv_energy_output_hatch",
@@ -47,6 +142,57 @@
           "gtceu:uxv_arc_furnace",
           "gtceu:opv_arc_furnace",
           "gtceu:large_arc_smelter"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_iv",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:tungsten_spring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iv_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_energy_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
         ]
       }
     ]

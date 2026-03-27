@@ -1,6 +1,158 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_titanium_trifluoride",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_titanium_trifluoride_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_titanium_trifluoride",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_titanium_trifluoride",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_titanium_trifluoride_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_titanium_trifluoride",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/titanium_trifluoride_separation",
+        "category": "gtceu:electric_blast_furnace",
+        "width": 164,
+        "height": 99,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_titanium_ingot"
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 3000
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_blast_furnace",
+          "gtceu:electric_blast_furnace"
+        ]
+      }
+    ],
     "gtceu__packer": [
+      {
+        "id": "gtceu:packer/unpackage_titanium_trifluoride_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
       {
         "id": "gtceu:packer/unpackage_titanium_trifluoride_small_dust",
         "category": "gtceu:packer",
@@ -21,6 +173,196 @@
           {
             "id": "gtceu:small_titanium_trifluoride_dust",
             "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_titanium_trifluoride",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:small_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:small_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:small_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:small_titanium_trifluoride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_titanium_trifluoride",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          },
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/naquadah_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:fluoroantimonic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_enriched_naquadah_solution",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:impure_naquadria_solution",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/package_titanium_trifluoride_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:small_titanium_trifluoride_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_titanium_trifluoride_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tiny_titanium_trifluoride_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust"
           }
         ],
         "workstations": [

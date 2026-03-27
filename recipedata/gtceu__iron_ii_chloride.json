@@ -1,5 +1,44 @@
 {
   "input": {
+    "gtceu__electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_iron_ii_chloride",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:iron_ii_chloride",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust"
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
+        ]
+      }
+    ],
     "gtceu__large_chemical_reactor": [
       {
         "id": "gtceu:large_chemical_reactor/calcium_ferrocyanide",
@@ -32,6 +71,43 @@
           {
             "id": "gtceu:hydrochloric_acid",
             "amount": 2000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/iron_2_chloride",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:iron_iii_chloride",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:chlorobenzene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_ii_chloride",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:dichlorobenzene",
+            "amount": 1000
           }
         ],
         "workstations": [

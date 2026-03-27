@@ -1,6 +1,357 @@
 {
-  "output": {
+  "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_naquadria_sulfate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_naquadria_sulfate_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_naquadria_sulfate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_naquadria_sulfate_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_naquadria_sulfate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_naquadria_sulfate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/naquadria_sulfate_separation",
+        "category": "gtceu:electric_blast_furnace",
+        "width": 164,
+        "height": 99,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_naquadria_ingot"
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_blast_furnace",
+          "gtceu:electric_blast_furnace"
+        ]
+      }
+    ],
     "gtceu__packer": [
+      {
+        "id": "gtceu:packer/unpackage_naquadria_sulfate_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_naquadria_sulfate_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_naquadria_sulfate_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_naquadria_sulfate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:small_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:small_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:small_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:small_naquadria_sulfate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_naquadria_sulfate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_sulfate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__centrifuge": [
+      {
+        "id": "gtceu:centrifuge/acidic_naquadria_solution_separation",
+        "category": "gtceu:centrifuge",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_naquadria_solution",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:naquadria_waste",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 500
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_centrifuge",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_centrifuge",
+          "gtceu:iv_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:zpm_centrifuge",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_centrifuge",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/package_naquadria_sulfate_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:small_naquadria_sulfate_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
       {
         "id": "gtceu:packer/package_naquadria_sulfate_tiny_dust",
         "category": "gtceu:packer",

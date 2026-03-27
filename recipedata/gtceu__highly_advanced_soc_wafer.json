@@ -1,6 +1,122 @@
 {
+  "output": {
+    "gtceu__laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_hasoc_neutronium",
+        "category": "gtceu:laser_engraver",
+        "width": 150,
+        "height": 71,
+        "catalysts": [
+          {
+            "id": "gtceu:black_glass_lens",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_wafer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:highly_advanced_soc_wafer"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_laser_engraver",
+          "gtceu:mv_laser_engraver",
+          "gtceu:hv_laser_engraver",
+          "gtceu:ev_laser_engraver",
+          "gtceu:iv_laser_engraver",
+          "gtceu:luv_laser_engraver",
+          "gtceu:zpm_laser_engraver",
+          "gtceu:uv_laser_engraver",
+          "gtceu:uhv_laser_engraver",
+          "gtceu:uev_laser_engraver",
+          "gtceu:uiv_laser_engraver",
+          "gtceu:uxv_laser_engraver",
+          "gtceu:opv_laser_engraver",
+          "gtceu:large_engraving_laser"
+        ]
+      }
+    ]
+  },
   "input": {
     "gtceu__cutter": [
+      {
+        "id": "gtceu:cutter/cut_hasoc",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:highly_advanced_soc_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:highly_advanced_soc",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/cut_hasoc_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:highly_advanced_soc_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:highly_advanced_soc",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
       {
         "id": "gtceu:cutter/cut_hasoc_distilled_water",
         "category": "gtceu:cutter",

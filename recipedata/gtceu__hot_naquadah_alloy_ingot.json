@@ -1,6 +1,68 @@
 {
+  "input": {
+    "gtceu__vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_naquadah_alloy_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hot_naquadah_alloy_ingot"
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_vacuum_freezer",
+          "gtceu:vacuum_freezer"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_naquadah_alloy_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "width": 164,
+        "height": 99,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_naquadah_alloy_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_blast_furnace",
+          "gtceu:electric_blast_furnace"
+        ]
+      },
       {
         "id": "gtceu:electric_blast_furnace/blast_naquadah_alloy",
         "category": "gtceu:electric_blast_furnace",

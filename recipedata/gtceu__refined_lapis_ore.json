@@ -1,5 +1,496 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shapeless/centrifuged_ore_to_dust_lapis",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "tag": "gtceu:iron_hammer"
+          },
+          {
+            "id": "gtceu:refined_lapis_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapis_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_lapis_refined_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:refined_lapis_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapis_dust"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.14
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_lapis_refined_ore_to_dust",
+        "category": "gtceu:ore_forging",
+        "width": 150,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:refined_lapis_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapis_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_forge_hammer",
+          "gtceu:lv_forge_hammer",
+          "gtceu:hp_steam_forge_hammer",
+          "gtceu:mv_forge_hammer",
+          "gtceu:hv_forge_hammer",
+          "gtceu:ev_forge_hammer",
+          "gtceu:iv_forge_hammer",
+          "gtceu:luv_forge_hammer",
+          "gtceu:zpm_forge_hammer",
+          "gtceu:uv_forge_hammer",
+          "gtceu:uhv_forge_hammer",
+          "gtceu:uev_forge_hammer",
+          "gtceu:uiv_forge_hammer",
+          "gtceu:uxv_forge_hammer",
+          "gtceu:opv_forge_hammer",
+          "gtceu:large_material_press"
+        ]
+      }
+    ],
+    "gtceu__ore_processing_diagram": [
+      {
+        "id": "gtceu:lapis",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "minecraft:lapis_ore"
+          },
+          {
+            "tag": "minecraft:lapis_ore"
+          },
+          {
+            "tag": "minecraft:lapis_ore"
+          },
+          {
+            "tag": "minecraft:lapis_ore"
+          },
+          {
+            "id": "gtceu:raw_lapis"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_lapis_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:impure_lapis_dust"
+          },
+          {
+            "id": "gtceu:purified_lapis_ore"
+          },
+          {
+            "id": "gtceu:refined_lapis_ore"
+          },
+          {
+            "id": "gtceu:pure_lapis_dust"
+          },
+          {
+            "id": "gtceu:crushed_lapis_ore"
+          },
+          {
+            "id": "gtceu:purified_lapis_ore"
+          },
+          {
+            "id": "gtceu:impure_lapis_dust"
+          },
+          {
+            "id": "gtceu:pure_lapis_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:lapis_lazuli",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:crushed_lapis_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:lazurite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_lapis_dust"
+          },
+          {
+            "id": "gtceu:lazurite_dust",
+            "amount": 4,
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lapis_dust"
+          },
+          {
+            "id": "gtceu:lazurite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_lapis_ore"
+          },
+          {
+            "id": "gtceu:lazurite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_lapis_ore"
+          },
+          {
+            "id": "gtceu:sodalite_dust",
+            "amount": 4,
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:lapis_dust"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_lapis_dust"
+          },
+          {
+            "id": "gtceu:sodalite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lapis_dust"
+          },
+          {
+            "id": "gtceu:sodalite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_lapis_ore"
+          },
+          {
+            "id": "gtceu:purified_lapis_ore"
+          },
+          {
+            "id": "gtceu:impure_lapis_dust"
+          },
+          {
+            "id": "gtceu:lapis_dust"
+          },
+          {
+            "id": "gtceu:pure_lapis_dust"
+          },
+          {
+            "id": "gtceu:lapis_dust"
+          },
+          {
+            "id": "gtceu:exquisite_lapis_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_lapis_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:lapis_lazuli",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_lapis_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_lapis_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_lapis_gem",
+            "chance": 0.35
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__thermal_centrifuge": [
+      {
+        "id": "gtceu:thermal_centrifuge/centrifuge_lapis_purified_ore_to_refined_ore",
+        "category": "gtceu:thermal_centrifuge",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:purified_lapis_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:refined_lapis_ore"
+          },
+          {
+            "id": "gtceu:sodalite_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      },
+      {
+        "id": "gtceu:thermal_centrifuge/centrifuge_lapis_crushed_ore_to_refined_ore",
+        "category": "gtceu:thermal_centrifuge",
+        "width": 164,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_lapis_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:refined_lapis_ore"
+          },
+          {
+            "id": "gtceu:sodalite_dust",
+            "amount": 4,
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      }
+    ],
     "gtceu__ore_processing_diagram": [
       {
         "id": "gtceu:lapis",

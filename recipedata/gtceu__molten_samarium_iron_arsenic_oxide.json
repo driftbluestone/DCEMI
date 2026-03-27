@@ -1,6 +1,85 @@
 {
+  "input": {
+    "gtceu__vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/samarium_iron_arsenic_oxide",
+        "category": "gtceu:vacuum_freezer",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:molten_samarium_iron_arsenic_oxide",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_iron_arsenic_oxide_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_vacuum_freezer",
+          "gtceu:vacuum_freezer"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/samarium_iron_arsenic_oxide_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "width": 164,
+        "height": 135,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          },
+          {
+            "id": "gtceu:iron_dust"
+          },
+          {
+            "id": "gtceu:arsenic_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_samarium_iron_arsenic_oxide",
+            "amount": 576
+          }
+        ],
+        "workstations": [
+          "gtceu:alloy_blast_smelter"
+        ]
+      },
       {
         "id": "gtceu:alloy_blast_smelter/samarium_iron_arsenic_oxide",
         "category": "gtceu:alloy_blast_smelter",

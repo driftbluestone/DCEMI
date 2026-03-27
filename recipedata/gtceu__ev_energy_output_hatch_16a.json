@@ -1,5 +1,103 @@
 {
   "input": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_ev",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:ev_transformer_16a"
+          },
+          {
+            "id": "gtceu:ev_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:aluminium_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_substation_output_hatch_64a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_energy_output_hatch_16a",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:ev_energy_output_hatch_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:small_platinum_dust",
+            "amount": 10
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_ev_energy_output_hatch_16a",
@@ -48,6 +146,53 @@
           "gtceu:uxv_arc_furnace",
           "gtceu:opv_arc_furnace",
           "gtceu:large_arc_smelter"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_16a_ev",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:ev_transformer_1a"
+          },
+          {
+            "id": "gtceu:ev_energy_output_hatch_4a"
+          },
+          {
+            "id": "gtceu:aluminium_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_energy_output_hatch_16a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
         ]
       }
     ]

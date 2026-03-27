@@ -1,6 +1,799 @@
 {
   "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_indium_tin_barium_titanium_cuprate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_indium_tin_barium_titanium_cuprate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__mixer": [
+      {
+        "id": "gtceu:mixer/indium_tin_barium_titanium_cuprate",
+        "category": "gtceu:mixer",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_mixer",
+          "gtceu:mv_mixer",
+          "gtceu:hv_mixer",
+          "gtceu:ev_mixer",
+          "gtceu:iv_mixer",
+          "gtceu:luv_mixer",
+          "gtceu:zpm_mixer",
+          "gtceu:uv_mixer",
+          "gtceu:uhv_mixer",
+          "gtceu:uev_mixer",
+          "gtceu:uiv_mixer",
+          "gtceu:uxv_mixer",
+          "gtceu:opv_mixer",
+          "gtceu:large_mixer"
+        ]
+      }
+    ],
+    "gtceu__macerator": [
+      {
+        "id": "gtceu:macerator/macerate_indium_tin_barium_titanium_cuprate_ingot",
+        "category": "gtceu:macerator",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/package_indium_tin_barium_titanium_cuprate_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_indium_tin_barium_titanium_cuprate_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ],
     "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_indium_tin_barium_titanium_cuprate_hex_wire",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 8
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_data_bank",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:data_bank"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 8
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_quantum_tank",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:uv_quantum_tank"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 12
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_world_accelerator",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:luv_world_accelerator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 51
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 48
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_quantum_chest",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:uv_quantum_chest"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_indium_tin_barium_titanium_cuprate_octal_wire",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_high_performance_computation_array",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_indium_tin_barium_titanium_cuprate_block",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_double_indium_tin_barium_titanium_cuprate_plate",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:double_indium_tin_barium_titanium_cuprate_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_indium_tin_barium_titanium_cuprate_quadruple_wire",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_advanced_computer_casing",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_computer_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:macerator/macerate_indium_tin_barium_titanium_cuprate_double_wire",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
       {
         "id": "gtceu:macerator/macerate_indium_tin_barium_titanium_cuprate_plate",
         "category": "gtceu:macerator_recycling",
@@ -37,6 +830,283 @@
           "gtceu:ev_large_miner",
           "gtceu:iv_large_miner",
           "gtceu:luv_large_miner"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_indium_tin_barium_titanium_cuprate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_indium_tin_barium_titanium_cuprate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_indium_tin_barium_titanium_cuprate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_indium_tin_barium_titanium_cuprate",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_indium_tin_barium_titanium_cuprate",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 30
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
+        ]
+      }
+    ],
+    "gtceu__electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_indium_tin_barium_titanium_cuprate_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "width": 164,
+        "height": 99,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_indium_tin_barium_titanium_cuprate_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_blast_furnace",
+          "gtceu:electric_blast_furnace"
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_indium_tin_barium_titanium_cuprate",
+        "category": "gtceu:electric_blast_furnace",
+        "width": 164,
+        "height": 99,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_indium_tin_barium_titanium_cuprate_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_blast_furnace",
+          "gtceu:electric_blast_furnace"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/unpackage_indium_tin_barium_titanium_cuprate_tiny_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_indium_tin_barium_titanium_cuprate_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_indium_tin_barium_titanium_cuprate_small_dust",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
         ]
       }
     ]

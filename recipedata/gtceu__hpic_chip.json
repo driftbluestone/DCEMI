@@ -1,6 +1,753 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/casing_assembly_control",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:hpic_chip"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:iv_sensor"
+          },
+          {
+            "id": "gtceu:tungsten_steel_frame"
+          },
+          {
+            "id": "gtceu:iv_emitter"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:assembly_line_casing",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/luv_transformer",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_transformer_1a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/iv_hi_amp_2a_transformer",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_1a"
+          },
+          {
+            "id": "gtceu:niobium_titanium_double_cable"
+          },
+          {
+            "id": "gtceu:platinum_double_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_transformer_2a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/iv_transformer",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "id": "gtceu:platinum_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_transformer_1a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/assembly_control_casing",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_chip"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iv_sensor"
+          },
+          {
+            "id": "gtceu:iv_emitter"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:tungsten_steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:assembly_line_casing",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/luv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:luv_transformer_1a"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:niobium_titanium_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_transformer_4a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/iv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_1a"
+          },
+          {
+            "id": "gtceu:niobium_titanium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:platinum_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_transformer_4a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/luv_hi_amp_2a_transformer",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:luv_transformer_1a"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_double_cable"
+          },
+          {
+            "id": "gtceu:niobium_titanium_double_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_transformer_2a"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/energy_hatch_iv",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:tungsten_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iv_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_energy_input_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dynamo_hatch_iv",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:tungsten_spring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iv_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_energy_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
     "gtceu__assembly_line": [
+      {
+        "id": "gtceu:assembly_line/lapotronic_energy_orb_cluster",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:europium_plate",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb"
+          },
+          {
+            "id": "gtceu:iv_field_generator"
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 720
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/energy_hatch_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_voltage_coil",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 720
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/quantum_chestplate_advanced",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:quarktech_chestplate"
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_niobium_titanium_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:osmium_quadruple_wire",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:double_iridium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gravitation_engine_unit",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:dense_rhodium_plated_palladium_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          },
+          {
+            "id": "gtceu:luv_field_generator",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:luv_electric_motor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsss_screw",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_quarktech_chestplate"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/energy_module",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:double_europium_plate",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          },
+          {
+            "id": "gtceu:luv_field_generator"
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:fine_ruridit_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_bolt",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1440
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:energy_module"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/dynamo_hatch_luv",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:niobium_titanium_spring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_voltage_coil",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 720
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_energy_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      },
       {
         "id": "gtceu:assembly_line/crystal_mainframe_uv",
         "category": "gtceu:assembly_line",
@@ -56,6 +803,121 @@
         ],
         "workstations": [
           "gtceu:assembly_line"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__cutter": [
+      {
+        "id": "gtceu:cutter/cut_hpic",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/cut_hpic_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/cut_hpic_distilled_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
         ]
       }
     ]

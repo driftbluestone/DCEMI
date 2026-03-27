@@ -1,5 +1,112 @@
 {
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/shape_extruder_pipe_normal",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_iron_wire_cutter"
+          },
+          {
+            "id": "gtceu:bolt_extruder_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:normal_pipe_extruder_mold"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__forming_press": [
+      {
+        "id": "gtceu:forming_press/copy_shape_normal_pipe_extruder_mold",
+        "category": "gtceu:forming_press",
+        "width": 164,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:normal_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:empty_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:normal_pipe_extruder_mold"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_forming_press",
+          "gtceu:mv_forming_press",
+          "gtceu:hv_forming_press",
+          "gtceu:ev_forming_press",
+          "gtceu:iv_forming_press",
+          "gtceu:luv_forming_press",
+          "gtceu:zpm_forming_press",
+          "gtceu:uv_forming_press",
+          "gtceu:uhv_forming_press",
+          "gtceu:uev_forming_press",
+          "gtceu:uiv_forming_press",
+          "gtceu:uxv_forming_press",
+          "gtceu:opv_forming_press",
+          "gtceu:large_material_press"
+        ]
+      }
+    ]
+  },
   "input": {
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_normal_pipe_extruder_mold",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:normal_pipe_extruder_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_normal_pipe_extruder_mold",

@@ -1,6 +1,151 @@
 {
   "input": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/uhpic_wafer",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhpic_wafer"
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/uhpic_wafer",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhpic_wafer"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
     "gtceu__cutter": [
+      {
+        "id": "gtceu:cutter/cut_hpic",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/cut_hpic_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
       {
         "id": "gtceu:cutter/cut_hpic_distilled_water",
         "category": "gtceu:cutter",
@@ -36,6 +181,79 @@
           "gtceu:uxv_cutter",
           "gtceu:opv_cutter",
           "gtceu:large_cutter"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/hpic_wafer",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:mpic_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/hpic_wafer",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:mpic_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
         ]
       }
     ]

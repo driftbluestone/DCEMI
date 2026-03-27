@@ -1,6 +1,616 @@
 {
+  "input": {
+    "gtceu__fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/neodymium_and_hydrogen_to_europium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "width": 150,
+        "height": 71,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 375
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:luv_fusion_reactor",
+          "gtceu:zpm_fusion_reactor",
+          "gtceu:uv_fusion_reactor"
+        ]
+      }
+    ],
+    "gtceu__fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_neodymium_block",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_neodymium_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_nugget",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_neodymium_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_plate"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_neodymium_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_neodymium_rod",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 72
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_neodymium_bolt",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 18
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_neodymium_screw",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_magnetic_neodymium_block",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 1296
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_neodymium_turbine_blade",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_turbine_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 1440
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_neodymium_block",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 1296
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_magnetic_neodymium_ingot",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_double_neodymium_plate",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:double_neodymium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 288
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_magnetic_neodymium_rod",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 72
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_magnetic_neodymium_nugget",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_neodymium_ingot",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_neodymium_plate",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
       {
         "id": "gtceu:extractor/extract_neodymium_nugget",
         "category": "gtceu:extractor_recycling",

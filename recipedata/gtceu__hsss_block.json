@@ -1,5 +1,1133 @@
 {
   "output": {
+    "gtceu__fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_hsss_block",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      }
+    ],
+    "gtceu__extruder": [
+      {
+        "id": "gtceu:extruder/extrude_hsss_ingot_to_block",
+        "category": "gtceu:extruder",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_extruder",
+          "gtceu:mv_extruder",
+          "gtceu:hv_extruder",
+          "gtceu:ev_extruder",
+          "gtceu:iv_extruder",
+          "gtceu:luv_extruder",
+          "gtceu:zpm_extruder",
+          "gtceu:uv_extruder",
+          "gtceu:uhv_extruder",
+          "gtceu:uev_extruder",
+          "gtceu:uiv_extruder",
+          "gtceu:uxv_extruder",
+          "gtceu:opv_extruder",
+          "gtceu:large_extruder"
+        ]
+      }
+    ],
+    "gtceu__compressor": [
+      {
+        "id": "gtceu:compressor/compress_hsss_to_block",
+        "category": "gtceu:compressor",
+        "width": 150,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_compressor",
+          "gtceu:hp_steam_compressor",
+          "gtceu:lv_compressor",
+          "gtceu:mv_compressor",
+          "gtceu:hv_compressor",
+          "gtceu:ev_compressor",
+          "gtceu:iv_compressor",
+          "gtceu:luv_compressor",
+          "gtceu:zpm_compressor",
+          "gtceu:uv_compressor",
+          "gtceu:uhv_compressor",
+          "gtceu:uev_compressor",
+          "gtceu:uiv_compressor",
+          "gtceu:uxv_compressor",
+          "gtceu:opv_compressor",
+          "gtceu:large_material_press"
+        ]
+      }
+    ],
+    "gtceu__arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_electric_pump",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2572
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_brewery",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_brewery"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3404
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 5
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_wiremill",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_wiremill"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6619
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_scanner",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_scanner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 9961
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 8
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uev_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:uev_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12769
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 29
+          },
+          {
+            "id": "gtceu:wrought_iron_block",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_canner",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_canner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3404
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 5
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_fermenter",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_fermenter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3475
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_conveyor_module",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_conveyor_module"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3742
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 19
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_quantum_tank",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_quantum_tank"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6579
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_cutter",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_cutter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5571
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_electromagnetic_separator",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4483
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_nugget",
+            "amount": 49
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uev_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:uev_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5382
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 23962
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:ruridit_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 10
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_256a_laser_source_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_256a_laser_source_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3475
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 6
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_256a_laser_target_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_256a_laser_target_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6964
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:niobium_titanium_block"
+          },
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uev_substation_input_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:uev_substation_input_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12769
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 29
+          },
+          {
+            "id": "gtceu:wrought_iron_block",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_substation_input_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_substation_input_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 13969
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:wrought_iron_block",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 10749
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_distillery",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_distillery"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3404
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 5
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_autoclave",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:luv_autoclave"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3753
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5382
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      }
+    ],
     "gtceu__ingot_molding": [
       {
         "id": "gtceu:alloy_smelter/alloy_smelt_hsss_ingot_to_block",
@@ -21,6 +1149,281 @@
         "outputs": [
           {
             "id": "gtceu:hsss_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_alloy_smelter",
+          "gtceu:hp_steam_alloy_smelter",
+          "gtceu:lv_alloy_smelter",
+          "gtceu:mv_alloy_smelter",
+          "gtceu:hv_alloy_smelter",
+          "gtceu:ev_alloy_smelter",
+          "gtceu:iv_alloy_smelter",
+          "gtceu:luv_alloy_smelter",
+          "gtceu:zpm_alloy_smelter",
+          "gtceu:uv_alloy_smelter",
+          "gtceu:uhv_alloy_smelter",
+          "gtceu:uev_alloy_smelter",
+          "gtceu:uiv_alloy_smelter",
+          "gtceu:uxv_alloy_smelter",
+          "gtceu:opv_alloy_smelter",
+          "gtceu:multi_smelter"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "gtceu__cutter": [
+      {
+        "id": "gtceu:cutter/cut_hsss_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_plate",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/cut_hsss_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 96
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_plate",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/cut_hsss_block_to_plate",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_plate",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hsss_block",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_hsss_block",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss",
+            "amount": 1296
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ],
+    "gtceu__arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hsss_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1161
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ingot",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_arc_furnace",
+          "gtceu:mv_arc_furnace",
+          "gtceu:hv_arc_furnace",
+          "gtceu:ev_arc_furnace",
+          "gtceu:iv_arc_furnace",
+          "gtceu:luv_arc_furnace",
+          "gtceu:zpm_arc_furnace",
+          "gtceu:uv_arc_furnace",
+          "gtceu:uhv_arc_furnace",
+          "gtceu:uev_arc_furnace",
+          "gtceu:uiv_arc_furnace",
+          "gtceu:uxv_arc_furnace",
+          "gtceu:opv_arc_furnace",
+          "gtceu:large_arc_smelter"
+        ]
+      }
+    ],
+    "gtceu__ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_hsss_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:hsss_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ingot",
+            "amount": 9
           }
         ],
         "workstations": [

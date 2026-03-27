@@ -1,5 +1,36 @@
 {
   "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/stripped_rubber_wood",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stripped_rubber_wood",
+            "amount": 3
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
     "gtceu__lathe": [
       {
         "id": "gtceu:lathe/strip_rubber_wood",
@@ -14,6 +45,46 @@
         "outputs": [
           {
             "id": "gtceu:stripped_rubber_wood"
+          },
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_lathe",
+          "gtceu:mv_lathe",
+          "gtceu:hv_lathe",
+          "gtceu:ev_lathe",
+          "gtceu:iv_lathe",
+          "gtceu:luv_lathe",
+          "gtceu:zpm_lathe",
+          "gtceu:uv_lathe",
+          "gtceu:uhv_lathe",
+          "gtceu:uev_lathe",
+          "gtceu:uiv_lathe",
+          "gtceu:uxv_lathe",
+          "gtceu:opv_lathe",
+          "gtceu:large_cutter"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "gtceu__lathe": [
+      {
+        "id": "gtceu:lathe/lathe_stripped_rubber_wood",
+        "category": "gtceu:lathe",
+        "width": 150,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "gtceu:stripped_rubber_wood"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_wood_rod",
+            "amount": 4
           },
           {
             "id": "gtceu:wood_dust"

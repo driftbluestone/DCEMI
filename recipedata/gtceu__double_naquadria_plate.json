@@ -1,5 +1,252 @@
 {
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/plate_double_naquadria",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "tag": "gtceu:iron_hammer"
+          },
+          {
+            "id": "gtceu:naquadria_plate"
+          },
+          {
+            "id": "gtceu:naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_naquadria_plate"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__bender": [
+      {
+        "id": "gtceu:bender/bend_naquadria_plate_to_double_plate",
+        "category": "gtceu:bender",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_naquadria_plate"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_bender",
+          "gtceu:mv_bender",
+          "gtceu:hv_bender",
+          "gtceu:ev_bender",
+          "gtceu:iv_bender",
+          "gtceu:luv_bender",
+          "gtceu:zpm_bender",
+          "gtceu:uv_bender",
+          "gtceu:uhv_bender",
+          "gtceu:uev_bender",
+          "gtceu:uiv_bender",
+          "gtceu:uxv_bender",
+          "gtceu:opv_bender",
+          "gtceu:large_material_press"
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_naquadria_ingot_to_double_plate",
+        "category": "gtceu:bender",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_naquadria_plate"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_bender",
+          "gtceu:mv_bender",
+          "gtceu:hv_bender",
+          "gtceu:ev_bender",
+          "gtceu:iv_bender",
+          "gtceu:luv_bender",
+          "gtceu:zpm_bender",
+          "gtceu:uv_bender",
+          "gtceu:uhv_bender",
+          "gtceu:uev_bender",
+          "gtceu:uiv_bender",
+          "gtceu:uxv_bender",
+          "gtceu:opv_bender",
+          "gtceu:large_material_press"
+        ]
+      }
+    ]
+  },
   "input": {
+    "gtceu__assembly_line": [
+      {
+        "id": "gtceu:assembly_line/fusion_reactor_mk2",
+        "category": "gtceu:assembly_line",
+        "width": 154,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:fusion_coil"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:double_naquadria_plate"
+          },
+          {
+            "id": "gtceu:double_europium_plate"
+          },
+          {
+            "id": "gtceu:luv_field_generator",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_single_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_fusion_reactor"
+          }
+        ],
+        "workstations": [
+          "gtceu:assembly_line"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_double_naquadria_plate",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:double_naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
+    "gtceu__extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_double_naquadria_plate",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:double_naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 288
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_double_naquadria_plate",

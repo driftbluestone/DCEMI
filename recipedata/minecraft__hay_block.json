@@ -1,5 +1,146 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shapeless/hay_block_to_hay",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "minecraft:hay_block"
+          },
+          {
+            "tag": "gtceu:iron_knife"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/target",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "minecraft:redstone",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:hay_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:target"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/wheat_from_hay_block",
+        "category": "gtceu:forge_hammer",
+        "width": 150,
+        "height": 61,
+        "inputs": [
+          {
+            "id": "minecraft:hay_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_forge_hammer",
+          "gtceu:lv_forge_hammer",
+          "gtceu:hp_steam_forge_hammer",
+          "gtceu:mv_forge_hammer",
+          "gtceu:hv_forge_hammer",
+          "gtceu:ev_forge_hammer",
+          "gtceu:iv_forge_hammer",
+          "gtceu:luv_forge_hammer",
+          "gtceu:zpm_forge_hammer",
+          "gtceu:uv_forge_hammer",
+          "gtceu:uhv_forge_hammer",
+          "gtceu:uev_forge_hammer",
+          "gtceu:uiv_forge_hammer",
+          "gtceu:uxv_forge_hammer",
+          "gtceu:opv_forge_hammer",
+          "gtceu:large_material_press"
+        ]
+      }
+    ],
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/wheat",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:hay_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
+        ]
+      }
+    ],
     "gtceu__macerator_recycling": [
       {
         "id": "gtceu:macerator/macerate_hay_block",
@@ -38,6 +179,49 @@
           "gtceu:ev_large_miner",
           "gtceu:iv_large_miner",
           "gtceu:luv_large_miner"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__packer": [
+      {
+        "id": "gtceu:packer/hay_block",
+        "category": "gtceu:packer",
+        "width": 150,
+        "height": 61,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:hay_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_packer",
+          "gtceu:mv_packer",
+          "gtceu:hv_packer",
+          "gtceu:ev_packer",
+          "gtceu:iv_packer",
+          "gtceu:luv_packer",
+          "gtceu:zpm_packer",
+          "gtceu:uv_packer",
+          "gtceu:uhv_packer",
+          "gtceu:uev_packer",
+          "gtceu:uiv_packer",
+          "gtceu:uxv_packer",
+          "gtceu:opv_packer",
+          "gtceu:large_packer"
         ]
       }
     ]

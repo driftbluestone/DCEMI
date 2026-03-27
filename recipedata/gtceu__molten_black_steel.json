@@ -1,6 +1,74 @@
 {
+  "input": {
+    "gtceu__vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/black_steel",
+        "category": "gtceu:vacuum_freezer",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:molten_black_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_vacuum_freezer",
+          "gtceu:vacuum_freezer"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/black_steel_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "width": 164,
+        "height": 135,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:black_bronze_dust"
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 5000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_black_steel",
+            "amount": 720
+          }
+        ],
+        "workstations": [
+          "gtceu:alloy_blast_smelter"
+        ]
+      },
       {
         "id": "gtceu:alloy_blast_smelter/black_steel",
         "category": "gtceu:alloy_blast_smelter",

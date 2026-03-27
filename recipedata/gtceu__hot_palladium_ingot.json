@@ -1,6 +1,60 @@
 {
+  "input": {
+    "gtceu__vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_palladium_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:hot_palladium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_vacuum_freezer",
+          "gtceu:vacuum_freezer"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_palladium_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "width": 164,
+        "height": 99,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:palladium_dust"
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_palladium_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_blast_furnace",
+          "gtceu:electric_blast_furnace"
+        ]
+      },
       {
         "id": "gtceu:electric_blast_furnace/blast_palladium",
         "category": "gtceu:electric_blast_furnace",

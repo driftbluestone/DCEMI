@@ -1,5 +1,47 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/iv_power_unit_iv_vanadium_battery",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_screw"
+          },
+          {
+            "tag": "gtceu:hv_iron_screwdriver"
+          },
+          {
+            "id": "gtceu:small_tungsten_steel_gear"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:small_tungsten_steel_gear"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:iv_vanadium_battery"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_power_unit"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
     "gtceu__extractor": [
       {
         "id": "gtceu:extractor/unpackage_iv_vanadium_battery",
@@ -32,6 +74,46 @@
           "gtceu:uiv_extractor",
           "gtceu:uxv_extractor",
           "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__canner": [
+      {
+        "id": "gtceu:canner/vanadium_battery_iv",
+        "category": "gtceu:canner",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:iv_battery_hull"
+          },
+          {
+            "id": "gtceu:vanadium_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_vanadium_battery"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_canner",
+          "gtceu:mv_canner",
+          "gtceu:hv_canner",
+          "gtceu:ev_canner",
+          "gtceu:iv_canner",
+          "gtceu:luv_canner",
+          "gtceu:zpm_canner",
+          "gtceu:uv_canner",
+          "gtceu:uhv_canner",
+          "gtceu:uev_canner",
+          "gtceu:uiv_canner",
+          "gtceu:uxv_canner",
+          "gtceu:opv_canner",
           "gtceu:large_extractor"
         ]
       }

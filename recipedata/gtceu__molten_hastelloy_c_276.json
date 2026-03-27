@@ -1,6 +1,85 @@
 {
+  "input": {
+    "gtceu__vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/hastelloy_c_276",
+        "category": "gtceu:vacuum_freezer",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:molten_hastelloy_c_276",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:mega_vacuum_freezer",
+          "gtceu:vacuum_freezer"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/hastelloy_c_276_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "width": 164,
+        "height": 135,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:molybdenum_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:tungsten_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust"
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_hastelloy_c_276",
+            "amount": 4320
+          }
+        ],
+        "workstations": [
+          "gtceu:alloy_blast_smelter"
+        ]
+      },
       {
         "id": "gtceu:alloy_blast_smelter/hastelloy_c_276",
         "category": "gtceu:alloy_blast_smelter",

@@ -1,5 +1,115 @@
 {
   "input": {
+    "minecraft__smelting": [
+      {
+        "id": "gtceu:smelting/smelt_basalt_ilmenite_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "width": 82,
+        "height": 38,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_ilmenite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ilmenite_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "minecraft:furnace",
+          "gtceu:lp_steam_furnace",
+          "gtceu:lv_electric_furnace",
+          "gtceu:hp_steam_furnace",
+          "gtceu:mv_electric_furnace",
+          "gtceu:hv_electric_furnace",
+          "gtceu:ev_electric_furnace",
+          "gtceu:iv_electric_furnace",
+          "gtceu:luv_electric_furnace",
+          "gtceu:zpm_electric_furnace",
+          "gtceu:uv_electric_furnace",
+          "gtceu:uhv_electric_furnace",
+          "gtceu:uev_electric_furnace",
+          "gtceu:uiv_electric_furnace",
+          "gtceu:uxv_electric_furnace",
+          "gtceu:opv_electric_furnace",
+          "gtceu:multi_smelter",
+          "gtceu:steam_oven"
+        ]
+      }
+    ],
+    "minecraft__blasting": [
+      {
+        "id": "gtceu:blasting/smelt_basalt_ilmenite_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "width": 82,
+        "height": 38,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_ilmenite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ilmenite_dust",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "minecraft:blast_furnace"
+        ]
+      }
+    ],
+    "gtceu__ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_basalt_ilmenite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_ilmenite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_ilmenite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:basalt_dust",
+            "chance": 0.67
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
     "gtceu__ore_forging": [
       {
         "id": "gtceu:forge_hammer/hammer_basalt_ilmenite_ore_to_crushed_ore",

@@ -1,5 +1,120 @@
 {
+  "output": {
+    "gtceu__mixer": [
+      {
+        "id": "gtceu:mixer/diesel",
+        "category": "gtceu:mixer",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 6000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_mixer",
+          "gtceu:mv_mixer",
+          "gtceu:hv_mixer",
+          "gtceu:ev_mixer",
+          "gtceu:iv_mixer",
+          "gtceu:luv_mixer",
+          "gtceu:zpm_mixer",
+          "gtceu:uv_mixer",
+          "gtceu:uhv_mixer",
+          "gtceu:uev_mixer",
+          "gtceu:uiv_mixer",
+          "gtceu:uxv_mixer",
+          "gtceu:opv_mixer",
+          "gtceu:large_mixer"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/diesel_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 20000
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 24000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ]
+  },
   "input": {
+    "gtceu__mixer": [
+      {
+        "id": "gtceu:mixer/cetane_diesel_from_diesel",
+        "category": "gtceu:mixer",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cetane_boosted_diesel",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_mixer",
+          "gtceu:mv_mixer",
+          "gtceu:hv_mixer",
+          "gtceu:ev_mixer",
+          "gtceu:iv_mixer",
+          "gtceu:luv_mixer",
+          "gtceu:zpm_mixer",
+          "gtceu:uv_mixer",
+          "gtceu:uhv_mixer",
+          "gtceu:uev_mixer",
+          "gtceu:uiv_mixer",
+          "gtceu:uxv_mixer",
+          "gtceu:opv_mixer",
+          "gtceu:large_mixer"
+        ]
+      }
+    ],
     "gtceu__large_chemical_reactor": [
       {
         "id": "gtceu:large_chemical_reactor/cetane_diesel_from_diesel_shortcut",

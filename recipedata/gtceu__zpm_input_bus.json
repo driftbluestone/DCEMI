@@ -1,5 +1,171 @@
 {
   "input": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_input_to_output_7",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_iron_screwdriver"
+          },
+          {
+            "id": "gtceu:zpm_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_output_bus"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/dual_import_bus_zpm_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          },
+          {
+            "id": "gtceu:zpm_input_hatch"
+          },
+          {
+            "id": "gtceu:iridium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:iridium_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_dual_input_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_export_bus_zpm_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          },
+          {
+            "id": "gtceu:zpm_input_hatch"
+          },
+          {
+            "id": "gtceu:iridium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:iridium_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_dual_output_hatch"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__scanner": [
+      {
+        "id": "gtceu:scanner/1_x_gtceu_zpm_input_bus",
+        "category": "gtceu:scanner",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:data_stick"
+          },
+          {
+            "id": "gtceu:zpm_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:object_holder"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_scanner",
+          "gtceu:mv_scanner",
+          "gtceu:hv_scanner",
+          "gtceu:ev_scanner",
+          "gtceu:iv_scanner",
+          "gtceu:luv_scanner",
+          "gtceu:zpm_scanner",
+          "gtceu:uv_scanner",
+          "gtceu:uhv_scanner",
+          "gtceu:uev_scanner",
+          "gtceu:uiv_scanner",
+          "gtceu:uxv_scanner",
+          "gtceu:opv_scanner"
+        ]
+      }
+    ],
     "gtceu__assembly_line": [
       {
         "id": "gtceu:assembly_line/object_holder",
@@ -54,6 +220,79 @@
         ],
         "workstations": [
           "gtceu:assembly_line"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "minecraft__crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_output_to_input_7",
+        "category": "minecraft:crafting",
+        "width": 118,
+        "height": 54,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_iron_screwdriver"
+          },
+          {
+            "id": "gtceu:zpm_output_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          }
+        ],
+        "workstations": [
+          "minecraft:crafting_table"
+        ]
+      }
+    ],
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/item_import_bus_zpm_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:tungsten_steel_crate"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
         ]
       }
     ]

@@ -1,6 +1,3723 @@
 {
   "input": {
+    "gtceu__fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/mercury_and_magnesium_to_uranium_235_plasma",
+        "category": "gtceu:fusion_reactor",
+        "width": 150,
+        "height": 71,
+        "inputs": [
+          {
+            "id": "gtceu:mercury",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:magnesium",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_235",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:luv_fusion_reactor",
+          "gtceu:zpm_fusion_reactor",
+          "gtceu:uv_fusion_reactor"
+        ]
+      },
+      {
+        "id": "gtceu:fusion_reactor/gold_and_mercury_to_radon_plasma",
+        "category": "gtceu:fusion_reactor",
+        "width": 150,
+        "height": 71,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "workstations": [
+          "gtceu:luv_fusion_reactor",
+          "gtceu:zpm_fusion_reactor",
+          "gtceu:uv_fusion_reactor"
+        ]
+      }
+    ],
+    "gtceu__mixer": [
+      {
+        "id": "gtceu:mixer/mercury_barium_calcium_cuprate",
+        "category": "gtceu:mixer",
+        "width": 164,
+        "height": 107,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:calcium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_dust",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_mixer",
+          "gtceu:mv_mixer",
+          "gtceu:hv_mixer",
+          "gtceu:ev_mixer",
+          "gtceu:iv_mixer",
+          "gtceu:luv_mixer",
+          "gtceu:zpm_mixer",
+          "gtceu:uv_mixer",
+          "gtceu:uhv_mixer",
+          "gtceu:uev_mixer",
+          "gtceu:uiv_mixer",
+          "gtceu:uxv_mixer",
+          "gtceu:opv_mixer",
+          "gtceu:large_mixer"
+        ]
+      }
+    ],
+    "gtceu__large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/hypochlorous_acid_mercury",
+        "category": "gtceu:large_chemical_reactor",
+        "width": 164,
+        "height": 107,
+        "inputs": [
+          {
+            "id": "gtceu:mercury",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hypochlorous_acid",
+            "amount": 10000
+          }
+        ],
+        "workstations": [
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/hypochlorous_acid_mercury",
+        "category": "gtceu:chemical_reactor",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "gtceu:mercury",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hypochlorous_acid",
+            "amount": 10000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_reactor",
+          "gtceu:mv_chemical_reactor",
+          "gtceu:hv_chemical_reactor",
+          "gtceu:ev_chemical_reactor",
+          "gtceu:iv_chemical_reactor",
+          "gtceu:luv_chemical_reactor",
+          "gtceu:zpm_chemical_reactor",
+          "gtceu:uv_chemical_reactor",
+          "gtceu:uhv_chemical_reactor",
+          "gtceu:uev_chemical_reactor",
+          "gtceu:uiv_chemical_reactor",
+          "gtceu:uxv_chemical_reactor",
+          "gtceu:opv_chemical_reactor",
+          "gtceu:large_chemical_reactor"
+        ]
+      }
+    ],
+    "gtceu__alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/mercury_barium_calcium_cuprate_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "width": 164,
+        "height": 135,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:calcium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 16000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_mercury_barium_calcium_cuprate",
+            "amount": 2304
+          }
+        ],
+        "workstations": [
+          "gtceu:alloy_blast_smelter"
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/mercury_barium_calcium_cuprate",
+        "category": "gtceu:alloy_blast_smelter",
+        "width": 164,
+        "height": 135,
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:calcium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_mercury_barium_calcium_cuprate",
+            "amount": 2304
+          }
+        ],
+        "workstations": [
+          "gtceu:alloy_blast_smelter"
+        ]
+      }
+    ],
+    "gtceu__ore_bathing": [
+      {
+        "id": "gtceu:chemical_bath/bathe_tungstate_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_tungstate_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_tungstate_ore"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_magnetite_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_magnetite_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_silver_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_silver_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_silver_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_chalcopyrite_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_bornite_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_bornite_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_bornite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_copper_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_copper_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_cooperite_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_cooperite_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_cooperite_ore"
+          },
+          {
+            "id": "gtceu:palladium_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_nickel_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_nickel_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_nickel_ore"
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_platinum_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_platinum_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_platinum_ore"
+          },
+          {
+            "id": "gtceu:palladium_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_galena_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_galena_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/bathe_gold_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_bathing",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_gold_ore"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_gold_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.4
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      }
+    ],
     "gtceu__ore_processing_diagram": [
+      {
+        "id": "gtceu:chalcopyrite",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:andesite_chalcopyrite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_chalcopyrite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_chalcopyrite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:raw_chalcopyrite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_chalcopyrite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:purified_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:refined_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:pure_chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:crushed_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:purified_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:impure_chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:pure_chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:purified_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:copper_ingot"
+          },
+          {
+            "id": "gtceu:crushed_chalcopyrite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:cadmium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:purified_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:impure_chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:pure_chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:chalcopyrite_dust"
+          },
+          {
+            "id": "gtceu:purified_chalcopyrite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:galena",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_galena_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_galena_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_galena_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_galena_ore"
+          },
+          {
+            "id": "gtceu:raw_galena"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:refined_galena_ore"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_galena_ore"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.7
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:copper",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "minecraft:copper_ore"
+          },
+          {
+            "tag": "minecraft:copper_ore"
+          },
+          {
+            "tag": "minecraft:copper_ore"
+          },
+          {
+            "tag": "minecraft:copper_ore"
+          },
+          {
+            "id": "minecraft:raw_copper"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_copper_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_copper_dust"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:refined_copper_ore"
+          },
+          {
+            "id": "gtceu:pure_copper_dust"
+          },
+          {
+            "id": "gtceu:crushed_copper_ore"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:impure_copper_dust"
+          },
+          {
+            "id": "gtceu:pure_copper_dust"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:copper_ingot"
+          },
+          {
+            "id": "gtceu:crushed_copper_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_copper_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_copper_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_copper_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_copper_ore"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:impure_copper_dust"
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:pure_copper_dust"
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:nickel",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:red_granite_nickel_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_nickel_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_nickel_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_nickel_ore"
+          },
+          {
+            "id": "gtceu:raw_nickel"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_nickel_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_nickel_dust"
+          },
+          {
+            "id": "gtceu:purified_nickel_ore"
+          },
+          {
+            "id": "gtceu:refined_nickel_ore"
+          },
+          {
+            "id": "gtceu:pure_nickel_dust"
+          },
+          {
+            "id": "gtceu:crushed_nickel_ore"
+          },
+          {
+            "id": "gtceu:purified_nickel_ore"
+          },
+          {
+            "id": "gtceu:impure_nickel_dust"
+          },
+          {
+            "id": "gtceu:pure_nickel_dust"
+          },
+          {
+            "id": "gtceu:purified_nickel_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_ingot"
+          },
+          {
+            "id": "gtceu:crushed_nickel_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_nickel_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_nickel_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_nickel_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_nickel_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_nickel_ore"
+          },
+          {
+            "id": "gtceu:purified_nickel_ore"
+          },
+          {
+            "id": "gtceu:impure_nickel_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:pure_nickel_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:purified_nickel_ore"
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:bornite",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:diorite_bornite_ore"
+          },
+          {
+            "tag": "gtceu:diorite_bornite_ore"
+          },
+          {
+            "tag": "gtceu:diorite_bornite_ore"
+          },
+          {
+            "tag": "gtceu:diorite_bornite_ore"
+          },
+          {
+            "id": "gtceu:raw_bornite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_bornite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_bornite_dust"
+          },
+          {
+            "id": "gtceu:purified_bornite_ore"
+          },
+          {
+            "id": "gtceu:refined_bornite_ore"
+          },
+          {
+            "id": "gtceu:pure_bornite_dust"
+          },
+          {
+            "id": "gtceu:crushed_bornite_ore"
+          },
+          {
+            "id": "gtceu:purified_bornite_ore"
+          },
+          {
+            "id": "gtceu:impure_bornite_dust"
+          },
+          {
+            "id": "gtceu:pure_bornite_dust"
+          },
+          {
+            "id": "gtceu:purified_bornite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:copper_ingot"
+          },
+          {
+            "id": "gtceu:crushed_bornite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_bornite_dust"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:bornite_dust"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_bornite_ore"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_bornite_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:bornite_dust"
+          },
+          {
+            "id": "gtceu:cadmium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_bornite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:bornite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_bornite_ore"
+          },
+          {
+            "id": "gtceu:purified_bornite_ore"
+          },
+          {
+            "id": "gtceu:impure_bornite_dust"
+          },
+          {
+            "id": "gtceu:bornite_dust"
+          },
+          {
+            "id": "gtceu:pure_bornite_dust"
+          },
+          {
+            "id": "gtceu:bornite_dust"
+          },
+          {
+            "id": "gtceu:purified_bornite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:magnetite",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:blackstone_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:blackstone_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:blackstone_magnetite_ore"
+          },
+          {
+            "tag": "gtceu:blackstone_magnetite_ore"
+          },
+          {
+            "id": "gtceu:raw_magnetite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_magnetite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:refined_magnetite_ore"
+          },
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:crushed_magnetite_ore"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:impure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_ingot"
+          },
+          {
+            "id": "gtceu:crushed_magnetite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_magnetite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_magnetite_ore"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:impure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:pure_magnetite_dust"
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:purified_magnetite_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:magnetite_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:tungstate",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:gravel_tungstate_ore"
+          },
+          {
+            "tag": "gtceu:gravel_tungstate_ore"
+          },
+          {
+            "tag": "gtceu:gravel_tungstate_ore"
+          },
+          {
+            "tag": "gtceu:gravel_tungstate_ore"
+          },
+          {
+            "id": "gtceu:raw_tungstate"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_tungstate_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_tungstate_dust"
+          },
+          {
+            "id": "gtceu:purified_tungstate_ore"
+          },
+          {
+            "id": "gtceu:refined_tungstate_ore"
+          },
+          {
+            "id": "gtceu:pure_tungstate_dust"
+          },
+          {
+            "id": "gtceu:crushed_tungstate_ore"
+          },
+          {
+            "id": "gtceu:purified_tungstate_ore"
+          },
+          {
+            "id": "gtceu:impure_tungstate_dust"
+          },
+          {
+            "id": "gtceu:pure_tungstate_dust"
+          },
+          {
+            "id": "gtceu:purified_tungstate_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungstate_dust"
+          },
+          {
+            "id": "gtceu:crushed_tungstate_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_tungstate_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:tungstate_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_tungstate_ore"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_tungstate_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:tungstate_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_tungstate_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:tungstate_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_tungstate_ore"
+          },
+          {
+            "id": "gtceu:purified_tungstate_ore"
+          },
+          {
+            "id": "gtceu:impure_tungstate_dust"
+          },
+          {
+            "id": "gtceu:tungstate_dust"
+          },
+          {
+            "id": "gtceu:pure_tungstate_dust"
+          },
+          {
+            "id": "gtceu:tungstate_dust"
+          },
+          {
+            "id": "gtceu:purified_tungstate_ore"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.7
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:platinum",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_platinum_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_platinum_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_platinum_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_platinum_ore"
+          },
+          {
+            "id": "gtceu:raw_platinum"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_platinum_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_platinum_dust"
+          },
+          {
+            "id": "gtceu:purified_platinum_ore"
+          },
+          {
+            "id": "gtceu:refined_platinum_ore"
+          },
+          {
+            "id": "gtceu:pure_platinum_dust"
+          },
+          {
+            "id": "gtceu:crushed_platinum_ore"
+          },
+          {
+            "id": "gtceu:purified_platinum_ore"
+          },
+          {
+            "id": "gtceu:impure_platinum_dust"
+          },
+          {
+            "id": "gtceu:pure_platinum_dust"
+          },
+          {
+            "id": "gtceu:purified_platinum_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_ingot"
+          },
+          {
+            "id": "gtceu:crushed_platinum_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_platinum_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:platinum_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_platinum_ore"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_platinum_ore"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:platinum_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_platinum_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:platinum_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_platinum_ore"
+          },
+          {
+            "id": "gtceu:purified_platinum_ore"
+          },
+          {
+            "id": "gtceu:impure_platinum_dust"
+          },
+          {
+            "id": "gtceu:platinum_dust"
+          },
+          {
+            "id": "gtceu:pure_platinum_dust"
+          },
+          {
+            "id": "gtceu:platinum_dust"
+          },
+          {
+            "id": "gtceu:purified_platinum_ore"
+          },
+          {
+            "id": "gtceu:palladium_dust",
+            "chance": 0.7
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:gold",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "minecraft:gold_ore"
+          },
+          {
+            "tag": "minecraft:gold_ore"
+          },
+          {
+            "tag": "minecraft:gold_ore"
+          },
+          {
+            "tag": "minecraft:gold_ore"
+          },
+          {
+            "id": "minecraft:raw_gold"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_gold_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_gold_dust"
+          },
+          {
+            "id": "gtceu:purified_gold_ore"
+          },
+          {
+            "id": "gtceu:refined_gold_ore"
+          },
+          {
+            "id": "gtceu:pure_gold_dust"
+          },
+          {
+            "id": "gtceu:crushed_gold_ore"
+          },
+          {
+            "id": "gtceu:purified_gold_ore"
+          },
+          {
+            "id": "gtceu:impure_gold_dust"
+          },
+          {
+            "id": "gtceu:pure_gold_dust"
+          },
+          {
+            "id": "gtceu:purified_gold_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot"
+          },
+          {
+            "id": "gtceu:crushed_gold_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_gold_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:gold_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_gold_ore"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_gold_ore"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:gold_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_gold_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:gold_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_gold_ore"
+          },
+          {
+            "id": "gtceu:purified_gold_ore"
+          },
+          {
+            "id": "gtceu:impure_gold_dust"
+          },
+          {
+            "id": "gtceu:gold_dust"
+          },
+          {
+            "id": "gtceu:pure_gold_dust"
+          },
+          {
+            "id": "gtceu:gold_dust"
+          },
+          {
+            "id": "gtceu:purified_gold_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.7
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
+      {
+        "id": "gtceu:silver",
+        "category": "gtceu:ore_processing_diagram",
+        "width": 176,
+        "height": 166,
+        "inputs": [
+          {
+            "tag": "gtceu:diorite_silver_ore"
+          },
+          {
+            "tag": "gtceu:diorite_silver_ore"
+          },
+          {
+            "tag": "gtceu:diorite_silver_ore"
+          },
+          {
+            "tag": "gtceu:diorite_silver_ore"
+          },
+          {
+            "id": "gtceu:raw_silver"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_silver_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_silver_dust"
+          },
+          {
+            "id": "gtceu:purified_silver_ore"
+          },
+          {
+            "id": "gtceu:refined_silver_ore"
+          },
+          {
+            "id": "gtceu:pure_silver_dust"
+          },
+          {
+            "id": "gtceu:crushed_silver_ore"
+          },
+          {
+            "id": "gtceu:purified_silver_ore"
+          },
+          {
+            "id": "gtceu:impure_silver_dust"
+          },
+          {
+            "id": "gtceu:pure_silver_dust"
+          },
+          {
+            "id": "gtceu:purified_silver_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silver_ingot"
+          },
+          {
+            "id": "gtceu:crushed_silver_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lead_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_silver_dust"
+          },
+          {
+            "id": "gtceu:lead_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:silver_dust"
+          },
+          {
+            "id": "gtceu:lead_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_silver_ore"
+          },
+          {
+            "id": "gtceu:lead_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_silver_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:silver_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_silver_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:silver_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_silver_ore"
+          },
+          {
+            "id": "gtceu:purified_silver_ore"
+          },
+          {
+            "id": "gtceu:impure_silver_dust"
+          },
+          {
+            "id": "gtceu:silver_dust"
+          },
+          {
+            "id": "gtceu:pure_silver_dust"
+          },
+          {
+            "id": "gtceu:silver_dust"
+          },
+          {
+            "id": "gtceu:purified_silver_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_sifter",
+          "gtceu:lv_macerator",
+          "gtceu:lv_centrifuge",
+          "gtceu:hp_steam_macerator",
+          "gtceu:lv_chemical_bath",
+          "gtceu:lv_electromagnetic_separator",
+          "gtceu:lv_ore_washer",
+          "gtceu:lv_thermal_centrifuge",
+          "gtceu:mv_electromagnetic_separator",
+          "gtceu:mv_thermal_centrifuge",
+          "gtceu:mv_macerator",
+          "gtceu:mv_ore_washer",
+          "gtceu:mv_sifter",
+          "gtceu:mv_chemical_bath",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_macerator",
+          "gtceu:hv_sifter",
+          "gtceu:hv_ore_washer",
+          "gtceu:hv_chemical_bath",
+          "gtceu:hv_electromagnetic_separator",
+          "gtceu:hv_thermal_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_thermal_centrifuge",
+          "gtceu:ev_sifter",
+          "gtceu:ev_ore_washer",
+          "gtceu:ev_chemical_bath",
+          "gtceu:ev_macerator",
+          "gtceu:ev_centrifuge",
+          "gtceu:ev_electromagnetic_separator",
+          "gtceu:iv_centrifuge",
+          "gtceu:iv_chemical_bath",
+          "gtceu:iv_macerator",
+          "gtceu:iv_ore_washer",
+          "gtceu:iv_thermal_centrifuge",
+          "gtceu:iv_electromagnetic_separator",
+          "gtceu:iv_sifter",
+          "gtceu:luv_thermal_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:luv_ore_washer",
+          "gtceu:luv_chemical_bath",
+          "gtceu:luv_sifter",
+          "gtceu:luv_electromagnetic_separator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_thermal_centrifuge",
+          "gtceu:zpm_electromagnetic_separator",
+          "gtceu:zpm_centrifuge",
+          "gtceu:zpm_ore_washer",
+          "gtceu:zpm_sifter",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uv_thermal_centrifuge",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uv_electromagnetic_separator",
+          "gtceu:uv_ore_washer",
+          "gtceu:uv_sifter",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_thermal_centrifuge",
+          "gtceu:uhv_macerator",
+          "gtceu:uhv_ore_washer",
+          "gtceu:uhv_sifter",
+          "gtceu:uhv_electromagnetic_separator",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_thermal_centrifuge",
+          "gtceu:uev_ore_washer",
+          "gtceu:uev_macerator",
+          "gtceu:uev_sifter",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uev_centrifuge",
+          "gtceu:uev_electromagnetic_separator",
+          "gtceu:uiv_sifter",
+          "gtceu:uiv_ore_washer",
+          "gtceu:uiv_macerator",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uiv_electromagnetic_separator",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uiv_thermal_centrifuge",
+          "gtceu:uxv_sifter",
+          "gtceu:uxv_thermal_centrifuge",
+          "gtceu:uxv_macerator",
+          "gtceu:uxv_ore_washer",
+          "gtceu:uxv_electromagnetic_separator",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_ore_washer",
+          "gtceu:opv_centrifuge",
+          "gtceu:opv_chemical_bath",
+          "gtceu:opv_macerator",
+          "gtceu:opv_electromagnetic_separator",
+          "gtceu:opv_sifter",
+          "gtceu:opv_thermal_centrifuge",
+          "gtceu:large_maceration_tower",
+          "gtceu:large_electromagnet",
+          "gtceu:steam_grinder",
+          "gtceu:large_centrifuge",
+          "gtceu:large_sifting_funnel",
+          "gtceu:large_chemical_bath",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      },
       {
         "id": "gtceu:cooperite",
         "category": "gtceu:ore_processing_diagram",
@@ -291,6 +4008,143 @@
           "gtceu:ev_large_miner",
           "gtceu:iv_large_miner",
           "gtceu:luv_large_miner"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__centrifuge": [
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__cinnabar",
+        "category": "gtceu:centrifuge",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:cinnabar_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfur_dust"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 1000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_centrifuge",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_centrifuge",
+          "gtceu:iv_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:zpm_centrifuge",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_centrifuge",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      },
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__redstone",
+        "category": "gtceu:centrifuge",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "minecraft:redstone",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_dust"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 3000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_centrifuge",
+          "gtceu:mv_centrifuge",
+          "gtceu:hv_centrifuge",
+          "gtceu:ev_centrifuge",
+          "gtceu:iv_centrifuge",
+          "gtceu:luv_centrifuge",
+          "gtceu:zpm_centrifuge",
+          "gtceu:uv_centrifuge",
+          "gtceu:uhv_centrifuge",
+          "gtceu:uev_centrifuge",
+          "gtceu:uiv_centrifuge",
+          "gtceu:uxv_centrifuge",
+          "gtceu:opv_centrifuge",
+          "gtceu:large_centrifuge"
+        ]
+      }
+    ],
+    "gtceu__electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_mercury_barium_calcium_cuprate",
+        "category": "gtceu:electrolyzer",
+        "width": 164,
+        "height": 115,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:calcium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8000
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_electrolyzer",
+          "gtceu:mv_electrolyzer",
+          "gtceu:hv_electrolyzer",
+          "gtceu:ev_electrolyzer",
+          "gtceu:iv_electrolyzer",
+          "gtceu:luv_electrolyzer",
+          "gtceu:zpm_electrolyzer",
+          "gtceu:uv_electrolyzer",
+          "gtceu:uhv_electrolyzer",
+          "gtceu:uev_electrolyzer",
+          "gtceu:uiv_electrolyzer",
+          "gtceu:uxv_electrolyzer",
+          "gtceu:opv_electrolyzer",
+          "gtceu:large_electrolyzer"
         ]
       }
     ]

@@ -1,6 +1,1547 @@
 {
+  "input": {
+    "gtceu__assembler": [
+      {
+        "id": "gtceu:assembler/coil_hssg",
+        "category": "gtceu:assembler",
+        "width": 164,
+        "height": 125,
+        "inputs": [
+          {
+            "id": "gtceu:hssg_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_carbide_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hssg_coil_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_assembler",
+          "gtceu:mv_assembler",
+          "gtceu:hv_assembler",
+          "gtceu:ev_assembler",
+          "gtceu:iv_assembler",
+          "gtceu:luv_assembler",
+          "gtceu:zpm_assembler",
+          "gtceu:uv_assembler",
+          "gtceu:uhv_assembler",
+          "gtceu:uev_assembler",
+          "gtceu:uiv_assembler",
+          "gtceu:uxv_assembler",
+          "gtceu:opv_assembler",
+          "gtceu:large_assembler"
+        ]
+      }
+    ],
+    "gtceu__fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_large_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 864
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_large_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_ingot"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_block",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_block"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_plate"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_gear",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_gear"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_small_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:small_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_small_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_huge_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_huge_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_normal_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:normal_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 432
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_normal_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_nugget",
+            "amount": 9
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_tiny_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "width": 150,
+        "height": 79,
+        "catalysts": [
+          {
+            "id": "gtceu:tiny_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ],
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_tiny_fluid_pipe"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_fluid_solidifier",
+          "gtceu:mv_fluid_solidifier",
+          "gtceu:hv_fluid_solidifier",
+          "gtceu:ev_fluid_solidifier",
+          "gtceu:iv_fluid_solidifier",
+          "gtceu:luv_fluid_solidifier",
+          "gtceu:zpm_fluid_solidifier",
+          "gtceu:uv_fluid_solidifier",
+          "gtceu:uhv_fluid_solidifier",
+          "gtceu:uev_fluid_solidifier",
+          "gtceu:uiv_fluid_solidifier",
+          "gtceu:uxv_fluid_solidifier",
+          "gtceu:opv_fluid_solidifier",
+          "gtceu:large_solidifier"
+        ]
+      }
+    ]
+  },
   "output": {
     "gtceu__extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tungsten_quadruple_cable",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_quadruple_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten",
+            "amount": 288
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_small_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_frame",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 288
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_bolt",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 18
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_octal_wire",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 576
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_double_tungsten_plate",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:double_tungsten_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 288
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_normal_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_normal_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 432
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_huge_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1728
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_block",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1296
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_small_tungsten_spring",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 36
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_screw",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_turbine_blade",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_turbine_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1440
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_spring",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_plate",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_foil",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 36
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_ingot",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_tiny_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_tiny_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 72
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_gear",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 576
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_hex_cable",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1152
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_double_cable",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_double_wire",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_quadruple_wire",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 288
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_nugget",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 16
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_large_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 864
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_hex_wire",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1152
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_long_tungsten_rod",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:long_tungsten_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_single_cable",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:tungsten",
+            "amount": 72
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_octal_cable",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tungsten",
+            "amount": 576
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_single_wire",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 72
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_nonuple_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1296
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
+      {
+        "id": "gtceu:extractor/extract_tungsten_rod",
+        "category": "gtceu:extractor_recycling",
+        "width": 150,
+        "height": 79,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 72
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_extractor",
+          "gtceu:hp_steam_extractor",
+          "gtceu:lv_extractor",
+          "gtceu:mv_extractor",
+          "gtceu:hv_extractor",
+          "gtceu:ev_extractor",
+          "gtceu:iv_extractor",
+          "gtceu:luv_extractor",
+          "gtceu:zpm_extractor",
+          "gtceu:uv_extractor",
+          "gtceu:uhv_extractor",
+          "gtceu:uev_extractor",
+          "gtceu:uiv_extractor",
+          "gtceu:uxv_extractor",
+          "gtceu:opv_extractor",
+          "gtceu:large_extractor"
+        ]
+      },
       {
         "id": "gtceu:extractor/extract_tungsten_quadruple_fluid_pipe",
         "category": "gtceu:extractor_recycling",

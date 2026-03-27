@@ -1,5 +1,120 @@
 {
   "input": {
+    "gtceu__chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/waxing_cut_copper_slab",
+        "category": "gtceu:chemical_bath",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "minecraft:cut_copper_slab"
+          },
+          {
+            "id": "gtceu:wax",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_cut_copper_slab"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      },
+      {
+        "id": "gtceu:chemical_bath/raw_to_exposed_cut_copper_slab_oxidation",
+        "category": "gtceu:chemical_bath",
+        "width": 164,
+        "height": 97,
+        "inputs": [
+          {
+            "id": "minecraft:cut_copper_slab"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:exposed_cut_copper_slab"
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_chemical_bath",
+          "gtceu:mv_chemical_bath",
+          "gtceu:hv_chemical_bath",
+          "gtceu:ev_chemical_bath",
+          "gtceu:iv_chemical_bath",
+          "gtceu:luv_chemical_bath",
+          "gtceu:zpm_chemical_bath",
+          "gtceu:uv_chemical_bath",
+          "gtceu:uhv_chemical_bath",
+          "gtceu:uev_chemical_bath",
+          "gtceu:uiv_chemical_bath",
+          "gtceu:uxv_chemical_bath",
+          "gtceu:opv_chemical_bath",
+          "gtceu:large_chemical_bath"
+        ]
+      }
+    ],
+    "gtceu__macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cut_copper_slab",
+        "category": "gtceu:macerator_recycling",
+        "width": 164,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:cut_copper_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_copper_dust",
+            "amount": 10
+          }
+        ],
+        "workstations": [
+          "gtceu:lp_steam_macerator",
+          "gtceu:lv_macerator",
+          "gtceu:hp_steam_macerator",
+          "gtceu:mv_macerator",
+          "gtceu:hv_macerator",
+          "gtceu:ev_macerator",
+          "gtceu:iv_macerator",
+          "gtceu:luv_macerator",
+          "gtceu:zpm_macerator",
+          "gtceu:uv_macerator",
+          "gtceu:uhv_macerator",
+          "gtceu:uev_macerator",
+          "gtceu:uiv_macerator",
+          "gtceu:uxv_macerator",
+          "gtceu:opv_macerator",
+          "gtceu:large_maceration_tower",
+          "gtceu:steam_grinder",
+          "gtceu:ev_large_miner",
+          "gtceu:iv_large_miner",
+          "gtceu:luv_large_miner"
+        ]
+      }
+    ],
     "gtceu__arc_furnace_recycling": [
       {
         "id": "gtceu:arc_furnace/arc_cut_copper_slab",
@@ -36,6 +151,120 @@
           "gtceu:uxv_arc_furnace",
           "gtceu:opv_arc_furnace",
           "gtceu:large_arc_smelter"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "gtceu__cutter": [
+      {
+        "id": "gtceu:cutter/cut_cut_copper_into_slab_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:cut_copper"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/cut_cut_copper_into_slab",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:cut_copper"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
+        ]
+      },
+      {
+        "id": "gtceu:cutter/cut_cut_copper_into_slab_distilled_water",
+        "category": "gtceu:cutter",
+        "width": 150,
+        "height": 89,
+        "inputs": [
+          {
+            "id": "minecraft:cut_copper"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "workstations": [
+          "gtceu:lv_cutter",
+          "gtceu:mv_cutter",
+          "gtceu:hv_cutter",
+          "gtceu:ev_cutter",
+          "gtceu:iv_cutter",
+          "gtceu:luv_cutter",
+          "gtceu:zpm_cutter",
+          "gtceu:uv_cutter",
+          "gtceu:uhv_cutter",
+          "gtceu:uev_cutter",
+          "gtceu:uiv_cutter",
+          "gtceu:uxv_cutter",
+          "gtceu:opv_cutter",
+          "gtceu:large_cutter"
         ]
       }
     ]
