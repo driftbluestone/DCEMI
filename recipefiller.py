@@ -17,12 +17,12 @@ recipe = {"gtceu__bender": [
         ],
         "inputs": [
           {
-            "id": "gtceu:uraninite_bolt"
+            "id": "gtceu:wheat_ingot"
           }
         ],
         "outputs": [
           {
-            "id": "gtceu:ammonia_gem"
+            "id": "gtceu:ammonia_plate"
           }
         ],
         "workstations": [
