@@ -3,7 +3,7 @@ DIR = pathlib.Path(__file__).resolve().parent
 
 items = {}
 
-with open(f"{DIR}/index.json") as file:
+with open(f"{DIR}/temp/index.json") as file:
     recipes = json.load(file)
 length = len(recipes)
 for recipe in recipes:
