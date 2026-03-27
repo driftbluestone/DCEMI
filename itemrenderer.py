@@ -3,8 +3,8 @@ from PIL import Image, ImageChops
 from pathlib import Path
 DIR = Path(__file__).resolve().parent
 
-material_name = input("Name: ")
-material_type = input("Type: ")
+# material_name = input("Name: ")
+# material_type = input("Type: ")
 
 def material_renderer(material_name: str, material_type: str) -> Image.Image:
     with open(f"{DIR}/materialdata/{material_name}.json", "r") as file:
@@ -42,5 +42,5 @@ def material_renderer(material_name: str, material_type: str) -> Image.Image:
         base.paste(im, mask=im_mask)
     image = base
     return image
-base = material_renderer(material_name, material_type)
-base.save(f"{DIR}/image.png")
+# base = material_renderer(material_name, material_type)
+# base.save(f"{DIR}/image.png")

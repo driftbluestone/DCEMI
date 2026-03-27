@@ -3,8 +3,8 @@ from pathlib import Path
 from PIL import Image
 DIR = Path(__file__).resolve().parent
 
-input_slots = int(input("Input Slots: "))
-output_slots = int(input("Output Slots: "))
+# input_slots = int(input("Input Slots: "))
+# output_slots = int(input("Output Slots: "))
 # base gui colors
 # border = (0, 0, 0)
 # background = (198, 198, 198)
@@ -40,15 +40,15 @@ def create_base_gui(width: int, height: int) -> Image.Image:
     
     return basegui
 
-def add_slots(gui: Image.Image, in_slots: int, out_slots: int, progress_bar: str) -> Image.Image:
+def add_slots(gui: Image.Image, input_slots: int, output_slots: int, progress_bar: str) -> Image.Image:
     vertical = 8
     horizontal = 8
     height = max([math.ceil(input_slots / 3), math.ceil(output_slots / 3)])
-    gui.__setattr__("input_slots", in_slots)
-    gui.__setattr__("output_slots", out_slots)
+    gui.__setattr__("input_slots", input_slots)
+    gui.__setattr__("output_slots", output_slots)
 
     with Image.open(f"{DIR}/gui/slot.png") as img:
-        for i in range(in_slots):
+        for i in range(input_slots):
             i += 1
             gui.paste(im=img, box=(horizontal, vertical))
             horizontal+=18
@@ -68,8 +68,9 @@ def add_slots(gui: Image.Image, in_slots: int, out_slots: int, progress_bar: str
     
     vertical = 8
     horizontal = arrow_distance + progress_bar_width + 12
+    gui.__setattr__("output_slot_distance", horizontal+1)
     with Image.open(f"{DIR}/gui/slot.png") as img:
-        for i in range(out_slots):
+        for i in range(output_slots):
             i += 1
             gui.paste(im=img, box=(horizontal, vertical))
             horizontal+=18
@@ -79,7 +80,10 @@ def add_slots(gui: Image.Image, in_slots: int, out_slots: int, progress_bar: str
     return gui
 
 def create_gui(input_slots: int, output_slots: int, progress_bar: str) -> Image.Image:
-    width = 56
+    with Image.open(f"{DIR}/gui/gtceu/gui/progress_bar/progress_bar_{progress_bar}.png") as img:
+        img = img.convert("RGBA")
+        progress_bar_width = img.width
+    width = progress_bar_width + 32
     height = (max([math.ceil(input_slots / 3), math.ceil(output_slots / 3)])) * 18 + 8
     if input_slots >= 3:
         width += 54
@@ -94,8 +98,8 @@ def create_gui(input_slots: int, output_slots: int, progress_bar: str) -> Image.
     gui = add_slots(gui, input_slots, output_slots, progress_bar)
     return gui
 
-basegui = create_gui(input_slots, output_slots, "bending")
-basegui = basegui.resize((8*basegui.width, 8*basegui.height), resample= Image.BOX)
-basegui.save(f"{DIR}/gui.png")
+# basegui = create_gui(input_slots, output_slots, "bending")
+# basegui = basegui.resize((8*basegui.width, 8*basegui.height), resample= Image.BOX)
+# basegui.save(f"{DIR}/gui.png")
 
-basegui.show()
+# basegui.show()
