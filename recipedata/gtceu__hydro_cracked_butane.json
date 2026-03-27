@@ -1,0 +1,36 @@
+{
+  "input": {
+    "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_hydro_cracked_butane",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:hydro_cracked_butane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:propane",
+            "amount": 750
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 750
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 500
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      }
+    ]
+  }
+}

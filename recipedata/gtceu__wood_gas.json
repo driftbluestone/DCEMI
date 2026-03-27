@@ -1,0 +1,44 @@
+{
+  "output": {
+    "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_charcoal_byproducts",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_byproducts",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:charcoal_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      }
+    ]
+  }
+}

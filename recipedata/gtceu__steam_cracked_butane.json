@@ -1,0 +1,44 @@
+{
+  "input": {
+    "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_steam_cracked_butane",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:steam_cracked_butane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 750
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 750
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      }
+    ]
+  }
+}

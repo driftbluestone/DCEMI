@@ -1,0 +1,40 @@
+{
+  "output": {
+    "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/enriched_naquadah_waste_separation",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_waste",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:enriched_naquadah_solution",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:naquadria_solution",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:barium_sulfide_dust",
+            "chance": 0.5
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      }
+    ]
+  }
+}

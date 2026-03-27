@@ -1,0 +1,40 @@
+{
+  "input": {
+    "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_raw_oil",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:oil_medium",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_gas",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:sulfuric_heavy_fuel",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:sulfuric_light_fuel",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:sulfuric_naphtha",
+            "amount": 150
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      }
+    ]
+  }
+}

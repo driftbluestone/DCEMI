@@ -1,0 +1,44 @@
+{
+  "input": {
+    "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_coal_gas",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:coal_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:ethylbenzene",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:coke_dust",
+            "chance": 0.25
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      }
+    ]
+  }
+}

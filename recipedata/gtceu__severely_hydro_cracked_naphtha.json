@@ -1,0 +1,40 @@
+{
+  "input": {
+    "gtceu__distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_severely_hydro_cracked_naphtha",
+        "category": "gtceu:distillation_tower",
+        "width": 150,
+        "height": 131,
+        "inputs": [
+          {
+            "id": "gtceu:severely_hydro_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 1500
+          },
+          {
+            "id": "gtceu:butane",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 1500
+          }
+        ],
+        "workstations": [
+          "gtceu:distillation_tower",
+          "gtceu:large_distillery"
+        ]
+      }
+    ]
+  }
+}

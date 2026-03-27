@@ -59,7 +59,7 @@ def add_slots(gui: Image.Image, in_slots: int, out_slots: int) -> Image.Image:
     arrow_distance = 54 + 20
     if input_slots < 3:
         arrow_distance = input_slots*18 + 20
-    arrow_height = height * 9
+    arrow_height = (height * 9) -1
     with Image.open(f"{DIR}/gui/arrow.png") as img:
         gui.paste(im=img, box=(arrow_distance, arrow_height))
     
