@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_alloy_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_alloy_smelter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_alloy_smelter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_alloy_smelter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_alloy_smelter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_alloy_smelter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1194
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

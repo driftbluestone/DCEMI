@@ -1,0 +1,229 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/large_wiremill",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:hsla_steel_plate"
+          },
+          {
+            "id": "gtceu:hsla_steel_spring"
+          },
+          {
+            "id": "gtceu:iv_wiremill"
+          },
+          {
+            "id": "gtceu:hsla_steel_spring"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_wiremill"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_wiremill",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:hsla_steel_plate"
+          },
+          {
+            "id": "gtceu:hsla_steel_spring"
+          },
+          {
+            "id": "gtceu:iv_wiremill"
+          },
+          {
+            "id": "gtceu:hsla_steel_spring"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_wiremill"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hsla_steel_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_hsla_steel_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hsla_steel_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 61
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spring_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_spring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_hsla_steel_long_rod_to_spring",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_spring"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

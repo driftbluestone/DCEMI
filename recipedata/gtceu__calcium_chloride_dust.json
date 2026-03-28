@@ -1,0 +1,512 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_calcium_chloride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_calcium_chloride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_calcium_chloride_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_calcium_chloride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_calcium_chloride_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_calcium_chloride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/bauxite_slurry_from_crushed_bauxite",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_bauxite_ore",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soda_ash_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bauxite_slurry",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/bauxite_slurry_from_washed_bauxite",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:purified_bauxite_ore",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soda_ash_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bauxite_slurry",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_calcium_chloride",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_dust"
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_calcium_chloride_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_calcium_chloride_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_calcium_chloride_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_calcium_chloride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_calcium_chloride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:small_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:small_calcium_chloride_dust"
+          },
+          {
+            "id": "gtceu:small_calcium_chloride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/soda_ash_from_calcite",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:soda_ash_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/tungstic_acid_from_scheelite",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 960,
+        "inputs": [
+          {
+            "id": "gtceu:scheelite_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungstic_acid_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/calcium_chloride_from_quicklime",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/calcium_chloride_from_quicklime",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_calcium_chloride_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_calcium_chloride_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_calcium_chloride_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_calcium_chloride_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

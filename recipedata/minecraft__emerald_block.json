@@ -1,0 +1,152 @@
+{
+  "uses": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_emerald_block_to_gem",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "minecraft:emerald_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_emerald_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:emerald_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_emerald_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:emerald_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 13
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_emerald_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:emerald_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_emerald_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:emerald_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_emerald_gem_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

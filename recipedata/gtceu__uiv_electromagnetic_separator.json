@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uiv_electromagnetic_separator",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_conveyor_module"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:tin_single_wire"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:iron_rod"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:tin_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_electromagnetic_separator"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uiv_electromagnetic_separator",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_electromagnetic_separator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_red_alloy_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:tin_dust"
+          },
+          {
+            "id": "gtceu:small_iron_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_electromagnetic_separator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 262
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:tin_ingot"
+          },
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_assembler",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mv_robot_arm"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:mv_robot_arm"
+          },
+          {
+            "id": "gtceu:mv_conveyor_module"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:mv_conveyor_module"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_assembler"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_assembler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_assembler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4594
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:annealed_copper_block",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

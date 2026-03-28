@@ -1,0 +1,437 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 200
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/acidic_osmium_solution_separation_to_water",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 200
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/acidic_osmium_solution_separation",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:osmium_tetroxide_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_osmium_tetroxide_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_osmium_tetroxide_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_osmium_tetroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/osmium_tetroxide_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/osmium_tetroxide_separation",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_osmium_tetroxide_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_osmium_tetroxide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_osmium_tetroxide_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_osmium_tetroxide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_bus_output_to_input",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:steam_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_output_bus"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/steam_output_bus",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_machine_casing"
+          },
+          {
+            "tag": "minecraft:chest"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_output_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_bus_input_to_output",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:steam_output_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_input_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:steam_grinder",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          },
+          {
+            "id": "gtceu:steam_input_hatch"
+          },
+          {
+            "id": "gtceu:steam_output_bus"
+          },
+          {
+            "id": "gtceu:steam_input_bus"
+          },
+          {
+            "id": "gtceu:steam_machine_casing",
+            "amount": 22
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:steam_oven",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steam_oven"
+          },
+          {
+            "id": "gtceu:steam_input_hatch"
+          },
+          {
+            "id": "gtceu:steam_output_bus"
+          },
+          {
+            "id": "gtceu:steam_input_bus"
+          },
+          {
+            "id": "gtceu:bronze_firebox_casing",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steam_machine_casing",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_oven"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_steam_output_bus",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:steam_output_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_steam_output_bus",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:steam_output_bus"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 608
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "uses": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bismuth_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bismuth_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bismuth_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_bismuth_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

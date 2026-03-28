@@ -1,0 +1,124 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_polarizer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:copper_double_wire"
+          },
+          {
+            "id": "gtceu:steel_rod"
+          },
+          {
+            "id": "gtceu:copper_double_wire"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:copper_double_wire"
+          },
+          {
+            "id": "gtceu:steel_rod"
+          },
+          {
+            "id": "gtceu:copper_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_polarizer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_polarizer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_polarizer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_polarizer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_polarizer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 648
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:steel_ingot"
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

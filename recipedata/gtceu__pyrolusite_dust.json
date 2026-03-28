@@ -1,0 +1,1429 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_pyrolusite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/centrifuged_ore_to_dust_pyrolusite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_pyrolusite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:small_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:small_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:small_pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/centrifuge_pyrolusite_dirty_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/metal_mixture_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 900,
+        "inputs": [
+          {
+            "id": "gtceu:metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hematite_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:bauxite_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:pyrolusite_dust",
+            "chance": 0.22222222
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:chromite_dust",
+            "chance": 0.0855
+          },
+          {
+            "id": "gtceu:ilmenite_dust",
+            "chance": 0.0575
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/centrifuge_pyrolusite_pure_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_washer": [
+      {
+        "id": "gtceu:ore_washer/wash_pyrolusite_dirty_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_pyrolusite_pure_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_pyrolusite_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_pyrolusite_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_pyrolusite_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_pyrolusite_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_pyrolusite_refined_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_pyrolusite_refined_ore_to_dust",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:pyrolusite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:raw_pyrolusite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:manganese_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pyrolusite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:raw_pyrolusite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:manganese_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pyrolusite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:raw_pyrolusite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:manganese_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pyrolusite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:raw_pyrolusite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:manganese_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pyrolusite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "tag": "gtceu:granite_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:raw_pyrolusite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:manganese_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:purified_pyrolusite_ore"
+          },
+          {
+            "id": "gtceu:impure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pure_pyrolusite_dust"
+          },
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_pyrolusite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_pyrolusite_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_pyrolusite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_pyrolusite_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_pyrolusite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_pyrolusite_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_pyrolusite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_pyrolusite_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_dust_pyrolusite_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:manganese_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_pyrolusite",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolusite_dust",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:manganese_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_pyrolusite_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_pyrolusite_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_pyrolusite_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolusite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_pyrolusite_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

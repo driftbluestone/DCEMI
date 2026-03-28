@@ -1,0 +1,185 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_lead",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:lead_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_lead_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lead_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lead_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_lead_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_lead_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lead_foil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_foil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 46
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/foil_lead",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:lead_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_foil",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_lead_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:lead_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_lead_ingot_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:lead_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      }
+    ]
+  }
+}

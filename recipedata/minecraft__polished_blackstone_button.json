@@ -1,0 +1,104 @@
+{
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_polished_blackstoneslab_into_button_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:polished_blackstone_pressure_plate"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:polished_blackstone_button",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_polished_blackstoneslab_into_button_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:polished_blackstone_pressure_plate"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:polished_blackstone_button",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_polished_blackstoneslab_into_button",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:polished_blackstone_pressure_plate"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:polished_blackstone_button",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_polished_blackstone_button",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:polished_blackstone_button"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_blackstone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

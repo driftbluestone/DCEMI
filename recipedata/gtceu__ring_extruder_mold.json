@@ -1,0 +1,202 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/shape_extruder_ring",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:empty_mold"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ring_extruder_mold"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/copy_shape_ring_extruder_mold",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 22,
+        "inputs": [
+          {
+            "id": "gtceu:empty_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ring_extruder_mold"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/shape_extruder_bottle",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:ring_extruder_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bottle_extruder_mold"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/shape_extruder_gear_small",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:ring_extruder_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_gear_extruder_mold"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/shape_extruder_cell",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ring_extruder_mold"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cell_extruder_mold"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/shape_extruder_gear",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:ring_extruder_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gear_extruder_mold"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ring_extruder_mold",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ring_extruder_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ring_extruder_mold",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ring_extruder_mold"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 224
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

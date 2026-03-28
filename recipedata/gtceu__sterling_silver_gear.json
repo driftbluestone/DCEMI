@@ -1,0 +1,231 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/gear_sterling_silver",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_rod"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "id": "gtceu:sterling_silver_rod"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "id": "gtceu:sterling_silver_rod"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "id": "gtceu:sterling_silver_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_gear"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_sterling_silver_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_sterling_silver_ingot_to_gear",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_sterling_silver_ingot_to_gear",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 14,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/buzzsaw_gear_sterling_silver",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_buzz_saw_blade"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_sterling_silver_gear",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_sterling_silver_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_sterling_silver_gear",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_gear"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 392
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

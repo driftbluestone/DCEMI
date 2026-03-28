@@ -1,0 +1,606 @@
+{
+  "uses": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_black_steel_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_black_steel_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_black_steel_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_black_steel_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_black_steel_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:autoclave": [
+      {
+        "id": "gtceu:autoclave/energy_crystal_black_steel",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:energium_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:black_steel",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:energy_crystal"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_black_steel_double_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:black_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_fine_black_steel_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:fine_black_steel_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_quadruple_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_quadruple_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:black_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_double_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_hex_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_quadruple_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_single_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_octal_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:black_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_black_steel_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:double_black_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_octal_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_frame",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_hex_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:black_steel",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_steel_single_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:black_steel_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:black_steel",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

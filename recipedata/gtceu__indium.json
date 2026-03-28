@@ -1,0 +1,201 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/silver_and_lithium_to_indium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 24576,
+        "inputs": [
+          {
+            "id": "gtceu:silver",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:lithium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_indium_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_indium_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:indium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_indium_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:indium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_indium_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:indium_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_indium_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_indium_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_indium_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

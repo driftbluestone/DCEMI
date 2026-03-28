@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/luv_cutter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "id": "gtceu:luv_conveyor_module"
+          },
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:hsse_buzz_saw_blade"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_cutter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_luv_cutter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 56
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_cutter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_cutter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5571
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_electric_furnace",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:kanthal_double_wire"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:kanthal_double_wire"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:kanthal_double_wire"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "id": "gtceu:kanthal_double_wire"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_electric_furnace"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_electric_furnace",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electric_furnace"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:kanthal_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_electric_furnace",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electric_furnace"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1014
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

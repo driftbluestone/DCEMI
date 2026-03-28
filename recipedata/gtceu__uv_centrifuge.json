@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_centrifuge",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_centrifuge"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_centrifuge",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_centrifuge"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_centrifuge",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_centrifuge"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12965
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tritanium_block"
+          },
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_mixer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_rotor"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_mixer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_mixer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_mixer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tiny_osmiridium_dust",
+            "amount": 53
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_mixer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_mixer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 11836
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:naquadah_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:osmiridium_nugget",
+            "amount": 53
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

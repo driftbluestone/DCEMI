@@ -1,0 +1,395 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_double_nichrome",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:nichrome_plate"
+          },
+          {
+            "id": "gtceu:nichrome_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_nichrome_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_nichrome",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:nichrome_plate"
+          },
+          {
+            "id": "gtceu:nichrome_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_nichrome_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/nichrome_wire_single",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_plate"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_single_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_nichrome_plate_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_nichrome_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_nichrome_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_nichrome_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_nichrome_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 56
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_nichrome",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:nichrome_ingot"
+          },
+          {
+            "id": "gtceu:nichrome_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_nichrome_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_nichrome_to_plate",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_ingot",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_plate",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_nichrome_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_nichrome_to_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_nichrome_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 31
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_nichrome_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 42
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_nichrome_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

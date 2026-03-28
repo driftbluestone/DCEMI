@@ -1,0 +1,302 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_brass_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:brass",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_brass_bolt",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:brass_bolt"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass_nugget"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_lv_sensor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_sensor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 253
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:brass_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_brass_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:brass_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 28
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_lv_scanner",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_scanner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1192
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:brass_nugget",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:ash_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_brass_screw",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:brass_screw"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_brass_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:brass_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_brass_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:brass_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_brass_nugget",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:brass_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_brass_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_brass_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:brass_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_brass_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:brass_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

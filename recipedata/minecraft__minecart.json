@@ -1,0 +1,255 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/minecart_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_minecart_wheels"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_minecart_wheels"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:minecart"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/minecart_iron",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:iron_minecart_wheels"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:iron_minecart_wheels"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:minecart"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/minecart",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:iron_ring",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:minecart"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/furnace_minecart",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:minecart"
+          },
+          {
+            "id": "minecraft:furnace"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:furnace_minecart"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/hopper_minecart",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:minecart"
+          },
+          {
+            "id": "minecraft:hopper"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:hopper_minecart"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/chest_minecart",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:minecart"
+          },
+          {
+            "tag": "minecraft:chest"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chest_minecart"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/tnt_minecart",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:minecart"
+          },
+          {
+            "id": "minecraft:tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:tnt_minecart"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_minecart",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:minecart"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_minecart",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:minecart"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 280
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

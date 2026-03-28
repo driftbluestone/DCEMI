@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:bronze_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:mv_electric_motor"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_chemical_reactor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_chemical_reactor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_chemical_reactor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_chemical_reactor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 967
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

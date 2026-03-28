@@ -1,0 +1,283 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_export_hatch_9x_uv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uv_output_hatch"
+          },
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_output_hatch_9x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/fluid_import_hatch_9x_uv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:uv_input_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_input_hatch_9x"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dual_import_bus_uv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_input_bus"
+          },
+          {
+            "id": "gtceu:uv_input_hatch"
+          },
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_dual_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_export_bus_uv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_input_bus"
+          },
+          {
+            "id": "gtceu:uv_input_hatch"
+          },
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_dual_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_naquadah_nonuple_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_naquadah_nonuple_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_naquadah_nonuple_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4734
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/nonuple_naquadah_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_naquadah_nonuple_pipe",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_nonuple_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:9}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1062 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/acetic_acid_electrolysis",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dissolved_calcium_acetate_from_calcite",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/ethenone",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetone_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetone",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "chance": 0.0
+          },
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/vinyl_acetate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:vinyl_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_anhydride",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_anhydride",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dissolved_calcium_acetate_from_quicklime",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 380,
+        "inputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/methyl_acetate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dissolved_calcium_acetate_from_calcium",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 380,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_dust"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/dissolved_calcium_acetate_from_calcite",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/dissolved_calcium_acetate_from_calcium",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 380,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_dust"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/dissolved_calcium_acetate_from_quicklime",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 380,
+        "inputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/ethenone",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/methyl_acetate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/vinyl_acetate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:vinyl_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/acetic_anhydride",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_anhydride",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_acetic_acid",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 25
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_vinegar_to_acetic_acid",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 50
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/paracetamol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:acetic_anhydride",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:paracetamol_dust"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_acid_from_methyl_acetate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_acid_from_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_acid_from_elements",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_acid_from_ethylene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_acid_from_monoxide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/acetic_acid_from_monoxide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/paracetamol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:acetic_anhydride",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:paracetamol_dust"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/acetic_acid_from_elements",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/acetic_acid_from_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/acetic_acid_from_methyl_acetate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/acetic_acid_from_ethylene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_wood_vinegar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 100
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_fermented_biomass",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 600
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 25
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 375
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:fertilizer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

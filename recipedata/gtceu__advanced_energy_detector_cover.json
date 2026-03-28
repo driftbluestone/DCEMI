@@ -1,0 +1,107 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_advanced_energy_detector",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:energy_detector_cover"
+          },
+          {
+            "id": "gtceu:hv_sensor"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_energy_detector_cover"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_advanced_energy_detector_cover",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_energy_detector_cover"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ender_eye_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_advanced_energy_detector_cover",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_energy_detector_cover"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 425
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot"
+          },
+          {
+            "id": "gtceu:chromium_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

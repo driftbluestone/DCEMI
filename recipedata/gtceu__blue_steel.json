@@ -1,0 +1,541 @@
+{
+  "uses": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_blue_steel_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_blue_steel_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_blue_steel_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_blue_steel_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_blue_steel_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:autoclave": [
+      {
+        "id": "gtceu:autoclave/lapotron_gem_red_steel",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 192,
+        "inputs": [
+          {
+            "id": "gtceu:lapotron_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotron_gem"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_blue_steel_screw",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_chainsaw_head",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_chainsaw_head"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_blue_steel_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:double_blue_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_drill_head",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_drill_head"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_frame",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_wire_cutter_head",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_wire_cutter_head"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_long_blue_steel_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:long_blue_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_buzz_saw_blade",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_buzz_saw_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_screwdriver_tip",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_screwdriver_tip"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_wrench_tip",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_wrench_tip"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_steel_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:blue_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

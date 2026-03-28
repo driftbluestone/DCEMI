@@ -1,0 +1,357 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_zinc",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_zinc",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_zinc_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_rod"
+          },
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_zinc_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fluid_tag_filter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fluid_tag_filter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_zinc_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_item_smart_filter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:item_smart_filter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_zinc_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_zinc_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_zinc",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_zinc",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_zinc",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_zinc",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          },
+          {
+            "id": "gtceu:small_zinc_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_zinc_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:large_centrifuge",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_centrifuge"
+          },
+          {
+            "id": "gtceu:iv_parallel_hatch"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_hatch"
+          },
+          {
+            "id": "gtceu:ulv_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_bus"
+          },
+          {
+            "id": "gtceu:ulv_input_bus"
+          },
+          {
+            "id": "gtceu:steel_pipe_casing",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:vibration_safe_casing",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_centrifuge"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_sifting_funnel",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_sifting_funnel"
+          },
+          {
+            "id": "gtceu:iv_parallel_hatch"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_bus"
+          },
+          {
+            "id": "gtceu:ulv_input_bus"
+          },
+          {
+            "id": "gtceu:assembly_line_grating",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:vibration_safe_casing",
+            "amount": 63
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_sifting_funnel"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_vibration_safe_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:vibration_safe_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:incoloy_ma_956_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_vibration_safe_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:vibration_safe_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 196
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:incoloy_ma_956_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_incoloy_vibration_safe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:incoloy_ma_956_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:incoloy_ma_956_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vibration_safe_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_isoprene",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:isoprene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 8000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/raw_rubber_from_oxygen",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:isoprene",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_rubber_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/raw_rubber_from_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:isoprene",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_rubber_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/raw_rubber_from_oxygen",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:isoprene",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_rubber_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/raw_rubber_from_air",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:isoprene",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_rubber_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/isoprene_from_methane",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:propene",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:isoprene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/isoprene_from_ethylene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:isoprene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/isoprene_from_ethylene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:isoprene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/isoprene_from_methane",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:propene",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:isoprene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  }
+}

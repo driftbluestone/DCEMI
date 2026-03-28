@@ -1,0 +1,83 @@
+{
+  "recipes": {
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/nan_certificate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_block",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:neutronium_block",
+            "amount": 64
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nan_certificate"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_nan_certificate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:nan_certificate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 64
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_nan_certificate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nan_certificate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 576000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_block",
+            "amount": 64
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ring_aluminium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_aluminium_ingot_to_ring",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ring",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/power_thruster",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_electric_motor"
+          },
+          {
+            "id": "gtceu:aluminium_ring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          },
+          {
+            "id": "gtceu:steel_rotor"
+          },
+          {
+            "id": "gtceu:copper_single_cable",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:power_thruster"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_aluminium_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_aluminium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_aluminium_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_aluminium_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

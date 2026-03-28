@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_granite_into_wall",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:granite"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:granite_wall"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:13}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_granite_wall",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:granite_wall"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:granite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

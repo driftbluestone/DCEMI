@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_electrolyzer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_single_wire"
+          },
+          {
+            "id": "gtceu:tempered_glass"
+          },
+          {
+            "id": "gtceu:electrum_single_wire"
+          },
+          {
+            "id": "gtceu:electrum_single_wire"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:electrum_single_wire"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_electrolyzer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_electrolyzer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electrolyzer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_gold_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_electrolyzer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electrolyzer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1029
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

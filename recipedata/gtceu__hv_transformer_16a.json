@@ -1,0 +1,120 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/hv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_transformer_4a"
+          },
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "id": "gtceu:aluminium_octal_cable"
+          },
+          {
+            "id": "gtceu:gold_hex_cable"
+          },
+          {
+            "id": "gtceu:small_gold_spring"
+          },
+          {
+            "id": "gtceu:aluminium_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_transformer_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_transformer_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:small_aluminium_dust",
+            "amount": 46
+          },
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7062
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

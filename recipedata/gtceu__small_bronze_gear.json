@@ -1,0 +1,284 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_miner_bronze",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_brick_casing"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:small_bronze_gear"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lp_steam_miner"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/steam_miner_bronze",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_brick_casing"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:small_bronze_gear"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lp_steam_miner"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_small_bronze_gear",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_small_bronze_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_small_bronze_gear",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:small_bronze_gear"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 76
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_gear_bronze",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:bronze_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bronze_small_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:bronze",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:small_gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_bronze_ingot_to_small_gear",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:small_gear_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_bronze_ingot_to_small_gear",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:small_gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

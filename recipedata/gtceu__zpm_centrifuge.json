@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_centrifuge",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_centrifuge"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_centrifuge",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_centrifuge"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:small_osmiridium_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_centrifuge",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_centrifuge"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8691
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:osmiridium_block"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

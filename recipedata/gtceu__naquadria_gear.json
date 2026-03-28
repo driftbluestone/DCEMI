@@ -1,0 +1,209 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/gear_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_rod"
+          },
+          {
+            "id": "gtceu:naquadria_plate"
+          },
+          {
+            "id": "gtceu:naquadria_rod"
+          },
+          {
+            "id": "gtceu:naquadria_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:naquadria_plate"
+          },
+          {
+            "id": "gtceu:naquadria_rod"
+          },
+          {
+            "id": "gtceu:naquadria_plate"
+          },
+          {
+            "id": "gtceu:naquadria_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_naquadria_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_naquadria_ingot_to_gear",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_naquadria_ingot_to_gear",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_naquadria_gear",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_naquadria_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_naquadria_gear",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2088
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

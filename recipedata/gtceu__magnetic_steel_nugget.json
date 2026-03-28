@@ -1,0 +1,172 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/demagnetize_magnetic_steel_nugget",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_steel_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_magnetic_steel_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_steel_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_magnetic_steel_nugget",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_steel_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_steel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_magnetic_steel_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_steel_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_magnetic_steel_nugget",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_steel_nugget"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnetic_steel_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_steel_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:polarizer": [
+      {
+        "id": "gtceu:polarizer/polarize_steel_nugget",
+        "category": "gtceu:polarizer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:steel_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnetic_steel_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

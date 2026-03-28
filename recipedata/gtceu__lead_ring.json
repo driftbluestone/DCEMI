@@ -1,0 +1,180 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ring_lead",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:lead_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_lead_ingot_to_ring",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:lead_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ring",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rotor_lead",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:lead_plate"
+          },
+          {
+            "id": "gtceu:lead_screw"
+          },
+          {
+            "id": "gtceu:lead_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:lead_plate"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:lead_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_rotor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lead_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lead_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_lead_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_lead_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lead_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 46
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

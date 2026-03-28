@@ -1,0 +1,72 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/fireclay_brick",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:compressed_fireclay"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:firebrick"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_compressed_fireclay",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:compressed_fireclay"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fireclay_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compressed_fireclay",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:fireclay_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:compressed_fireclay"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

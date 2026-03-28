@@ -1,0 +1,831 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/round_hsss",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:hsss_nugget"
+          },
+          {
+            "id": "gtceu:hsss_nugget"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_round"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/round_hsss",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:hsss_nugget"
+          },
+          {
+            "id": "gtceu:hsss_nugget"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_round"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_hsss_nugget_to_round",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_round"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_hsss_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hsss_nugget",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_hsss_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_hsss_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_hsss_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_hsss_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hsss",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_chemical_reactor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_chemical_reactor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2893
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hsss_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 57
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_muffler_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3035
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_ore_washer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_ore_washer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3313
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_electric_motor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1641
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_conveyor_module",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_conveyor_module"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3742
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_fusion_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1668
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:ruridit_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:beryllium_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_emitter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4959
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hsss_round",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_round"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_mixer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_mixer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2822
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_thermal_centrifuge",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3979
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 53
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hsss_screw",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_screw"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_centrifuge",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_centrifuge"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3979
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 53
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_sensor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_sensor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4959
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hsss_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 28
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hsss_bolt",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_bolt"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_computation_transmitter_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5898
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 44
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hsss_foil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_foil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 28
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_hsss_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

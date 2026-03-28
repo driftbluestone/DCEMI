@@ -1,0 +1,138 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/mossy_marble_bricks_from_moss_block",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "gtceu:marble_bricks"
+          },
+          {
+            "id": "minecraft:moss_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mossy_marble_bricks"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/mossy_marble_bricks_from_vine",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "gtceu:marble_bricks"
+          },
+          {
+            "id": "minecraft:vine"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mossy_marble_bricks"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_cracked_marble_bricks",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:marble_bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cracked_marble_bricks"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_marble_bricks",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:polished_marble"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:marble_bricks"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:diamond_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_marble_bricks",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:marble"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:marble_bricks"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

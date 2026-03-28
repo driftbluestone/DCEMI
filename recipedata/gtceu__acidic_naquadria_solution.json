@@ -1,0 +1,66 @@
+{
+  "recipes": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/naquadria_solution_separation",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_solution",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acidic_naquadria_solution",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/acidic_naquadria_solution_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_naquadria_solution",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_sulfate_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:naquadria_waste",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

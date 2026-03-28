@@ -1,0 +1,251 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_double_darmstadtium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:darmstadtium_plate"
+          },
+          {
+            "id": "gtceu:darmstadtium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_darmstadtium_plate_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_darmstadtium_ingot_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/ultimate_battery",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 300000,
+        "inputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:energy_cluster",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:uv_field_generator",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_wafer",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:uhpic_wafer",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:neutronium_bolt",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 5760
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 2304
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 2592
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_energy_cluster\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_double_darmstadtium_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_double_darmstadtium_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_double_darmstadtium_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 562
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,823 @@
+{
+  "uses": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_to_huge_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_huge_item_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_to_small_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_small_item_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:small_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_to_normal_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 432
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_normal_item_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:normal_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ultimet_to_large_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 864
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_large_item_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_ultimet_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_small_restrictive_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_small_restrictive_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_large_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_large_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 864
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_screw",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_huge_restrictive_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_huge_restrictive_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ultimet",
+            "amount": 1728
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_wire_cutter_head",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_wire_cutter_head"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ultimet",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_normal_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_normal_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 432
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_ultimet_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:double_ultimet_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_large_restrictive_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_large_restrictive_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ultimet",
+            "amount": 864
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_screwdriver_tip",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_screwdriver_tip"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_small_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_small_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_turbine_blade",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_turbine_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 1440
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_frame",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_huge_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_huge_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 1728
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_buzz_saw_blade",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_buzz_saw_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_drill_head",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_drill_head"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ultimet",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_chainsaw_head",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_chainsaw_head"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:ultimet",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_normal_restrictive_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_normal_restrictive_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ultimet",
+            "amount": 432
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_long_ultimet_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:long_ultimet_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_wrench_tip",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_wrench_tip"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ultimet",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_ultimet_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

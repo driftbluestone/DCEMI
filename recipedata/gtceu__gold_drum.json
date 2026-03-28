@@ -1,0 +1,171 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/gold_drum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:gold_plate"
+          },
+          {
+            "id": "gtceu:long_gold_rod"
+          },
+          {
+            "id": "gtceu:gold_plate"
+          },
+          {
+            "id": "gtceu:gold_plate"
+          },
+          {
+            "id": "gtceu:long_gold_rod"
+          },
+          {
+            "id": "gtceu:gold_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_drum"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/drum_nbt_gold",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:gold_drum"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_drum"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/gold_drum",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_gold_rod",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:gold_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_drum"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/drum_nbt_gold",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:gold_drum"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_drum"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_gold_drum",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:gold_drum"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_gold_drum",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_drum"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1176
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

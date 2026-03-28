@@ -1,0 +1,219 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_hsla_steel_frame",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_corrosion_proof",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:hsla_steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:corrosion_proof_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/casing_hsla_nonconducting",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:hsla_steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nonconducting_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hsla_steel_frame",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_hsla_steel_frame",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hsla_steel_frame",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_frame"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 122
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

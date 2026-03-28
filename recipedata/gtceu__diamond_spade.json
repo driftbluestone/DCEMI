@@ -1,0 +1,77 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spade_diamond",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "minecraft:stick"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diamond_spade",
+            "nbt": "{Damage:0,DisallowContainerItem:0,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1},GT.Tool:{DefaultEnchantments:[],HarvestLevel:3,MaxDamage:2303,ToolSpeed:6.4f},HideFlags:2}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:smithing": [
+      {
+        "id": "gtceu:netherite_spade_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_spade",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_spade",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.5f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:6096,ToolSpeed:8.0f}}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

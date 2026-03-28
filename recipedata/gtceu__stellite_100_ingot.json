@@ -1,0 +1,571 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_stellite_100",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:stellite_100_ingot"
+          },
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_stellite_100",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:stellite_100_ingot"
+          },
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_stellite_100_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_stellite_100_to_plate",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_plate",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_stellite_100_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_stellite_100_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_stellite_100_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_stellite_100_to_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_stellite_100_ingot_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_stellite_100_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_stellite_100_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_stellite_100_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_stellite_100_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_stellite_100_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hot_stellite_100_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:vacuum_freezer/stellite_100",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_stellite_100",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_stellite_100_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_stellite_100_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_stellite_100_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 84
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_stellite_100_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 756
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_large_scale_assembler_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:large_scale_assembler_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 435
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tungsten_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_double_stellite_100_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:double_stellite_100_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 168
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_stellite_100_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_stellite_100_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:stellite_100_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

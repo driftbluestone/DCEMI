@@ -1,0 +1,482 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_samarium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_samarium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/demagnetize_magnetic_samarium_small_dust",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_magnetic_samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_samarium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/rare_earth_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 20,
+        "inputs": [
+          {
+            "id": "gtceu:rare_earth_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_cadmium_dust",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:small_neodymium_dust",
+            "chance": 0.45
+          },
+          {
+            "id": "gtceu:small_samarium_dust",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:small_cerium_dust",
+            "chance": 0.55
+          },
+          {
+            "id": "gtceu:small_yttrium_dust",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:small_lanthanum_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_magnetic_samarium_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_rod"
+          },
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:lathe/lathe_samarium_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_rod"
+          },
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_samarium_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_voltage_coil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_voltage_coil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_voltage_coil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_voltage_coil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_zpm_voltage_coil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_voltage_coil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_samarium_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_magnetic_samarium_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_samarium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_samarium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_samarium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_samarium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          },
+          {
+            "id": "gtceu:small_samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:polarizer": [
+      {
+        "id": "gtceu:polarizer/polarize_samarium_small_dust",
+        "category": "gtceu:polarizer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:small_samarium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_magnetic_samarium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_samarium_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

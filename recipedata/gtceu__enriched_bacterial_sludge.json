@@ -1,0 +1,113 @@
+{
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/mutagen",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mutagen",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:brewery/enriched_bacterial_sludge_from_u238",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/enriched_bacterial_sludge_from_u235",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_uranium_235_dust"
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/enriched_bacterial_sludge_from_naquadria",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_bacterial_sludge",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

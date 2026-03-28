@@ -1,0 +1,117 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/opv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:opv_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_opv_ore_washer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:opv_ore_washer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_opv_ore_washer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:opv_ore_washer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1027
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:red_alloy_ingot"
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

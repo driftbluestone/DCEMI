@@ -1,0 +1,108 @@
+{
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/golden_apple",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:apple"
+          },
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:golden_apple"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/golden_apple",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:apple"
+          },
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:golden_apple"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_golden_apple",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:golden_apple"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_golden_apple",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:golden_apple"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1568
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

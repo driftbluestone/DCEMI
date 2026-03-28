@@ -1,0 +1,180 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rotor_chromium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:chromium_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:chromium_plate"
+          },
+          {
+            "id": "gtceu:chromium_screw"
+          },
+          {
+            "id": "gtceu:chromium_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:chromium_plate"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:chromium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chromium_rotor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_chromium_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:chromium_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_chromium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_chromium_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:chromium_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chromium",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_chromium_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chromium_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 11
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chromium_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ring_chromium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:chromium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chromium_ring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_chromium_ingot_to_ring",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:chromium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chromium_ring",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

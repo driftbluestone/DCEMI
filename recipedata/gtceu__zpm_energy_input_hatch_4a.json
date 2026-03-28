@@ -1,0 +1,127 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/energy_hatch_16a_zpm",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_transformer_1a"
+          },
+          {
+            "id": "gtceu:zpm_energy_input_hatch_4a"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadah_alloy_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_energy_input_hatch_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_energy_input_hatch_4a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_energy_input_hatch_4a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_energy_input_hatch_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_energy_input_hatch_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1002
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/energy_hatch_4a_zpm",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadah_alloy_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_energy_input_hatch_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

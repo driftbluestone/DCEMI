@@ -1,0 +1,51 @@
+{
+  "recipes": {
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/form_polished_blackstone_slab_into_pillar",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:polished_blackstone_slab",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chiseled_polished_blackstone"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_chiseled_polished_blackstone",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_polished_blackstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blackstone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

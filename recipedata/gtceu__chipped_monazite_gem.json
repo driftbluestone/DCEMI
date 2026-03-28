@@ -1,0 +1,422 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/gem_to_gem_chipped_gem_monazite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:flawed_monazite_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_monazite_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:sifter": [
+      {
+        "id": "gtceu:sifter/sift_monazite_purified_ore_to_gems",
+        "category": "gtceu:sifter",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:purified_monazite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:exquisite_monazite_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_monazite_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:monazite_gem",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_monazite_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_monazite_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_monazite_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_monazite_flawed_gem_to_chipped_gem_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_monazite_gem"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_monazite_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_monazite_flawed_gem_to_chipped_gem",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_monazite_gem"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_monazite_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_monazite_flawed_gem_to_chipped_gem_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_monazite_gem"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_monazite_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:monazite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:andesite_monazite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_monazite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_monazite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_monazite_ore"
+          },
+          {
+            "id": "gtceu:raw_monazite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_monazite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:impure_monazite_dust"
+          },
+          {
+            "id": "gtceu:purified_monazite_ore"
+          },
+          {
+            "id": "gtceu:refined_monazite_ore"
+          },
+          {
+            "id": "gtceu:pure_monazite_dust"
+          },
+          {
+            "id": "gtceu:crushed_monazite_ore"
+          },
+          {
+            "id": "gtceu:purified_monazite_ore"
+          },
+          {
+            "id": "gtceu:impure_monazite_dust"
+          },
+          {
+            "id": "gtceu:pure_monazite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:monazite_gem",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:crushed_monazite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_monazite_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "amount": 2,
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:monazite_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_monazite_ore"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_monazite_ore"
+          },
+          {
+            "id": "gtceu:neodymium_dust",
+            "amount": 2,
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:monazite_dust"
+          },
+          {
+            "id": "gtceu:rare_earth_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_monazite_dust"
+          },
+          {
+            "id": "gtceu:neodymium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:monazite_dust"
+          },
+          {
+            "id": "gtceu:neodymium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_monazite_ore"
+          },
+          {
+            "id": "gtceu:purified_monazite_ore"
+          },
+          {
+            "id": "gtceu:impure_monazite_dust"
+          },
+          {
+            "id": "gtceu:monazite_dust"
+          },
+          {
+            "id": "gtceu:pure_monazite_dust"
+          },
+          {
+            "id": "gtceu:monazite_dust"
+          },
+          {
+            "id": "gtceu:monazite_dust"
+          },
+          {
+            "id": "gtceu:neodymium_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:neodymium_dust",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:exquisite_monazite_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_monazite_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:monazite_gem",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_monazite_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_monazite_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_monazite_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_monazite_flawed_gem_to_chipped_gem",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:chipped_monazite_gem",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_monazite_gem"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_chipped_monazite_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:chipped_monazite_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_monazite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

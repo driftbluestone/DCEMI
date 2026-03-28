@@ -1,0 +1,102 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/uranium_triplatinum",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_uranium_triplatinum",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/uranium_triplatinum",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_uranium_triplatinum",
+            "amount": 576
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/uranium_triplatinum_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_uranium_triplatinum",
+            "amount": 576
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:12}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/nonuple_copper_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_nonuple_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_copper_nonuple_pipe",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:copper_small_fluid_pipe",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_nonuple_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:9}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_copper_nonuple_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:copper_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_copper_nonuple_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_copper_nonuple_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

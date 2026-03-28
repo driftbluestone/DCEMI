@@ -1,0 +1,960 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tritanium_ingot"
+          },
+          {
+            "id": "gtceu:tritanium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tritanium_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_tritanium_to_plate",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_tritanium_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_tritanium_to_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_tritanium_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 55
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_tritanium_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 167
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_tritanium_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 222
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/gear_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/foil_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_foil",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_gear_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:tritanium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tritanium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_tritanium_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_tritanium_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tritanium_wire_single",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_single_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_tritanium_plate_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_tritanium_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_tritanium_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/conveyor_module_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_motor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tritanium_ring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_round",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tritanium_screw",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 3456
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_conveyor_module"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_conveyor_module\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/electric_pump_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:naquadah_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tritanium_screw",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silicone_rubber_ring",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:naquadah_alloy_rotor"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_electric_pump"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_electric_pump\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/electric_piston_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_ring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_round",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tritanium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:naquadah_alloy_gear"
+          },
+          {
+            "id": "gtceu:small_naquadah_alloy_gear",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_electric_piston"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_electric_piston\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_sensor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_sensor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/field_generator_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "id": "gtceu:uv_emitter",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1728
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_field_generator"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_field_generator\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tritanium_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tritanium_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tritanium_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 297
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

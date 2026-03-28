@@ -1,0 +1,132 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/hastelloy_x",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_hastelloy_x",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/hastelloy_x",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:molybdenum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_hastelloy_x",
+            "amount": 2736
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/hastelloy_x_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:molybdenum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 950
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_hastelloy_x",
+            "amount": 2736
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      }
+    ]
+  }
+}

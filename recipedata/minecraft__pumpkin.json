@@ -1,0 +1,115 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/pumpkin_pie_from_dough",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_pie"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/jack_o_lantern",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:torch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:jack_o_lantern"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_pumpkin",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_seeds",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/pumpkin_pie",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dough",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:sugar"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_pie",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

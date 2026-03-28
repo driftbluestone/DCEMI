@@ -1,0 +1,82 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rubber_hanging_sign",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:chain"
+          },
+          {
+            "id": "minecraft:chain"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_hanging_sign",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/rubber_hanging_sign",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:stripped_rubber_log",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:chain",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_hanging_sign",
+            "amount": 6
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      }
+    ]
+  }
+}

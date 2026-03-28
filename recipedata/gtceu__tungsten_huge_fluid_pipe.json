@@ -1,0 +1,178 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/huge_tungsten_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:double_tungsten_plate"
+          },
+          {
+            "id": "gtceu:double_tungsten_plate"
+          },
+          {
+            "id": "gtceu:double_tungsten_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:double_tungsten_plate"
+          },
+          {
+            "id": "gtceu:double_tungsten_plate"
+          },
+          {
+            "id": "gtceu:double_tungsten_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_to_huge_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_tungsten_huge_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tungsten_huge_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tungsten_huge_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten",
+            "amount": 1728
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tungsten_huge_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2196
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

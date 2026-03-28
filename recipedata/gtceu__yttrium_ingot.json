@@ -1,0 +1,310 @@
+{
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_yttrium_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hot_yttrium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_yttrium_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_yttrium_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_yttrium_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 801
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_yttrium_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_yttrium_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_yttrium_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_yttrium_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_yttrium_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_yttrium_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_yttrium_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_yttrium_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

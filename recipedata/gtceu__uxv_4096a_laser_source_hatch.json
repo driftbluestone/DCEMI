@@ -1,0 +1,115 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uxv_4096a_laser_output_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 125829120,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "gtceu:diamond_lens",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uxv_emitter",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uxv_electric_pump",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:red_alloy_quadruple_cable",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_4096a_laser_source_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uxv_4096a_laser_source_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_4096a_laser_source_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:diamond_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uxv_4096a_laser_source_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_4096a_laser_source_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 656
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ash_dust"
+          },
+          {
+            "id": "gtceu:tiny_carbon_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

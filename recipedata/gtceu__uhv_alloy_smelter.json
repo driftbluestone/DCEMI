@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uhv_alloy_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:trinium_quadruple_wire"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:trinium_quadruple_wire"
+          },
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:trinium_quadruple_wire"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          },
+          {
+            "id": "gtceu:trinium_quadruple_wire"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_alloy_smelter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_alloy_smelter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_alloy_smelter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_alloy_smelter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_alloy_smelter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 10892
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:trinium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

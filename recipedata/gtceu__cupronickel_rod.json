@@ -1,0 +1,335 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_long_cupronickel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/stick_cupronickel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:cupronickel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_cupronickel_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_rod"
+          },
+          {
+            "id": "gtceu:small_cupronickel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_cupronickel_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_cupronickel_long_rod_to_rod_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_cupronickel_long_rod_to_rod",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_cupronickel_long_rod_to_rod_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_long_stick_cupronickel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:cupronickel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/stick_long_stick_cupronickel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:cupronickel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_cupronickel_rod_to_long_rod",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_rod",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cupronickel_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_cupronickel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_cupronickel_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_cupronickel_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 26
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

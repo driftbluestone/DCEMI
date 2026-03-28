@@ -1,0 +1,738 @@
+{
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/uranium_triplatinum",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_uranium_triplatinum",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_uranium_triplatinum_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:hot_uranium_triplatinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_uranium_triplatinum_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_uranium_triplatinum_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uranium_triplatinum_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1845
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_quantum_chest",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_quantum_chest"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5578
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_quantum_tank",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_quantum_tank"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6579
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_world_accelerator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_world_accelerator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 9149
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uranium_triplatinum_octal_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_octal_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 820
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uranium_triplatinum_double_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_double_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 205
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uranium_triplatinum_quadruple_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_quadruple_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 410
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uranium_triplatinum_hex_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_hex_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1640
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_field_generator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_field_generator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1833
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_uranium_triplatinum_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_uranium_triplatinum_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_uranium_triplatinum_wire_16",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_uranium_triplatinum_wire_4",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_quadruple_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_uranium_triplatinum_wire_8",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_octal_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_uranium_triplatinum_wire_2",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_double_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_uranium_triplatinum_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_uranium_triplatinum_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_uranium_triplatinum_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_uranium_triplatinum_wire",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:wire_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_uranium_triplatinum_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_uranium_triplatinum_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_uranium_triplatinum_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_uranium_triplatinum_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

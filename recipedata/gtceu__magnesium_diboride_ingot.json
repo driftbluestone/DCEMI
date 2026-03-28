@@ -1,0 +1,738 @@
+{
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_magnesium_diboride_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hot_magnesium_diboride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:vacuum_freezer/magnesium_diboride",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_magnesium_diboride",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_magnesium_diboride_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_magnesium_diboride_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_magnesium_diboride_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 126
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_super_tank",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_super_tank"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1394
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:stainless_steel_block"
+          },
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_magnesium_diboride_double_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_double_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_magnesium_diboride_octal_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_octal_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 56
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_magnesium_diboride_hex_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_hex_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 112
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_world_accelerator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_world_accelerator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2016
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_field_generator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_field_generator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 165
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_magnesium_diboride_quadruple_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_quadruple_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 28
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_super_chest",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_super_chest"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 693
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnesium_diboride_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnesium_diboride_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_magnesium_diboride_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_magnesium_diboride_wire_16",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_magnesium_diboride_wire_8",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_octal_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_magnesium_diboride_wire_4",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_quadruple_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_magnesium_diboride_wire_2",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_double_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_magnesium_diboride_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_magnesium_diboride_wire",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:wire_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_magnesium_diboride_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_magnesium_diboride_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_magnesium_diboride_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnesium_diboride_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnesium_diboride_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:magnesium_diboride_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

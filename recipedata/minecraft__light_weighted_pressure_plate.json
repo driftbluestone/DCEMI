@@ -1,0 +1,114 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/light_weighted_pressure_plate",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:gold_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:light_weighted_pressure_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_item_detector",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:light_weighted_pressure_plate"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:item_detector_cover"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_light_weighted_pressure_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:light_weighted_pressure_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_light_weighted_pressure_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:light_weighted_pressure_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 392
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

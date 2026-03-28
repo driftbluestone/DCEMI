@@ -1,0 +1,408 @@
+{
+  "recipes": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/demagnetize_magnetic_neodymium_block",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_neodymium_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_magnetic_neodymium_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_neodymium_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_neodymium_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:compressor/compress_magnetic_neodymium_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnetic_neodymium_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_neodymium_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:polarizer": [
+      {
+        "id": "gtceu:polarizer/polarize_neodymium_block",
+        "category": "gtceu:polarizer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_neodymium_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 81
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_neodymium_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 108
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_neodymium_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 27
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_neodymium_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_neodymium_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_neodymium_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_neodymium_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:neodymium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neodymium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

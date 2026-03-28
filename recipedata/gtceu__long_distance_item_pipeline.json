@@ -1,0 +1,98 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/long_distance_item_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:tin_large_item_pipe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_plate",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_distance_item_pipeline",
+            "amount": 64
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_long_distance_item_pipeline",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:long_distance_item_pipeline"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_tin_dust"
+          },
+          {
+            "id": "gtceu:tiny_steel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_long_distance_item_pipeline",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:long_distance_item_pipeline"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 19
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_nugget"
+          },
+          {
+            "id": "gtceu:steel_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

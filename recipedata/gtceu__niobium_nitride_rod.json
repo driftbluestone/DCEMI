@@ -1,0 +1,158 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_niobium_nitride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:niobium_nitride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_niobium_nitride_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_rod"
+          },
+          {
+            "id": "gtceu:small_niobium_nitride_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_niobium_nitride_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_niobium_nitride_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_niobium_nitride_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_niobium_nitride_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/coke_oven_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:coke_oven_bricks"
+          },
+          {
+            "id": "gtceu:wood_drum"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_oven_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_coke_oven_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:coke_oven_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_coke_oven_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:coke_oven_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 172
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

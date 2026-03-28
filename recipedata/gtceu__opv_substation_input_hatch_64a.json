@@ -1,0 +1,113 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_opv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 503316480,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_16a"
+          },
+          {
+            "id": "gtceu:opv_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_opv_substation_input_hatch_64a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:opv_substation_input_hatch_64a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 57
+          },
+          {
+            "id": "gtceu:lead_dust",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_opv_substation_input_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:opv_substation_input_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 16600
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 57
+          },
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

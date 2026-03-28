@@ -1,0 +1,112 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uv_hi_amp_2a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_1a"
+          },
+          {
+            "id": "gtceu:europium_double_cable"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_double_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_transformer_2a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_transformer_2a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_2a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_transformer_2a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_2a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3034
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_block"
+          },
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

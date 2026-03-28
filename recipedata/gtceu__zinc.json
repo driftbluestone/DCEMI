@@ -1,0 +1,353 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/xenon_and_zinc_to_plutonium_239_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 49152,
+        "inputs": [
+          {
+            "id": "gtceu:xenon",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:zinc",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plutonium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_zinc_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_zinc_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_zinc_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_zinc_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_zinc_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_fine_zinc_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_zinc_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_zinc_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_zinc_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_zinc_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_zinc_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_zinc_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:double_zinc_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_zinc_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_zinc_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_zinc_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

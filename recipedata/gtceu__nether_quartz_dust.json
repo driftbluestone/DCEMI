@@ -1,0 +1,2629 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_nether_quartz",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:small_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:small_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:small_nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_nether_quartz",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:tiny_nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/centrifuged_ore_to_dust_nether_quartz",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/centrifuge_certus_quartz_dirty_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/centrifuge_nether_quartz_dirty_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/centrifuge_nether_quartz_pure_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_washer": [
+      {
+        "id": "gtceu:ore_washer/wash_certus_quartz_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_nether_quartz_dirty_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_nether_quartz_pure_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_certus_quartz_crushed_ore_to_purified_ore_distilled",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_nether_quartz_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_nether_quartz_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_nether_quartz_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_nether_quartz_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_flawless_nether_quartz_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:flawless_nether_quartz_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_smooth_quartz",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:smooth_quartz"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_exquisite_nether_quartz_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:exquisite_nether_quartz_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_quartz_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:quartz_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_quartz",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:quartz"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_quartz_bricks",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:quartz_bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_smooth_quartz_stairs",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:smooth_quartz_stairs"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_smooth_quartz_slab",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:smooth_quartz_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_chiseled_quartz_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_quartz_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_quartz_stairs",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:quartz_stairs"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_certus_quartz_crushed_ore_to_impure_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_nether_quartz_refined_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_nether_quartz_refined_ore_to_dust",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:certus_quartz",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:raw_certus_quartz"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:refined_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:certus_quartz_gem",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:exquisite_certus_quartz_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_certus_quartz_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:certus_quartz_gem",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_certus_quartz_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_certus_quartz_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:certus_quartz",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:raw_certus_quartz"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:refined_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:certus_quartz_gem",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:exquisite_certus_quartz_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_certus_quartz_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:certus_quartz_gem",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_certus_quartz_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_certus_quartz_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:certus_quartz",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:raw_certus_quartz"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:refined_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:certus_quartz_gem",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_certus_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:certus_quartz_dust"
+          },
+          {
+            "id": "gtceu:exquisite_certus_quartz_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_certus_quartz_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:certus_quartz_gem",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_certus_quartz_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_certus_quartz_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_certus_quartz_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:nether_quartz",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:raw_nether_quartz"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quartzite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:exquisite_nether_quartz_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_nether_quartz_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_nether_quartz_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_nether_quartz_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:nether_quartz",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:raw_nether_quartz"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quartzite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:exquisite_nether_quartz_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_nether_quartz_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_nether_quartz_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_nether_quartz_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:nether_quartz",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:raw_nether_quartz"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quartzite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:exquisite_nether_quartz_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_nether_quartz_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_nether_quartz_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_nether_quartz_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:nether_quartz",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:raw_nether_quartz"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quartzite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:exquisite_nether_quartz_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_nether_quartz_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_nether_quartz_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_nether_quartz_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:nether_quartz",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "tag": "gtceu:endstone_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:raw_nether_quartz"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quartzite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:purified_nether_quartz_ore"
+          },
+          {
+            "id": "gtceu:impure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:exquisite_nether_quartz_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_nether_quartz_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_nether_quartz_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_nether_quartz_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_nether_quartz_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_nether_quartz",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_nether_quartz",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_nether_quartz_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_nether_quartz",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_nether_quartz_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_nether_quartz",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:implosion_compressor": [
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_quartz_dynamite",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:dynamite",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_quartz_tnt",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:tnt",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_quartz_powderbarrel",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:powderbarrel",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_quartz_itnt",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/nether_quartz_plate",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_quartz_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_nether_quartz_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_nether_quartz_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_nether_quartz_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_nether_quartz_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:autoclave": [
+      {
+        "id": "gtceu:autoclave/autoclave_dust_nether_quartz_distilled",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:autoclave/autoclave_dust_nether_quartz_water",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:nether_quartz_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.75
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

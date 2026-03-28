@@ -1,0 +1,694 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/vacuum_tube_red_alloy",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:glass_tube"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:copper_single_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vacuum_tube",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/vacuum_tube_red_alloy_annealed",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:glass_tube"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vacuum_tube",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_red_alloy_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_red_alloy_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_red_alloy_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_red_alloy_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/red_alloy",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "minecraft:redstone",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_red_alloy_octal_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_hex_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_small_red_alloy_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:small_red_alloy_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_fine_red_alloy_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_red_alloy_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_single_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_quadruple_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_octal_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_quadruple_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_quadruple_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_screw",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_hex_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_double_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_double_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_red_alloy_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:double_red_alloy_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_alloy_single_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

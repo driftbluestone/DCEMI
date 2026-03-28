@@ -1,0 +1,616 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/yttrium_barium_cuprate_wire_wire_gt_octal_doubling",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_octal_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/yttrium_barium_cuprate_wire_wire_gt_quadruple_quadrupling",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_yttrium_barium_cuprate_wire_16",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/pack_yttrium_barium_cuprate_wires_2_2",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/strip_yttrium_barium_cuprate_cable_gt_hex",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:packer/pack_yttrium_barium_cuprate_wires_4_0",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_wire",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/pack_yttrium_barium_cuprate_wires_1_3",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_octal_wire",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/pack_yttrium_barium_cuprate_wires_3_1",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_double_wire",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/yttrium_barium_cuprate_wire_wire_gt_hex_splitting",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_octal_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_yttrium_barium_cuprate_wire_gt_hex_silicone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide_foil",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:silicone_rubber",
+            "amount": 360
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_yttrium_barium_cuprate_wire_gt_hex_styrene_butadiene",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide_foil",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 180
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:darmstadtium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_uv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uv_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:darmstadtium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/pack_yttrium_barium_cuprate_wires_4_single",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_wire",
+            "amount": 16
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_yttrium_barium_cuprate_hex_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_yttrium_barium_cuprate_hex_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_yttrium_barium_cuprate_hex_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 408
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

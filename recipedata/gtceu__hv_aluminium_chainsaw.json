@@ -1,0 +1,98 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/aluminium_hv_chainsaw",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:aluminium_chainsaw_head"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:hv_power_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_aluminium_chainsaw",
+            "nbt": "{Charge:0L,Damage:0,DisallowContainerItem:0,GT.Behaviours:{DisableShields:1,HarvestIce:1,TreeFelling:1},GT.Tool:{DefaultEnchantments:[],HarvestLevel:2,MaxDamage:767,ToolSpeed:22.0f},HideFlags:2,MaxCharge:1600000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_aluminium_chainsaw",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_aluminium_chainsaw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_steel_dust",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_aluminium_chainsaw",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_aluminium_chainsaw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 300
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

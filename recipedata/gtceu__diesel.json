@@ -1,0 +1,148 @@
+{
+  "recipes": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/diesel",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/diesel_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 20000
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 24000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/cetane_diesel_from_diesel",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cetane_boosted_diesel",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:combustion_generator": [
+      {
+        "id": "gtceu:combustion_generator/diesel",
+        "category": "gtceu:combustion_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:diesel"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/cetane_diesel_from_diesel_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cetane_boosted_diesel",
+            "amount": 10000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      }
+    ]
+  }
+}

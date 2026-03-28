@@ -1,0 +1,172 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_hydrogen_peroxide",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen_peroxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/iodine",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "minecraft:dried_kelp_block",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen_peroxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iodine_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/iodine",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "minecraft:dried_kelp_block",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen_peroxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iodine_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/hydrogen_peroxide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_peroxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/hydrogen_peroxide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_peroxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

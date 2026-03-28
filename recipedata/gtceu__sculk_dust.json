@@ -1,0 +1,329 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_sculk",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_sculk_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_sculk",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_sculk_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_sculk",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_sculk_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_sculk",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_sculk_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_sculk_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_sculk_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_sculk_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_sculk_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_sculk",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_sculk_dust"
+          },
+          {
+            "id": "gtceu:small_sculk_dust"
+          },
+          {
+            "id": "gtceu:small_sculk_dust"
+          },
+          {
+            "id": "gtceu:small_sculk_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_sculk",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          },
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          },
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          },
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          },
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          },
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          },
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          },
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          },
+          {
+            "id": "gtceu:tiny_sculk_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_echo_shard",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:echo_shard_dust",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:sculk_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_sculk_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_sculk_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_sculk_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sculk_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_sculk",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:sculk"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sculk_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

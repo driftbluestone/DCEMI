@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_turbine_mv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_normal_fluid_pipe"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:steel_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_rotor"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:bronze_rotor"
+          },
+          {
+            "id": "gtceu:mv_electric_motor"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:mv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_steam_turbine"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_steam_turbine",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_steam_turbine"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_steam_turbine",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_steam_turbine"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1740
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

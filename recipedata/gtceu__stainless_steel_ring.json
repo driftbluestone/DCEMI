@@ -1,0 +1,216 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rotor_stainless_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:stainless_steel_screw"
+          },
+          {
+            "id": "gtceu:stainless_steel_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_rotor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/power_thruster_advanced",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electric_motor"
+          },
+          {
+            "id": "gtceu:stainless_steel_ring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:stainless_steel_rod"
+          },
+          {
+            "id": "gtceu:chromium_rotor"
+          },
+          {
+            "id": "gtceu:gold_single_cable",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_power_thruster"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_stainless_steel_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_stainless_steel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_stainless_steel_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_stainless_steel_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ring_stainless_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:stainless_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_stainless_steel_ingot_to_ring",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ring",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

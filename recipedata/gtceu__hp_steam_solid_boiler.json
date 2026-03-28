@@ -1,0 +1,106 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_boiler_coal_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "minecraft:bricks"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "minecraft:bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hp_steam_solid_boiler"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_solid_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_solid_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hp_steam_solid_boiler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_solid_boiler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 280
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

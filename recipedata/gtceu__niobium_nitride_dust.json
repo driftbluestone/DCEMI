@@ -1,0 +1,718 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_niobium_nitride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_niobium_nitride_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_niobium_nitride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_niobium_nitride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_niobium_nitride_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_niobium_nitride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_niobium_nitride",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_dust"
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_niobium_nitride_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_niobium_nitride_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_niobium_nitride",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_niobium_nitride_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_niobium_nitride_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_niobium_nitride_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_niobium_nitride_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_niobium_nitride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:small_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:small_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:small_niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_niobium_nitride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/niobium_nitride",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_dust"
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/niobium_nitride",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_dust"
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_niobium_nitride_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_niobium_nitride_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_niobium_nitride_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_niobium_nitride_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_double_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_octal_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_double_niobium_nitride_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:double_niobium_nitride_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_double_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust"
+          },
+          {
+            "id": "gtceu:rubber_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_polarizer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_polarizer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_quadruple_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_quadruple_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_quadruple_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_hex_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_octal_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_niobium_nitride_hex_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_nitride_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_nitride_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

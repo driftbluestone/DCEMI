@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/deuterium_and_tritium_to_helium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:deuterium",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:tritium",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:helium_plasma",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:plasma_generator": [
+      {
+        "id": "gtceu:plasma_generator/helium",
+        "category": "gtceu:plasma_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:helium_plasma"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:helium"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

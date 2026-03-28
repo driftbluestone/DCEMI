@@ -1,0 +1,138 @@
+{
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 200
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/acidic_osmium_solution_separation_to_water",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium_tetroxide_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 200
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/acidic_osmium_solution_separation",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:osmium_tetroxide_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/rarest_metal_mixture_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:rarest_metal_mixture_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_metal_residue_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:acidic_osmium_solution",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

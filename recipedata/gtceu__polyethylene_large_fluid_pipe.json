@@ -1,0 +1,295 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hermetic_casing_lv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_hermetic_casing"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/ev_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:stainless_steel_rotor"
+          },
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_electric_motor"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/ev_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:stainless_steel_rotor"
+          },
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_electric_motor"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_polyethylene_large_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_polyethylene_large_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 864
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_polyethylene_large_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_polyethylene_to_large_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 864
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_large_pipe_dust",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polyethylene_large_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_ingot",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

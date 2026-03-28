@@ -1,0 +1,52 @@
+{
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_chalcocite_to_raw_ore_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:raw_chalcocite",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_chalcocite_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/decompress_chalcocite_to_raw_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:raw_chalcocite_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_chalcocite",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

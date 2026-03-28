@@ -1,0 +1,251 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:darmstadtium_rotor"
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uv_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:darmstadtium_rotor"
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_polytetrafluoroethylene_huge_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_dust",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_polytetrafluoroethylene_huge_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 1728
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_polytetrafluoroethylene_huge_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_polytetrafluoroethylene_to_huge_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_polytetrafluoroethylene_huge_pipe_dust",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_dust",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_polytetrafluoroethylene_huge_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_ingot",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

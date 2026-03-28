@@ -1,0 +1,118 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/luv_diode",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:niobium_titanium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_diode"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_luv_diode",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_diode"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_diode",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_diode"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1414
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

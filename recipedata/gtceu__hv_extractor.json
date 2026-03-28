@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_extractor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tempered_glass"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:tempered_glass"
+          },
+          {
+            "id": "gtceu:hv_electric_piston"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_extractor"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_extractor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_extractor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 46
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tiny_steel_dust",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_extractor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_extractor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2912
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_block",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 46
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

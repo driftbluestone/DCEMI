@@ -1,0 +1,98 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rose_gold_iv_wrench",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:rose_gold_wrench_tip"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:iv_power_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_rose_gold_wrench",
+            "nbt": "{Charge:0L,Damage:0,DisallowContainerItem:0,GT.Behaviours:{Mode:2},GT.Tool:{DefaultEnchantments:[],HarvestLevel:2,MaxDamage:767,ToolSpeed:52.0f},HideFlags:2,MaxCharge:25600000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_rose_gold_wrench",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:iv_rose_gold_wrench",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rose_gold_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_steel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_rose_gold_wrench",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_rose_gold_wrench",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 700
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rose_gold_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

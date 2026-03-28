@@ -1,0 +1,113 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uhv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uhv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:europium_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:neutronium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_substation_output_hatch_64a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_substation_output_hatch_64a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 55
+          },
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 36
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 25
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 50391
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_block",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:neutronium_block",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

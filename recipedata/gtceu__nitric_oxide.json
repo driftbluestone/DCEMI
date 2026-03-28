@@ -1,0 +1,302 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_nitric_oxide",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/nitrosyl_chloride",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/nitrogen_dioxide_from_oxide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/nitrogen_dioxide_from_oxide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/nitrosyl_chloride",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/nitric_acid_from_dioxide_1",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 3000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/nitric_oxide_from_ammonia",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/nitric_acid_from_dioxide_1",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 3000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/nitric_oxide_from_ammonia",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

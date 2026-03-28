@@ -1,0 +1,142 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/fermented_spider_eye_red",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "minecraft:red_mushroom"
+          },
+          {
+            "id": "minecraft:spider_eye"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:fermented_spider_eye"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/red_mushroom_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "minecraft:red_mushroom"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:brewery/biomass_from_red_mushroom",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 3,
+        "inputs": [
+          {
+            "id": "minecraft:red_mushroom"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:biomass",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/plant_ball_from_red_mushroom",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:red_mushroom",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plant_ball"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/mycelium_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:mycelium"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_mushroom",
+            "chance": 0.28
+          },
+          {
+            "id": "minecraft:brown_mushroom",
+            "chance": 0.28
+          },
+          {
+            "id": "minecraft:sand",
+            "chance": 0.62
+          },
+          {
+            "id": "gtceu:clay_dust",
+            "chance": 0.055
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

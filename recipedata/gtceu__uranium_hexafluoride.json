@@ -1,0 +1,106 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/uranium_hexafluoride_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_hexafluoride",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_uranium_hexafluoride",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:depleted_uranium_hexafluoride",
+            "amount": 900
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/uranium_hexafluoride",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uraninite_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_hexafluoride",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/uranium_hexafluoride",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uraninite_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_hexafluoride",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

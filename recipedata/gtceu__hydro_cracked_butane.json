@@ -1,0 +1,226 @@
+{
+  "recipes": {
+    "gtceu:cracker": [
+      {
+        "id": "gtceu:cracker/hydro_crack_butane",
+        "category": "gtceu:cracker",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:butane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydro_cracked_butane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/hydro_crack_butane",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:butane",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydro_cracked_butane",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/hydro_crack_butane",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:butane",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydro_cracked_butane",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_hydro_cracked_butane_to_methane",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydro_cracked_butane",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 50
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_hydro_cracked_butane_to_ethane",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydro_cracked_butane",
+            "amount": 40
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethane",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_hydro_cracked_butane_to_propane",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydro_cracked_butane",
+            "amount": 40
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:propane",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_hydro_cracked_butane",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hydro_cracked_butane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:propane",
+            "amount": 750
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 750
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

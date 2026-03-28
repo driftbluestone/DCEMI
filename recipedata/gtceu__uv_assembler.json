@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_assembler",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uv_robot_arm"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_robot_arm"
+          },
+          {
+            "id": "gtceu:uv_conveyor_module"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:uv_conveyor_module"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_assembler"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_assembler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_assembler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 75273
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_block",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:tritanium_block",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

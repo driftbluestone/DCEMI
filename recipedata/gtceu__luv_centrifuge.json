@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/luv_centrifuge",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_centrifuge"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_luv_centrifuge",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_centrifuge"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tiny_hsss_dust",
+            "amount": 53
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_centrifuge",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_centrifuge"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3979
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 53
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

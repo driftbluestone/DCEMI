@@ -1,0 +1,188 @@
+{
+  "recipes": {
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_lpic_phosphorus",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:phosphorus_wafer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lpic_wafer",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:orange_glass_lens",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:laser_engraver/engrave_lpic_neutronium",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_wafer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lpic_wafer",
+            "amount": 16
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:orange_glass_lens",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:laser_engraver/engrave_lpic_naquadah",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_wafer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lpic_wafer",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:orange_glass_lens",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:laser_engraver/engrave_lpic_silicon",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_wafer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lpic_wafer"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:orange_glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_lpic",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:lpic_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lpic_chip",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_lpic_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:lpic_wafer"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lpic_chip",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_lpic_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:lpic_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lpic_chip",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uev_packer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:uev_robot_arm"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:uev_conveyor_module"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_packer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uev_packer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uev_packer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uev_packer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uev_packer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 83
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot"
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_chemical_bath",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mv_conveyor_module"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:mv_conveyor_module"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_chemical_bath"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_chemical_bath",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_chemical_bath"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_chemical_bath",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_chemical_bath"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2346
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 49
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

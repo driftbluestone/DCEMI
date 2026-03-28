@@ -1,0 +1,1041 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/silver_and_copper_to_osmium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 24578,
+        "inputs": [
+          {
+            "id": "gtceu:silver",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:copper",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/coil_kanthal",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:kanthal_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:kanthal_coil_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_large_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 864
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:copper_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_small_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:small_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_normal_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 432
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:normal_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_rotor",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 20,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_rotor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rotor_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_tiny_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_tiny_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:tiny_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_to_huge_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_copper_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:copper_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_copper_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:copper_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_octal_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:copper",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_single_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_large_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 864
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_double_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_long_copper_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:long_copper_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_fine_copper_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_copper_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_quadruple_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_quadruple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_tiny_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_tiny_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_huge_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 1728
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_nonuple_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_octal_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_normal_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_normal_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 432
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_copper_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:double_copper_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_hex_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_quadruple_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_quadruple_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_rotor",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_double_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_small_copper_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:small_copper_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:copper_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_hex_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:copper",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_single_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:copper",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_small_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_screw",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_quadruple_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_copper_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

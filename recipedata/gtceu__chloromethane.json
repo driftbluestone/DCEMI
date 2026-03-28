@@ -1,0 +1,236 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/chloromethane_electrolysis",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dimethylchlorosilane_from_chloromethane",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_dust"
+          },
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethyldichlorosilane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/dimethylchlorosilane_from_chloromethane",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_dust"
+          },
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethyldichlorosilane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/chloromethane_from_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/chloromethane_from_methane",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/chloromethane_from_methane",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/chloromethane_from_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

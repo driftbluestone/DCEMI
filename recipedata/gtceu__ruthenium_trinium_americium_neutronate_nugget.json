@@ -1,0 +1,186 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ruthenium_trinium_americium_neutronate_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ruthenium_trinium_americium_neutronate_single_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_single_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 98
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_ruthenium_trinium_americium_neutronate_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_ruthenium_trinium_americium_neutronate_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ruthenium_trinium_americium_neutronate_nugget",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ruthenium_trinium_americium_neutronate_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_ruthenium_trinium_americium_neutronate_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_ruthenium_trinium_americium_neutronate_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

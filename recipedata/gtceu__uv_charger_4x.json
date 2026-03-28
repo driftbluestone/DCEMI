@@ -1,0 +1,118 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_charger_4x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_charger_4x"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_charger_4x",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_charger_4x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_charger_4x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_charger_4x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2764
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

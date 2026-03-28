@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/opv_sifter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:item_filter"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:opv_electric_piston"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:opv_electric_piston"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:item_filter"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_sifter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_opv_sifter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:opv_sifter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_opv_sifter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:opv_sifter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 455
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy_ingot"
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

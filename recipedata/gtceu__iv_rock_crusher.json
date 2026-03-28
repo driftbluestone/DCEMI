@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/iv_rock_crusher",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iv_electric_piston"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:tungsten_grinding_head"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "id": "gtceu:laminated_glass"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_rock_crusher"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_rock_crusher",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_rock_crusher"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:vanadium_steel_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_rock_crusher",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_rock_crusher"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3968
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:tungsten_block"
+          },
+          {
+            "id": "gtceu:vanadium_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_fermenter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_fermenter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_fermenter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_fermenter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 38
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:small_copper_dust",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:tiny_bronze_dust",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_fermenter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_fermenter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1066
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

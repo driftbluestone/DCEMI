@@ -1,0 +1,71 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/barrel",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "tag": "minecraft:oak_planks",
+            "amount": 7
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:barrel"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_barrel",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:barrel"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_barrel",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:barrel"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ]
+  }
+}

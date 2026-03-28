@@ -1,0 +1,524 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/bolt_saw_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_bolt",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_steel_ingot_to_bolt",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_bolt",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:bolt_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_steel_screw_to_bolt",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:steel_screw"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_steel_rod_to_bolt_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:steel_rod"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_steel_rod_to_bolt",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:steel_rod"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_steel_rod_to_bolt_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:steel_rod"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_steel_screw_to_bolt_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:steel_screw"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_steel_screw_to_bolt_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:steel_screw"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/screw_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_screw"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/screw_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_screw"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/vacuum_tube",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:glass_tube"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:copper_single_wire"
+          },
+          {
+            "id": "gtceu:copper_single_wire"
+          },
+          {
+            "id": "gtceu:copper_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vacuum_tube"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/vacuum_tube",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:glass_tube"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:copper_single_wire"
+          },
+          {
+            "id": "gtceu:copper_single_wire"
+          },
+          {
+            "id": "gtceu:copper_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vacuum_tube"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/vacuum_tube_plain",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:glass_tube"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:copper_single_wire",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vacuum_tube",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/vacuum_tube_red_alloy",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:glass_tube"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:copper_single_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vacuum_tube",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/vacuum_tube_red_alloy_annealed",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:glass_tube"
+          },
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vacuum_tube",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_steel_bolt_to_screw",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_screw"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_steel_bolt",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_steel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_steel_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_steel_bolt",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:steel_bolt"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

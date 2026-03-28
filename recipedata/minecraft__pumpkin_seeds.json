@@ -1,0 +1,52 @@
+{
+  "recipes": {
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_pumpkin",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_seeds",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/seed_oil_from_pumpkin",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin_seeds"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/indium_tin_barium_titanium_cuprate",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_indium_tin_barium_titanium_cuprate",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/indium_tin_barium_titanium_cuprate",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_indium_tin_barium_titanium_cuprate",
+            "amount": 2304
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/indium_tin_barium_titanium_cuprate_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14000
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 800
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_indium_tin_barium_titanium_cuprate",
+            "amount": 2304
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      }
+    ]
+  }
+}

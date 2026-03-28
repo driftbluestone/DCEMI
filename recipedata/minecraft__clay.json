@@ -1,0 +1,120 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/clay_block_to_dust",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:invar_mortar"
+          },
+          {
+            "id": "minecraft:clay"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/clay_extraction",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:clay"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:clay_ball",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_clay",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:clay"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/mud_to_clay",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:mud"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:clay"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:compressor/clay",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:clay_ball",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:clay"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

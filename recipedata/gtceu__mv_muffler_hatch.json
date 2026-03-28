@@ -1,0 +1,110 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:mv_electric_motor"
+          },
+          {
+            "id": "gtceu:steel_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_muffler_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_muffler_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_muffler_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 970
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 31
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

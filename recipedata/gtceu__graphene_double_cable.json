@@ -1,0 +1,167 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_graphene_wire_gt_double_silicone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_double_wire"
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil"
+          },
+          {
+            "id": "gtceu:silicone_rubber",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_double_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_graphene_wire_gt_double_styrene_butadiene",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_double_wire"
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil"
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 36
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_double_cable"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/strip_graphene_cable_gt_double",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_double_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_graphene_double_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_dust"
+          },
+          {
+            "id": "gtceu:rubber_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_graphene_double_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_ingot"
+          },
+          {
+            "id": "gtceu:rubber",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_graphene_double_cable",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_double_cable"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 13
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_ingot"
+          },
+          {
+            "id": "gtceu:tiny_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

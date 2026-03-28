@@ -1,0 +1,202 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:hv_fluid_drilling_rig",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_fluid_drilling_rig"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ulv_output_hatch"
+          },
+          {
+            "id": "gtceu:titanium_frame",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:stable_machine_casing",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_fluid_drilling_rig"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_fluid_drilling_rig",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hv_fluid_drilling_rig"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 36
+          },
+          {
+            "id": "gtceu:kanthal_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_fluid_drilling_rig",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_fluid_drilling_rig"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4510
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_block",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:hv_fluid_drilling_rig",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_fluid_drilling_rig"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ulv_output_hatch"
+          },
+          {
+            "id": "gtceu:titanium_frame",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:stable_machine_casing",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_fluid_drilling_rig"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/hv_fluid_drilling_rig",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:titanium_frame",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:micro_processor_computer",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ev_electric_motor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ev_electric_pump",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tungsten_carbide_gear",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_fluid_drilling_rig"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

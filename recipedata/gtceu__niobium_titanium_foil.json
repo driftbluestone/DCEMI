@@ -1,0 +1,434 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/foil_niobium_titanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:niobium_titanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_niobium_titanium_ingot_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_niobium_titanium_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_niobium_titanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_niobium_titanium_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/superconducting_coil_uv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:trinium",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:superconducting_coil"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/superconducting_coil_zpm",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_double_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:trinium",
+            "amount": 2304
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:superconducting_coil"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/superconducting_coil_luv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_double_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:trinium",
+            "amount": 3456
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:superconducting_coil"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/wetware_circuit_board_persulfate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_circuit_board"
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:sodium_persulfate",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/wetware_circuit_board_iron3",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_circuit_board"
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:iron_iii_chloride",
+            "amount": 5000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/wetware_circuit_board_iron3",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_circuit_board"
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:iron_iii_chloride",
+            "amount": 5000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/wetware_circuit_board_persulfate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_circuit_board"
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:sodium_persulfate",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/wetware_board",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_circuit_board",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:petri_dish"
+          },
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:iv_sensor"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_circuit_board",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_niobium_titanium_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_niobium_titanium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_niobium_titanium_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_niobium_titanium_foil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_foil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 15
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

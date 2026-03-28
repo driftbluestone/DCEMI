@@ -1,0 +1,113 @@
+{
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/glistening_melon_slice",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glistering_melon_slice"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/glistening_melon_slice",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glistering_melon_slice"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:/brewery/potion_vanilla_mundane_0",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:glistering_melon_slice"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:mundane\"}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:/brewery/potion_vanilla_healing_34",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:glistering_melon_slice"
+          },
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:awkward\"}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:healing\"}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

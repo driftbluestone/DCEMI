@@ -1,0 +1,144 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/empty_tier_3_battery",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_frame"
+          },
+          {
+            "id": "gtceu:neutronium_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:neutronium_screw",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_uv_lapotronic_battery",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_lapotronic_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:energy_cluster"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_uhv_ultimate_battery",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_ultimate_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/uhv_ultimate_battery",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_ultimate_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/uv_lapotronic_battery",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:energy_cluster"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_lapotronic_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rotor_darmstadtium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:darmstadtium_plate"
+          },
+          {
+            "id": "gtceu:darmstadtium_screw"
+          },
+          {
+            "id": "gtceu:darmstadtium_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:darmstadtium_plate"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:darmstadtium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_rotor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_darmstadtium_screw_to_bolt",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_screw"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_bolt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_darmstadtium_screw_to_bolt_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_screw"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_bolt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_darmstadtium_screw_to_bolt_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_screw"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_bolt"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_darmstadtium_screw",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_darmstadtium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_darmstadtium_screw",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_darmstadtium_screw",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_screw"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 31
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/screw_darmstadtium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:darmstadtium_bolt"
+          },
+          {
+            "id": "gtceu:darmstadtium_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_screw"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_darmstadtium_bolt_to_screw",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:darmstadtium_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_screw"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

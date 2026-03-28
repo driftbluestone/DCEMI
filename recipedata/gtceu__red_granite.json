@@ -1,0 +1,177 @@
+{
+  "recipes": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_red_granite",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite_cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_granite"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_red_granite",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite_cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_granite"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_polished_red_granite",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polished_red_granite"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_red_granite",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:granite_red_dust"
+          },
+          {
+            "id": "gtceu:uranium_dust",
+            "chance": 0.0025
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_red_granite_cobblestone",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_granite_cobblestone"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_polished_red_granite",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polished_red_granite"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_red_granite_bricks",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_granite_bricks"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

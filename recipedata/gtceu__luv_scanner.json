@@ -1,0 +1,150 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/luv_scanner",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_emitter"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_sensor"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_scanner"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:scanner": [
+      {
+        "id": "gtceu:scanner/1_x_gtceu_luv_scanner",
+        "category": "gtceu:scanner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:data_stick"
+          },
+          {
+            "id": "gtceu:luv_scanner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:research_station"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_luv_scanner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_scanner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_scanner",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_scanner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 9961
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

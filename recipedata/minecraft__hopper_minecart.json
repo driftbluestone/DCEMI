@@ -1,0 +1,88 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/hopper_minecart",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:minecart"
+          },
+          {
+            "id": "minecraft:hopper"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:hopper_minecart"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hopper_minecart",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:hopper_minecart"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:wood_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hopper_minecart",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:hopper_minecart"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 572
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

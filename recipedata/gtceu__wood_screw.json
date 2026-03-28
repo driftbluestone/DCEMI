@@ -1,0 +1,187 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/screw_wood",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:wood_bolt"
+          },
+          {
+            "id": "gtceu:wood_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_screw"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_wood_bolt_to_screw",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:wood_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_screw"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/gtceu_wood_screw",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wood_screw"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/gtceu_wood_screw",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wood_screw"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_wood_screw_to_bolt_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:wood_screw"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_bolt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_wood_screw_to_bolt_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:wood_screw"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_bolt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_wood_screw_to_bolt",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:wood_screw"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_bolt"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_wood_screw",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:wood_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

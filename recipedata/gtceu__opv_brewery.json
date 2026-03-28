@@ -1,0 +1,113 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/opv_brewery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:opv_electric_pump"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "minecraft:blaze_rod"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_brewery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_opv_brewery",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:opv_brewery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:blaze_powder",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_opv_brewery",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:opv_brewery"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 83
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot"
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,1086 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_rtm_alloy",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_rtm_alloy_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_rod"
+          },
+          {
+            "id": "gtceu:small_rtm_alloy_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_rtm_alloy_wire_16",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_rtm_alloy_wire_8",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_octal_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_rtm_alloy_wire_4",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_quadruple_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_rtm_alloy_wire_2",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_double_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_rtm_alloy_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_rtm_alloy_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_rtm_alloy_wire",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:wire_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_rtm_alloy_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_rtm_alloy_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_rtm_alloy_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_rtm_alloy_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_rtm_alloy_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_rtm_alloy_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/rtm_alloy",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_rtm_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_rtm_alloy_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hot_rtm_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_rtm_alloy_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_rtm_alloy_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_octal_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_octal_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 492
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_iv_thermal_centrifuge",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2510
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_double_cable",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_double_cable"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 124
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          },
+          {
+            "id": "gtceu:tiny_ash_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_coil_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_coil_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1094
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:vanadium_steel_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 123
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_quadruple_cable",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_quadruple_cable"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 249
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_quadruple_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_quadruple_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 246
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_long_rtm_alloy_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:long_rtm_alloy_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 123
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_iv_fluid_heater",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_fluid_heater"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4359
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1107
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_iv_extruder",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_extruder"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3604
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_hex_cable",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_hex_cable"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 990
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_large_extruder",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:large_extruder"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8848
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_iv_alloy_smelter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_alloy_smelter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2332
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_double_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_double_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 123
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_iv_electric_furnace",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_electric_furnace"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1840
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_octal_cable",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_octal_cable"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 496
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_hex_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_hex_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 984
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_rtm_alloy_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_rtm_alloy_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

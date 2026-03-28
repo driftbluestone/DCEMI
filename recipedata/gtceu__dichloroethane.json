@@ -1,0 +1,180 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_dichloroethane",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:dichloroethane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/diethylenetriamine",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:dichloroethane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diethylenetriamine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/diethylenetriamine",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:dichloroethane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diethylenetriamine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dichloroethane",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dichloroethane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          },
+          {
+            "id": "gtceu:iron_iii_chloride",
+            "amount": 100,
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/dichloroethane",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dichloroethane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          },
+          {
+            "id": "gtceu:iron_iii_chloride",
+            "amount": 100,
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

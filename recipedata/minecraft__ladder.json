@@ -1,0 +1,94 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/ladder",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:stick",
+            "amount": 7
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:ladder",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:7}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_ladder",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:ladder"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_ladder",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:ladder"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ladder",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:ladder"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/large_bronze_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bronze_to_large_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:bronze",
+            "amount": 864
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_bronze_large_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_pump",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_pump"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_pump",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_pump"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/long_distance_fluid_endpoint",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_large_fluid_pipe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_plate",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_gear",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_distance_fluid_pipeline_endpoint",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/long_distance_fluid_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_large_fluid_pipe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_plate",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_distance_fluid_pipeline",
+            "amount": 64
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_bronze_large_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_bronze_large_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze",
+            "amount": 864
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_bronze_large_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 456
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

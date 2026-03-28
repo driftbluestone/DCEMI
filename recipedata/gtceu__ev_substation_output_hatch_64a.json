@@ -1,0 +1,162 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:power_substation",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:power_substation"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ev_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:ev_substation_input_hatch_64a"
+          },
+          {
+            "id": "gtceu:hv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:hv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ev_lapotronic_battery",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:laminated_glass",
+            "amount": 57
+          },
+          {
+            "id": "gtceu:palladium_substation",
+            "amount": 44
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:power_substation"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_substation_output_hatch_64a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_substation_output_hatch_64a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 57
+          },
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 15
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6995
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ev_transformer_16a"
+          },
+          {
+            "id": "gtceu:ev_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:aluminium_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

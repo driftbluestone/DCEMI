@@ -1,0 +1,989 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/gold_and_aluminium_to_uranium_238_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 24576,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:aluminium",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:fusion_reactor/gold_and_mercury_to_radon_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_large_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 864
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_small_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_small_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:small_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_normal_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 432
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:normal_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_tiny_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_tiny_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:tiny_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gold_to_huge_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_gold_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:gold_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_gold_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:double_gold_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_tiny_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_tiny_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_fine_gold_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_gold_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_long_gold_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:long_gold_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_normal_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_normal_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 432
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_nonuple_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:gold_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:gold_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_octal_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_small_gold_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:small_gold_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_huge_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 1728
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_quadruple_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_quadruple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_large_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 864
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_hex_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:gold",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_screw",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_hex_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_quadruple_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_single_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_double_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_double_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_double_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_octal_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:gold",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_quadruple_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_quadruple_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:gold",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_small_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gold_single_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          },
+          {
+            "id": "gtceu:gold",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

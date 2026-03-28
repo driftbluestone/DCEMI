@@ -1,0 +1,203 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__lead_zinc_solution",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_zinc_solution",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_dust"
+          },
+          {
+            "id": "gtceu:silver_dust"
+          },
+          {
+            "id": "gtceu:zinc_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/indium_concentrate_separation_4x",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:indium_concentrate",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_sulfite_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:lead_zinc_solution",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/indium_concentrate_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:indium_concentrate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_sulfite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lead_zinc_solution",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/indium_concentrate_separation_4x",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:indium_concentrate",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_sulfite_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:lead_zinc_solution",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/indium_concentrate_separation",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:indium_concentrate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_sulfite_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lead_zinc_solution",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

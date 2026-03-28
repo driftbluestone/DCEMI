@@ -1,0 +1,152 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_titanium_turbine_casing",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:steel_turbine_casing"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_turbine_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_titanium_turbine",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:steel_turbine_casing"
+          },
+          {
+            "id": "gtceu:titanium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_turbine_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_titanium_turbine_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_turbine_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_magnalium_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:small_blue_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_titanium_turbine_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_turbine_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 210
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:magnalium_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:blue_steel_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

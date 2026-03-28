@@ -1,0 +1,229 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_brewery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:uv_electric_pump"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_spring"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_brewery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uv_distillery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_spring"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "id": "gtceu:uv_electric_pump"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_distillery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_naquadah_alloy_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_naquadah_alloy_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_naquadah_alloy_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 391
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spring_naquadah_alloy",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:long_naquadah_alloy_rod"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:long_naquadah_alloy_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_spring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_naquadah_alloy_long_rod_to_spring",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_naquadah_alloy_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_spring"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

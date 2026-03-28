@@ -1,0 +1,173 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_input_to_output_12",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:uxv_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_output_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dual_export_bus_uxv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 125829120,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_input_bus"
+          },
+          {
+            "id": "gtceu:uxv_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1872
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_dual_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_import_bus_uxv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 125829120,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_input_bus"
+          },
+          {
+            "id": "gtceu:uxv_input_hatch"
+          },
+          {
+            "id": "gtceu:titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wood_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1872
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_dual_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_output_to_input_12",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:uxv_output_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_input_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/item_import_bus_uxv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 125829120,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 468
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_input_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/axe_diamond",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "minecraft:stick"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diamond_axe",
+            "nbt": "{Damage:0,DisallowContainerItem:0,GT.Behaviours:{DisableShields:1,TreeFelling:1},GT.Tool:{DefaultEnchantments:[],HarvestLevel:3,MaxDamage:767,ToolSpeed:8.0f},HideFlags:2}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:smithing": [
+      {
+        "id": "gtceu:netherite_axe_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_axe",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_axe",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:9.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:12.0f}}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

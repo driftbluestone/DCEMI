@@ -1,0 +1,159 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_miner_bronze",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_brick_casing"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:small_bronze_gear"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:small_bronze_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lp_steam_miner"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_miner_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:tin_alloy_normal_fluid_pipe"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:tin_alloy_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:lp_steam_miner"
+          },
+          {
+            "id": "gtceu:tin_alloy_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:small_steel_gear"
+          },
+          {
+            "id": "gtceu:tin_alloy_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:small_steel_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hp_steam_miner"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_miner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_miner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:diamond_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lp_steam_miner",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_miner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1447
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:small_carbon_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

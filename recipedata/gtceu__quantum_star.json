@@ -1,0 +1,683 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/emitter_iv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_single_cable"
+          },
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "id": "gtceu:tungsten_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_emitter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/sensor_iv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_sensor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/field_generator_iv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_iron_arsenic_oxide_quadruple_wire"
+          },
+          {
+            "id": "gtceu:double_tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:samarium_iron_arsenic_oxide_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:samarium_iron_arsenic_oxide_quadruple_wire"
+          },
+          {
+            "id": "gtceu:double_tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:samarium_iron_arsenic_oxide_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_field_generator"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/field_generator_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "id": "gtceu:double_tungsten_steel_plate",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:samarium_iron_arsenic_oxide_quadruple_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_field_generator"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/sensor_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:quantum_star"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_sensor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/emitter_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tungsten_single_cable",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:quantum_star"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/emitter_luv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:long_ruridit_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_iv_emitter\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/fusion_reactor_mk3",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_coil"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "id": "gtceu:double_americium_plate"
+          },
+          {
+            "id": "gtceu:zpm_field_generator",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_fusion_reactor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_fusion_reactor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_frame"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:osmiridium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_sensor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_sensor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_luv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:ruridit_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_sensor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_iv_sensor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/field_generator_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_frame"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "id": "gtceu:zpm_emitter",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_uranium_rhodium_dinaquadide_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_uranium_rhodium_dinaquadide_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_field_generator"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_field_generator\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/field_generator_luv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_frame"
+          },
+          {
+            "id": "gtceu:hsss_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "id": "gtceu:luv_emitter",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_indium_tin_barium_titanium_cuprate_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_indium_tin_barium_titanium_cuprate_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_field_generator"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_iv_field_generator\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/emitter_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_frame"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:long_osmiridium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_emitter\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:autoclave": [
+      {
+        "id": "gtceu:autoclave/gravi_star",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:quantum_star"
+          },
+          {
+            "id": "gtceu:neutronium",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gravi_star"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/quantum_star",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "minecraft:nether_star"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 1250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_star"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

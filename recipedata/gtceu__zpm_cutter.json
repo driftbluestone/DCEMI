@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_cutter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:zpm_conveyor_module"
+          },
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_buzz_saw_blade"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_cutter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_cutter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 36
+          },
+          {
+            "id": "gtceu:osmiridium_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_cutter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_cutter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14660
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_block",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

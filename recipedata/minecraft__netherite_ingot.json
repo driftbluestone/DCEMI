@@ -1,0 +1,1163 @@
+{
+  "recipes": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_dust_netherite_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:netherite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_netherite_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:netherite_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_netherite_dust",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:netherite_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 98
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_netherite_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:netherite_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:smithing": [
+      {
+        "id": "gtceu:netherite_axe_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_axe",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_axe",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:9.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:12.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_wrench_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_wrench",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_wrench",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-2.8f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_scythe_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_scythe",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_scythe",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:9.0f,AttackSpeed:-3.0f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:6096,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_ev_drill_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:ev_diamond_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_netherite_drill",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:12192,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_butchery_knife_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_butchery_knife",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_butchery_knife",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.5f,AttackSpeed:-1.3f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_pickaxe_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_pickaxe",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_pickaxe",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-2.8f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_mining_hammer_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_mining_hammer",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_mining_hammer",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.5f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:6096,ToolSpeed:8.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_lv_wirecutter_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:lv_diamond_wire_cutter",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_netherite_wire_cutter",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:-2.4f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_knife_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_knife",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_knife",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:4.0f,AttackSpeed:3.0f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_sword_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_sword",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_sword",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-2.4f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_screwdriver_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_screwdriver",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_screwdriver",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:3.0f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_iv_wirecutter_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:iv_diamond_wire_cutter",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_netherite_wire_cutter",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:-2.4f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_hammer_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_hammer",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_hammer",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-2.8f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_iv_wrench_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:iv_diamond_wrench",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_netherite_wrench",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-2.8f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:44.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_crowbar_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_crowbar",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_crowbar",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:6.0f,AttackSpeed:-2.4f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_spade_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_spade",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_spade",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.5f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:6096,ToolSpeed:8.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_wire_cutter_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_wire_cutter",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_wire_cutter",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:-2.4f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_hv_wirecutter_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:hv_diamond_wire_cutter",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_netherite_wire_cutter",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:-2.4f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_iv_screwdriver_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:iv_diamond_screwdriver",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_netherite_screwdriver",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:3.0f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_lv_screwdriver_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:lv_diamond_screwdriver",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_netherite_screwdriver",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:3.0f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_saw_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_saw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_saw",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:-2.6f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_hv_chainsaw_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:hv_diamond_chainsaw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_netherite_chainsaw",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:9.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:34.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_mv_drill_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:mv_diamond_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_netherite_drill",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:8128,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_file_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_file",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_file",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:0.0f,AttackSpeed:-2.4f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_lv_drill_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:lv_diamond_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_netherite_drill",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:6096,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_lv_wrench_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:lv_diamond_wrench",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_netherite_wrench",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-2.8f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:24.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_iv_chainsaw_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:iv_diamond_chainsaw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_netherite_chainsaw",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:9.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:44.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_lv_chainsaw_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:lv_diamond_chainsaw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_netherite_chainsaw",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:9.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:24.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_hv_screwdriver_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:hv_diamond_screwdriver",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_netherite_screwdriver",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:3.0f,AttackSpeed:3.0f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_hv_wrench_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:hv_diamond_wrench",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_netherite_wrench",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-2.8f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:34.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_buzzsaw_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_buzzsaw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_buzzsaw",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.5f,AttackSpeed:-3.2f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_hoe_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_hoe",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_hoe",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:0.0f,AttackSpeed:-1.0f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_iv_drill_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:iv_diamond_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_netherite_drill",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:14224,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_hv_drill_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:hv_diamond_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_netherite_drill",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:10160,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:netherite_shovel_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_shovel",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_shovel",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.5f,AttackSpeed:-3.0f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/lodestone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_stone_bricks",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:lodestone"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_netherite_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_netherite_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

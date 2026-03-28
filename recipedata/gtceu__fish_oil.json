@@ -1,0 +1,367 @@
+{
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/gtceu_fish_oil",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 160
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_fish_oil_to_lubricant",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 120
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 50
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_fish_oil_ethanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_fish_oil_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_fish_oil_methanol_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 54000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 9000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 54000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_fish_oil_ethanol_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 54000
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 9000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 54000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/glycerol_from_fish_oil_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/glycerol_from_fish_oil_ethanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_fish_oil",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 1200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/fish_oil_from_salmon",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:salmon"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 60
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/fish_oil_from_tropical_fish",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:tropical_fish"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 70
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/fish_oil_from_pufferfish",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:pufferfish"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 30
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/fish_oil_from_cod",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:cod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "uses": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/plant_ball_from_nether_wart",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:nether_wart_block",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plant_ball"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/nether_wart_block",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:nether_wart",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_wart_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:9}"
+          }
+        ]
+      }
+    ]
+  }
+}

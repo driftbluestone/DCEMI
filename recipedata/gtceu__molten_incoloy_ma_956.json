@@ -1,0 +1,120 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/incoloy_ma_956",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_incoloy_ma_956",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:incoloy_ma_956_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/incoloy_ma_956_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:yttrium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 1300
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_incoloy_ma_956",
+            "amount": 1872
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:14}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/incoloy_ma_956",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:yttrium_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_incoloy_ma_956",
+            "amount": 1872
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  }
+}

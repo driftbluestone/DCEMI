@@ -1,0 +1,110 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_buffer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_conveyor_module"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_buffer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_buffer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_buffer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tin_dust",
+            "amount": 36
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_buffer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_buffer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2136
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_block"
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

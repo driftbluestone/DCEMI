@@ -1,0 +1,108 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/shape_mold_cylinder",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:empty_mold"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cylinder_casting_mold"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/copy_mold_cylinder_casting_mold",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 22,
+        "inputs": [
+          {
+            "id": "gtceu:empty_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cylinder_casting_mold"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cylinder_casting_mold",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:cylinder_casting_mold"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_cylinder_casting_mold",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cylinder_casting_mold"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 224
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

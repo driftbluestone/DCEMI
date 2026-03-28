@@ -1,0 +1,222 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/battery_hull_hv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:gold_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:battery_alloy_plate",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_hv_cadmium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:hv_cadmium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/unpackage_hv_sodium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:hv_sodium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/unpackage_hv_lithium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:hv_lithium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/cadmium_battery_hv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          },
+          {
+            "id": "gtceu:cadmium_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_cadmium_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/lithium_battery_hv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_lithium_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/sodium_battery_hv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          },
+          {
+            "id": "gtceu:sodium_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_sodium_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_battery_hull",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:battery_alloy_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_battery_hull",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_battery_hull"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1701
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:battery_alloy_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

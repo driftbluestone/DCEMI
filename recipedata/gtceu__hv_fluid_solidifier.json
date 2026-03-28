@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_fluid_solidifier",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:tempered_glass"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_fluid_solidifier"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_fluid_solidifier",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_fluid_solidifier"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:small_steel_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_fluid_solidifier",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_fluid_solidifier"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3020
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:steel_block"
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

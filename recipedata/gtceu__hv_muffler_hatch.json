@@ -1,0 +1,111 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:hv_electric_motor"
+          },
+          {
+            "id": "gtceu:stainless_steel_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:steel_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_muffler_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_muffler_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_muffler_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1726
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

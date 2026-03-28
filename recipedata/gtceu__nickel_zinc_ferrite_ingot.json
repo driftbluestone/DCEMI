@@ -1,0 +1,463 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_nickel_zinc_ferrite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_nickel_zinc_ferrite_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          },
+          {
+            "id": "gtceu:small_nickel_zinc_ferrite_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_nickel_zinc_ferrite_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_nickel_zinc_ferrite_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_nickel_zinc_ferrite_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_nickel_zinc_ferrite_ingot_to_ring",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_nickel_zinc_ferrite_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_nickel_zinc_ferrite_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_nickel_zinc_ferrite_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_nickel_zinc_ferrite_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_dust_nickel_zinc_ferrite_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/nickel_zinc_ferrite",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ferrite_mixture_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_nickel_zinc_ferrite_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_nickel_zinc_ferrite_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_nickel_zinc_ferrite_dust",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 33
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_nickel_zinc_ferrite_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 297
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_nickel_zinc_ferrite_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_nickel_zinc_ferrite_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

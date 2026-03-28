@@ -1,0 +1,574 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_titanium_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          },
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_titanium_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          },
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_titanium_carbide_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_titanium_carbide_to_plate",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_plate",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_titanium_carbide_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_titanium_carbide_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_titanium_carbide_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_titanium_carbide_ingot_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_titanium_carbide_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_titanium_carbide_to_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_titanium_carbide_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_titanium_carbide_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_titanium_carbide_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_titanium_carbide_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hot_titanium_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:vacuum_freezer/titanium_carbide",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_titanium_carbide",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_titanium_carbide_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_titanium_carbide_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_titanium_carbide_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 30
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_titanium_carbide_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 270
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_double_titanium_carbide_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:double_titanium_carbide_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 60
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_high_temperature_smelting_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:high_temperature_smelting_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 218
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_carbide_ingot"
+          },
+          {
+            "id": "gtceu:hsla_steel_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_titanium_carbide_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_titanium_carbide_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_carbide_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_carbide_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_tritanium_wire_gt_hex_silicone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_hex_wire"
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide_foil",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:silicone_rubber",
+            "amount": 360
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_tritanium_wire_gt_hex_styrene_butadiene",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_hex_wire"
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide_foil",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 180
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_hex_cable"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/strip_tritanium_cable_gt_hex",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tritanium_hex_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tritanium_hex_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tritanium",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tritanium_hex_cable",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_hex_cable"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2382
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

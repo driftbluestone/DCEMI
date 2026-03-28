@@ -1,0 +1,113 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/fermented_spider_eye_red",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "minecraft:red_mushroom"
+          },
+          {
+            "id": "minecraft:spider_eye"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:fermented_spider_eye"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/fermented_spider_eye_brown",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "minecraft:brown_mushroom"
+          },
+          {
+            "id": "minecraft:spider_eye"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:fermented_spider_eye"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:/brewery/potion_vanilla_mundane_4",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:spider_eye"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:mundane\"}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:/brewery/potion_vanilla_poison_42",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:spider_eye"
+          },
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:awkward\"}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:poison\"}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

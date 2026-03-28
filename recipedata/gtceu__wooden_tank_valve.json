@@ -1,0 +1,119 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/wood_tank_valve",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:copper_ring"
+          },
+          {
+            "tag": "gtceu:silicone_rubber_mallet"
+          },
+          {
+            "id": "gtceu:wood_wall"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:copper_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wooden_tank_valve"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:wooden_multiblock_tank",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wooden_multiblock_tank"
+          },
+          {
+            "id": "gtceu:wooden_tank_valve"
+          },
+          {
+            "id": "gtceu:wood_wall",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wooden_multiblock_tank"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_wooden_tank_valve",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:wooden_tank_valve"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_copper_dust",
+            "amount": 17
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_wooden_tank_valve",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wooden_tank_valve"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 266
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 38
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

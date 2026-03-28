@@ -1,0 +1,214 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_tantalum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:tantalum_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_tantalum_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_tantalumingot_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_tantalum_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/inductor_tantalum",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          },
+          {
+            "id": "gtceu:fine_tantalum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/smd_resistor_tantalum",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:fine_tantalum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_resistor",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/smd_transistor_tantalum",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:gallium_foil"
+          },
+          {
+            "id": "gtceu:fine_tantalum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_transistor",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_tantalum_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fine_tantalum_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_tantalum_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_tantalum_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_tantalum_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_tantalum_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_tantalum_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

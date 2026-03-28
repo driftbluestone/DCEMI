@@ -1,0 +1,81 @@
+{
+  "recipes": {
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/waxing_exposed_copper",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:exposed_copper"
+          },
+          {
+            "id": "gtceu:wax",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_exposed_copper"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_waxed_exposed_copper",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_exposed_copper"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_waxed_exposed_copper",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_exposed_copper"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

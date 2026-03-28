@@ -1,0 +1,187 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_import_hatch_4x_uhv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_quadruple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:uhv_input_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_input_hatch_4x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/fluid_export_hatch_4x_uhv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_output_hatch"
+          },
+          {
+            "id": "gtceu:neutronium_quadruple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_output_hatch_4x"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_neutronium_quadruple_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_quadruple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_neutronium_quadruple_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_quadruple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_neutronium_quadruple_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_quadruple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/quadruple_neutronium_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:neutronium_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:neutronium_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:neutronium_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_quadruple_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_neutronium_quadruple_pipe",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_small_fluid_pipe",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_quadruple_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  }
+}

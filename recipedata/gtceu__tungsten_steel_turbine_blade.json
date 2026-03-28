@@ -1,0 +1,179 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/turbine_blade_tungsten_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:double_tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:double_tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:double_tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:tungsten_steel_screw"
+          },
+          {
+            "id": "gtceu:double_tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:tungsten_steel_screw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:double_tungsten_steel_plate"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_turbine_blade"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/press_tungsten_steel_turbine_rotor",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:double_tungsten_steel_plate",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tungsten_steel_screw",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_turbine_blade"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_tungsten_steel_turbine_blade",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 400,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_turbine_blade",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:long_magnalium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:turbine_rotor",
+            "nbt": "{GT.PartStats:{Material:\"gtceu:tungsten_steel\"}}"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tungsten_steel_turbine_blade",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_turbine_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tungsten_steel_turbine_blade",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_turbine_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel",
+            "amount": 1440
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tungsten_steel_turbine_blade",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_turbine_blade"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1190
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/dynamo_hatch_ulv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_voltage_coil"
+          },
+          {
+            "id": "gtceu:lead_spring"
+          },
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_energy_output_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/dynamo_hatch_ulv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_voltage_coil"
+          },
+          {
+            "id": "gtceu:lead_spring"
+          },
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_energy_output_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_ulv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_spring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ulv_voltage_coil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_energy_output_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lead_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lead_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_lead_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lead_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 207
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spring_lead",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:long_lead_rod"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:long_lead_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_spring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_lead_long_rod_to_spring",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_lead_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_spring"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

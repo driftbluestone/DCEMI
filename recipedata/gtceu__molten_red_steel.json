@@ -1,0 +1,116 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/red_steel",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_red_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_steel_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/red_steel_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:rose_gold_dust"
+          },
+          {
+            "id": "gtceu:brass_dust"
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:black_steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_red_steel",
+            "amount": 1152
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:14}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/red_steel",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:rose_gold_dust"
+          },
+          {
+            "id": "gtceu:brass_dust"
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:black_steel_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_red_steel",
+            "amount": 1152
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,822 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_tritanium_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_rod"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_tritanium_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_thermal_centrifuge",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_thermal_centrifuge"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_fermenter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_fermenter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_electric_piston",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_piston"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 58
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_canner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_canner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tritanium_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tritanium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_256a_laser_source_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_256a_laser_source_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_autoclave",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_autoclave"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_centrifuge",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_centrifuge"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_distillery",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_distillery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tritanium_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_extruder",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_extruder"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 58
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_forge_hammer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_forge_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 58
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tritanium_single_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_electric_pump",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_pump"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_sensor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_sensor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_brewery",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_brewery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tritanium_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tritanium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_emitter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_emitter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tritanium_single_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tritanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          },
+          {
+            "id": "gtceu:small_tritanium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_tritanium_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

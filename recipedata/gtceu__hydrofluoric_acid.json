@@ -1,0 +1,413 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_hydrofluoric_acid",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/tetrafluoroethylene_from_methane",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 12000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tetrafluoroethylene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 12000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/antimony_trifluoride",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:antimony_trioxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 6000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:antimony_trifluoride_dust",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/tetrafluoroethylene_from_chloroform",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:chloroform",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:tetrafluoroethylene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/uranium_hexafluoride",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uraninite_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_hexafluoride",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/fluoroantimonic_acid",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:antimony_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluoroantimonic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/antimony_trifluoride",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:antimony_trioxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 6000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:antimony_trifluoride_dust",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/fluoroantimonic_acid",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:antimony_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluoroantimonic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:chloroform",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:tetrafluoroethylene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/uranium_hexafluoride",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uraninite_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_hexafluoride",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/titanium_trifluoride_separation",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_titanium_ingot"
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/hydrofluoric_acid_from_elements",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/hydrofluoric_acid_from_elements",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

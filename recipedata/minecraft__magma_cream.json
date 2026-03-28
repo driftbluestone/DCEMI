@@ -1,0 +1,159 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/magma_cream_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "minecraft:magma_cream"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:blaze_powder"
+          },
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:/brewery/potion_vanilla_mundane_6",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:magma_cream"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:mundane\"}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:/brewery/potion_vanilla_fire_resistance_15",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:magma_cream"
+          },
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:awkward\"}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:fire_resistance\"}"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/magma_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:magma_cream",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:magma_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/magma_cream",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:blaze_powder"
+          },
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:magma_cream"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/magma_cream",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:blaze_powder"
+          },
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:magma_cream"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

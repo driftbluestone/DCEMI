@@ -1,0 +1,105 @@
+{
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_green_sapphire_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:green_sapphire_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 15
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_green_sapphire_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:green_sapphire_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 11
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_green_sapphire_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:green_sapphire_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_green_sapphire_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:green_sapphire_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

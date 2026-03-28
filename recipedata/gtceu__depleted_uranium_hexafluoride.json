@@ -1,0 +1,61 @@
+{
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/uranium_hexafluoride_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_hexafluoride",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_uranium_hexafluoride",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:depleted_uranium_hexafluoride",
+            "amount": 900
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/depleted_uranium_hexafluoride_separation",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:depleted_uranium_hexafluoride",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

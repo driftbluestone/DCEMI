@@ -1,0 +1,290 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/enriched_naquadah_and_radon_to_naquadria_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 49152,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_enriched_naquadah_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_enriched_naquadah_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_enriched_naquadah_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_enriched_naquadah_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_enriched_naquadah_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_enriched_naquadah_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_enriched_naquadah_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_enriched_naquadah_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_enriched_naquadah_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_enriched_naquadah_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_enriched_naquadah_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:double_enriched_naquadah_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

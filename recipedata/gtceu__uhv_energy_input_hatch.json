@@ -1,0 +1,111 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/energy_hatch_4a_uhv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:europium_quadruple_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:neutronium_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_energy_input_hatch_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_uv_energy_input_hatch",
+        "category": "gtceu:research_station",
+        "dimensions": [
+          150,
+          117
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:data_module"
+          },
+          {
+            "id": "gtceu:uv_energy_input_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_energy_input_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/energy_hatch_uhv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:europium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_double_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 12000
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 5760
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_energy_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_uv_energy_input_hatch\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  }
+}

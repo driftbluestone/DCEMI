@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/treated_button",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_planks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_button"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/treated_button",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_pressure_plate"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_button",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/treated_button_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_pressure_plate"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_button",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/treated_button_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_pressure_plate"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_button",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_treated_wood_button",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_button"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_treated_wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

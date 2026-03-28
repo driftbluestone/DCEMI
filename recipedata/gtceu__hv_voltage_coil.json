@@ -1,0 +1,168 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/energy_hatch_hv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:gold_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hv_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_energy_input_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/dynamo_hatch_hv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:gold_spring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hv_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_energy_output_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_voltage_coil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_voltage_coil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_voltage_coil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_voltage_coil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_steel_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/voltage_coil_hv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_steel_rod"
+          },
+          {
+            "id": "gtceu:fine_black_steel_wire",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_voltage_coil"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

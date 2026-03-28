@@ -1,0 +1,1106 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_aluminium_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_aluminium_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_aluminium_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_4a_energy_converter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_4a_energy_converter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 796
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_distillery",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_distillery"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1063
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 31
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_muffler_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 970
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 31
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_aluminium_nonuple_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 234
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_chemical_reactor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_chemical_reactor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 967
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_laser_engraver",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_laser_engraver"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1936
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_advanced_monitor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_monitor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 562
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_battery_buffer_4x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_battery_buffer_4x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 621
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_robot_arm",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_robot_arm"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1377
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 49
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 13
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_large_combustion_engine",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:large_combustion_engine"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2441
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 22
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_ore_washer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_ore_washer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1271
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_brewery",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_brewery"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1063
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 31
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_mixer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_mixer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 904
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_fermenter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_fermenter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1066
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_substation_input_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_substation_input_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6943
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7062
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_canner",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_canner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1003
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 31
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_fisher",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_fisher"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2753
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_block",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 58
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_forming_press",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_forming_press"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1690
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:neodymium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_bender",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_bender"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2105
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 23
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 22
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_energy_output_hatch_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2064
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:aluminium_block",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:platinum_nugget",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:neodymium_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ev_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6995
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_aluminium_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_aluminium_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_aluminium_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 19
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_aluminium_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 14
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_aluminium_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_aluminium_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_aluminium_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 234
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_aluminium_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

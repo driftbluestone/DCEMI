@@ -1,0 +1,114 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/passthrough_hatch_item",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_conveyor_module"
+          },
+          {
+            "id": "gtceu:small_steel_gear"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:small_steel_gear"
+          },
+          {
+            "tag": "minecraft:chest"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_item_passthrough_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_item_passthrough_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_item_passthrough_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_item_passthrough_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_item_passthrough_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2354
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

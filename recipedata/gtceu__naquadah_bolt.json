@@ -1,0 +1,506 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/bolt_saw_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:naquadah_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_naquadah_ingot_to_bolt",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:bolt_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_naquadah_rod_to_bolt",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_rod"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_naquadah_rod_to_bolt_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_rod"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 13
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_naquadah_screw_to_bolt",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_screw"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_bolt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_naquadah_rod_to_bolt_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_rod"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_naquadah_screw_to_bolt_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_screw"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_bolt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_naquadah_screw_to_bolt_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_screw"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_bolt"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/screw_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:naquadah_bolt"
+          },
+          {
+            "id": "gtceu:naquadah_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_screw"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/screw_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:naquadah_bolt"
+          },
+          {
+            "id": "gtceu:naquadah_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_screw"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_naquadah_bolt_to_screw",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_screw"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/wetware_processor_luv_soc",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 150000,
+        "inputs": [
+          {
+            "id": "gtceu:neuro_processing_unit"
+          },
+          {
+            "id": "gtceu:highly_advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/wetware_processor_luv_soc_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 150000,
+        "inputs": [
+          {
+            "id": "gtceu:neuro_processing_unit"
+          },
+          {
+            "id": "gtceu:highly_advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/lapotronic_energy_orb_cluster",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 80000,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:europium_plate",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb"
+          },
+          {
+            "id": "gtceu:iv_field_generator"
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 720
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_lapotronic_energy_orb\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_naquadah_bolt",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_naquadah_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_naquadah_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_naquadah_bolt",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_bolt"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 58
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

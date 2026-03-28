@@ -1,0 +1,64 @@
+{
+  "recipes": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/purple_concrete_powder",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "tag": "minecraft:sand",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:gravel",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:purple_dye",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:purple_concrete_powder",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:chem_dyes": [
+      {
+        "id": "gtceu:chemical_bath/purple_concrete",
+        "category": "gtceu:chem_dyes",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:purple_concrete_powder"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:purple_concrete"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

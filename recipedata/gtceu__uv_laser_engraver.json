@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_laser_engraver",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_piston"
+          },
+          {
+            "id": "gtceu:uv_emitter"
+          },
+          {
+            "id": "gtceu:uv_electric_piston"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_laser_engraver"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_laser_engraver",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_laser_engraver"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_laser_engraver",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_laser_engraver"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 41157
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_ingot",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:naquadria_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

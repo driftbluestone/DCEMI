@@ -1,0 +1,111 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uiv_gas_collector",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:iron_bars"
+          },
+          {
+            "id": "gtceu:fluid_filter"
+          },
+          {
+            "id": "minecraft:iron_bars"
+          },
+          {
+            "id": "gtceu:uiv_electric_pump"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:uiv_electric_pump"
+          },
+          {
+            "id": "minecraft:iron_bars"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "minecraft:iron_bars"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_gas_collector"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uiv_gas_collector",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_gas_collector"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_iron_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_gas_collector",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_gas_collector"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 210
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 13
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

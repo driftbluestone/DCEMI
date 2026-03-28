@@ -1,0 +1,283 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/enriched_naquadah_and_radon_to_naquadria_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 49152,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:fusion_reactor/gallium_and_radon_to_duranium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 16384,
+        "inputs": [
+          {
+            "id": "gtceu:gallium",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:duranium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/quantum_eye",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "minecraft:ender_eye"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_eye"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_bath/quantum_star",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "minecraft:nether_star"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 1250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_star"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/qbit_cpu_wafer_radon",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:nano_cpu_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/qbit_cpu_wafer_radon",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:nano_cpu_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/gold_and_mercury_to_radon_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/radon_from_uranium_238",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:plutonium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plutonium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_liquid_ender_air",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:liquid_ender_air",
+            "amount": 200000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tritium",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:krypton",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:xenon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 122000
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 50000
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 15000
+          },
+          {
+            "id": "gtceu:ender_pearl_dust",
+            "chance": 0.1
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

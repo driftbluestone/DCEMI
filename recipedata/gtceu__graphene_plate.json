@@ -1,0 +1,395 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_graphene",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:graphene_ingot"
+          },
+          {
+            "id": "gtceu:graphene_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_graphene_to_plate",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_plate",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_graphene_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_graphene_to_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_graphene_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_graphene_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_graphene_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/foil_graphene",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:graphene_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_foil",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/graphene_wire_single",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_plate"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_single_wire"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_graphene",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:graphene_plate"
+          },
+          {
+            "id": "gtceu:graphene_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_graphene_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_graphene",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:graphene_plate"
+          },
+          {
+            "id": "gtceu:graphene_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_graphene_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_graphene_plate_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_graphene_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_graphene_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_graphene_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_graphene_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

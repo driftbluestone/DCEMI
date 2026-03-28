@@ -1,0 +1,849 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_naquadria_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_naquadria_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_naquadria_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_naquadria_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/naquadria_battery_uv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:uv_battery_hull"
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_naquadria_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/naquadria_battery_zpm",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_battery_hull"
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_naquadria_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_naquadria",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_naquadria_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_naquadria_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_naquadria_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_naquadria_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_naquadria_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_naquadria_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_naquadria_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_naquadria_dust"
+          },
+          {
+            "id": "gtceu:small_naquadria_dust"
+          },
+          {
+            "id": "gtceu:small_naquadria_dust"
+          },
+          {
+            "id": "gtceu:small_naquadria_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_naquadria_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_naquadria_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_naquadria_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_naquadria_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_naquadria_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_double_naquadria_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:double_naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_world_accelerator",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_world_accelerator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_dust",
+            "amount": 64
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_circuit_assembler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_circuit_assembler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 34
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 24
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_naquadria_gear",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_naquadria_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_256a_laser_target_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_256a_laser_target_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_1024a_laser_source_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_1024a_laser_source_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_1024a_laser_target_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_1024a_laser_target_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_naquadria_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tritanium_coil_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_coil_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_laser_engraver",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_laser_engraver"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_scanner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_scanner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 23
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_4096a_laser_target_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_4096a_laser_target_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 50
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_sensor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_sensor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uv_emitter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_emitter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_tritanium_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

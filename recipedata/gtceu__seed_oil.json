@@ -1,0 +1,446 @@
+{
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_seed_oil_to_lubricant",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 12
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_seed_oil_ethanol_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 54000
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 9000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 54000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_seed_oil_methanol_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 54000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 9000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 54000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_seed_oil_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_seed_oil_ethanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/glycerol_from_seed_oil_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/glycerol_from_seed_oil_ethanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:brewery/lubricant_from_seed_oil_and_redstone",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:redstone"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/lubricant_from_seed_oil_and_talc",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:talc_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/lubricant_from_seed_oil_and_soapstone",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:soapstone_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_seed_oil",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/seed_oil_from_torchflower",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:torchflower_seeds"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/seed_oil_from_melon",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:melon_seeds"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/seed_oil_from_beetroot",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:beetroot_seeds"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/seed_oil_from_wheat_seeds",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:wheat_seeds"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/seed_oil_from_pumpkin",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin_seeds"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

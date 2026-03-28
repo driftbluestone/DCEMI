@@ -1,0 +1,342 @@
+{
+  "recipes": {
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/reinforced_epoxy_sheet_glass",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:fine_borosilicate_glass_wire"
+          },
+          {
+            "id": "gtceu:epoxy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_bath/reinforced_epoxy_sheet_carbon_fibers",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_fibers"
+          },
+          {
+            "id": "gtceu:epoxy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_reinforced_epoxy_resin_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_reinforced_epoxy_resin_dust_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_reinforced_epoxy_resin_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_reinforced_epoxy_resin_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_block"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_reinforced_epoxy_resin_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_reinforced_epoxy_resin_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/fiber_board",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 10,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          },
+          {
+            "id": "gtceu:annealed_copper_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fiber_reinforced_circuit_board"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/fiber_board",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 10,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          },
+          {
+            "id": "gtceu:annealed_copper_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fiber_reinforced_circuit_board"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_reinforced_epoxy_resin_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_reinforced_epoxy_resin_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_reinforced_epoxy_resin_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          },
+          {
+            "id": "gtceu:oxygen"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

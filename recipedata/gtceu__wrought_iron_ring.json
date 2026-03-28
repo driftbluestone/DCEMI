@@ -1,0 +1,281 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ring_wrought_iron",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:wrought_iron_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_wrought_iron_ingot_to_ring",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ring",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/chain_wrought_iron",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ring"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:wrought_iron_ring"
+          },
+          {
+            "id": "gtceu:wrought_iron_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chain",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/chain_wrought_iron",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ring"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:wrought_iron_ring"
+          },
+          {
+            "id": "gtceu:wrought_iron_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chain",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/chain_wrought_iron",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ring"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:wrought_iron_ring"
+          },
+          {
+            "id": "gtceu:wrought_iron_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chain",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/tripwire_hook_wrought_iron",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:stick",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:wrought_iron_ring",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:tripwire_hook"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/chain_wrought_iron",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 10,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ring",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chain",
+            "amount": 3
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_wrought_iron_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_wrought_iron_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_wrought_iron_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_wrought_iron_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

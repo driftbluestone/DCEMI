@@ -1,0 +1,1098 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/diesel",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cracker": [
+      {
+        "id": "gtceu:cracker/lightly_hydro_crack_light_fuel",
+        "category": "gtceu:cracker",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:cracker/lightly_steam_crack_light_fuel",
+        "category": "gtceu:cracker",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:cracker/severely_hydro_crack_light_fuel",
+        "category": "gtceu:cracker",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 6000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:severely_hydro_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:cracker/severely_steam_crack_light_fuel",
+        "category": "gtceu:cracker",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ],
+    "gtceu:combustion_generator": [
+      {
+        "id": "gtceu:combustion_generator/light_fuel",
+        "category": "gtceu:combustion_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/diesel_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 20000
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 24000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/severely_hydro_crack_light_fuel",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:severely_hydro_cracked_light_fuel",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/severely_steam_crack_light_fuel",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_light_fuel",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/lightly_steam_crack_light_fuel",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_light_fuel",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/lightly_hydro_crack_light_fuel",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_light_fuel",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/lightly_steam_crack_light_fuel",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_light_fuel",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/lightly_hydro_crack_light_fuel",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_light_fuel",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/severely_hydro_crack_light_fuel",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:severely_hydro_cracked_light_fuel",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/severely_steam_crack_light_fuel",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_light_fuel",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_severely_steam_cracked_heavy_fuel_to_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_lightly_steam_cracked_naphtha_to_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 150
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_lightly_hydro_cracked_heavy_fuel_to_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_heavy_fuel",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 60
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_severely_steam_cracked_naphtha_to_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 50
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_lightly_steam_cracked_heavy_fuel_to_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 300
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_severely_hydro_cracked_heavy_fuel_to_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:severely_hydro_cracked_heavy_fuel",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 40
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_toluene_to_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 30
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/desulfurize_light_fuel",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_light_fuel",
+            "amount": 12000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 12000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/desulfurize_light_fuel",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_light_fuel",
+            "amount": 12000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 12000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_severely_steam_cracked_naphtha",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 65
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_severely_steam_cracked_heavy_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 80
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 80
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_severely_hydro_cracked_heavy_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:severely_hydro_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:propane",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 175
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 175
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:butane",
+            "amount": 300
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_lightly_steam_cracked_heavy_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_lightly_hydro_cracked_heavy_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:propane",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 600
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:butane",
+            "amount": 100
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_lightly_steam_cracked_naphtha",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 80
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_4a"
+          },
+          {
+            "id": "gtceu:iv_electric_pump"
+          },
+          {
+            "id": "gtceu:europium_octal_cable"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_cable"
+          },
+          {
+            "id": "gtceu:small_yttrium_barium_cuprate_spring"
+          },
+          {
+            "id": "gtceu:europium_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:darmstadtium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_uv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uv_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:darmstadtium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_transformer_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_dust",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:small_europium_dust",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:small_tungsten_steel_dust",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6140
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:europium_block"
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

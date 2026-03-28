@@ -1,0 +1,118 @@
+{
+  "recipes": {
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/phosphorus_boule",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:phosphorus_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_gallium_arsenide_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phosphorus_boule"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_phosphorus_boule_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:phosphorus_boule"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phosphorus_wafer",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_phosphorus_boule",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:phosphorus_boule"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phosphorus_wafer",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_phosphorus_boule_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:phosphorus_boule"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phosphorus_wafer",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

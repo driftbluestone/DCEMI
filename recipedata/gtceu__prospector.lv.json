@@ -1,0 +1,199 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/prospector_lv_lv_lithium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_emitter"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:lv_sensor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:glass_plate"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:lv_lithium_battery"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.lv",
+            "nbt": "{Charge:0L,MaxCharge:120000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/prospector_lv_lv_cadmium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_emitter"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:lv_sensor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:glass_plate"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:lv_cadmium_battery"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.lv",
+            "nbt": "{Charge:0L,MaxCharge:100000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/prospector_lv_lv_sodium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_emitter"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:lv_sensor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:glass_plate"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:lv_sodium_battery"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.lv",
+            "nbt": "{Charge:0L,MaxCharge:80000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_prospector.lv",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:prospector.lv"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:glass_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_prospector.lv",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:prospector.lv"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 169
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

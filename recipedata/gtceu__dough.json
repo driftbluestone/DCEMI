@@ -1,0 +1,302 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/flour_to_dough",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "minecraft:water_bucket"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          },
+          {
+            "id": "gtceu:wheat_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dough",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/flour_to_dough",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:wheat_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dough",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/cake_from_dough",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:milk_bucket"
+          },
+          {
+            "id": "minecraft:milk_bucket"
+          },
+          {
+            "id": "minecraft:milk_bucket"
+          },
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "minecraft:egg"
+          },
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cake"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/cookie_from_dough",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          },
+          {
+            "id": "minecraft:cocoa_beans"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cookie",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/pumpkin_pie_from_dough",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_pie"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/dough_to_bread",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bread"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smoking": [
+      {
+        "id": "gtceu:smoking/dough_to_bread",
+        "category": "minecraft:smoking",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bread"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:campfire_cooking": [
+      {
+        "id": "gtceu:campfire/dough_to_bread",
+        "category": "minecraft:campfire_cooking",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bread"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/pumpkin_pie",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dough",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:sugar"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_pie",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:forming_press/cookie",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          },
+          {
+            "id": "minecraft:cocoa_beans",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cookie",
+            "amount": 12
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

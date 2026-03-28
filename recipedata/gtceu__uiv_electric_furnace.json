@@ -1,0 +1,117 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uiv_electric_furnace",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:copper_double_wire"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:copper_double_wire"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:copper_double_wire"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:copper_double_wire"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_electric_furnace"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uiv_electric_furnace",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_electric_furnace"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_electric_furnace",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_electric_furnace"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 335
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:red_alloy_ingot"
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

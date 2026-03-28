@@ -1,0 +1,322 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/emitter_ev",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:platinum_rod"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:platinum_rod"
+          },
+          {
+            "id": "gtceu:quantum_eye"
+          },
+          {
+            "id": "gtceu:platinum_rod"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:platinum_rod"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_emitter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/sensor_ev",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:quantum_eye"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:platinum_rod"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_sensor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/field_generator_hv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:quantum_eye"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_field_generator"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/emitter_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:aluminium_single_cable",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:micro_processor_computer",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:quantum_eye"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/sensor_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_rod"
+          },
+          {
+            "id": "gtceu:titanium_plate",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:quantum_eye"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_sensor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/field_generator_hv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:quantum_eye"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_quadruple_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_field_generator"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/qbit_cpu_wafer_quantum_eye",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:nano_cpu_wafer"
+          },
+          {
+            "id": "gtceu:quantum_eye",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:gallium_arsenide",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/qbit_cpu_wafer_quantum_eye",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:nano_cpu_wafer"
+          },
+          {
+            "id": "gtceu:quantum_eye",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:gallium_arsenide",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/quantum_eye",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "minecraft:ender_eye"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_eye"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

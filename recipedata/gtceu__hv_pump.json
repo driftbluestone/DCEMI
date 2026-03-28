@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_pump",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:stainless_steel_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:stainless_steel_large_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_pump"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_pump",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_pump"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 36
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_pump",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_pump"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6260
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_block",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

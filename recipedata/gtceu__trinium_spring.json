@@ -1,0 +1,229 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uhv_brewery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:uhv_electric_pump"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          },
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:trinium_spring"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_brewery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uhv_distillery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:trinium_spring"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          },
+          {
+            "id": "gtceu:uhv_electric_pump"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_distillery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_trinium_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_trinium_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_trinium_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 323
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spring_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:long_trinium_rod"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:long_trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_spring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_trinium_long_rod_to_spring",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_spring"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

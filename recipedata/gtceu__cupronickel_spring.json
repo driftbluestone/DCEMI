@@ -1,0 +1,229 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_brewery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:cupronickel_spring"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_brewery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/mv_distillery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:cupronickel_spring"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_distillery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cupronickel_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_cupronickel_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_cupronickel_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 60
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spring_cupronickel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_spring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_cupronickel_long_rod_to_spring",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_cupronickel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_spring"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

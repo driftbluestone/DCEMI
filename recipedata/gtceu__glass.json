@@ -1,0 +1,756 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/diode_glass_annealed",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_annealed_copper_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_gallium_arsenide_dust"
+          },
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diode",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/diode_glass",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_gallium_arsenide_dust"
+          },
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diode"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/end_crystal",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:ghast_tear"
+          },
+          {
+            "id": "minecraft:ender_eye"
+          },
+          {
+            "id": "gtceu:glass",
+            "amount": 1008
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:end_crystal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cleanroom_glass",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 48,
+        "inputs": [
+          {
+            "id": "gtceu:steel_frame"
+          },
+          {
+            "id": "gtceu:polyethylene_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cleanroom_glass",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_glass_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glass"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_glass_tube",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass_tube"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ball_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_glass_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/glass_bottle",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glass_bottle"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:bottle_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/quartzite_extraction",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:quartzite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_glass_gem",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:glass_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_orange_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:orange_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_flawless_glass_gem",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:flawless_glass_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_black_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:black_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_pink_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:pink_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_glass_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_lime_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lime_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_light_blue_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_blue_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_brown_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:brown_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_light_gray_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:light_gray_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_glass",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:glass"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_glass_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:glass_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_green_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:green_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_yellow_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:yellow_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_magenta_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magenta_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_cyan_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cyan_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_purple_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:purple_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_exquisite_glass_gem",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:exquisite_glass_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_chipped_glass_gem",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chipped_glass_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_blue_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:blue_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_gray_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gray_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_flawed_glass_gem",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_glass_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_red_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

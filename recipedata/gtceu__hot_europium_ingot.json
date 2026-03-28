@@ -1,0 +1,94 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_europium_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hot_europium_ingot"
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_europium",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:europium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_europium_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_europium_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:europium_dust"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_europium_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

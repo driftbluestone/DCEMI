@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_autoclave",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_autoclave"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_autoclave",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_autoclave"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tiny_tin_dust",
+            "amount": 59
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_autoclave",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_autoclave"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1799
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tin_nugget",
+            "amount": 59
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

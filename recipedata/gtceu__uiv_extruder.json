@@ -1,0 +1,112 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uiv_extruder",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          },
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:uiv_electric_piston"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          },
+          {
+            "id": "gtceu:copper_quadruple_wire"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_extruder"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uiv_extruder",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_extruder"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_extruder",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_extruder"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 732
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

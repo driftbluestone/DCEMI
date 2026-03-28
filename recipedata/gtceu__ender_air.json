@@ -1,0 +1,87 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/ender_air_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ender_air",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 3900
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/liquid_ender_air",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:ender_air",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:liquid_ender_air",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:gas_collector": [
+      {
+        "id": "gtceu:gas_collector/ender_air",
+        "category": "gtceu:gas_collector",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:the_end_marker"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ender_air",
+            "amount": 10000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  }
+}

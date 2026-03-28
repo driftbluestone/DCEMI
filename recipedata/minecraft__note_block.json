@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/note_block",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "tag": "minecraft:oak_planks",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:redstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:note_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_note_block",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:note_block"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_note_block",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:note_block"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_note_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:note_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_dust",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:redstone"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_note_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:note_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

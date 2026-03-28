@@ -1,0 +1,107 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_battery_buffer_4x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_quadruple_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:aluminium_quadruple_wire"
+          },
+          {
+            "id": "gtceu:aluminium_quadruple_wire"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:aluminium_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_battery_buffer_4x"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_battery_buffer_4x",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_battery_buffer_4x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_battery_buffer_4x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_battery_buffer_4x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 621
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

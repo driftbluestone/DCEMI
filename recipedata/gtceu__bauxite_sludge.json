@@ -1,0 +1,80 @@
+{
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/bauxite_sludge_decalcification",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bauxite_sludge",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:decalcified_bauxite_sludge",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/bauxite_sludge_from_slurry",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:cracked_bauxite_slurry",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:bauxite_slag_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bauxite_sludge",
+            "amount": 2500
+          },
+          {
+            "id": "gtceu:sulfur_trioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

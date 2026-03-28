@@ -1,0 +1,157 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_iridium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:iridium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_iridium_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_iridiumingot_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_iridium_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/voltage_coil_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_rod"
+          },
+          {
+            "id": "gtceu:fine_iridium_wire",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_voltage_coil"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_iridium_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:fine_iridium_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_iridium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_iridium_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:fine_iridium_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_iridium_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_iridium_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 21
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_charcoal_byproducts_to_dimethylbenzene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_byproducts",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_tar_to_dimethylbenzene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 40
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dimethylbenzene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_charcoal_byproducts",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_byproducts",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:charcoal_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_wood_tar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 350
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/phthalic_acid_from_dimethylbenzene_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 18000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 9000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 18000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phthalic_acid_from_dimethylbenzene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

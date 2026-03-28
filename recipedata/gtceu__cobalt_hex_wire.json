@@ -1,0 +1,481 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/cobalt_cable_16",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/cobalt_wire_wire_gt_hex_splitting",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_octal_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_cobalt_wire_gt_hex_styrene_butadiene",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 180
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_cobalt_wire_gt_hex_silicone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          },
+          {
+            "id": "gtceu:silicone_rubber",
+            "amount": 360
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_cobalt_wire_gt_hex_rubber",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber",
+            "amount": 720
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_cable"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/pack_cobalt_wires_4_single",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_single_wire",
+            "amount": 16
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/cover_cobalt_wire_gt_hex",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_cable"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cobalt_hex_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_cobalt_hex_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_cobalt_hex_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 472
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/cobalt_wire_wire_gt_octal_doubling",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_octal_wire"
+          },
+          {
+            "id": "gtceu:cobalt_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/cobalt_wire_wire_gt_quadruple_quadrupling",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_quadruple_wire"
+          },
+          {
+            "id": "gtceu:cobalt_quadruple_wire"
+          },
+          {
+            "id": "gtceu:cobalt_quadruple_wire"
+          },
+          {
+            "id": "gtceu:cobalt_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_cobalt_wire_16",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/pack_cobalt_wires_3_1",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_double_wire",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/pack_cobalt_wires_4_0",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_single_wire",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/strip_cobalt_cable_gt_hex",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:packer/pack_cobalt_wires_1_3",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_octal_wire",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/pack_cobalt_wires_2_2",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_quadruple_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  }
+}

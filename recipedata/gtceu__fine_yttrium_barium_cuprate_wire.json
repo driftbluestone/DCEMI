@@ -1,0 +1,549 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_yttrium_barium_cuprate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_yttrium_barium_cuprate_wire_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:wiremill/mill_yttrium_barium_cuprate_wire_fine",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/data_module_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:nand_memory_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_module"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/wetware_processor_assembly_zpm",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:wetware_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/wetware_processor_assembly_zpm_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:wetware_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/wetware_processor_luv_soc",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 150000,
+        "inputs": [
+          {
+            "id": "gtceu:neuro_processing_unit"
+          },
+          {
+            "id": "gtceu:highly_advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/data_module",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:nand_memory_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_module"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/wetware_processor_luv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:neuro_processing_unit"
+          },
+          {
+            "id": "gtceu:crystal_cpu"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/wetware_processor_luv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:neuro_processing_unit"
+          },
+          {
+            "id": "gtceu:crystal_cpu"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/wetware_processor_luv_soc_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 150000,
+        "inputs": [
+          {
+            "id": "gtceu:neuro_processing_unit"
+          },
+          {
+            "id": "gtceu:highly_advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/wetware_super_computer_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:wetware_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:polybenzimidazole_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:europium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_processor_computer"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_wetware_processor_assembly\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_yttrium_barium_cuprate_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_yttrium_barium_cuprate_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_yttrium_barium_cuprate_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_yttrium_barium_cuprate_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_yttrium_barium_cuprate_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

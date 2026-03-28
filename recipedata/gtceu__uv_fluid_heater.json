@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_fluid_heater",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_quadruple_wire"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_quadruple_wire"
+          },
+          {
+            "id": "gtceu:uv_electric_pump"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:uv_electric_pump"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_fluid_heater"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_fluid_heater",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_fluid_heater"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_fluid_heater",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_fluid_heater"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 24945
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:naquadah_ingot",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

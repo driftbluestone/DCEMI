@@ -1,0 +1,179 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_export_hatch_9x_luv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:luv_output_hatch"
+          },
+          {
+            "id": "gtceu:niobium_titanium_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_output_hatch_9x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/fluid_export_hatch_4x_luv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:luv_output_hatch"
+          },
+          {
+            "id": "gtceu:niobium_titanium_quadruple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_output_hatch_4x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/fluid_hatch_output_to_input_6",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:luv_output_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_input_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:luv_fusion_reactor",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:luv_fusion_reactor"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:luv_output_hatch",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:luv_input_hatch",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fusion_casing",
+            "amount": 79
+          },
+          {
+            "id": "gtceu:superconducting_coil",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_fusion_reactor"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_hatch_input_to_output_6",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:luv_input_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_output_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fluid_export_hatch_luv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:titanium_drum"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 252
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

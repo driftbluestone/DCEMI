@@ -1,0 +1,73 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/impure_enriched_naquadah_solution_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:impure_enriched_naquadah_solution",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_sulfide_dust"
+          },
+          {
+            "id": "gtceu:antimony_trifluoride_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:enriched_naquadah_solution",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/naquadah_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:fluoroantimonic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_enriched_naquadah_solution",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:impure_naquadria_solution",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

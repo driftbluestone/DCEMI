@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/iv_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tungsten_steel_rotor"
+          },
+          {
+            "id": "gtceu:polyethylene_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_chemical_reactor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_chemical_reactor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_chemical_reactor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_chemical_reactor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2351
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

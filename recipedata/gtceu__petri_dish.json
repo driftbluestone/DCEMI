@@ -1,0 +1,105 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/petri_dish_ptfe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 36
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:petri_dish"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/petri_dish_pbi",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:petri_dish",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/wetware_board",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_circuit_board",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:petri_dish"
+          },
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:iv_sensor"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:niobium_titanium_foil",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wetware_circuit_board",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

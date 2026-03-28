@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_lathe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_electric_motor"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:diamond_grinding_head"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_electric_piston"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_lathe"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_lathe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_lathe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:kanthal_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_lathe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_lathe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1704
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 64
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

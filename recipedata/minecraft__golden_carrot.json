@@ -1,0 +1,87 @@
+{
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/golden_carrot",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:carrot"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:golden_carrot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/golden_carrot",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:carrot"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:golden_carrot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:/brewery/potion_vanilla_night_vision_10",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:golden_carrot"
+          },
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:awkward\"}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:night_vision\"}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

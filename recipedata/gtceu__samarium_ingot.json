@@ -1,0 +1,1153 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_samarium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_samarium_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_rod"
+          },
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_samarium_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:polarizer": [
+      {
+        "id": "gtceu:polarizer/polarize_samarium_ingot",
+        "category": "gtceu:polarizer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnetic_samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_samarium_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_samarium_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_samarium_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_samarium_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_samarium_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_samarium_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/demagnetize_magnetic_samarium_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_samarium_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hot_samarium_ingot"
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_samarium_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:samarium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_magnetic_samarium_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:compressor/compress_samarium_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_magnetic_samarium_ingot",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_ingot"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 150
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_electric_motor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3141
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:osmiridium_nugget",
+            "amount": 53
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot"
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_electric_pump",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2572
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_energy_output_hatch_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_energy_output_hatch_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3801
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_electric_motor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1641
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_long_samarium_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:long_samarium_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 150
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_samarium_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1350
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uv_electric_motor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5870
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tritanium_nugget",
+            "amount": 53
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot"
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_uv_conveyor_module",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_conveyor_module"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 13342
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_electric_piston",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_piston"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3533
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ingot",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 23962
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_block",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:ruridit_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_long_magnetic_samarium_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:long_magnetic_samarium_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 150
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_magnetic_samarium_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1350
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_energy_output_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2109
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_robot_arm",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_robot_arm"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8406
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ingot",
+            "amount": 34
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_energy_output_hatch_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5842
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_electric_piston",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_electric_piston"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5892
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 42614
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_block",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:europium_block",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_robot_arm",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_robot_arm"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14429
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 43
+          },
+          {
+            "id": "gtceu:europium_block",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_conveyor_module",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_conveyor_module"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7336
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_samarium_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_samarium_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnetic_samarium_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnetic_samarium_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/duranium_iv_drill",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:duranium_drill_head"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:iv_power_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_duranium_drill",
+            "nbt": "{Charge:0L,Damage:0,DisallowContainerItem:0,GT.Behaviours:{AoEColumn:4,AoELayer:8,AoERow:4,MaxAoEColumn:4,MaxAoELayer:8,MaxAoERow:4,RelocateMinedBlocks:1,RelocateMobDrops:1,TorchPlacing:1},GT.Tool:{DefaultEnchantments:[],HarvestLevel:5,MaxDamage:57343,ToolSpeed:18.0f},HideFlags:2,MaxCharge:25600000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_duranium_drill",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:iv_duranium_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:duranium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_duranium_drill",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_duranium_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1424
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:duranium_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

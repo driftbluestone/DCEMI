@@ -1,0 +1,186 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ring_nickel_zinc_ferrite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_nickel_zinc_ferrite_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_nickel_zinc_ferrite_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_nickel_zinc_ferrite_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_nickel_zinc_ferrite_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_nickel_zinc_ferrite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_nickel_zinc_ferrite_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          },
+          {
+            "id": "gtceu:small_nickel_zinc_ferrite_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_nickel_zinc_ferrite_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

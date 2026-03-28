@@ -1,0 +1,185 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/foil_indium_tin_barium_titanium_cuprate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_foil",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_indium_tin_barium_titanium_cuprate_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_indium_tin_barium_titanium_cuprate_ingot_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_indium_tin_barium_titanium_cuprate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_indium_tin_barium_titanium_cuprate_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_indium_tin_barium_titanium_cuprate_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_tin_barium_titanium_cuprate_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_indium_tin_barium_titanium_cuprate_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_indium_tin_barium_titanium_cuprate_foil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_foil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

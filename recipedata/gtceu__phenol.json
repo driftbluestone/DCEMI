@@ -1,0 +1,755 @@
+{
+  "uses": {
+    "gtceu:gas_turbine": [
+      {
+        "id": "gtceu:gas_turbine/phenol",
+        "category": "gtceu:gas_turbine",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:phenol"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/diphenyl_isophtalate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diphenyl_isophthalate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/epoxy_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:epichlorohydrin",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:epoxy",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:salt_water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/bisphenol_a",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bisphenol_a",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/aminophenol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/bisphenol_a",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bisphenol_a",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/aminophenol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_coal_tar_to_phenol",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_dust"
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_tar_to_phenol",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 75
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_heavy_fuel_to_phenol",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 5
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/phenol_from_dichlorobenzene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:dichlorobenzene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phenol_salt_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phenol_hcl_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:benzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phenol_acetone_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:propene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/polybenzimidazole",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:diaminobenzidine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diphenyl_isophthalate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1008
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phenol_from_cumene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:cumene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/phenol_from_dichlorobenzene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:dichlorobenzene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/polybenzimidazole",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:diaminobenzidine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diphenyl_isophthalate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1008
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/phenol_from_cumene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:cumene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_wood_tar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 350
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_coal_tar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:naphthalene",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:coke_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

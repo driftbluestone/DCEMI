@@ -1,0 +1,178 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/huge_tin_alloy_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:double_tin_alloy_plate"
+          },
+          {
+            "id": "gtceu:double_tin_alloy_plate"
+          },
+          {
+            "id": "gtceu:double_tin_alloy_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:double_tin_alloy_plate"
+          },
+          {
+            "id": "gtceu:double_tin_alloy_plate"
+          },
+          {
+            "id": "gtceu:double_tin_alloy_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_alloy_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tin_alloy_to_huge_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:tin_alloy",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_alloy_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_tin_alloy_huge_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:tin_alloy_ingot",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_alloy_huge_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:huge_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tin_alloy_huge_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tin_alloy_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_alloy_dust",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tin_alloy_huge_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tin_alloy_huge_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_alloy",
+            "amount": 1728
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tin_alloy_huge_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tin_alloy_huge_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1044
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_alloy_ingot",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

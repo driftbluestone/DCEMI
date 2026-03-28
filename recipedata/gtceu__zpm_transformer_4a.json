@@ -1,0 +1,154 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/zpm_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_transformer_1a"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_cable"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/zpm_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_transformer_4a"
+          },
+          {
+            "id": "gtceu:ev_electric_pump"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_octal_cable"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_hex_cable"
+          },
+          {
+            "id": "gtceu:small_vanadium_gallium_spring"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_transformer_4a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_transformer_4a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:vanadium_gallium_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_yttrium_barium_cuprate_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_transformer_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_transformer_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3883
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_nugget",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

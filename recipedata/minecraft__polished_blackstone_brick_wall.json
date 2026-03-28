@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_polished_blackstone_brick_into_wall",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:polished_blackstone_bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:polished_blackstone_brick_wall"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:13}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_polished_blackstone_brick_wall",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:polished_blackstone_brick_wall"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blackstone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

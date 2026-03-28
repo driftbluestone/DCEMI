@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_air_scrubber",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:fluid_filter"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:fluid_filter"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:fluid_filter"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:fluid_filter"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_air_scrubber"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_air_scrubber",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_air_scrubber"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:small_steel_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:zinc_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_air_scrubber",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_air_scrubber"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3112
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:steel_block"
+          },
+          {
+            "id": "gtceu:zinc_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

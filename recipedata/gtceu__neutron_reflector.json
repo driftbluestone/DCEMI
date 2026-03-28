@@ -1,0 +1,224 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fusion_coil",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:superconducting_coil"
+          },
+          {
+            "id": "gtceu:iv_field_generator",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iv_electric_pump"
+          },
+          {
+            "id": "gtceu:neutron_reflector",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:naquadah_small_fluid_pipe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:europium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fusion_coil"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/fusion_glass",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "id": "gtceu:naquadah_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:neutron_reflector",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fusion_glass",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/fusion_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_casing"
+          },
+          {
+            "id": "gtceu:superconducting_coil"
+          },
+          {
+            "id": "gtceu:neutron_reflector"
+          },
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fusion_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_neutron_reflector",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:neutron_reflector"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_carbide_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_neutron_reflector",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:neutron_reflector"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 591
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_carbide_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ruridit_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/neutron_reflector",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_plate"
+          },
+          {
+            "id": "gtceu:double_beryllium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:double_tungsten_carbide_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tin_alloy",
+            "amount": 4608
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutron_reflector"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_nitrosyl_chloride",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/cyclohexanone_oxime",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:cyclohexane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cyclohexanone_oxime_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/cyclohexanone_oxime",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:cyclohexane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cyclohexanone_oxime_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/nitrosyl_chloride",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/nitrosyl_chloride",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrosyl_chloride",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

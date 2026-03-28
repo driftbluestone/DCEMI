@@ -1,0 +1,90 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steel_lv_chainsaw",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:steel_chainsaw_head"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:lv_power_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_steel_chainsaw",
+            "nbt": "{Charge:0L,Damage:0,DisallowContainerItem:0,GT.Behaviours:{DisableShields:1,HarvestIce:1,TreeFelling:1},GT.Tool:{DefaultEnchantments:[],HarvestLevel:3,MaxDamage:511,ToolSpeed:14.0f},HideFlags:2,MaxCharge:100000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_steel_chainsaw",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_steel_chainsaw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_steel_dust",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_steel_chainsaw",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_steel_chainsaw",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 360
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 58
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

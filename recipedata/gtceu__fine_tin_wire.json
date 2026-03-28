@@ -1,0 +1,329 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_tin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:tin_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_tin_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_tin_wire_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_tin_wire",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:wiremill/mill_tin_wire_fine",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tin_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_tin_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/transistor",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_plate"
+          },
+          {
+            "id": "gtceu:fine_tin_wire",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:transistor",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/nand_chip_ulv_good_board",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:phenolic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:simple_soc"
+          },
+          {
+            "id": "gtceu:red_alloy_bolt",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_tin_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nand_chip",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nand_chip_ulv_good_board_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:phenolic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:simple_soc"
+          },
+          {
+            "id": "gtceu:red_alloy_bolt",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_tin_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nand_chip",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nand_chip_ulv_plastic_board",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:simple_soc"
+          },
+          {
+            "id": "gtceu:red_alloy_bolt",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_tin_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nand_chip",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nand_chip_ulv_plastic_board_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:simple_soc"
+          },
+          {
+            "id": "gtceu:red_alloy_bolt",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_tin_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nand_chip",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_tin_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fine_tin_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_tin_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_tin_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_tin_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_tin_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_tin_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 13
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

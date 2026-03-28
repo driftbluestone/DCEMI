@@ -1,0 +1,208 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/hay_block_to_hay",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:hay_block"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_knife"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/wheat_from_hay_block",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:hay_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/wheat",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:hay_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:9}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/wheat_to_dust",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:invar_mortar"
+          },
+          {
+            "id": "minecraft:wheat"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wheat_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/packed_mud",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:mud"
+          },
+          {
+            "id": "minecraft:wheat"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:packed_mud"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/plant_ball_from_wheat",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plant_ball"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/hay_block",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:wheat",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:hay_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_wheat",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:wheat"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wheat_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

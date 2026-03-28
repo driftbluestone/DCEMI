@@ -1,0 +1,161 @@
+{
+  "recipes": {
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_rubber_dust_to_foil",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:foil_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_rubber_ingot_to_foil",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:foil_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_rubber_ingot_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_rubber_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_rubber_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_rubber_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_rubber_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

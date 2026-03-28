@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_wiremill",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_wiremill"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_wiremill",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_wiremill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 23
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_wiremill",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_wiremill"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 25065
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_ingot",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 23
+          },
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

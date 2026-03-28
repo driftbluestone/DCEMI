@@ -1,0 +1,142 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/normal_wooden_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:oak_planks"
+          },
+          {
+            "tag": "minecraft:oak_planks"
+          },
+          {
+            "tag": "minecraft:oak_planks"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:silicone_rubber_mallet"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/normal_wood_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wood_plate",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/primitive_pump",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "id": "gtceu:wood_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:iron_screw"
+          },
+          {
+            "id": "gtceu:iron_rotor"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "minecraft:cobblestone_slab"
+          },
+          {
+            "id": "gtceu:wood_large_fluid_pipe"
+          },
+          {
+            "id": "minecraft:cobblestone_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:primitive_pump"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_wood_normal_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:wood_normal_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

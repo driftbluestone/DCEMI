@@ -1,0 +1,244 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_extruder",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_quadruple_wire"
+          },
+          {
+            "id": "gtceu:naquadah_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:zpm_electric_piston"
+          },
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_quadruple_wire"
+          },
+          {
+            "id": "gtceu:naquadah_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_extruder"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/zpm_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iridium_normal_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_iridium_normal_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium",
+            "amount": 432
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iridium_normal_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/medium_iridium_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_plate"
+          },
+          {
+            "id": "gtceu:iridium_plate"
+          },
+          {
+            "id": "gtceu:iridium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_iridium_to_normal_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:iridium",
+            "amount": 432
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:normal_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_iridium_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:normal_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

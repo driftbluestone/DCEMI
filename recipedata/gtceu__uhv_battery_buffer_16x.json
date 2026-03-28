@@ -1,0 +1,108 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uhv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:europium_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:europium_hex_wire"
+          },
+          {
+            "id": "gtceu:europium_hex_wire"
+          },
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:europium_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_battery_buffer_16x",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_battery_buffer_16x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 33
+          },
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_battery_buffer_16x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_battery_buffer_16x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 12986
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 33
+          },
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

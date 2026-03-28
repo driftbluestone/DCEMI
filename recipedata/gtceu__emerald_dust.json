@@ -1,0 +1,3259 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_emerald",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          },
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          },
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          },
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          },
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          },
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          },
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          },
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          },
+          {
+            "id": "gtceu:tiny_emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/centrifuged_ore_to_dust_emerald",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_emerald",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_emerald_dust"
+          },
+          {
+            "id": "gtceu:small_emerald_dust"
+          },
+          {
+            "id": "gtceu:small_emerald_dust"
+          },
+          {
+            "id": "gtceu:small_emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/centrifuge_emerald_pure_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "gtceu:pure_emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/centrifuge_beryllium_pure_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/centrifuge_beryllium_dirty_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/centrifuge_emerald_dirty_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:impure_emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_washer": [
+      {
+        "id": "gtceu:ore_washer/wash_emerald_dirty_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_emerald_pure_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_beryllium_crushed_ore_to_purified_ore_distilled",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:ore_washer/wash_beryllium_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_emerald_gem_to_lens",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:exquisite_emerald_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_lens"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_emerald_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_emerald_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_emerald_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_emerald_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:thermal_centrifuge": [
+      {
+        "id": "gtceu:thermal_centrifuge/centrifuge_beryllium_crushed_ore_to_refined_ore",
+        "category": "gtceu:thermal_centrifuge",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:thermal_centrifuge/centrifuge_beryllium_purified_ore_to_refined_ore",
+        "category": "gtceu:thermal_centrifuge",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_wireless_transmitter_cover",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:wireless_transmitter_cover"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_mv_emitter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_emitter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_emerald_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_ender_redstone_link_cover",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ender_redstone_link_cover"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:ender_pearl_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_mv_world_accelerator",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:mv_world_accelerator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnesium_diboride_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_mv_scanner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_scanner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_emerald_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:emerald_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_exquisite_emerald_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:exquisite_emerald_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_mv_sensor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_sensor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_flawless_emerald_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:flawless_emerald_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_central_monitor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:central_monitor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_emerald",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:emerald"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_beryllium_crushed_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_beryllium_crushed_ore_to_impure_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_emerald_refined_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:refined_emerald_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_emerald_refined_ore_to_dust",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:refined_emerald_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:emerald",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "id": "gtceu:raw_emerald"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:exquisite_emerald_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_emerald_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_emerald_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_emerald_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_emerald_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:emerald",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "id": "gtceu:raw_emerald"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:exquisite_emerald_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_emerald_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_emerald_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_emerald_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_emerald_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:emerald",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "id": "gtceu:raw_emerald"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:exquisite_emerald_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_emerald_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_emerald_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_emerald_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_emerald_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:emerald",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "id": "gtceu:raw_emerald"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:exquisite_emerald_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_emerald_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_emerald_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_emerald_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_emerald_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:emerald",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "tag": "minecraft:emerald_ore"
+          },
+          {
+            "id": "gtceu:raw_emerald"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_emerald_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_emerald_ore"
+          },
+          {
+            "id": "gtceu:purified_emerald_ore"
+          },
+          {
+            "id": "gtceu:impure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:pure_emerald_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust"
+          },
+          {
+            "id": "gtceu:exquisite_emerald_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_emerald_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_emerald_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_emerald_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_emerald_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:beryllium",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "id": "gtceu:raw_beryllium"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_ingot"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:beryllium",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "id": "gtceu:raw_beryllium"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_ingot"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:beryllium",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "id": "gtceu:raw_beryllium"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_ingot"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:beryllium",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "id": "gtceu:raw_beryllium"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_ingot"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:beryllium",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "id": "gtceu:raw_beryllium"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_ingot"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:beryllium",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_beryllium_ore"
+          },
+          {
+            "id": "gtceu:raw_beryllium"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_ingot"
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_beryllium_ore"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_beryllium_ore"
+          },
+          {
+            "id": "gtceu:purified_beryllium_ore"
+          },
+          {
+            "id": "gtceu:impure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          },
+          {
+            "id": "gtceu:pure_beryllium_dust"
+          },
+          {
+            "id": "gtceu:beryllium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_emerald",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_emerald_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_emerald",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_emerald_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_emerald",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_emerald_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_emerald",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_emerald_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_emerald",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 29
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:silicon_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 18000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:implosion_compressor": [
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_emerald_tnt",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:tnt",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_emerald_itnt",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_emerald_powderbarrel",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:powderbarrel",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_emerald_dynamite",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:dynamite",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:emerald",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_emerald_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_emerald_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_emerald_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_emerald_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

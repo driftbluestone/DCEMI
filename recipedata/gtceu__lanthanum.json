@@ -1,0 +1,57 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/lantanum_and_silicon_to_lutetium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:lanthanum",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:silicon",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lutetium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_lanthanum_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lanthanum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lanthanum",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

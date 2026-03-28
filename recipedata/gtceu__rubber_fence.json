@@ -1,0 +1,94 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rubber_fence",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_planks"
+          },
+          {
+            "tag": "minecraft:stick"
+          },
+          {
+            "id": "gtceu:rubber_planks"
+          },
+          {
+            "id": "gtceu:rubber_planks"
+          },
+          {
+            "tag": "minecraft:stick"
+          },
+          {
+            "id": "gtceu:rubber_planks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_fence",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/rubber_fence",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_planks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_fence"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:13}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_rubber_fence",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_fence"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

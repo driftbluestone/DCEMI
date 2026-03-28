@@ -1,0 +1,113 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uxv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 125829120,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uxv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uxv_substation_output_hatch_64a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_substation_output_hatch_64a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:lead_dust",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 27
+          },
+          {
+            "id": "gtceu:small_osmiridium_dust",
+            "amount": 51
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uxv_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 10440
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 27
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

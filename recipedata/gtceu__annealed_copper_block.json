@@ -1,0 +1,663 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_annealed_copper_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_annealed_copper_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_annealed_copper_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_copper_nonuple_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:copper_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_waxed_oxidized_copper",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_oxidized_copper"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_waxed_weathered_copper",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_weathered_copper"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_circuit_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_circuit_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3073
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 21
+          },
+          {
+            "id": "gtceu:annealed_copper_block"
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_fisher",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_fisher"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2967
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:annealed_copper_block"
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4594
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:annealed_copper_block",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_battery_buffer_4x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_battery_buffer_4x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 778
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_weathered_copper",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:weathered_copper"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mv_4a_energy_converter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_4a_energy_converter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 953
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_exposed_copper",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:exposed_copper"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_waxed_exposed_copper",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_exposed_copper"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_oxidized_copper",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:oxidized_copper"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_annealed_copper_dust_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_annealed_copper_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_annealed_copper_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 47
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_annealed_copper_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 35
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_annealed_copper_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 11
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_annealed_copper_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_annealed_copper_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_annealed_copper_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_annealed_copper_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

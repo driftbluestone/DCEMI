@@ -1,0 +1,128 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_hatch_9x_input_to_output_zpm",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:zpm_input_hatch_9x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_output_hatch_9x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/fluid_export_hatch_9x_zpm",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_output_hatch"
+          },
+          {
+            "id": "gtceu:iridium_nonuple_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_output_hatch_9x"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_hatch_9x_output_to_input_zpm",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:zpm_output_hatch_9x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_input_hatch_9x"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_output_hatch_9x",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_output_hatch_9x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_output_hatch_9x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_output_hatch_9x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1728
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

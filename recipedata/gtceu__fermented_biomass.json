@@ -1,0 +1,333 @@
+{
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_water",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 375
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_acetic_acid",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 25
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_carbon_dioxide",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 400
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_ethanol",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 150
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_ammonia",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_methanol",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 150
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_methane",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 600
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:7}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_fermented_biomass",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 600
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 25
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 375
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:fertilizer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:fermenter": [
+      {
+        "id": "gtceu:fermenter/fermented_biomass",
+        "category": "gtceu:fermenter",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:biomass",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 100
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/bio_chaff_to_fermented_biomass",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 10,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/snowball",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:snowball"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ball_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/snowball_distilled",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:snowball"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ball_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/snowball_extraction",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:snowball"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/snowballs_to_snow",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:snowball",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:snow_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

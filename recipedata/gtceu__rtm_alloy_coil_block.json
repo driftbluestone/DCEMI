@@ -1,0 +1,95 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/coil_rtm_alloy",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:vanadium_steel_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nichrome",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_coil_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_rtm_alloy_coil_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_coil_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:vanadium_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_rtm_alloy_coil_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rtm_alloy_coil_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1094
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:vanadium_steel_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

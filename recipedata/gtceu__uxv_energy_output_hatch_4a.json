@@ -1,0 +1,127 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_16a_uxv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 125829120,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_transformer_1a"
+          },
+          {
+            "id": "gtceu:uxv_energy_output_hatch_4a"
+          },
+          {
+            "id": "gtceu:lead_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_energy_output_hatch_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uxv_energy_output_hatch_4a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_energy_output_hatch_4a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uxv_energy_output_hatch_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_energy_output_hatch_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 940
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_4a_uxv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 31457280,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:lead_quadruple_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_energy_output_hatch_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_uranium_triplatinum_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:hot_uranium_triplatinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_uranium_triplatinum_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_dust"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_uranium_triplatinum",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_uranium_triplatinum_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

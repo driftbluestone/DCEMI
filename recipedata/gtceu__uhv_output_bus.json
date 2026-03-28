@@ -1,0 +1,91 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_input_to_output_9",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:uhv_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_output_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/item_export_bus_uhv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:mv_super_chest"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 360
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_output_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_output_to_input_9",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:uhv_output_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_input_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

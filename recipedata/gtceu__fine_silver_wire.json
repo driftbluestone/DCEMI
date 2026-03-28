@@ -1,0 +1,189 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_silver",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:silver_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_silver_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_silver_wire_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:silver_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_silver_wire",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:wiremill/mill_silver_wire_fine",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:silver_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_silver_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/image_module",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:electrum_foil",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_silver_wire",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:image_module"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_silver_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fine_silver_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_silver_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_silver_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_silver_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silver",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_silver_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_silver_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 11
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silver_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "uses": {
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/form_cobbled_deepslate_slab_into_pillar",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobbled_deepslate_slab",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chiseled_deepslate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cobbled_deepslate_slab",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:cobbled_deepslate_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_deepslate_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_cobbled_deepslate_into_slab",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobbled_deepslate"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobbled_deepslate_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_cobbled_deepslate_into_slab_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobbled_deepslate"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobbled_deepslate_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_cobbled_deepslate_into_slab_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobbled_deepslate"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobbled_deepslate_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_reinforced_epoxy_resin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:small_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:small_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:small_reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_reinforced_epoxy_resin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_reinforced_epoxy_resin_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_reinforced_epoxy_resin_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_reinforced_epoxy_resin_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_reinforced_epoxy_resin_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_reinforced_epoxy_resin_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_reinforced_epoxy_resin_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_reinforced_epoxy_resin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_reinforced_epoxy_resin_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_reinforced_epoxy_resin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_reinforced_epoxy_resin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_reinforced_epoxy_resin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_reinforced_epoxy_resin_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/reinforced_epoxy_resin_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:epoxy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_reinforced_epoxy_resin_dust_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_reinforced_epoxy_resin_to_ingot",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_reinforced_epoxy_resin_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_reinforced_epoxy_resin_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_reinforced_epoxy_resin_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_reinforced_epoxy_resin_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_reinforced_epoxy_resin_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_reinforced_epoxy_resin_dust",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust"
+          },
+          {
+            "id": "gtceu:oxygen"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_reinforced_epoxy_resin_dust_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

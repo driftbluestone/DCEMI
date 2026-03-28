@@ -1,0 +1,105 @@
+{
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_deepslate_tile_into_slab_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:deepslate_tiles"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:deepslate_tile_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_deepslate_tile_into_slab",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:deepslate_tiles"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:deepslate_tile_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_deepslate_tile_into_slab_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:deepslate_tiles"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:deepslate_tile_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_deepslate_tile_slab",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:deepslate_tile_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_deepslate_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

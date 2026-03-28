@@ -1,0 +1,88 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/bauxite_sludge_centrifuge",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:decalcified_bauxite_sludge",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rutile_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:gallium_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:gallium_dust",
+            "chance": 0.3
+          },
+          {
+            "id": "gtceu:gallium_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.9
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.8
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/bauxite_sludge_decalcification",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bauxite_sludge",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:decalcified_bauxite_sludge",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

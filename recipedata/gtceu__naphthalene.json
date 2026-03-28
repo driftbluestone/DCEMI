@@ -1,0 +1,147 @@
+{
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_coal_tar_to_naphthalene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_dust"
+          },
+          {
+            "id": "gtceu:naphthalene",
+            "amount": 400
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_coal_tar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:naphthalene",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:coke_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/phthalic_acid_from_naphthalene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_potassium_dust"
+          },
+          {
+            "id": "gtceu:naphthalene",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 2500
+          },
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phthalic_acid_from_naphthalene_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dust"
+          },
+          {
+            "id": "gtceu:naphthalene",
+            "amount": 18000
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 9000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 22500
+          },
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 9000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

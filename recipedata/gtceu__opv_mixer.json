@@ -1,0 +1,104 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/opv_mixer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:opv_electric_motor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_mixer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_opv_mixer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:opv_mixer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_opv_mixer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:opv_mixer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 472
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

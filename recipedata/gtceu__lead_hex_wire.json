@@ -1,0 +1,1631 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/lead_wire_wire_gt_quadruple_quadrupling",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_quadruple_wire"
+          },
+          {
+            "id": "gtceu:lead_quadruple_wire"
+          },
+          {
+            "id": "gtceu:lead_quadruple_wire"
+          },
+          {
+            "id": "gtceu:lead_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/lead_wire_wire_gt_octal_doubling",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_octal_wire"
+          },
+          {
+            "id": "gtceu:lead_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_lead_wire_16",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/pack_lead_wires_4_0",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:lead_single_wire",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/pack_lead_wires_1_3",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:lead_octal_wire",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/pack_lead_wires_3_1",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:lead_double_wire",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/strip_lead_cable_gt_hex",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:packer/pack_lead_wires_2_2",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:lead_quadruple_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/max_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:max_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/max_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:max_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/max_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:max_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/max_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:max_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/ulv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/ulv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/ulv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/ulv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/lead_wire_wire_gt_hex_splitting",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_octal_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uxv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uxv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uxv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uxv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/lead_cable_16",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          },
+          {
+            "id": "gtceu:rubber_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_uxv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 125829120,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uxv_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uxv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 125829120,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uxv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_lead_wire_gt_hex_styrene_butadiene",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 180
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_opv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 503316480,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_16a"
+          },
+          {
+            "id": "gtceu:opv_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_uiv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 31457280,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uiv_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_uev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7864320,
+        "inputs": [
+          {
+            "id": "gtceu:uev_transformer_16a"
+          },
+          {
+            "id": "gtceu:uev_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uiv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 31457280,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uiv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_lead_wire_gt_hex_rubber",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber",
+            "amount": 720
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7864320,
+        "inputs": [
+          {
+            "id": "gtceu:uev_transformer_16a"
+          },
+          {
+            "id": "gtceu:uev_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_max",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2013265920,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_16a"
+          },
+          {
+            "id": "gtceu:max_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_opv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 503316480,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_16a"
+          },
+          {
+            "id": "gtceu:opv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_max",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2013265920,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_16a"
+          },
+          {
+            "id": "gtceu:max_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_lead_wire_gt_hex_silicone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:silicone_rubber",
+            "amount": 360
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_cable"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/cover_lead_wire_gt_hex",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_hex_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:packer/pack_lead_wires_4_single",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_single_wire",
+            "amount": 16
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lead_hex_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_lead_hex_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lead_hex_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lead_hex_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1656
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

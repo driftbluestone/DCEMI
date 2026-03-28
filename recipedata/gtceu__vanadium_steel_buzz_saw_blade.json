@@ -1,0 +1,220 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/vanadium_steel_buzzsaw",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:vanadium_steel_buzz_saw_blade"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:lv_power_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_steel_buzzsaw",
+            "nbt": "{Charge:0L,Damage:0,DisallowContainerItem:0,GT.Behaviours:{},GT.Tool:{DefaultEnchantments:[],MaxDamage:1535},HideFlags:2,MaxCharge:100000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/mv_cutter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:mv_conveyor_module"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:vanadium_steel_buzz_saw_blade"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:mv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_cutter"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_vanadium_steel_buzz_saw_blade",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_steel_buzz_saw_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_steel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_vanadium_steel_buzz_saw_blade",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_steel_buzz_saw_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_steel",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_vanadium_steel_buzz_saw_blade",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_steel_buzz_saw_blade"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 220
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/buzzsaw_blade_vanadium_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:vanadium_steel_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:vanadium_steel_plate"
+          },
+          {
+            "id": "gtceu:vanadium_steel_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:vanadium_steel_plate"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_steel_buzz_saw_blade"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/buzzsaw_gear_vanadium_steel",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_steel_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_steel_buzz_saw_blade"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

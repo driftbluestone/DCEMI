@@ -1,0 +1,57 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/arsenic_and_ruthenium_to_darmstadtium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:arsenic",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:ruthenium",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_arsenic_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:arsenic_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:arsenic",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

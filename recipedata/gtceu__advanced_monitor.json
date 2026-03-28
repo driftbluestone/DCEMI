@@ -1,0 +1,112 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/advanced_monitor_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:monitor"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_monitor"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_advanced_monitor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_monitor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:glass_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_advanced_monitor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_monitor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 562
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_block"
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

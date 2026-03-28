@@ -1,0 +1,1820 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_pentlandite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_pentlandite_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_pentlandite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_pentlandite_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_pentlandite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_pentlandite_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_pentlandite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_pentlandite_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_dust_pentlandite_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_pentlandite",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust",
+            "amount": 17
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/pentlandite_metallurgy",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:garnierite_dust"
+          },
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:sulfur_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_pentlandite_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_pentlandite_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_pentlandite_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_pentlandite_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/centrifuged_ore_to_dust_pentlandite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_pentlandite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:small_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:small_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:small_pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_pentlandite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:tiny_pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/centrifuge_pentlandite_dirty_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/centrifuge_pentlandite_pure_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_washer": [
+      {
+        "id": "gtceu:ore_washer/wash_pentlandite_dirty_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_pentlandite_pure_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:electromagnetic_separator": [
+      {
+        "id": "gtceu:electromagnetic_separator/separate_pentlandite_pure_dust_to_dust",
+        "category": "gtceu:electromagnetic_separator",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:iron_nugget",
+            "chance": 0.2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_pentlandite_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_pentlandite_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_pentlandite_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_pentlandite_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_pentlandite_refined_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_pentlandite_refined_ore_to_dust",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pentlandite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:pentlandite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:raw_pentlandite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:sodium_persulfate",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pentlandite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:raw_pentlandite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:sodium_persulfate",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pentlandite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:raw_pentlandite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:sodium_persulfate",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pentlandite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:raw_pentlandite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:sodium_persulfate",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pentlandite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:raw_pentlandite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:sodium_persulfate",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:pentlandite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "tag": "gtceu:gravel_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:raw_pentlandite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:sodium_persulfate",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_ingot"
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:impure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pure_pentlandite_dust"
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.7
+          },
+          {
+            "id": "gtceu:pentlandite_dust"
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 2,
+            "chance": 0.2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

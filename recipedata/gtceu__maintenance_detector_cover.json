@@ -1,0 +1,105 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_maintenance_detector",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:lv_emitter"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:maintenance_detector_cover"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_maintenance_detector_cover",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:maintenance_detector_cover"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:brass_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_dust"
+          },
+          {
+            "id": "gtceu:quartzite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_maintenance_detector_cover",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:maintenance_detector_cover"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 304
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brass_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_ingot"
+          },
+          {
+            "id": "gtceu:tin_ingot"
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

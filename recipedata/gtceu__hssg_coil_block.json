@@ -1,0 +1,95 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/coil_hssg",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:hssg_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_carbide_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hssg_coil_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hssg_coil_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hssg_coil_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hssg_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_carbide_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hssg_coil_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hssg_coil_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 978
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hssg_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_carbide_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

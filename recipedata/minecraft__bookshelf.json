@@ -1,0 +1,147 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/lectern",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "tag": "minecraft:oak_slab",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:bookshelf"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:lectern"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_bookshelf",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:bookshelf"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_bookshelf",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:bookshelf"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/bookshelf_extraction",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:bookshelf"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:book",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_bookshelf",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:bookshelf"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:paper_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/bookshelf",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "tag": "minecraft:oak_planks",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:book",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bookshelf"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

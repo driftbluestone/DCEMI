@@ -1,0 +1,1850 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/centrifuged_ore_to_dust_ruby",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_ruby",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_ruby",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_ruby_dust"
+          },
+          {
+            "id": "gtceu:small_ruby_dust"
+          },
+          {
+            "id": "gtceu:small_ruby_dust"
+          },
+          {
+            "id": "gtceu:small_ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/centrifuge_ruby_pure_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "gtceu:pure_ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/centrifuge_ruby_dirty_dust_to_dust",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:impure_ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__redstone",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:redstone",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_dust"
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_washer": [
+      {
+        "id": "gtceu:ore_washer/wash_ruby_pure_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_ruby_dirty_dust_to_dust",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_ruby_gem_to_lens",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:exquisite_ruby_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_lens"
+          },
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_ruby_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_ruby_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_ruby_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_ruby_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ruby_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_ruby_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_ruby_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_exquisite_ruby_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:exquisite_ruby_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_flawless_ruby_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:flawless_ruby_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_ruby_refined_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:refined_ruby_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_ruby_refined_ore_to_dust",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:refined_ruby_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:ruby",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "id": "gtceu:raw_ruby"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:exquisite_ruby_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_ruby_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:ruby_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_ruby_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_ruby_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_ruby_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:ruby",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "id": "gtceu:raw_ruby"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:exquisite_ruby_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_ruby_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:ruby_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_ruby_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_ruby_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_ruby_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:ruby",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "id": "gtceu:raw_ruby"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:exquisite_ruby_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_ruby_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:ruby_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_ruby_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_ruby_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_ruby_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:ruby",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "id": "gtceu:raw_ruby"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:exquisite_ruby_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_ruby_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:ruby_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_ruby_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_ruby_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_ruby_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:ruby",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "tag": "gtceu:endstone_ruby_ore"
+          },
+          {
+            "id": "gtceu:raw_ruby"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem"
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_ruby_ore"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:red_garnet_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_ruby_ore"
+          },
+          {
+            "id": "gtceu:purified_ruby_ore"
+          },
+          {
+            "id": "gtceu:impure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:pure_ruby_dust"
+          },
+          {
+            "id": "gtceu:ruby_dust"
+          },
+          {
+            "id": "gtceu:exquisite_ruby_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_ruby_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:ruby_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_ruby_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_ruby_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_ruby_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_ruby",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ruby_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_ruby",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ruby_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_ruby",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ruby_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_ruby",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ruby_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/energium_dust",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "minecraft:redstone",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:energium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_ruby",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chromium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/aluminium_from_ruby_dust",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 100,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:implosion_compressor": [
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_ruby_powderbarrel",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:powderbarrel",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_ruby_tnt",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:tnt",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_ruby_dynamite",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:dynamite",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_ruby_itnt",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruby_gem",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_ruby_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ruby_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_ruby_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:ruby_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ruby_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

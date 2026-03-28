@@ -1,0 +1,54 @@
+{
+  "recipes": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/naquadria_battery_zpm",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_battery_hull"
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_naquadria_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_zpm_naquadria_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_naquadria_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

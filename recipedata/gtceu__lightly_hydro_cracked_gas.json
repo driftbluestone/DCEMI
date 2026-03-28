@@ -1,0 +1,226 @@
+{
+  "recipes": {
+    "gtceu:cracker": [
+      {
+        "id": "gtceu:cracker/lightly_hydro_crack_refinery_gas",
+        "category": "gtceu:cracker",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:refinery_gas",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_gas",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/lightly_hydro_crack_refinery_gas",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:refinery_gas",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_gas",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/lightly_hydro_crack_refinery_gas",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:refinery_gas",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_gas",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_lightly_hydro_cracked_gas_to_methane",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_gas",
+            "amount": 40
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 56
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_lightly_hydro_cracked_gas_to_helium",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:helium",
+            "amount": 20
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_lightly_hydro_cracked_gas_to_hydrogen",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_gas",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 134
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_lightly_hydro_cracked_gas",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 1400
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1340
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

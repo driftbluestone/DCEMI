@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/butraldehyde",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:propene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:butyraldehyde",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/butraldehyde",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:propene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:butyraldehyde",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/polyvinyl_butyral",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:butyraldehyde",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:polyvinyl_acetate",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_butyral",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/polyvinyl_butyral",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:butyraldehyde",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:polyvinyl_acetate",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_butyral",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

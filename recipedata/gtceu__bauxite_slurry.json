@@ -1,0 +1,110 @@
+{
+  "recipes": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/bauxite_slurry_from_crushed_bauxite",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_bauxite_ore",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soda_ash_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bauxite_slurry",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/bauxite_slurry_from_washed_bauxite",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:purified_bauxite_ore",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soda_ash_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bauxite_slurry",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:cracker": [
+      {
+        "id": "gtceu:cracker/cracked_bauxite_slurry",
+        "category": "gtceu:cracker",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:bauxite_slurry",
+            "amount": 16000
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cracked_bauxite_slurry",
+            "amount": 16000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

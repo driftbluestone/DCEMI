@@ -1,0 +1,1130 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_platinum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:platinum_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_platinum_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_platinum_wire_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:wiremill/mill_platinum_wire_fine",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/voltage_coil_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_rod"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_voltage_coil"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/wireless_transmitter_cover",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_plate"
+          },
+          {
+            "id": "gtceu:annealed_copper_foil"
+          },
+          {
+            "id": "gtceu:mv_emitter"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wireless_transmitter_cover"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/asmd_resistor",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 3840,
+        "inputs": [
+          {
+            "id": "gtceu:graphene_dust"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/smd_diode",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:gallium_arsenide_dust"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_diode",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/quantum_computer_luv_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:quantum_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/data_orb_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1200,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:nand_memory_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_orb"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_soc",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:niobium_titanium_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_computer_luv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:quantum_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_diode",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:qbit_cpu_chip"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_assembly_iv_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:qbit_cpu_chip"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:smd_transistor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/lapotronic_energy_orb_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1024,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:mpic_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:engraved_lapotron_crystal_chip",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:nano_cpu_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:platinum_plate",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotronic_energy_orb"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_computer_luv_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:quantum_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:qbit_cpu_chip"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:smd_transistor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_computer_luv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:quantum_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_diode",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/lapotronic_energy_orb",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1024,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:mpic_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:engraved_lapotron_crystal_chip",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:nano_cpu_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:platinum_plate",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotronic_energy_orb"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/data_orb",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1200,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:nand_memory_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_orb"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_assembly_iv_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:qbit_cpu_chip"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_soc_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:niobium_titanium_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_assembly_iv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_assembly_iv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/lapotronic_energy_orb_cluster",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 80000,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:europium_plate",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb"
+          },
+          {
+            "id": "gtceu:iv_field_generator"
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadah_bolt",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 720
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_lapotronic_energy_orb\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_platinum_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fine_platinum_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_platinum_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_platinum_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_platinum_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_platinum_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_platinum_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 21
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

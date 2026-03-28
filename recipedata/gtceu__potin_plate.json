@@ -1,0 +1,946 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_potin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_ingot"
+          },
+          {
+            "id": "gtceu:potin_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_potin_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:potin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_potin_to_plate",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:potin_ingot",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_plate",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_potin_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:potin_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_potin_to_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:potin_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_potin_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:potin_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 51
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_potin_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:potin_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 68
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_potin_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:potin_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 17
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/medium_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/medium_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/medium_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_tiny_fluid_pipe",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_large_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_large_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_large_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_large_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_large_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_large_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_potin_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_small_fluid_pipe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_potin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_potin_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_potin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_potin_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_potin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_potin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_potin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_potin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          },
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:potin_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_gear"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_potin_plate_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_potin_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_potin_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_potin_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_potin_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:potin_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 91
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potin_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

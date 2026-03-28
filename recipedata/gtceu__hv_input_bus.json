@@ -1,0 +1,241 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_input_to_output_3",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:hv_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_output_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:large_chemical_reactor",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_chemical_reactor"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:hv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:hv_output_hatch"
+          },
+          {
+            "id": "gtceu:hv_input_hatch"
+          },
+          {
+            "id": "gtceu:hv_output_bus"
+          },
+          {
+            "id": "gtceu:hv_input_bus"
+          },
+          {
+            "id": "gtceu:cupronickel_coil_block"
+          },
+          {
+            "id": "gtceu:ptfe_pipe_casing"
+          },
+          {
+            "id": "gtceu:inert_machine_casing",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/basic_data_access_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_input_bus"
+          },
+          {
+            "id": "gtceu:data_stick",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:basic_data_access_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_output_to_input_3",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:hv_output_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_input_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/item_import_bus_hv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:steel_crate"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_input_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/item_import_bus_hv_polytetrafluoroethylene",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:steel_crate"
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_input_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/item_import_bus_hv_polyethylene",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:steel_crate"
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_input_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

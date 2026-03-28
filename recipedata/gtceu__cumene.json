@@ -1,0 +1,146 @@
+{
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/cumene_from_benzene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cumene",
+            "amount": 8000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/cumene_from_benzene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cumene",
+            "amount": 8000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/phenol_from_cumene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:cumene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/phenol_from_cumene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:cumene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

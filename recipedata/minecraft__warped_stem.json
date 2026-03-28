@@ -1,0 +1,52 @@
+{
+  "uses": {
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/strip_warped_log",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:warped_stem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:stripped_warped_stem"
+          },
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/plant_ball_from_warped_stem",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:warped_stem",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plant_ball"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

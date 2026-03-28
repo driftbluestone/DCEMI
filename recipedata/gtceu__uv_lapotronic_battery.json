@@ -1,0 +1,62 @@
+{
+  "recipes": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/uv_lapotronic_battery",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:energy_cluster"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_lapotronic_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_uv_lapotronic_battery",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_lapotronic_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:energy_cluster"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_cutter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:lv_conveyor_module"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:cobalt_brass_buzz_saw_blade"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_cutter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/cobalt_brass_buzzsaw",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:cobalt_brass_buzz_saw_blade"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:lv_power_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_buzzsaw",
+            "nbt": "{Charge:0L,Damage:0,DisallowContainerItem:0,GT.Behaviours:{},GT.Tool:{DefaultEnchantments:[],MaxDamage:1023},HideFlags:2,MaxCharge:100000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cobalt_brass_buzz_saw_blade",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_buzz_saw_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_cobalt_brass_buzz_saw_blade",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_buzz_saw_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_cobalt_brass_buzz_saw_blade",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_buzz_saw_blade"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 232
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/buzzsaw_blade_cobalt_brass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_buzz_saw_blade"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/buzzsaw_gear_cobalt_brass",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 56,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_buzz_saw_blade"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/iv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_4a"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:niobium_titanium_octal_cable"
+          },
+          {
+            "id": "gtceu:platinum_hex_cable"
+          },
+          {
+            "id": "gtceu:small_platinum_spring"
+          },
+          {
+            "id": "gtceu:niobium_titanium_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_transformer_4a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_4a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_transformer_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3733
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 11
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/iv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_1a"
+          },
+          {
+            "id": "gtceu:niobium_titanium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:platinum_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

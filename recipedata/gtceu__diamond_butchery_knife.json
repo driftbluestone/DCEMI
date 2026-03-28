@@ -1,0 +1,77 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/butchery_knife_diamond",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "gtceu:diamond_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diamond_butchery_knife",
+            "nbt": "{Damage:0,DisallowContainerItem:0,GT.Behaviours:{},GT.Tool:{AttackDamage:8.5f,AttackSpeed:-1.1999999f,DefaultEnchantments:[],MaxDamage:767},HideFlags:2}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:smithing": [
+      {
+        "id": "gtceu:netherite_butchery_knife_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_butchery_knife",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_butchery_knife",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.5f,AttackSpeed:-1.3f,DefaultEnchantments:[],MaxDamage:2032}}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

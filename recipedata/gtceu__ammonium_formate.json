@@ -1,0 +1,121 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_ammonium_formate",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:ammonium_formate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_heater": [
+      {
+        "id": "gtceu:fluid_heater/formamide",
+        "category": "gtceu:fluid_heater",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ammonium_formate",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:formamide",
+            "amount": 100
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/ammonium_formate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:formic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonium_formate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/ammonium_formate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:formic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonium_formate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

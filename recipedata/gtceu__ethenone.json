@@ -1,0 +1,274 @@
+{
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_acetone_to_ethenone",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 160,
+        "inputs": [
+          {
+            "id": "gtceu:acetone",
+            "amount": 40
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 40
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/ethenone",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/ethenone",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_acetone",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 640,
+        "inputs": [
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_heater": [
+      {
+        "id": "gtceu:fluid_heater/ethenone",
+        "category": "gtceu:fluid_heater",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:acetone",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/tetranitromethane_from_ethenone",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 5000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_anhydride",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_anhydride",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/tetranitromethane_from_ethenone",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 5000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/acetic_anhydride",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_anhydride",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

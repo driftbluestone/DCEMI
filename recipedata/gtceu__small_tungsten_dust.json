@@ -1,0 +1,842 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_tungsten",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_tungsten",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_tungsten_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_rod"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_tungsten_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tungsten_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_extractor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_extractor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 22
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_autoclave",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_autoclave"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_assembly_line_unit",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:assembly_line_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 34
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_cutter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_assembly_line_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:assembly_line_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_steel_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_electrolytic_cell",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:electrolytic_cell"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsla_steel_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tungsten_tiny_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_tiny_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_canner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_canner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_conveyor_module",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_conveyor_module"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silicone_rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_brewery",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_brewery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_robot_arm",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_robot_arm"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 34
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_small_tungsten_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tungsten_single_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_256a_laser_source_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_256a_laser_source_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 14
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_fisher",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_fisher"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 58
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tungsten_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tungsten_single_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_distillery",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_distillery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_iv_electric_pump",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_electric_pump"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_steel_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tungsten",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tungsten",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tungsten",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tungsten",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_tungsten_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

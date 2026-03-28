@@ -1,0 +1,99 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/treated_fence_gate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_rod"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:treated_wood_rod"
+          },
+          {
+            "id": "gtceu:treated_wood_rod"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:treated_wood_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_fence_gate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/treated_fence_gate",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_planks",
+            "amount": 2
+          },
+          {
+            "tag": "minecraft:stick",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_fence_gate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_treated_wood_fence_gate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_fence_gate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

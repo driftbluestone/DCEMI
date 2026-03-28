@@ -1,0 +1,312 @@
+{
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/gtceu_bio_chaff",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/gtceu_bio_chaff",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/dirt_from_bio_chaff",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:dirt"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:brewery/biomass_from_bio_chaff",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:biomass",
+            "amount": 750
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/bacteria",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bacteria",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/bio_chaff_to_fermented_biomass",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 10,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/bio_chaff_to_biomass",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 10,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:biomass",
+            "amount": 5000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/bio_chaff",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:plant_ball",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "gtceu:bio_chaff",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:bio_chaff",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/bio_chaff",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:plant_ball",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "gtceu:bio_chaff",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:bio_chaff",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/bio_chaff",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:plant_ball",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "gtceu:bio_chaff",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:bio_chaff",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/bio_chaff",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:plant_ball",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "gtceu:bio_chaff"
+          },
+          {
+            "id": "gtceu:bio_chaff",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:bio_chaff",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/silver_and_helium_3_to_tin_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 49152,
+        "inputs": [
+          {
+            "id": "gtceu:silver",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:helium_3",
+            "amount": 375
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_plasma",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:plasma_generator": [
+      {
+        "id": "gtceu:plasma_generator/tin",
+        "category": "gtceu:plasma_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_plasma"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

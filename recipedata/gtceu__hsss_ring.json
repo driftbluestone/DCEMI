@@ -1,0 +1,353 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rotor_hsss",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:hsss_plate"
+          },
+          {
+            "id": "gtceu:hsss_screw"
+          },
+          {
+            "id": "gtceu:hsss_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:hsss_plate"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:hsss_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_rotor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/electric_motor_luv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:long_magnetic_samarium_rod"
+          },
+          {
+            "id": "gtceu:long_hsss_rod",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsss_ring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsss_round",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_ruridit_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_electric_motor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_iv_electric_motor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/electric_piston_luv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:hsss_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hsss_ring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hsss_round",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hsss_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hsss_gear"
+          },
+          {
+            "id": "gtceu:small_hsss_gear",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_electric_piston"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_iv_electric_piston\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/conveyor_module_luv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_motor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsss_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsss_ring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hsss_round",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hsss_screw",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_conveyor_module"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_iv_conveyor_module\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hsss_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hsss_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_hsss_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hsss_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 28
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ring_hsss",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:hsss_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_hsss_ingot_to_ring",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:hsss_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ring",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/demagnetize_magnetic_steel_dense_plate",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:dense_magnetic_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dense_steel_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_dense_magnetic_steel_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:dense_magnetic_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_dense_magnetic_steel_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:dense_magnetic_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_dense_magnetic_steel_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dense_magnetic_steel_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 504
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:polarizer": [
+      {
+        "id": "gtceu:polarizer/polarize_steel_dense_plate",
+        "category": "gtceu:polarizer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:dense_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dense_magnetic_steel_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

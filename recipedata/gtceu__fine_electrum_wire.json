@@ -1,0 +1,1000 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_electrum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:electrum_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_electrum_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_electrum_wire_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:wiremill/mill_electrum_wire_fine",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/smd_resistor_electrum",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_resistor",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/advanced_computer_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:fine_cobalt_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_single_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_computer_casing"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_hv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:smd_resistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:smd_transistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_hv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:smd_resistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:smd_transistor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/integrated_circuit_hv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:good_integrated_circuit",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ilc_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:transistor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:annealed_copper_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_integrated_circuit"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_assembly_ev_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor"
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_assembly_ev_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_computer_iv_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/workstation_ev",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:micro_processor_assembly",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:diode",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:blue_alloy_bolt",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/workstation_ev_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:micro_processor_assembly",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:diode",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:blue_alloy_bolt",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_computer_iv_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/integrated_circuit_hv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:good_integrated_circuit",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ilc_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:transistor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:annealed_copper_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_integrated_circuit"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_hv_soc_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 9600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:platinum_bolt",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_assembly_ev_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor"
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_assembly_ev",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_hv_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_computer_iv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_diode",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_hv_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_computer_iv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:nano_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_diode",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_hv_soc",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 9600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:platinum_bolt",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_electrum_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fine_electrum_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_electrum_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_electrum_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_electrum_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_electrum_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_electrum_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

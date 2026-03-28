@@ -1,0 +1,145 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/pump_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iron_screw"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:wood_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "minecraft:cobblestone_slab"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "id": "minecraft:cobblestone_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pump_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:primitive_pump",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:primitive_pump"
+          },
+          {
+            "id": "gtceu:pump_hatch"
+          },
+          {
+            "id": "gtceu:treated_wood_frame",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:pump_deck",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:primitive_pump"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_pump_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:pump_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:stone_dust"
+          },
+          {
+            "id": "gtceu:tiny_iron_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_pump_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:pump_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 43
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

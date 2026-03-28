@@ -1,0 +1,162 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/coke_oven",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:coke_oven_bricks"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:coke_oven_bricks"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:coke_oven_bricks"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:coke_oven_bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_oven"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:coke_oven",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:coke_oven"
+          },
+          {
+            "id": "gtceu:coke_oven_bricks",
+            "amount": 25
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_oven"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:coke_oven",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:coke_oven"
+          },
+          {
+            "id": "gtceu:coke_oven_bricks",
+            "amount": 25
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_oven"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_coke_oven",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:coke_oven"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_coke_oven",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:coke_oven"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 464
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

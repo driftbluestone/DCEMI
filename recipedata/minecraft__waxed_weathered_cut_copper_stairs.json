@@ -1,0 +1,112 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_waxed_weathered_cut_copper_into_stair",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_weathered_cut_copper",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_weathered_cut_copper_stairs",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:7}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/waxing_weathered_cut_copper_stairs",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:weathered_cut_copper_stairs"
+          },
+          {
+            "id": "gtceu:wax",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_weathered_cut_copper_stairs"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_waxed_weathered_cut_copper_stairs",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_weathered_cut_copper_stairs"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_copper_dust",
+            "amount": 15
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_waxed_weathered_cut_copper_stairs",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_weathered_cut_copper_stairs"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 105
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 15
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

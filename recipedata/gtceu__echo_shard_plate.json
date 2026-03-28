@@ -1,0 +1,105 @@
+{
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_echo_shard_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:echo_shard_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 28
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:echo_shard_plate",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_echo_shard_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:echo_shard_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 38
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:echo_shard_plate",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_echo_shard_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:echo_shard_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:echo_shard_plate",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_echo_shard_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:echo_shard_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:echo_shard_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

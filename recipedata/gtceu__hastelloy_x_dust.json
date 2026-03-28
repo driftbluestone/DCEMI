@@ -1,0 +1,510 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_hastelloy_x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hastelloy_x_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_hastelloy_x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_hastelloy_x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hastelloy_x_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_hastelloy_x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__hastelloy_x",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust",
+            "amount": 19
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:molybdenum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust"
+          },
+          {
+            "id": "gtceu:niobium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_hastelloy_x",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_hastelloy_x_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_hastelloy_x_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_hastelloy_x_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_hastelloy_x_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_hastelloy_x_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hastelloy_x_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_hastelloy_x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:small_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:small_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:small_hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_hastelloy_x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          },
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_hastelloy_x_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_hastelloy_x_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_hastelloy_x_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_hastelloy_x_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_hastelloy_x_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_double_hastelloy_x_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:double_hastelloy_x_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hastelloy_x_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hastelloy_x_frame",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_reaction_safe_mixing_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:reaction_safe_mixing_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:maraging_steel_300_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hastelloy_x_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

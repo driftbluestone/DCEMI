@@ -1,0 +1,880 @@
+{
+  "recipes": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/glue_from_methyl_acetate",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:polyvinyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glue",
+            "amount": 2500
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/glue_from_acetone",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:polyvinyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glue",
+            "amount": 2500
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/sticky_resin_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "gtceu:sticky_resin"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_rubber_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:plant_ball",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fluid_hatch_ulv_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/fluid_export_hatch_lv_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:wood_drum"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/resistor_carbon_annealed",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 6,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:fine_annealed_copper_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:resistor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/item_import_bus_ulv_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_input_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/resistor_carbon",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 6,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:resistor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/item_export_bus_ulv_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_output_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/book_from_pvc",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:paper",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:book"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/resistor_coal",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 6,
+        "inputs": [
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:resistor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/sticky_piston_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:piston"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sticky_piston"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/phenolic_board",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wood_dust"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenolic_circuit_board"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/basic_circuit_board",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:copper_foil",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:wood_plate"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:resin_printed_circuit_board"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/fluid_export_hatch_ulv_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/normal_treated_wood_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_plate",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/resistor_charcoal_annealed",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 6,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          },
+          {
+            "id": "gtceu:fine_annealed_copper_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:resistor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/resistor_coal_annealed",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 6,
+        "inputs": [
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:fine_annealed_copper_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:resistor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/large_treated_wood_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/normal_wood_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wood_plate",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_normal_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/small_wood_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wood_plate"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_small_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:12}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/item_export_bus_lv_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:wood_crate"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_output_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/item_import_bus_lv_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:wood_crate"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_input_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/small_treated_wood_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_plate"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_small_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:12}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/resistor_charcoal",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 6,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:resistor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/fluid_hatch_lv_glue",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:wood_drum"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/large_wood_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wood_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_large_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/book_from_leather",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:paper",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:leather"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:book"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/name_tag",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:leather"
+          },
+          {
+            "id": "minecraft:lead"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:name_tag"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/luv_4096a_laser_target_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:diamond_lens",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:luv_sensor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:luv_electric_pump",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:niobium_titanium_quadruple_cable",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_4096a_laser_target_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_luv_4096a_laser_target_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_4096a_laser_target_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 21
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_4096a_laser_target_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_4096a_laser_target_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 11554
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ingot",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 21
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

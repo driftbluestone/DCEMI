@@ -1,0 +1,100 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/tungsten_steel",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_tungsten_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/tungsten_steel",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:steel_dust"
+          },
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_tungsten_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/tungsten_steel_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:steel_dust"
+          },
+          {
+            "id": "gtceu:tungsten_dust"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_tungsten_steel",
+            "amount": 288
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:12}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "recipes": {
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_hasoc_neutronium",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_wafer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:highly_advanced_soc_wafer"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:black_glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_hasoc",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:highly_advanced_soc_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:highly_advanced_soc",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_hasoc_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:highly_advanced_soc_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:highly_advanced_soc",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_hasoc_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:highly_advanced_soc_wafer"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:highly_advanced_soc",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spring_niobium_titanium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:long_niobium_titanium_rod"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:long_niobium_titanium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_spring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_niobium_titanium_long_rod_to_spring",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_niobium_titanium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_spring"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/iv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_4a"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:niobium_titanium_octal_cable"
+          },
+          {
+            "id": "gtceu:platinum_hex_cable"
+          },
+          {
+            "id": "gtceu:small_platinum_spring"
+          },
+          {
+            "id": "gtceu:niobium_titanium_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/dynamo_hatch_luv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:niobium_titanium_spring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_voltage_coil",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 720
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_energy_output_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_niobium_titanium_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_niobium_titanium_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_niobium_titanium_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:niobium_titanium_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 71
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

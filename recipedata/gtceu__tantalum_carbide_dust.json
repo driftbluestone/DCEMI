@@ -1,0 +1,541 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:small_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:small_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:small_tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/tantalum_carbide",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_dust"
+          },
+          {
+            "id": "gtceu:carbon_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_tantalum_carbide_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_tantalum_carbide_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_tantalum_carbide_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_tantalum_carbide_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tantalum_carbide_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_alloy_blast_smelter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:alloy_blast_smelter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nichrome_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:tantalum_carbide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_double_tantalum_carbide_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:double_tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tantalum_carbide_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_large_arc_smelter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:large_arc_smelter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:tantalum_carbide_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tantalum_carbide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tantalum_carbide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_tantalum_carbide",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_dust"
+          },
+          {
+            "id": "gtceu:carbon_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_tantalum_carbide",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_tantalum_carbide_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_tantalum_carbide_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_tantalum_carbide_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_tantalum_carbide_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tantalum_carbide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_tantalum_carbide_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_tantalum_carbide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

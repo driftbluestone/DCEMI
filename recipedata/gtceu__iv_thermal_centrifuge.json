@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/iv_thermal_centrifuge",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:rtm_alloy_quadruple_wire"
+          },
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:rtm_alloy_quadruple_wire"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_thermal_centrifuge"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_thermal_centrifuge",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_thermal_centrifuge"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rtm_alloy_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_thermal_centrifuge",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2510
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rtm_alloy_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

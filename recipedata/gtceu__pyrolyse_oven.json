@@ -1,0 +1,230 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/pyrolyse_oven",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mv_electric_piston"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:cupronickel_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:mv_electric_piston"
+          },
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "id": "gtceu:cupronickel_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolyse_oven"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:pyrolyse_oven",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolyse_oven"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:lv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:lv_energy_input_hatch",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lv_output_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_hatch"
+          },
+          {
+            "id": "gtceu:lv_output_bus"
+          },
+          {
+            "id": "gtceu:lv_input_bus"
+          },
+          {
+            "id": "gtceu:cupronickel_coil_block",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ulv_machine_casing",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolyse_oven"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:pyrolyse_oven",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolyse_oven"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:lv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:lv_energy_input_hatch",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lv_output_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_hatch"
+          },
+          {
+            "id": "gtceu:lv_output_bus"
+          },
+          {
+            "id": "gtceu:lv_input_bus"
+          },
+          {
+            "id": "gtceu:cupronickel_coil_block",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ulv_machine_casing",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pyrolyse_oven"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_pyrolyse_oven",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolyse_oven"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 21
+          },
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 54
+          },
+          {
+            "id": "gtceu:small_copper_dust",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_pyrolyse_oven",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:pyrolyse_oven"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2160
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 21
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 58
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

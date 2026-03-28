@@ -1,0 +1,186 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/deuterium_and_tritium_to_helium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:deuterium",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:tritium",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:helium_plasma",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:fusion_reactor/beryllium_and_deuterium_to_nitrogen_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 16384,
+        "inputs": [
+          {
+            "id": "gtceu:beryllium",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 375
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen_plasma",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/deuterium_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 80,
+        "inputs": [
+          {
+            "id": "gtceu:deuterium",
+            "amount": 160
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritium",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/hydrogen_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 20,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 160
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:deuterium",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/ender_air_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ender_air",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 3900
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_liquid_ender_air",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:liquid_ender_air",
+            "amount": 200000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tritium",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:krypton",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:xenon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 122000
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 50000
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 15000
+          },
+          {
+            "id": "gtceu:ender_pearl_dust",
+            "chance": 0.1
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

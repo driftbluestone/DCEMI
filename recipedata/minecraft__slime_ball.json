@@ -1,0 +1,198 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/sticky_resin_from_slime",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sticky_resin"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/sticky_piston_slime",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:slime_ball"
+          },
+          {
+            "id": "minecraft:piston"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sticky_piston"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/lead",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:string"
+          },
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:lead",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/magma_cream",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:blaze_powder"
+          },
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:magma_cream"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/magma_cream",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:blaze_powder"
+          },
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:magma_cream"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/raw_rubber_from_slime",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_rubber_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/slime_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:slime_ball",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:slime_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/magma_cream_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 5,
+        "inputs": [
+          {
+            "id": "minecraft:magma_cream"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:blaze_powder"
+          },
+          {
+            "id": "minecraft:slime_ball"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

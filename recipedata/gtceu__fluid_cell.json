@@ -1,0 +1,329 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/universal_fluid_cell",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:universal_fluid_cell"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/cell_nbt_regular",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/spray_can_empty",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:redstone"
+          },
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_spray_can"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/universal_fluid_cell_revert",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:universal_fluid_cell"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/cell_nbt_regular",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/fluid_cell_pbi",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polybenzimidazole_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell",
+            "amount": 16
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cell_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/fluid_cell_ptfe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cell_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/fluid_cell_steel",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cell_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/fluid_cell_tin",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cell_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/fluid_cell_steel",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:12}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/fluid_cell_pbi",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:polybenzimidazole_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell",
+            "amount": 16
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:12}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/fluid_cell_ptfe",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:12}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/fluid_cell_tin",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tin_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_cell"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:12}"
+          }
+        ]
+      }
+    ]
+  }
+}

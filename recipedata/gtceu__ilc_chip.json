@@ -1,0 +1,263 @@
+{
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_ilc",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:ilc_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 45
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ilc_chip",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_ilc_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:ilc_wafer"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 135
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ilc_chip",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_ilc_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:ilc_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 180
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ilc_chip",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/integrated_circuit_lv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:resin_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:ilc_chip"
+          },
+          {
+            "tag": "gtceu:resistor",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:diode",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tin_bolt",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:basic_integrated_circuit",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/integrated_circuit_hv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:good_integrated_circuit",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ilc_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:transistor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:annealed_copper_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_integrated_circuit"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/integrated_circuit_lv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:resin_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:ilc_chip"
+          },
+          {
+            "tag": "gtceu:resistor",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:diode",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tin_bolt",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:basic_integrated_circuit",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/integrated_circuit_hv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:good_integrated_circuit",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ilc_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:transistor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:annealed_copper_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_integrated_circuit"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

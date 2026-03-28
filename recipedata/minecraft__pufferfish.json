@@ -1,0 +1,56 @@
+{
+  "uses": {
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/fish_oil_from_pufferfish",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:pufferfish"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 30
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:/brewery/potion_vanilla_water_breathing_32",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:pufferfish"
+          },
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:awkward\"}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:water_breathing\"}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

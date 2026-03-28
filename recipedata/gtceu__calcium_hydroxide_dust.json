@@ -1,0 +1,444 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_calcium_hydroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_calcium_hydroxide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_calcium_hydroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_calcium_hydroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_calcium_hydroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_calcium_hydroxide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_calcium_hydroxide",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/calcium_ferrocyanide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:iron_ii_chloride",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 7000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_ferrocyanide_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_calcium_hydroxide_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_calcium_hydroxide_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_calcium_hydroxide_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_calcium_hydroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:small_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:small_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:small_calcium_hydroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_calcium_hydroxide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/potassium_ferrocyanide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_ferrocyanide_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:rock_salt_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_ferrocyanide_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:calcium_hydroxide_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 4000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/calcium_hydroxide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/calcium_hydroxide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_calcium_hydroxide_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_calcium_hydroxide_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_calcium_hydroxide_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_calcium_hydroxide_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

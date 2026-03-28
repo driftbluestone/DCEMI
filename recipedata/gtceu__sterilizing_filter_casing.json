@@ -1,0 +1,182 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/filter_casing_sterile",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polybenzimidazole_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:zpm_emitter"
+          },
+          {
+            "id": "gtceu:polybenzimidazole_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:item_filter"
+          },
+          {
+            "id": "gtceu:blacklight"
+          },
+          {
+            "id": "gtceu:item_filter"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterilizing_filter_casing"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:cleanroom",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cleanroom"
+          },
+          {
+            "id": "gtceu:hv_diode"
+          },
+          {
+            "id": "gtceu:lv_fluid_passthrough_hatch"
+          },
+          {
+            "id": "gtceu:lv_item_passthrough_hatch"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:lv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:cleanroom_glass",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:sterilizing_filter_casing",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:plascrete",
+            "amount": 75
+          },
+          {
+            "id": "minecraft:iron_door",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cleanroom"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_sterilizing_filter_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:sterilizing_filter_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polybenzimidazole_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:zinc_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_sterilizing_filter_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sterilizing_filter_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2530
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:zinc_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

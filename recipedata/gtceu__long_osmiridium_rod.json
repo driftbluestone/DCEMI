@@ -1,0 +1,408 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_long_stick_osmiridium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:osmiridium_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:osmiridium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_osmiridium_rod_to_long_rod",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:osmiridium_rod",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_long_osmiridium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_osmiridium_long_rod_to_rod",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_osmiridium_long_rod_to_rod_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_osmiridium_long_rod_to_rod_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/robot_arm_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:osmiridium_gear"
+          },
+          {
+            "id": "gtceu:small_osmiridium_gear",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:zpm_electric_motor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:zpm_electric_piston"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_robot_arm"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_robot_arm\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/electric_motor_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:long_magnetic_samarium_rod"
+          },
+          {
+            "id": "gtceu:long_osmiridium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:osmiridium_ring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:osmiridium_round",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_europium_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_europium_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_electric_motor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_electric_motor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/emitter_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_frame"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:long_osmiridium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_emitter\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_long_osmiridium_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_long_osmiridium_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_long_osmiridium_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:long_osmiridium_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 191
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

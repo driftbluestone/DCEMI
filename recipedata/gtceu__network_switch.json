@@ -1,0 +1,252 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:network_switch",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:network_switch"
+          },
+          {
+            "id": "gtceu:computation_receiver_hatch"
+          },
+          {
+            "id": "gtceu:computation_transmitter_hatch",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:advanced_computer_casing"
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 19
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:network_switch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_network_switch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:network_switch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:osmiridium_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_network_switch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:network_switch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 53271
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_block",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:network_switch",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:network_switch"
+          },
+          {
+            "id": "gtceu:computation_receiver_hatch"
+          },
+          {
+            "id": "gtceu:computation_transmitter_hatch",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:advanced_computer_casing"
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 19
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:network_switch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_normal_optical_pipe",
+        "category": "gtceu:research_station",
+        "dimensions": [
+          150,
+          117
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:data_orb"
+          },
+          {
+            "id": "gtceu:normal_optical_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:network_switch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/network_switch",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "id": "gtceu:zpm_emitter",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:zpm_sensor",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_double_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tritanium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:normal_optical_pipe",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:network_switch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_normal_optical_pipe\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  }
+}

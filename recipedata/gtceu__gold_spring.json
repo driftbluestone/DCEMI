@@ -1,0 +1,215 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spring_gold",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:long_gold_rod"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:long_gold_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_spring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_gold_long_rod_to_spring",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_gold_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_spring"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_hv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:gold_spring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hv_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_energy_output_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/mv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:mv_transformer_4a"
+          },
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "id": "gtceu:gold_octal_cable"
+          },
+          {
+            "id": "gtceu:copper_hex_cable"
+          },
+          {
+            "id": "gtceu:small_copper_spring"
+          },
+          {
+            "id": "gtceu:gold_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_gold_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:gold_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_gold_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gold",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_gold_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:gold_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 196
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

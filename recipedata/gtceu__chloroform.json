@@ -1,0 +1,177 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_chloroform",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:chloroform",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/tetrafluoroethylene_from_chloroform",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:chloroform",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:tetrafluoroethylene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:chloroform",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:tetrafluoroethylene",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/chloroform",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:chloroform",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/chloroform",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chlorine",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:chloroform",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_cupronickel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:cupronickel_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_cupronickel_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_cupronickel_wire_fine",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_cupronickel_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_cupronickel_wire_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_cupronickel_wire",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/smd_inductor",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          },
+          {
+            "id": "gtceu:fine_cupronickel_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_cupronickel_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fine_cupronickel_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_cupronickel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_cupronickel_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_cupronickel_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_cupronickel_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_cupronickel_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

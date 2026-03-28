@@ -1,0 +1,315 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/spring_europium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:long_europium_rod"
+          },
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:long_europium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_spring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_europium_long_rod_to_spring",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:long_europium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_spring"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/blacklight",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_carbide_screw"
+          },
+          {
+            "id": "gtceu:tungsten_carbide_plate"
+          },
+          {
+            "id": "gtceu:tungsten_carbide_screw"
+          },
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "id": "gtceu:europium_spring"
+          },
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:tungsten_carbide_plate"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:blacklight"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uhv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_4a"
+          },
+          {
+            "id": "gtceu:iv_electric_pump"
+          },
+          {
+            "id": "gtceu:europium_octal_cable"
+          },
+          {
+            "id": "gtceu:europium_hex_cable"
+          },
+          {
+            "id": "gtceu:small_europium_spring"
+          },
+          {
+            "id": "gtceu:europium_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/uv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_4a"
+          },
+          {
+            "id": "gtceu:iv_electric_pump"
+          },
+          {
+            "id": "gtceu:europium_octal_cable"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_cable"
+          },
+          {
+            "id": "gtceu:small_yttrium_barium_cuprate_spring"
+          },
+          {
+            "id": "gtceu:europium_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/dynamo_hatch_uhv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:europium_spring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_double_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 12000
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 5760
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_energy_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_uv_energy_output_hatch\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_europium_spring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:europium_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_europium_spring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:europium_spring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_europium_spring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:europium_spring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 151
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

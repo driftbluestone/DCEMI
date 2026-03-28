@@ -1,0 +1,894 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/plate_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_ingot"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tantalum_carbide_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_tantalum_carbide_to_plate",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_ingot",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_tantalum_carbide_to_plate",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_tantalum_carbide_to_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_tantalum_carbide_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_tantalum_carbide_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_tantalum_carbide_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 54
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/heat_vent",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:long_molybdenum_disilicide_rod"
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:heat_vent",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/heat_vent",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:long_molybdenum_disilicide_rod"
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:heat_vent",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/heat_vent",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:long_molybdenum_disilicide_rod"
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:heat_vent",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/heat_vent",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:long_molybdenum_disilicide_rod"
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:heat_vent",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_arc_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:graphite_dust"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_arc_furnace"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_arc_smelter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_arc_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:graphite_dust"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_arc_furnace"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_arc_smelter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/large_arc_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:graphite_dust"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_arc_furnace"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_arc_smelter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/blast_alloy_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_alloy_smelter"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:alloy_blast_smelter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/blast_alloy_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_alloy_smelter"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:alloy_blast_smelter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/blast_alloy_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_alloy_smelter"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:alloy_blast_smelter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/blast_alloy_smelter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_alloy_smelter"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:alloy_blast_smelter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_tantalum_carbide_plate"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/plate_double_tantalum_carbide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_tantalum_carbide_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/heat_vent",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:double_molybdenum_disilicide_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_rotor"
+          },
+          {
+            "id": "gtceu:long_molybdenum_disilicide_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:heat_vent",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_tantalum_carbide_plate_to_double_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:double_tantalum_carbide_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tantalum_carbide_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tantalum_carbide_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tantalum_carbide_plate",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tantalum_carbide_plate"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 96
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tantalum_carbide_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

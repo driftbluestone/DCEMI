@@ -1,0 +1,343 @@
+{
+  "recipes": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/concrete_from_calcite",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:stone_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:calcite_dust"
+          },
+          {
+            "id": "gtceu:gypsum_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:concrete",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/concrete_from_marble",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:stone_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:marble_dust"
+          },
+          {
+            "id": "gtceu:gypsum_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:concrete",
+            "amount": 1152
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/concrete_from_clay",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:clay_dust"
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:concrete",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_light_concrete",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "tag": "gtceu:light_concrete"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_concrete_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:concrete_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/construction_foam",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:raw_rubber_dust"
+          },
+          {
+            "id": "gtceu:concrete",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:construction_foam",
+            "amount": 8000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/plascrete",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 48,
+        "inputs": [
+          {
+            "id": "gtceu:steel_frame"
+          },
+          {
+            "id": "gtceu:polyethylene_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plascrete",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/repeater",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 10,
+        "inputs": [
+          {
+            "id": "minecraft:redstone_torch",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:redstone"
+          },
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:repeater"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/comparator_quartzite",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "minecraft:redstone_torch",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:quartzite_gem"
+          },
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:comparator"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/comparator_nether_quartz",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "minecraft:redstone_torch",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:quartz"
+          },
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:comparator"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/comparator_certus_quartz",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "minecraft:redstone_torch",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:certus_quartz_gem"
+          },
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:comparator"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_concrete_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

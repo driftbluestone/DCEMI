@@ -1,0 +1,183 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_trinium_wire_gt_octal_silicone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_octal_wire"
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide_foil",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:silicone_rubber",
+            "amount": 216
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_octal_cable"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_trinium_wire_gt_octal_styrene_butadiene",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_octal_wire"
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide_foil",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 108
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_octal_cable"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/strip_trinium_cable_gt_octal",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_octal_wire"
+          },
+          {
+            "id": "gtceu:rubber_plate",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_trinium_octal_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_trinium_octal_cable",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_octal_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:trinium",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_trinium_octal_cable",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_octal_cable"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/nether_air_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:nether_air",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 3900
+          },
+          {
+            "id": "gtceu:sulfur_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/liquid_nether_air",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:nether_air",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:liquid_nether_air",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:gas_collector": [
+      {
+        "id": "gtceu:gas_collector/nether_air",
+        "category": "gtceu:gas_collector",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:the_nether_marker"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_air",
+            "amount": 10000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

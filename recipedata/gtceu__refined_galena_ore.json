@@ -1,0 +1,564 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/centrifuged_ore_to_dust_galena",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:refined_galena_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:galena_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_refined_ore_galena_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:refined_galena_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:blasting": [
+      {
+        "id": "gtceu:blasting/smelt_refined_ore_galena_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:refined_galena_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_galena_refined_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:refined_galena_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_galena_refined_ore_to_dust",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:refined_galena_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:galena_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:galena",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:basalt_galena_ore"
+          },
+          {
+            "tag": "gtceu:basalt_galena_ore"
+          },
+          {
+            "tag": "gtceu:basalt_galena_ore"
+          },
+          {
+            "tag": "gtceu:basalt_galena_ore"
+          },
+          {
+            "id": "gtceu:raw_galena"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:refined_galena_ore"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_galena_ore"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:thermal_centrifuge": [
+      {
+        "id": "gtceu:thermal_centrifuge/centrifuge_galena_crushed_ore_to_refined_ore",
+        "category": "gtceu:thermal_centrifuge",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_galena_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:refined_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:thermal_centrifuge/centrifuge_galena_purified_ore_to_refined_ore",
+        "category": "gtceu:thermal_centrifuge",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:purified_galena_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:refined_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:galena",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:basalt_galena_ore"
+          },
+          {
+            "tag": "gtceu:basalt_galena_ore"
+          },
+          {
+            "tag": "gtceu:basalt_galena_ore"
+          },
+          {
+            "tag": "gtceu:basalt_galena_ore"
+          },
+          {
+            "id": "gtceu:raw_galena"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:refined_galena_ore"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lead_ingot"
+          },
+          {
+            "id": "gtceu:crushed_galena_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_galena_ore"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:impure_galena_dust"
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:pure_galena_dust"
+          },
+          {
+            "id": "gtceu:galena_dust"
+          },
+          {
+            "id": "gtceu:purified_galena_ore"
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

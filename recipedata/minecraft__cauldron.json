@@ -1,0 +1,157 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/cauldron",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cauldron"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cauldron",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 7
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cauldron"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:7}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_infinite_water",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electric_pump",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:cauldron"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:infinite_water_cover"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cauldron",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:cauldron"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_cauldron",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 392
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

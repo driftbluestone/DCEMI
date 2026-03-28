@@ -1,0 +1,81 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/crossbow",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:string",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:stick",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:tripwire_hook"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:crossbow",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:11}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_crossbow",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:crossbow",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_crossbow",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:crossbow",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ]
+  }
+}

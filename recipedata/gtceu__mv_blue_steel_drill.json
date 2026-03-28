@@ -1,0 +1,98 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/blue_steel_mv_drill",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:blue_steel_drill_head"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:mv_power_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_blue_steel_drill",
+            "nbt": "{Charge:0L,Damage:0,DisallowContainerItem:0,GT.Behaviours:{AoEColumn:1,AoELayer:2,AoERow:1,MaxAoEColumn:1,MaxAoELayer:2,MaxAoERow:1,TorchPlacing:1},GT.Tool:{DefaultEnchantments:[],HarvestLevel:3,MaxDamage:4095,ToolSpeed:19.0f},HideFlags:2,MaxCharge:400000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_blue_steel_drill",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_blue_steel_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:blue_steel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_blue_steel_drill",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_blue_steel_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:blue_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

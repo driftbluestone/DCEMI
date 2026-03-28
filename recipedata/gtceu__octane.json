@@ -1,0 +1,215 @@
+{
+  "uses": {
+    "gtceu:combustion_generator": [
+      {
+        "id": "gtceu:combustion_generator/octane",
+        "category": "gtceu:combustion_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:octane",
+            "amount": 2
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/high_octane_gasoline",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 20000
+          },
+          {
+            "id": "gtceu:octane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitrous_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethyl_tertbutyl_ether",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:high_octane_gasoline",
+            "amount": 32000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_lightly_hydro_cracked_light_fuel_to_octane",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_light_fuel",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:octane",
+            "amount": 50
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_severely_hydro_cracked_light_fuel_to_octane",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:severely_hydro_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:octane",
+            "amount": 20
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_lightly_hydro_cracked_light_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_hydro_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:propane",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 800
+          },
+          {
+            "id": "gtceu:octane",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:butane",
+            "amount": 150
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_severely_hydro_cracked_light_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:severely_hydro_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:propane",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 1500
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1500
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:octane",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:butane",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

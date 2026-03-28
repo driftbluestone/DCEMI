@@ -1,0 +1,105 @@
+{
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_red_garnet_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_garnet_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_garnet_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_red_garnet_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_garnet_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 17
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_garnet_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_red_garnet_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:red_garnet_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_garnet_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_red_garnet_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:red_garnet_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_garnet_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

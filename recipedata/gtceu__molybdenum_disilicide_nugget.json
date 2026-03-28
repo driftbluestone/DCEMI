@@ -1,0 +1,244 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_molybdenum_disilicide_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_heat_vent",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:heat_vent"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 356
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tantalum_carbide_nugget",
+            "amount": 13
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_molybdenum_disilicide_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 11
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_molybdenum_disilicide_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 22
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_molybdenum_disilicide_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_molybdenum_disilicide_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_molybdenum_disilicide_nugget",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_molybdenum_disilicide_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_molybdenum_disilicide_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_molybdenum_disilicide_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molybdenum_disilicide_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

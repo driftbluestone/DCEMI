@@ -1,0 +1,261 @@
+{
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/oilsands_ore_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "tag": "gtceu:diorite_oilsands_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand",
+            "chance": 0.75
+          },
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/oilsands_dust_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oilsands_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand",
+            "chance": 0.75
+          },
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_heavy_oil",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 192,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 200
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/gtceu_oil_heavy",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 32
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_heavy_oil_to_sulfuric_heavy_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 72,
+        "inputs": [
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_heavy_fuel",
+            "amount": 125
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_heavy_oil_to_sulfuric_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 72,
+        "inputs": [
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_light_fuel",
+            "amount": 45
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_heavy_oil_to_sulfuric_gas",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 72,
+        "inputs": [
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_gas",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_heavy_oil_to_sulfuric_naphtha",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 72,
+        "inputs": [
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_naphtha",
+            "amount": 15
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_heavy_oil",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 288,
+        "inputs": [
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_gas",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:sulfuric_heavy_fuel",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:sulfuric_light_fuel",
+            "amount": 45
+          },
+          {
+            "id": "gtceu:sulfuric_naphtha",
+            "amount": 15
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

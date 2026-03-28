@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/iv_chemical_bath",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iv_conveyor_module"
+          },
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "id": "gtceu:iv_electric_pump"
+          },
+          {
+            "id": "gtceu:laminated_glass"
+          },
+          {
+            "id": "gtceu:iv_conveyor_module"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_chemical_bath"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_chemical_bath",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_chemical_bath"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_silicone_rubber_dust",
+            "amount": 50
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_chemical_bath",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_chemical_bath"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4619
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:tungsten_block"
+          },
+          {
+            "id": "gtceu:neodymium_nugget",
+            "amount": 22
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

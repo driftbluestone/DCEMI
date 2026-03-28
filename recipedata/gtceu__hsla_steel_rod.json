@@ -1,0 +1,724 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_long_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/stick_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:hsla_steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_hsla_steel_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:small_hsla_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_hsla_steel_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_hsla_steel_long_rod_to_rod",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_hsla_steel_long_rod_to_rod_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_hsla_steel_long_rod_to_rod_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_long_stick_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/stick_long_stick_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/frame_hsla_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_hsla_steel_frame",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_frame"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_hsla_steel_rod_to_long_rod",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_hsla_steel_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hsla_steel_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hsla_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_hsla_steel_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hsla_steel_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hsla_steel_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 27
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

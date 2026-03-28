@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_polarizer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_quadruple_wire"
+          },
+          {
+            "id": "gtceu:neodymium_rod"
+          },
+          {
+            "id": "gtceu:steel_quadruple_wire"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:steel_quadruple_wire"
+          },
+          {
+            "id": "gtceu:neodymium_rod"
+          },
+          {
+            "id": "gtceu:steel_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_polarizer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_polarizer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_polarizer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_polarizer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_polarizer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1028
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:neodymium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

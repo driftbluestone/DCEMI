@@ -1,0 +1,79 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/diamond_horse_armor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "minecraft:diamond_helmet",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "minecraft:diamond_chestplate",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "minecraft:diamond_leggings",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "gtceu:diamond_bolt"
+          },
+          {
+            "id": "minecraft:diamond_leggings",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:diamond_horse_armor"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_diamond_horse_armor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:diamond_horse_armor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_diamond_dust",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

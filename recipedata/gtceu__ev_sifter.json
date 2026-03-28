@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_sifter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:item_filter"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_electric_piston"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:ev_electric_piston"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:item_filter"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_sifter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_sifter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_sifter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:kanthal_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_sifter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_sifter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1780
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:zinc_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

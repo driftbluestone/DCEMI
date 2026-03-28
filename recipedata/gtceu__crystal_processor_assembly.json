@@ -1,0 +1,188 @@
+{
+  "uses": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/crystal_computer_zpm",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 9600,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:crystal_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:nand_memory_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_niobium_titanium_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crystal_processor_computer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/crystal_computer_zpm_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 9600,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:crystal_processor_assembly",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nor_memory_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:nand_memory_chip",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_niobium_titanium_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crystal_processor_computer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/crystal_assembly_luv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 9600,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:crystal_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:fine_niobium_titanium_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crystal_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/crystal_assembly_luv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 9600,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:crystal_processor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:fine_niobium_titanium_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crystal_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

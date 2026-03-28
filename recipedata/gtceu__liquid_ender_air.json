@@ -1,0 +1,82 @@
+{
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/liquid_ender_air",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:ender_air",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:liquid_ender_air",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_liquid_ender_air",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:liquid_ender_air",
+            "amount": 200000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tritium",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:krypton",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:xenon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 122000
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 50000
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 15000
+          },
+          {
+            "id": "gtceu:ender_pearl_dust",
+            "chance": 0.1
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

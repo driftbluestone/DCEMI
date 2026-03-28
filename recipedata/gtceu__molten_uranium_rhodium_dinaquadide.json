@@ -1,0 +1,116 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/uranium_rhodium_dinaquadide",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_uranium_rhodium_dinaquadide",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/uranium_rhodium_dinaquadide",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:rhodium_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_uranium_rhodium_dinaquadide",
+            "amount": 576
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/uranium_rhodium_dinaquadide_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:rhodium_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_uranium_rhodium_dinaquadide",
+            "amount": 576
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:13}"
+          }
+        ]
+      }
+    ]
+  }
+}

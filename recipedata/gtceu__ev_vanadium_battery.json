@@ -1,0 +1,98 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_power_unit_ev_vanadium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_screw"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:small_titanium_gear"
+          },
+          {
+            "id": "gtceu:ev_electric_motor"
+          },
+          {
+            "id": "gtceu:small_titanium_gear"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:ev_vanadium_battery"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_power_unit",
+            "nbt": "{Charge:0L,MaxCharge:10240000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_ev_vanadium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ev_vanadium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/vanadium_battery_ev",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ev_battery_hull"
+          },
+          {
+            "id": "gtceu:vanadium_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_vanadium_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

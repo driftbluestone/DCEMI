@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_extruder",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_quadruple_wire"
+          },
+          {
+            "id": "gtceu:cupronickel_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:mv_electric_piston"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:steel_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:cupronickel_quadruple_wire"
+          },
+          {
+            "id": "gtceu:cupronickel_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_extruder"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_extruder",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_extruder"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_extruder",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_extruder"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1465
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

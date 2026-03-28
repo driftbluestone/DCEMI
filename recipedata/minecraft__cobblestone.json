@@ -1,0 +1,290 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/mossy_cobblestone_from_vine",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone"
+          },
+          {
+            "id": "minecraft:vine"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:mossy_cobblestone"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/mossy_cobblestone_from_moss_block",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone"
+          },
+          {
+            "id": "minecraft:moss_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:mossy_cobblestone"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_cobblestone_into_stair",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobblestone_stairs",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:7}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/assemble_cobblestone_into_wall",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobblestone_wall"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:13}"
+          }
+        ]
+      }
+    ],
+    "gtceu:alloy_smelter": [
+      {
+        "id": "gtceu:alloy_smelter/andesite",
+        "category": "gtceu:alloy_smelter",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:diorite"
+          },
+          {
+            "id": "minecraft:cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:andesite",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:alloy_smelter/diorite",
+        "category": "gtceu:alloy_smelter",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:quartz",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:diorite",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_cobblestone_into_slab_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobblestone_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_cobblestone_into_slab_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobblestone_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_cobblestone_into_slab",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobblestone_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cobblestone",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_stone_into_cracked",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:stone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cobblestone"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

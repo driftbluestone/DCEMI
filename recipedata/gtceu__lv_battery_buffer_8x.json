@@ -1,0 +1,108 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_battery_buffer_8x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_octal_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:tin_octal_wire"
+          },
+          {
+            "id": "gtceu:tin_octal_wire"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_octal_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_battery_buffer_8x"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_battery_buffer_8x",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_battery_buffer_8x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_battery_buffer_8x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_battery_buffer_8x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2457
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

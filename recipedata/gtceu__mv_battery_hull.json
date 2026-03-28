@@ -1,0 +1,295 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/battery_hull_mv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/battery_hull_mv_copper",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:copper_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:battery_alloy_plate",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 432
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/battery_hull_mv_annealed",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:annealed_copper_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:battery_alloy_plate",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 432
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_mv_lithium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_lithium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/unpackage_mv_sodium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_sodium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/unpackage_mv_cadmium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_cadmium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/cadmium_battery_mv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          },
+          {
+            "id": "gtceu:cadmium_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_cadmium_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/lithium_battery_mv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_lithium_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/sodium_battery_mv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          },
+          {
+            "id": "gtceu:sodium_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_sodium_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_battery_hull",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:battery_alloy_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_battery_hull",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 567
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:battery_alloy_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/cookie_from_dough",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          },
+          {
+            "id": "minecraft:cocoa_beans"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cookie",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_cocoa",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:cocoa_beans"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cocoa_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/cookie",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dough"
+          },
+          {
+            "id": "minecraft:cocoa_beans",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:cookie",
+            "amount": 12
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

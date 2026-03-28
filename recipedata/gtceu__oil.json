@@ -1,0 +1,287 @@
+{
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/soul_sand_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 80,
+        "inputs": [
+          {
+            "id": "minecraft:soul_sand"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand",
+            "chance": 0.925
+          },
+          {
+            "id": "gtceu:saltpeter_dust",
+            "chance": 0.225
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.0225
+          },
+          {
+            "id": "gtceu:oil",
+            "amount": 80
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/gtceu_oil",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:oil",
+            "amount": 200
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_oil_to_sulfuric_naphtha",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:oil",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_naphtha",
+            "amount": 20
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_oil_to_sulfuric_gas",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:oil",
+            "amount": 25
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_gas",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_oil_to_sulfuric_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:oil",
+            "amount": 25
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_light_fuel",
+            "amount": 25
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_oil_to_sulfuric_heavy_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:oil",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_heavy_fuel",
+            "amount": 15
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:brewery/lubricant_from_oil_and_redstone",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:redstone"
+          },
+          {
+            "id": "gtceu:oil",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/lubricant_from_oil_and_talc",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:talc_dust"
+          },
+          {
+            "id": "gtceu:oil",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/lubricant_from_oil_and_soapstone",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:soapstone_dust"
+          },
+          {
+            "id": "gtceu:oil",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_oil",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:oil",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_gas",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:sulfuric_heavy_fuel",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:sulfuric_light_fuel",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:sulfuric_naphtha",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

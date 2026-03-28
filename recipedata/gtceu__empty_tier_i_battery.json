@@ -1,0 +1,144 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/empty_tier_1_battery",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_frame"
+          },
+          {
+            "id": "gtceu:ultimet_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:ultimet_screw",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_i_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_ev_lapotronic_battery",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_lapotronic_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_i_battery"
+          },
+          {
+            "id": "gtceu:lapotron_crystal"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_iv_lapotronic_battery",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_lapotronic_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_i_battery"
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/ev_lapotronic_battery",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_i_battery"
+          },
+          {
+            "id": "gtceu:lapotron_crystal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_lapotronic_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/iv_lapotronic_battery",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_i_battery"
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_lapotronic_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

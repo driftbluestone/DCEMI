@@ -1,0 +1,597 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/frame_aluminium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_rod"
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          },
+          {
+            "id": "gtceu:aluminium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_aluminium_frame",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_rod",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_frame"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_aluminium_frostproof",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:aluminium_frame"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:frostproof_machine_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_aluminium_frostproof",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:aluminium_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:frostproof_machine_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ],
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/mainframe_iv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:micro_processor_computer",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:inductor",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:capacitor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor_mainframe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_mainframe_luv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nano_processor_computer",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_mainframe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/mainframe_iv_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:micro_processor_computer",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor_mainframe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_mainframe_luv_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nano_processor_computer",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_mainframe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/mainframe_iv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:micro_processor_computer",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:inductor",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:capacitor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor_mainframe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/mainframe_iv_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:micro_processor_computer",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor_mainframe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_mainframe_luv_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nano_processor_computer",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_mainframe"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_mainframe_luv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nano_processor_computer",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:annealed_copper_single_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor_mainframe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_aluminium_frame",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_aluminium_frame",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_aluminium_frame",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_frame"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 52
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

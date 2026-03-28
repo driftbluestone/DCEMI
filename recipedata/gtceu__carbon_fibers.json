@@ -1,0 +1,220 @@
+{
+  "uses": {
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/reinforced_epoxy_sheet_carbon_fibers",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_fibers"
+          },
+          {
+            "id": "gtceu:epoxy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/nano_cpu_wafer",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:cpu_wafer"
+          },
+          {
+            "id": "gtceu:carbon_fibers",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:glowstone",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_cpu_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/nano_cpu_wafer",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:cpu_wafer"
+          },
+          {
+            "id": "gtceu:carbon_fibers",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:glowstone",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_cpu_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/carbon_mesh",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_fibers",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_fiber_mesh"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:autoclave": [
+      {
+        "id": "gtceu:autoclave/carbon_fibers_ptfe",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_fibers",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:autoclave/carbon_fibers_pbi",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_fibers",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:autoclave/carbon_fibers_polyethylene",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 36
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_fibers"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:autoclave/carbon_fibers_epoxy",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:epoxy",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_fibers",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

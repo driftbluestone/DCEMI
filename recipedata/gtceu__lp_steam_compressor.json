@@ -1,0 +1,148 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_compressor_bronze",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "tag": "minecraft:piston"
+          },
+          {
+            "id": "gtceu:bronze_machine_casing"
+          },
+          {
+            "tag": "minecraft:piston"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lp_steam_compressor"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_compressor_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_alloy_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:tin_alloy_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:lp_steam_compressor"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:tin_alloy_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_alloy_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_alloy_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hp_steam_compressor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_compressor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_compressor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lp_steam_compressor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_compressor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1064
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 14
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

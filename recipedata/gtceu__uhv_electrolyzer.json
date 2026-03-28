@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uhv_electrolyzer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:osmium_single_wire"
+          },
+          {
+            "id": "gtceu:fusion_glass"
+          },
+          {
+            "id": "gtceu:osmium_single_wire"
+          },
+          {
+            "id": "gtceu:osmium_single_wire"
+          },
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:osmium_single_wire"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_electrolyzer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_electrolyzer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_electrolyzer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:osmium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_electrolyzer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_electrolyzer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 9650
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:osmium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadah_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:europium_nugget",
+            "amount": 13
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

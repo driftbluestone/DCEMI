@@ -1,0 +1,114 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/lava_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 80,
+        "inputs": [
+          {
+            "id": "minecraft:lava",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.125
+          },
+          {
+            "id": "gtceu:magnesia_dust",
+            "chance": 0.025
+          },
+          {
+            "id": "gtceu:quicklime_dust",
+            "chance": 0.025
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "chance": 0.025
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.0315
+          },
+          {
+            "id": "gtceu:tantalite_dust",
+            "chance": 0.0125
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_lava",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:lava",
+            "amount": 100
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_lava",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:lava",
+            "amount": 100
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/obsidian",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:lava",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:obsidian"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/luv_electric_furnace",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:hssg_double_wire"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:hssg_double_wire"
+          },
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:hssg_double_wire"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "id": "gtceu:hssg_double_wire"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_electric_furnace"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_luv_electric_furnace",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_furnace"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hssg_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_electric_furnace",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_furnace"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1380
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:hssg_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

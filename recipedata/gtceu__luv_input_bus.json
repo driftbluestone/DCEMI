@@ -1,0 +1,253 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_input_to_output_6",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:luv_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_output_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/data_receiver_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "id": "gtceu:luv_input_bus"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_sensor"
+          },
+          {
+            "id": "gtceu:normal_optical_pipe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_receiver_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/dual_export_bus_luv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_input_bus"
+          },
+          {
+            "id": "gtceu:luv_input_hatch"
+          },
+          {
+            "id": "gtceu:niobium_titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:ruridit_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1008
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_dual_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_import_bus_luv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_input_bus"
+          },
+          {
+            "id": "gtceu:luv_input_hatch"
+          },
+          {
+            "id": "gtceu:niobium_titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:ruridit_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1008
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_dual_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/advanced_data_access_hatch",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:luv_input_bus"
+          },
+          {
+            "id": "gtceu:data_orb",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_data_access_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_data_bank\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_output_to_input_6",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:luv_output_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_input_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/item_import_bus_luv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:titanium_crate"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 252
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_input_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/pumpkin_pie_from_dough",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:sugar"
+          },
+          {
+            "id": "gtceu:dough"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_pie"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/pumpkin_pie",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dough",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:pumpkin"
+          },
+          {
+            "id": "minecraft:sugar"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pumpkin_pie",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:cylinder_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

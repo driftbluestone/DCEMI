@@ -1,0 +1,78 @@
+{
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_magenta_glass_lens",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magenta_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_glass_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_magenta_glass_lens",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magenta_glass_lens"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 108
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:chem_dyes": [
+      {
+        "id": "gtceu:chemical_bath/magenta_dye_lens",
+        "category": "gtceu:chem_dyes",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:glass_lens"
+          },
+          {
+            "id": "gtceu:magenta_dye",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magenta_glass_lens"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

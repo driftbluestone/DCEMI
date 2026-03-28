@@ -1,0 +1,188 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/frame_hastelloy_c_276",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_rod"
+          },
+          {
+            "id": "gtceu:hastelloy_c_276_rod"
+          },
+          {
+            "id": "gtceu:hastelloy_c_276_rod"
+          },
+          {
+            "id": "gtceu:hastelloy_c_276_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hastelloy_c_276_rod"
+          },
+          {
+            "id": "gtceu:hastelloy_c_276_rod"
+          },
+          {
+            "id": "gtceu:hastelloy_c_276_rod"
+          },
+          {
+            "id": "gtceu:hastelloy_c_276_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_hastelloy_c_276_frame",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_rod",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_frame"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_shock_proof",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:hastelloy_c_276_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:shock_proof_cutting_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hastelloy_c_276_frame",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_hastelloy_c_276_frame",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_c_276",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hastelloy_c_276_frame",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_frame"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 140
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_c_276_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

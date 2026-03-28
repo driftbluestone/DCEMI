@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/luv_fisher",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_electric_piston"
+          },
+          {
+            "id": "gtceu:luv_machine_hull"
+          },
+          {
+            "id": "gtceu:luv_electric_piston"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          },
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:luv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_fisher"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_luv_fisher",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_fisher"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 54
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 11
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_fisher",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_fisher"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14875
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_ingot",
+            "amount": 54
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

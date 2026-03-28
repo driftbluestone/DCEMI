@@ -1,0 +1,340 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_rad_away",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_rad_away_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_rad_away",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_rad_away_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_rad_away",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_rad_away_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_rad_away",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_rad_away_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/pack_rad_away",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:rad_away_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rad_away_pill",
+            "amount": 16
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:pill_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_rad_away_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_rad_away_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_rad_away_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_rad_away_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_rad_away",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_rad_away_dust"
+          },
+          {
+            "id": "gtceu:small_rad_away_dust"
+          },
+          {
+            "id": "gtceu:small_rad_away_dust"
+          },
+          {
+            "id": "gtceu:small_rad_away_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_rad_away",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          },
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          },
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          },
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          },
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          },
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          },
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          },
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          },
+          {
+            "id": "gtceu:tiny_rad_away_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/rad_away",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_iodide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:prussian_blue_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:diethylenetriaminepentaacetic_acid_dust",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rad_away_dust",
+            "amount": 48
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_rad_away_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_rad_away_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_rad_away_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_rad_away_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rad_away_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

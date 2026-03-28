@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/silicon_and_magnesium_to_iron_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:silicon",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:magnesium",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_plasma",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:plasma_generator": [
+      {
+        "id": "gtceu:plasma_generator/iron",
+        "category": "gtceu:plasma_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iron_plasma"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

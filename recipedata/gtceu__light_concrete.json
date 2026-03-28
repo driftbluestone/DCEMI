@@ -1,0 +1,227 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_polished_light_concrete",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polished_light_concrete"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/light_to_dark_concrete",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:light_concrete"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dark_concrete"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_light_concrete_cobblestone",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_concrete_cobblestone"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_polished_light_concrete",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polished_light_concrete"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_light_concrete_bricks",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_concrete_bricks"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_light_concrete",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:concrete_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_light_concrete",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:light_concrete_cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_concrete_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:concrete",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_light_concrete",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:light_concrete_cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_concrete"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

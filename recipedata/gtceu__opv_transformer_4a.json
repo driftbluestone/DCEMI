@@ -1,0 +1,203 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/opv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 503316480,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_4a"
+          },
+          {
+            "id": "gtceu:zpm_electric_pump"
+          },
+          {
+            "id": "gtceu:red_alloy_octal_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_hex_cable"
+          },
+          {
+            "id": "gtceu:small_red_alloy_spring"
+          },
+          {
+            "id": "gtceu:tin_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/dynamo_hatch_16a_max",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2013265920,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_4a"
+          },
+          {
+            "id": "gtceu:max_energy_output_hatch_4a"
+          },
+          {
+            "id": "gtceu:lead_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_energy_output_hatch_16a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/energy_hatch_16a_max",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2013265920,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_4a"
+          },
+          {
+            "id": "gtceu:max_energy_input_hatch_4a"
+          },
+          {
+            "id": "gtceu:lead_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_energy_input_hatch_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_opv_transformer_4a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_4a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:small_red_alloy_dust",
+            "amount": 50
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_opv_transformer_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1016
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_block"
+          },
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/opv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 503316480,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_1a"
+          },
+          {
+            "id": "gtceu:red_alloy_quadruple_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ulpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

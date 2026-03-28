@@ -1,0 +1,394 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_inert_metal_mixture",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_inert_metal_mixture_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_inert_metal_mixture",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_inert_metal_mixture",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_inert_metal_mixture",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_inert_metal_mixture_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/inert_metal_mixture_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:rhodium_sulfate",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/inert_metal_mixture_separation",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:rhodium_sulfate",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_inert_metal_mixture_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_inert_metal_mixture_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_inert_metal_mixture_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_inert_metal_mixture",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_inert_metal_mixture",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:small_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:small_inert_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:small_inert_metal_mixture_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/pgs_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_group_sludge_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:aqua_regia",
+            "amount": 1200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_raw_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:palladium_raw_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:inert_metal_mixture_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:rarest_metal_mixture_dust"
+          },
+          {
+            "id": "gtceu:platinum_sludge_residue_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_inert_metal_mixture_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_inert_metal_mixture_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_inert_metal_mixture_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_inert_metal_mixture_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

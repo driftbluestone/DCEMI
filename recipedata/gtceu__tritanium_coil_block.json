@@ -1,0 +1,95 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/coil_tritanium",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:trinium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_coil_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tritanium_coil_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_coil_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadria_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tritanium_coil_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_coil_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3420
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadria_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

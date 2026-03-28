@@ -1,0 +1,137 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_fluoroantimonic_acid",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:fluoroantimonic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:antimony_dust"
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 7000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/naquadah_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:fluoroantimonic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_enriched_naquadah_solution",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:impure_naquadria_solution",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/fluoroantimonic_acid",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:antimony_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluoroantimonic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/fluoroantimonic_acid",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:antimony_trifluoride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hydrofluoric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluoroantimonic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

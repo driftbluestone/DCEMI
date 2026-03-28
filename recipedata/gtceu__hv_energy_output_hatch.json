@@ -1,0 +1,166 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:power_substation",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:power_substation"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ev_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:ev_substation_input_hatch_64a"
+          },
+          {
+            "id": "gtceu:hv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:hv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ev_lapotronic_battery",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:laminated_glass",
+            "amount": 57
+          },
+          {
+            "id": "gtceu:palladium_substation",
+            "amount": 44
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:power_substation"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_energy_output_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_energy_output_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:black_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_energy_output_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1180
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:black_steel_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_hv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:gold_spring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hv_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_energy_output_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

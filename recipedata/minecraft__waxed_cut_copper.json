@@ -1,0 +1,188 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_waxed_cut_copper_into_stair",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_cut_copper",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_cut_copper_stairs",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:7}"
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_waxed_cut_copper_into_slab_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_cut_copper"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_waxed_cut_copper_into_slab_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_cut_copper"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_waxed_cut_copper_into_slab",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_cut_copper"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_waxed_cut_copper",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_cut_copper"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_copper_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_waxed_cut_copper",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:waxed_cut_copper"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 140
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/waxing_cut_copper",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:cut_copper"
+          },
+          {
+            "id": "gtceu:wax",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_cut_copper"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

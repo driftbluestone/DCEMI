@@ -1,0 +1,36 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fluid_regulator_hv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_fluid_regulator"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

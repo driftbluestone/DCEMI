@@ -1,0 +1,154 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/ev_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ev_transformer_1a"
+          },
+          {
+            "id": "gtceu:platinum_quadruple_cable"
+          },
+          {
+            "id": "gtceu:aluminium_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:mpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/ev_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ev_transformer_4a"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:platinum_octal_cable"
+          },
+          {
+            "id": "gtceu:aluminium_hex_cable"
+          },
+          {
+            "id": "gtceu:small_aluminium_spring"
+          },
+          {
+            "id": "gtceu:platinum_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_transformer_4a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_transformer_4a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_platinum_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_transformer_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_transformer_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1172
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:platinum_nugget",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

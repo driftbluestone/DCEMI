@@ -1,0 +1,208 @@
+{
+  "uses": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/tnt_from_toluene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:tnt"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/itnt_from_toluene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:industrial_tnt"
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 150
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/itnt_from_toluene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:industrial_tnt"
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 150
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/tnt_from_toluene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:tnt"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/gelled_toluene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 192,
+        "inputs": [
+          {
+            "id": "minecraft:sugar",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gelled_toluene",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelled_toluene"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ball_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/gelled_toluene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 192,
+        "inputs": [
+          {
+            "id": "minecraft:sugar",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

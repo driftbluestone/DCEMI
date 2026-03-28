@@ -1,0 +1,1243 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_enriched_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_enriched_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:small_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:small_enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:small_enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__enriched_naquadah_trinium_europium_duranide",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_dust",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:duranium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_enriched_naquadah_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electromagnetic_separator": [
+      {
+        "id": "gtceu:electromagnetic_separator/separate_naquadah_pure_dust_to_dust",
+        "category": "gtceu:electromagnetic_separator",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.05
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:electromagnetic_separator/separate_naquadah_pure_dust_to_dust",
+        "category": "gtceu:electromagnetic_separator",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.05
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_enriched_naquadah_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_enriched_naquadah_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_enriched_naquadah_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_enriched_naquadah_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_double_enriched_naquadah_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:double_enriched_naquadah_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_trinium_coil_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_coil_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_enriched_naquadah_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_naquadah_refined_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:refined_naquadah_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:naquadah",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "id": "gtceu:raw_naquadah"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:refined_naquadah_ore"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_naquadah_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_naquadah_ore"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.05
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:naquadah",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "id": "gtceu:raw_naquadah"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:refined_naquadah_ore"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_naquadah_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_naquadah_ore"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.05
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:naquadah",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "tag": "gtceu:red_sand_naquadah_ore"
+          },
+          {
+            "id": "gtceu:raw_naquadah"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_electromagnetic_separator"
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:refined_naquadah_ore"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_naquadah_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_naquadah_ore"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_naquadah_ore"
+          },
+          {
+            "id": "gtceu:purified_naquadah_ore"
+          },
+          {
+            "id": "gtceu:impure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:pure_naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:naquadah_dust"
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.1
+          },
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "chance": 0.05
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_enriched_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_enriched_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_enriched_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_enriched_naquadah_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_enriched_naquadah",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_enriched_naquadah_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/enriched_naquadah_trinium_europium_duranide",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:duranium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_enriched_naquadah_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_enriched_naquadah_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_enriched_naquadah",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_enriched_naquadah_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/enriched_naquadah_trinium_europium_duranide_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:duranium_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_enriched_naquadah_trinium_europium_duranide",
+            "amount": 1440
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:14}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/enriched_naquadah_trinium_europium_duranide",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:duranium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_enriched_naquadah_trinium_europium_duranide",
+            "amount": 1440
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_enriched_naquadah_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_enriched_naquadah_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_enriched_naquadah_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_enriched_naquadah_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

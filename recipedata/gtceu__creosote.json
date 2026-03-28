@@ -1,0 +1,647 @@
+{
+  "uses": {
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/gtceu_creosote",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:creosote",
+            "amount": 250
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_creosote_to_lubricant",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:creosote",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 12
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/gtceu_creosote",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:creosote",
+            "amount": 250
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/treated_planks",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "tag": "minecraft:oak_planks"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_planks"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:brewery/lubricant_from_creosote_and_talc",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:talc_dust"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/lubricant_from_creosote_and_redstone",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:redstone"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/lubricant_from_creosote_and_soapstone",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:soapstone_dust"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_creosote",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:creosote",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lubricant",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_wood_tar_to_creosote",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:creosote",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_coal_tar_to_creosote",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_dust"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 200
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ],
+    "gtceu:coke_oven": [
+      {
+        "id": "gtceu:coke_oven/log_to_charcoal",
+        "category": "gtceu:coke_oven",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 250
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:coke_oven/coal_to_coke",
+        "category": "gtceu:coke_oven",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_gem"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:coke_oven/coal_to_coke_block",
+        "category": "gtceu:coke_oven",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_block"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 4500
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/wood_dust_extraction",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plant_ball",
+            "chance": 0.0225
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_creosote",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_block_to_coke_creosote",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 32000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_creosote_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_to_coke_creosote",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_gem",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 8000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_block_to_coke_creosote_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 32000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_to_coke_creosote_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_gem",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 8000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_wood_tar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 350
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_coal_tar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:naphthalene",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:coke_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

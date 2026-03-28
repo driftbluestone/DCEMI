@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_turbine_hv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_normal_fluid_pipe"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:stainless_steel_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:steel_rotor"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:steel_rotor"
+          },
+          {
+            "id": "gtceu:hv_electric_motor"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "id": "gtceu:hv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_steam_turbine"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_steam_turbine",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_steam_turbine"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_steam_turbine",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_steam_turbine"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3020
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:steel_block"
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

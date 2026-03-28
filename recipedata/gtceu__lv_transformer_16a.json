@@ -1,0 +1,121 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/lv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_transformer_4a"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:copper_octal_cable"
+          },
+          {
+            "id": "gtceu:tin_hex_cable"
+          },
+          {
+            "id": "gtceu:small_tin_spring"
+          },
+          {
+            "id": "gtceu:copper_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_transformer_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_transformer_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 43
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 34
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5444
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 34
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

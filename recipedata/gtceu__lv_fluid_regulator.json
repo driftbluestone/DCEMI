@@ -1,0 +1,36 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fluid_regulator_lv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_fluid_regulator"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1088 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_ammonia",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/hydrogen_cyanide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/diethylenetriamine",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:dichloroethane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diethylenetriamine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/sodium_bicarbonate_from_salt",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_bicarbonate_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dinitrogen_tetroxide_from_ammonia",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/diaminobenzidine",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:dichlorobenzidine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diaminobenzidine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:zinc_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/ammonium_formate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:formic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonium_formate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/nitric_acid_from_ammonia",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dimethylamine",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:dimethylamine",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/monochloramine",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hypochlorous_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:monochloramine",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dimethylhydrazine_from_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hypochlorous_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylhydrazine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/nitric_oxide_from_ammonia",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/dinitrogen_tetroxide_from_ammonia",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/diethylenetriamine",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:dichloroethane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diethylenetriamine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/monochloramine",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hypochlorous_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:monochloramine",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/sodium_bicarbonate_from_salt",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_bicarbonate_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/ammonium_formate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:formic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonium_formate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/nitric_oxide_from_ammonia",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitric_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/dimethylhydrazine_from_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hypochlorous_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylhydrazine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/dimethylamine",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:dimethylamine",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/hydrogen_cyanide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_ammonium_chloride",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_coal_gas_to_ammonia",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:coal_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_dust"
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 300
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_ammonia",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/ammonia_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/calcium_chloride_from_quicklime",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/ammonia_from_elements",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 384,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/ammonia_from_elements",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 384,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/calcium_chloride_from_quicklime",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonium_chloride_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_chloride_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_fermented_biomass",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 600
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 25
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 375
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:fertilizer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_coal_gas",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:coal_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:ethylbenzene",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:coke_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

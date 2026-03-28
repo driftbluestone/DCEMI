@@ -1,0 +1,235 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/pipe_large_restrictive_sterling_silver",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_large_item_pipe"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_large_restrictive_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_sterling_silver_pipe_large_restrictive",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_large_item_pipe"
+          },
+          {
+            "id": "gtceu:iron_ring",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_large_restrictive_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_sterling_silver_large_item_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_large_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_sterling_silver_large_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_large_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver",
+            "amount": 864
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_sterling_silver_large_item_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_large_item_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 588
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_ingot",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/large_sterling_silver_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          },
+          {
+            "id": "gtceu:sterling_silver_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_large_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_sterling_silver_to_large_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver",
+            "amount": 864
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_large_item_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_sterling_silver_large_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:sterling_silver_ingot",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterling_silver_large_item_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

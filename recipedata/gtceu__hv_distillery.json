@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_distillery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tempered_glass"
+          },
+          {
+            "id": "gtceu:kanthal_spring"
+          },
+          {
+            "id": "gtceu:tempered_glass"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_distillery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_distillery",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_distillery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:tiny_steel_dust",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_distillery",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_distillery"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1998
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 22
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

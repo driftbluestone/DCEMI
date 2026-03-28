@@ -1,0 +1,468 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_vanadium_gallium_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_vanadium_gallium_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_vanadium_gallium_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_battery_buffer_4x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_battery_buffer_4x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3626
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 17939
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 34
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_block"
+          },
+          {
+            "id": "gtceu:stainless_steel_nugget",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_chemical_bath",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_chemical_bath"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 21469
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 46
+          },
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_luv_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 9045
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_block",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "gtceu:stainless_steel_nugget",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_4a_energy_converter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_4a_energy_converter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3801
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_vanadium_gallium_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_vanadium_gallium_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 30
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_vanadium_gallium_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_vanadium_gallium_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 41
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_vanadium_gallium_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_vanadium_gallium_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_vanadium_gallium_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 495
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_vanadium_gallium_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

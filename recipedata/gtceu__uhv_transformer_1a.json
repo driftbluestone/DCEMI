@@ -1,0 +1,231 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uhv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_1a"
+          },
+          {
+            "id": "gtceu:europium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:europium_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/energy_hatch_16a_uhv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_1a"
+          },
+          {
+            "id": "gtceu:uhv_energy_input_hatch_4a"
+          },
+          {
+            "id": "gtceu:europium_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:neutronium_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_energy_input_hatch_16a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/uhv_hi_amp_2a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_1a"
+          },
+          {
+            "id": "gtceu:europium_double_cable"
+          },
+          {
+            "id": "gtceu:europium_double_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_transformer_2a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/dynamo_hatch_16a_uhv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_1a"
+          },
+          {
+            "id": "gtceu:uhv_energy_output_hatch_4a"
+          },
+          {
+            "id": "gtceu:europium_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:neutronium_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_energy_output_hatch_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_transformer_1a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_1a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:small_europium_dust",
+            "amount": 14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_transformer_1a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_1a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8529
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:europium_nugget",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uhv_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          },
+          {
+            "id": "gtceu:europium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_transformer_1a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

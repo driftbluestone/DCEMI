@@ -1,0 +1,135 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/battery_hull_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:red_steel_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_ev_vanadium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ev_vanadium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/vanadium_battery_ev",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ev_battery_hull"
+          },
+          {
+            "id": "gtceu:vanadium_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_vanadium_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_battery_hull",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_battery_hull"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_battery_hull",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_battery_hull"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 150
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_steel_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

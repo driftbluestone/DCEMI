@@ -1,0 +1,160 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:active_transformer",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:active_transformer"
+          },
+          {
+            "id": "gtceu:iv_4096a_laser_source_hatch"
+          },
+          {
+            "id": "gtceu:iv_1024a_laser_target_hatch"
+          },
+          {
+            "id": "gtceu:iv_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:iv_substation_input_hatch_64a"
+          },
+          {
+            "id": "gtceu:ulv_energy_output_hatch",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:high_power_casing",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:superconducting_coil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:active_transformer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_substation_output_hatch_64a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_substation_output_hatch_64a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 62
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 38
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 38
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_substation_output_hatch_64a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_substation_output_hatch_64a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 19330
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 38
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 38
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:niobium_titanium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_16a"
+          },
+          {
+            "id": "gtceu:iv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:tungsten_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

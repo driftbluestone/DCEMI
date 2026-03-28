@@ -1,0 +1,136 @@
+{
+  "recipes": {
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_melon_block",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:melon"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:melon_slice",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:melon_seeds",
+            "chance": 0.85
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_melon_slice",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:melon_seeds"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/glistening_melon_slice",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glistering_melon_slice"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/glistening_melon_slice",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice"
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glistering_melon_slice"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/melon",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:melon"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:9}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_polarizer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:silver_double_wire"
+          },
+          {
+            "id": "gtceu:steel_rod"
+          },
+          {
+            "id": "gtceu:silver_double_wire"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "id": "gtceu:silver_double_wire"
+          },
+          {
+            "id": "gtceu:steel_rod"
+          },
+          {
+            "id": "gtceu:silver_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_polarizer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_polarizer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_polarizer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_polarizer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_polarizer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1316
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

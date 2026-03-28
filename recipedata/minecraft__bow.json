@@ -1,0 +1,114 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/bow",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:string",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:stick",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bow",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dispenser",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "tag": "minecraft:cobblestone",
+            "amount": 7
+          },
+          {
+            "id": "minecraft:bow",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "minecraft:redstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:dispenser"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_bow",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:bow",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_bow",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:bow",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ]
+  }
+}

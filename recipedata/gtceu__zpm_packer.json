@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_packer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:zpm_robot_arm"
+          },
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:zpm_conveyor_module"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_packer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_packer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_packer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_dust",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:vanadium_gallium_dust",
+            "amount": 11
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_packer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_packer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 24253
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

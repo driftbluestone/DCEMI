@@ -1,0 +1,95 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/coil_nichrome",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:stainless_steel_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_coil_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_nichrome_coil_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_coil_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_nichrome_coil_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nichrome_coil_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 558
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nichrome_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

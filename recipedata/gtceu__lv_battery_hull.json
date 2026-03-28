@@ -1,0 +1,247 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/battery_hull_lv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/battery_hull_lv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:battery_alloy_plate"
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_lv_sodium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lv_sodium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/unpackage_lv_cadmium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lv_cadmium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/unpackage_lv_lithium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lv_lithium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/cadmium_battery_lv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          },
+          {
+            "id": "gtceu:cadmium_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_cadmium_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/lithium_battery_lv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_lithium_battery"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:canner/sodium_battery_lv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          },
+          {
+            "id": "gtceu:sodium_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_sodium_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_battery_hull",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:battery_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_battery_hull",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_battery_hull"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 189
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:battery_alloy_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

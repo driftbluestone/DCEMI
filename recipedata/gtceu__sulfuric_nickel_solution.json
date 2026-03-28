@@ -1,0 +1,157 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_sulfuric_nickel_solution",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_nickel_solution",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/pgs_from_pentlandite",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_group_sludge_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfuric_nickel_solution",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/pgs_from_cooperite",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:purified_cooperite_ore"
+          },
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_group_sludge_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfuric_nickel_solution",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/pgs_from_pentlandite",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:purified_pentlandite_ore"
+          },
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_group_sludge_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfuric_nickel_solution",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/pgs_from_cooperite",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:purified_cooperite_ore"
+          },
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_group_sludge_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfuric_nickel_solution",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

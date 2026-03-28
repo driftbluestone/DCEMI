@@ -1,0 +1,75 @@
+{
+  "uses": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_realgar_block_to_gem",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:realgar_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:realgar_gem",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_realgar_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:realgar_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:realgar_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_realgar_gem_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:realgar_gem",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:realgar_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

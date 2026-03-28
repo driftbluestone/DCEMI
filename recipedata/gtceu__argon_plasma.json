@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/carbon_and_magnesium_to_argon_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 24576,
+        "inputs": [
+          {
+            "id": "gtceu:carbon",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:magnesium",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:argon_plasma",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:plasma_generator": [
+      {
+        "id": "gtceu:plasma_generator/argon",
+        "category": "gtceu:plasma_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:argon_plasma"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:argon"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "uses": {
+    "gtceu:gas_turbine": [
+      {
+        "id": "gtceu:gas_turbine/wood_gas",
+        "category": "gtceu:gas_turbine",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 8
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_wood_gas_to_carbon_dioxide",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 49
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_gas_to_methane",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 26
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_gas_to_hydrogen",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 20
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_gas_to_carbon_monoxide",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 34
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_gas_to_ethylene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 20
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_wood_gas",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 340
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 490
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 130
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_charcoal_byproducts_to_wood_gas",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_byproducts",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_wood_gas_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 1500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_wood_gas",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 1500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_charcoal_byproducts",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_byproducts",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:charcoal_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

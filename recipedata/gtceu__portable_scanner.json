@@ -1,0 +1,193 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/portable_scanner_mv_sodium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mv_emitter"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_sensor"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_sodium_battery"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:portable_scanner",
+            "nbt": "{Charge:0L,MaxCharge:360000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/portable_scanner_mv_lithium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mv_emitter"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_sensor"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_lithium_battery"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:portable_scanner",
+            "nbt": "{Charge:0L,MaxCharge:420000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/portable_scanner_mv_cadmium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mv_emitter"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_sensor"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_cadmium_battery"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:portable_scanner",
+            "nbt": "{Charge:0L,MaxCharge:400000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_portable_scanner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:portable_scanner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_portable_scanner",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:portable_scanner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 78
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_transformer_1a",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_transformer_1a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/lv_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:copper_single_cable"
+          },
+          {
+            "id": "gtceu:tin_single_cable",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_transformer_1a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/lv_hi_amp_2a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_transformer_1a"
+          },
+          {
+            "id": "gtceu:copper_double_cable"
+          },
+          {
+            "id": "gtceu:tin_double_cable",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_transformer_2a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/lv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_transformer_1a"
+          },
+          {
+            "id": "gtceu:copper_quadruple_cable"
+          },
+          {
+            "id": "gtceu:tin_quadruple_cable",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_transformer_1a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_transformer_1a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_copper_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_transformer_1a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_transformer_1a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 839
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

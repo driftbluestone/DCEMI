@@ -1,0 +1,71 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/shovel_diamond",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "minecraft:stick"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diamond_shovel",
+            "nbt": "{Damage:0,DisallowContainerItem:0,GT.Behaviours:{},GT.Tool:{DefaultEnchantments:[],HarvestLevel:3,MaxDamage:767,ToolSpeed:10.0f},HideFlags:2}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:smithing": [
+      {
+        "id": "gtceu:netherite_shovel_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_shovel",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_shovel",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:5.5f,AttackSpeed:-3.0f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:2032,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

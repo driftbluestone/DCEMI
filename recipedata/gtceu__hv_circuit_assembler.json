@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_circuit_assembler",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_robot_arm"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:hv_emitter"
+          },
+          {
+            "id": "gtceu:hv_conveyor_module"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:hv_conveyor_module"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_circuit_assembler"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_circuit_assembler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_circuit_assembler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 21
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_circuit_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_circuit_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 21
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 14
+          },
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 58
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

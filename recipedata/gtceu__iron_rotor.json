@@ -1,0 +1,274 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rotor_iron",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:iron_screw"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_rotor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_iron_to_rotor",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 20,
+        "inputs": [
+          {
+            "id": "gtceu:iron",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_rotor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rotor_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_iron_ingot_to_rotor",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "minecraft:iron_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_rotor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rotor_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/charcoal_pile_igniter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "id": "gtceu:iron_rotor"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "id": "gtceu:bronze_brick_casing"
+          },
+          {
+            "id": "gtceu:bronze_plate"
+          },
+          {
+            "id": "minecraft:flint_and_steel",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "minecraft:flint_and_steel",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "minecraft:flint_and_steel",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:charcoal_pile_igniter"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/primitive_pump",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "id": "gtceu:wood_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:iron_screw"
+          },
+          {
+            "id": "gtceu:iron_rotor"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "minecraft:cobblestone_slab"
+          },
+          {
+            "id": "gtceu:wood_large_fluid_pipe"
+          },
+          {
+            "id": "minecraft:cobblestone_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:primitive_pump"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iron_rotor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:iron_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_iron_rotor",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iron_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iron_rotor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iron_rotor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 224
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

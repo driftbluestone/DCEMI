@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_canner",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "id": "gtceu:ev_electric_pump"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:tempered_glass"
+          },
+          {
+            "id": "gtceu:tempered_glass"
+          },
+          {
+            "id": "gtceu:tempered_glass"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_canner"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_canner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_canner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:small_aluminium_dust",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:tiny_stainless_steel_dust",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_canner",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_canner"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1093
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:stainless_steel_nugget",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

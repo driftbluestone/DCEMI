@@ -1,0 +1,154 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:large_mixer",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_mixer"
+          },
+          {
+            "id": "gtceu:iv_parallel_hatch"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_hatch"
+          },
+          {
+            "id": "gtceu:ulv_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_bus"
+          },
+          {
+            "id": "gtceu:ulv_input_bus"
+          },
+          {
+            "id": "gtceu:hastelloy_x_frame",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:titanium_pipe_casing",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:stainless_steel_gearbox",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:reaction_safe_mixing_casing",
+            "amount": 61
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_mixer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_reaction_safe_mixing_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:reaction_safe_mixing_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:maraging_steel_300_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_reaction_safe_mixing_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reaction_safe_mixing_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 322
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hastelloy_x_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:maraging_steel_300_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_reaction_safe_mixing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:hastelloy_x_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:maraging_steel_300_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reaction_safe_mixing_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_lathe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_piston"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_lathe"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_lathe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_lathe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:small_tin_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_lathe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_lathe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1790
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:tin_nugget",
+            "amount": 49
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

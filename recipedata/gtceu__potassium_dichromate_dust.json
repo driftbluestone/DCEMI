@@ -1,0 +1,410 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_potassium_dichromate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_potassium_dichromate_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_potassium_dichromate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_potassium_dichromate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_potassium_dichromate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_potassium_dichromate_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_potassium_dichromate",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust",
+            "amount": 11
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/phthalic_acid_from_dimethylbenzene_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 18000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 9000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 18000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_potassium_dichromate_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_potassium_dichromate_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_potassium_dichromate_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_potassium_dichromate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:small_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:small_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:small_potassium_dichromate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_potassium_dichromate",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          },
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/potassium_dichromate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:saltpeter_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:chromium_trioxide_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/potassium_dichromate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:saltpeter_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:chromium_trioxide_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_potassium_dichromate_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_potassium_dichromate_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_potassium_dichromate_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_potassium_dichromate_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_dichromate_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:high_performance_computation_array",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          },
+          {
+            "id": "gtceu:hpca_heat_sink_component",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hpca_computation_component"
+          },
+          {
+            "id": "gtceu:hpca_empty_component",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_hatch"
+          },
+          {
+            "id": "gtceu:computer_heat_vent",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:advanced_computer_casing",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/hpca_advanced_computation_component",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_computation_component"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:zpm_field_generator"
+          },
+          {
+            "id": "gtceu:pcb_coolant",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpca_advanced_computation_component"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hpca_computation_component",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_computation_component"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hpca_computation_component",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_computation_component"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 10929
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:hsss_block"
+          },
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/hpca_computation_component",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_empty_component"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:luv_field_generator"
+          },
+          {
+            "id": "gtceu:pcb_coolant",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpca_computation_component"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

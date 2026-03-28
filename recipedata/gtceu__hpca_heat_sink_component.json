@@ -1,0 +1,171 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:high_performance_computation_array",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          },
+          {
+            "id": "gtceu:hpca_heat_sink_component",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hpca_computation_component"
+          },
+          {
+            "id": "gtceu:hpca_empty_component",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_hatch"
+          },
+          {
+            "id": "gtceu:computer_heat_vent",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:advanced_computer_casing",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hpca_heat_sink_component",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_heat_sink_component"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hpca_heat_sink_component",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_heat_sink_component"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2856
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:cobalt_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/hpca_heat_sink_component",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_empty_component"
+          },
+          {
+            "id": "gtceu:aluminium_plate",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:stainless_steel_screw",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:pcb_coolant",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpca_heat_sink_component"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/end_crystal",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:ghast_tear"
+          },
+          {
+            "id": "minecraft:ender_eye"
+          },
+          {
+            "id": "gtceu:glass",
+            "amount": 1008
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:end_crystal"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/ghast_tear_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:ghast_tear"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_potassium_dust"
+          },
+          {
+            "id": "gtceu:tiny_lithium_dust"
+          },
+          {
+            "id": "gtceu:salt_water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/ghast_tear_separation",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:ghast_tear"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_potassium_dust"
+          },
+          {
+            "id": "gtceu:tiny_lithium_dust"
+          },
+          {
+            "id": "gtceu:salt_water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:/brewery/potion_vanilla_mundane_1",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:ghast_tear"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:mundane\"}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:/brewery/potion_vanilla_regeneration_45",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "minecraft:ghast_tear"
+          },
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:awkward\"}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potion",
+            "amount": 750,
+            "nbt": "{Potion:\"minecraft:regeneration\"}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

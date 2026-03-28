@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_assembler",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ev_robot_arm"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:ev_robot_arm"
+          },
+          {
+            "id": "gtceu:ev_conveyor_module"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:ev_conveyor_module"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_assembler"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_assembler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_assembler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:kanthal_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 28
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_assembler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_assembler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4648
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:neodymium_ingot",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

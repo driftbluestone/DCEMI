@@ -1,0 +1,240 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_grinder_from_lp",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:potin_gear"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:lp_steam_macerator"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:potin_gear"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/steam_grinder_from_hp",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:potin_gear"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:hp_steam_macerator"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          },
+          {
+            "id": "gtceu:potin_gear"
+          },
+          {
+            "id": "gtceu:steam_machine_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:steam_grinder",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          },
+          {
+            "id": "gtceu:steam_input_hatch"
+          },
+          {
+            "id": "gtceu:steam_output_bus"
+          },
+          {
+            "id": "gtceu:steam_input_bus"
+          },
+          {
+            "id": "gtceu:steam_machine_casing",
+            "amount": 22
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:steam_grinder",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          },
+          {
+            "id": "gtceu:steam_input_hatch"
+          },
+          {
+            "id": "gtceu:steam_output_bus"
+          },
+          {
+            "id": "gtceu:steam_input_bus"
+          },
+          {
+            "id": "gtceu:steam_machine_casing",
+            "amount": 22
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_steam_grinder",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:potin_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_steam_grinder",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3462
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:potin_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tin_alloy_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

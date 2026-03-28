@@ -1,0 +1,106 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/reservoir_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:infinite_water_cover"
+          },
+          {
+            "id": "gtceu:ev_input_hatch"
+          },
+          {
+            "id": "gtceu:ev_electric_pump"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reservoir_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_reservoir_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:reservoir_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_stainless_steel_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:small_steel_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_reservoir_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:reservoir_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2599
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_block"
+          },
+          {
+            "id": "gtceu:steel_block"
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

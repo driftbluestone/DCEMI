@@ -1,0 +1,199 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/naquadria_solution_separation",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_solution",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acidic_naquadria_solution",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/impure_naquadria_solution_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:impure_naquadria_solution",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_phosphide_dust"
+          },
+          {
+            "id": "gtceu:antimony_trifluoride_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadria_solution",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/naquadria_waste_separation_to_naquadria_solution",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_waste",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gallium_sulfide_dust"
+          },
+          {
+            "id": "gtceu:naquadria_solution",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/enriched_naquadah_waste_separation_to_naquadria_solution",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_waste",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:barium_sulfide_dust"
+          },
+          {
+            "id": "gtceu:naquadria_solution",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/naquadria_waste_separation",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_waste",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:naquadria_solution",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:enriched_naquadah_solution",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:gallium_sulfide_dust",
+            "chance": 0.5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/enriched_naquadah_waste_separation",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_waste",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:enriched_naquadah_solution",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:naquadria_solution",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:barium_sulfide_dust",
+            "chance": 0.5
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

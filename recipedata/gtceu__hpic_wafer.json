@@ -1,0 +1,203 @@
+{
+  "uses": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/uhpic_wafer",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhpic_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/uhpic_wafer",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhpic_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_hpic",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_hpic_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_hpic_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/hpic_wafer",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:mpic_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/hpic_wafer",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:mpic_wafer"
+          },
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpic_wafer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

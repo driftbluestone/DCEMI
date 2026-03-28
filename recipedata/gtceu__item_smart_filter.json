@@ -1,0 +1,102 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_smart_filter_olivine",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:ruby_plate"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:ruby_plate"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:item_smart_filter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_item_smart_filter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:item_smart_filter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_zinc_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_item_smart_filter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:item_smart_filter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 93
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_nugget",
+            "amount": 13
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

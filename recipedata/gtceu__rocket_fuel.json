@@ -1,0 +1,79 @@
+{
+  "recipes": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/rocket_fuel_from_dinitrogen_tetroxide",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:dinitrogen_tetroxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:dimethylhydrazine",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rocket_fuel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/rocket_fuel_from_oxygen",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:dimethylhydrazine",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rocket_fuel",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:combustion_generator": [
+      {
+        "id": "gtceu:combustion_generator/rocket_fuel",
+        "category": "gtceu:combustion_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:rocket_fuel",
+            "amount": 16
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ]
+  }
+}

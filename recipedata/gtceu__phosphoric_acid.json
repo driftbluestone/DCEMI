@@ -1,0 +1,326 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/gelatin_mixture",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:collagen_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelatin_mixture",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/cumene_from_benzene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cumene",
+            "amount": 8000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phenol_acetone_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:propene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/cumene_from_benzene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cumene",
+            "amount": 8000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/phosphoric_acid_from_elements",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phosphorus_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phosphoric_acid_from_pentoxide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phosphorus_pentoxide_dust",
+            "amount": 14
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 6000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/phosphoric_acid_from_apatite",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:apatite_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 5000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gypsum_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/phosphoric_acid_from_pentoxide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phosphorus_pentoxide_dust",
+            "amount": 14
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 6000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/phosphoric_acid_from_apatite",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:apatite_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 5000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gypsum_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phosphoric_acid",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

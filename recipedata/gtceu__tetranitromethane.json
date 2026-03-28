@@ -1,0 +1,258 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/cetane_diesel_from_biodiesel",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 40
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cetane_boosted_diesel",
+            "amount": 750
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/cetane_diesel_from_diesel",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cetane_boosted_diesel",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/cetane_diesel_from_bio_diesel_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 400
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cetane_boosted_diesel",
+            "amount": 7500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/cetane_diesel_from_diesel_shortcut",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:diesel",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cetane_boosted_diesel",
+            "amount": 10000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/tetranitromethane_from_ethenone",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 5000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/tetranitromethane_from_methyl_acetate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 8000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/tetranitromethane_from_methyl_acetate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 8000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/tetranitromethane_from_ethenone",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:nitric_acid",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tetranitromethane",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 5000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

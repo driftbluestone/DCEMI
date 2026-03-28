@@ -1,0 +1,197 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_stainless_turbine_casing",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:steel_turbine_casing"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_turbine_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_stainless_steel_turbine",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:steel_turbine_casing"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_turbine_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:gas_large_turbine",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:gas_large_turbine"
+          },
+          {
+            "id": "gtceu:iv_rotor_holder"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:iv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:ulv_input_hatch"
+          },
+          {
+            "id": "gtceu:stainless_steel_turbine_casing",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:stainless_steel_gearbox",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gas_large_turbine"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_stainless_steel_turbine_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_turbine_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_magnalium_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:small_blue_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_stainless_steel_turbine_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_turbine_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 231
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:magnalium_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:blue_steel_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

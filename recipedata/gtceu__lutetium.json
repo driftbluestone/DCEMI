@@ -1,0 +1,85 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/lantanum_and_silicon_to_lutetium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:lanthanum",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:silicon",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lutetium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_lutetium_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lutetium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lutetium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/lutenium_and_chromium_to_americium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 49152,
+        "inputs": [
+          {
+            "id": "gtceu:lutetium",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:chromium",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

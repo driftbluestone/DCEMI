@@ -1,0 +1,480 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_electrum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_electrum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_electrum_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_rod"
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_electrum_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_electrum_single_cable",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_ender_redstone_link_cover",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ender_redstone_link_cover"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:ender_pearl_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_electrum_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_stainless_steel_fluid_cell",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:stainless_steel_fluid_cell"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_electrum_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_electrum_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_mv_sensor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_sensor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_electrum_single_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_electrum_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:electrum_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_electrum_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_central_monitor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:central_monitor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_electrum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_electrum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_electrum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_electrum",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          },
+          {
+            "id": "gtceu:small_electrum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_electrum_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_electrum_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

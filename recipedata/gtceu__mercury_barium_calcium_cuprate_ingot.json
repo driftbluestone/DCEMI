@@ -1,0 +1,736 @@
+{
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/mercury_barium_calcium_cuprate",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_mercury_barium_calcium_cuprate",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_mercury_barium_calcium_cuprate_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:hot_mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_mercury_barium_calcium_cuprate_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_mercury_barium_calcium_cuprate_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_world_accelerator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_world_accelerator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3896
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:chromium_ingot",
+            "amount": 5
+          },
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mercury_barium_calcium_cuprate_hex_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_hex_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 432
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_hv_field_generator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_field_generator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 542
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_iv_quantum_chest",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_quantum_chest"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4902
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:platinum_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_iv_quantum_tank",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_quantum_tank"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4814
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 34
+          },
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mercury_barium_calcium_cuprate_double_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_double_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 54
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mercury_barium_calcium_cuprate_octal_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_octal_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 216
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mercury_barium_calcium_cuprate_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 486
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_mercury_barium_calcium_cuprate_quadruple_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 108
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_mercury_barium_calcium_cuprate_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_mercury_barium_calcium_cuprate_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_mercury_barium_calcium_cuprate_wire_4",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_quadruple_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_mercury_barium_calcium_cuprate_wire_8",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_octal_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_mercury_barium_calcium_cuprate_wire_16",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_mercury_barium_calcium_cuprate_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_mercury_barium_calcium_cuprate_wire_2",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_double_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_mercury_barium_calcium_cuprate_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_mercury_barium_calcium_cuprate_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_mercury_barium_calcium_cuprate_wire",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:wire_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_mercury_barium_calcium_cuprate_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_mercury_barium_calcium_cuprate_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_mercury_barium_calcium_cuprate_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_mercury_barium_calcium_cuprate_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mercury_barium_calcium_cuprate_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

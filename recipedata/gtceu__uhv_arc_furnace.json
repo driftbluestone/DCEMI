@@ -1,0 +1,121 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uhv_arc_furnace",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:europium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:graphite_dust"
+          },
+          {
+            "id": "gtceu:europium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_arc_furnace"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_arc_furnace",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_arc_furnace"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:graphite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_arc_furnace",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_arc_furnace"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 11764
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

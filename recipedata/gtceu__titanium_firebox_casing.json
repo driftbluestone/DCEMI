@@ -1,0 +1,229 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_titanium_firebox",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:titanium_rod"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:titanium_rod"
+          },
+          {
+            "id": "gtceu:titanium_frame"
+          },
+          {
+            "id": "gtceu:titanium_rod"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          },
+          {
+            "id": "gtceu:titanium_rod"
+          },
+          {
+            "id": "gtceu:titanium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_firebox_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_titanium_firebox",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_rod",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:titanium_frame"
+          },
+          {
+            "id": "gtceu:titanium_plate",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_firebox_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/large_titanium_boiler",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:titanium_firebox_casing"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:gold_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_large_boiler"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:titanium_large_boiler",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_large_boiler"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:iv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_hatch"
+          },
+          {
+            "id": "gtceu:ulv_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_input_bus"
+          },
+          {
+            "id": "gtceu:titanium_firebox_casing",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:titanium_pipe_casing",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:stable_machine_casing",
+            "amount": 23
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_large_boiler"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_titanium_firebox_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_firebox_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_titanium_dust",
+            "amount": 13
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_titanium_firebox_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:titanium_firebox_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 154
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_nugget",
+            "amount": 29
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

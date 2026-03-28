@@ -1,0 +1,235 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/large_cobalt_brass_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          },
+          {
+            "id": "gtceu:cobalt_brass_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_cobalt_brass_to_large_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass",
+            "amount": 864
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_item_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_cobalt_brass_large_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_ingot",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_item_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:large_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/pipe_large_restrictive_cobalt_brass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_item_pipe"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_restrictive_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_cobalt_brass_pipe_large_restrictive",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_item_pipe"
+          },
+          {
+            "id": "gtceu:iron_ring",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_restrictive_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cobalt_brass_large_item_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_cobalt_brass_large_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass",
+            "amount": 864
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_cobalt_brass_large_item_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_brass_large_item_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 348
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cobalt_brass_ingot",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

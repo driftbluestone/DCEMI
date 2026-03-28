@@ -1,0 +1,754 @@
+{
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_dilute_sulfuric_to_water",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 120
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 40
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_dilute_sulfuric_to_sulfuric_acid",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 60
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 40
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_dilute_sulfuric",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 2000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/nitrochlorobenzene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:chlorobenzene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrochlorobenzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/nitrobenzene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:benzene",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrobenzene",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/collagen_from_bone",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:meat_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:bone"
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:collagen_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/ethenone",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/collagen_from_bone_meal",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:meat_dust"
+          },
+          {
+            "id": "minecraft:bone_meal"
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:collagen_dust"
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/diphenyl_isophtalate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:phthalic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diphenyl_isophthalate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/ethylene_from_ethanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/caprolactam",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:cyclohexanone_oxime_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:caprolactam_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/itnt_from_toluene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:industrial_tnt"
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 150
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glyceryl_trinitrate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glyceryl_trinitrate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/aminophenol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/nitrobenzene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:benzene",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrobenzene",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/collagen_from_bone",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:meat_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:bone"
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:collagen_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/itnt_from_toluene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:industrial_tnt"
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 150
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/aminophenol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:phenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aminophenol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/ethenone",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethenone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/ethylene_from_ethanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/collagen_from_bone_meal",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:meat_dust"
+          },
+          {
+            "id": "minecraft:bone_meal"
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:collagen_dust"
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/caprolactam",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:cyclohexanone_oxime_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:caprolactam_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/glyceryl_trinitrate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glyceryl_trinitrate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/nitrochlorobenzene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:chlorobenzene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrochlorobenzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

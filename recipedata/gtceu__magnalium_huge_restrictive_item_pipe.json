@@ -1,0 +1,148 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/pipe_huge_restrictive_magnalium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:magnalium_huge_item_pipe"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnalium_huge_restrictive_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_magnalium_pipe_huge_restrictive",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnalium_huge_item_pipe"
+          },
+          {
+            "id": "gtceu:iron_ring",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnalium_huge_restrictive_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_magnalium_huge_restrictive_item_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:magnalium_huge_restrictive_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnalium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_iron_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_magnalium_huge_restrictive_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnalium_huge_restrictive_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:magnalium",
+            "amount": 1728
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_magnalium_huge_restrictive_item_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnalium_huge_restrictive_item_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 324
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnalium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

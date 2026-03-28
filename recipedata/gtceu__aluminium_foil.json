@@ -1,0 +1,333 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/foil_aluminium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_foil",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_aluminium_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_aluminium_ingot_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_aluminium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:aluminium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_aluminium_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/capacitor",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:polyethylene_foil"
+          },
+          {
+            "id": "gtceu:aluminium_foil",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:capacitor",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/coil_kanthal",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:kanthal_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:copper",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:kanthal_coil_block"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_screen",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:glass_plate"
+          },
+          {
+            "id": "gtceu:aluminium_foil",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:computer_monitor_cover"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/smd_capacitor_pvc",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_foil",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aluminium_foil"
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/smd_capacitor_silicone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber_foil"
+          },
+          {
+            "id": "gtceu:aluminium_foil"
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_aluminium_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_aluminium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_aluminium_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_aluminium_foil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_foil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

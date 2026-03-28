@@ -1,0 +1,1007 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 98304,
+        "inputs": [
+          {
+            "id": "gtceu:americium",
+            "amount": 128
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 128
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_naquadria_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_naquadria_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_naquadria_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_naquadria_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_naquadria_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/electric_motor_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:long_magnetic_samarium_rod"
+          },
+          {
+            "id": "gtceu:long_tritanium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_ring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_round",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:fine_americium_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_americium_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_electric_motor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_electric_motor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/conveyor_module_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_motor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tritanium_ring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_round",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tritanium_screw",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber",
+            "amount": 3456
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_conveyor_module"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_conveyor_module\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/emitter_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:long_tritanium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_emitter\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/robot_arm_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:long_tritanium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_gear"
+          },
+          {
+            "id": "gtceu:small_tritanium_gear",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:uv_electric_motor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:uv_electric_piston"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1728
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_robot_arm"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_robot_arm\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/electric_pump_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:naquadah_large_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tritanium_screw",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silicone_rubber_ring",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:naquadah_alloy_rotor"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_electric_pump"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_electric_pump\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/electric_piston_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_ring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tritanium_round",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tritanium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:naquadah_alloy_gear"
+          },
+          {
+            "id": "gtceu:small_naquadah_alloy_gear",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_electric_piston"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_electric_piston\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_sensor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_sensor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/field_generator_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "id": "gtceu:uv_emitter",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1728
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_field_generator"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_field_generator\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/ultimate_battery",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 300000,
+        "inputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:energy_cluster",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:uv_field_generator",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_wafer",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:uhpic_wafer",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:neutronium_bolt",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 5760
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 2304
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 2592
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_energy_cluster\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/enriched_naquadah_and_radon_to_naquadria_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 49152,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_double_naquadria_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:double_naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_fine_naquadria_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:fine_naquadria_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_screw",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_naquadria_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

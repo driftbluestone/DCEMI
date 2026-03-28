@@ -1,0 +1,139 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_silicon_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hot_silicon_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/silicon_cool_down",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hot_silicon_ingot"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_bath/silicon_cool_down_distilled_water",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:hot_silicon_ingot"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_silicon",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_silicon_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_silicon_dioxide",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_silicon_ingot"
+          },
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

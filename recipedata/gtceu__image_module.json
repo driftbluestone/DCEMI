@@ -1,0 +1,99 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/image_module",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:electrum_foil",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_silver_wire",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:image_module"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_image_module",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:image_module"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_dust"
+          },
+          {
+            "id": "gtceu:small_silver_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_image_module",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:image_module"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 198
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_ingot"
+          },
+          {
+            "id": "gtceu:silver_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

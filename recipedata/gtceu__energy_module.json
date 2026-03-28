@@ -1,0 +1,270 @@
+{
+  "uses": {
+    "gtceu:research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_energy_module",
+        "category": "gtceu:research_station",
+        "dimensions": [
+          150,
+          117
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:data_module"
+          },
+          {
+            "id": "gtceu:energy_module"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:energy_cluster"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/zpm_lapotronic_battery",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_ii_battery"
+          },
+          {
+            "id": "gtceu:energy_module"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_lapotronic_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/energy_cluster",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 200000,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:americium_plate",
+            "amount": 16
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:energy_module"
+          },
+          {
+            "id": "gtceu:zpm_field_generator"
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fine_osmiridium_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_bolt",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 2880
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:energy_cluster"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_energy_module\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_lapotronic_energy_orb_cluster",
+        "category": "gtceu:research_station",
+        "dimensions": [
+          150,
+          117
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:data_orb"
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:energy_module"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_zpm_lapotronic_battery",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_lapotronic_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_ii_battery"
+          },
+          {
+            "id": "gtceu:energy_module"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/energy_module",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:double_europium_plate",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          },
+          {
+            "id": "gtceu:luv_field_generator"
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:fine_ruridit_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_bolt",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1440
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:energy_module"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_lapotronic_energy_orb_cluster\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  }
+}

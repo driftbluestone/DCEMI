@@ -1,0 +1,87 @@
+{
+  "uses": {
+    "gtceu:gas_turbine": [
+      {
+        "id": "gtceu:gas_turbine/natural_gas",
+        "category": "gtceu:gas_turbine",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:natural_gas",
+            "amount": 8
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/desulfurize_natural_gas",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:natural_gas",
+            "amount": 16000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:refinery_gas",
+            "amount": 16000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/desulfurize_natural_gas",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:natural_gas",
+            "amount": 16000
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_sulfide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:refinery_gas",
+            "amount": 16000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

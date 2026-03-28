@@ -1,0 +1,111 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:ev_electric_motor"
+          },
+          {
+            "id": "gtceu:titanium_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:stainless_steel_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_muffler_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_muffler_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:kanthal_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_muffler_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_muffler_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1050
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

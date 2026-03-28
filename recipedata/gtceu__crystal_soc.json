@@ -1,0 +1,107 @@
+{
+  "recipes": {
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/crystal_soc",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 40000,
+        "inputs": [
+          {
+            "id": "gtceu:crystal_cpu"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crystal_soc"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:sapphire_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/crystal_processor_iv_soc",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 86000,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:crystal_soc"
+          },
+          {
+            "id": "gtceu:fine_niobium_titanium_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crystal_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/crystal_processor_iv_soc_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 86000,
+        "inputs": [
+          {
+            "id": "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:crystal_soc"
+          },
+          {
+            "id": "gtceu:fine_niobium_titanium_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crystal_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

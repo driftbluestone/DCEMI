@@ -1,0 +1,112 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/iv_hi_amp_2a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_1a"
+          },
+          {
+            "id": "gtceu:niobium_titanium_double_cable"
+          },
+          {
+            "id": "gtceu:platinum_double_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_transformer_2a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_transformer_2a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_2a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_transformer_2a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_2a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2874
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_block"
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

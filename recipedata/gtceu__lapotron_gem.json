@@ -1,0 +1,134 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/lapotron_crystal",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:lapotron_gem"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotron_crystal"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:autoclave": [
+      {
+        "id": "gtceu:autoclave/lapotron_gem_distilled",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 320,
+        "inputs": [
+          {
+            "id": "gtceu:lapotron_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotron_gem"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:autoclave/lapotron_gem_water",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:lapotron_dust",
+            "amount": 15
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotron_gem"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:autoclave/lapotron_gem_red_steel",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 192,
+        "inputs": [
+          {
+            "id": "gtceu:lapotron_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:blue_steel",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotron_gem"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:autoclave/lapotron_gem_blue_steel",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:lapotron_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:red_steel",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lapotron_gem"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

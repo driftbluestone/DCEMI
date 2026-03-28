@@ -1,0 +1,148 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/prospector_luv_luv_vanadium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:luv_sensor"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:luv_vanadium_battery"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.luv",
+            "nbt": "{Charge:0L,MaxCharge:163840000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/prospector_luv_lapotronic_energy_orb_cluster",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:luv_sensor"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.luv",
+            "nbt": "{Charge:0L,MaxCharge:1000000000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_prospector.luv",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:prospector.luv"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_prospector.luv",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:prospector.luv"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 315
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

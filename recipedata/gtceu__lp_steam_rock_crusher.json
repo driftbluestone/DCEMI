@@ -1,0 +1,155 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_rock_breaker_bronze",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:piston"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "tag": "minecraft:piston"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_machine_casing"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "id": "minecraft:diamond"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lp_steam_rock_crusher"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_rock_breaker_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:tin_alloy_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:lp_steam_rock_crusher"
+          },
+          {
+            "id": "gtceu:tin_alloy_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hp_steam_rock_crusher"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_rock_crusher",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_rock_crusher"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:diamond_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lp_steam_rock_crusher",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_rock_crusher"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 915
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_carbon_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:high_performance_computation_array",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          },
+          {
+            "id": "gtceu:hpca_heat_sink_component",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hpca_computation_component"
+          },
+          {
+            "id": "gtceu:hpca_empty_component",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_hatch"
+          },
+          {
+            "id": "gtceu:computer_heat_vent",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:advanced_computer_casing",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:network_switch",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:network_switch"
+          },
+          {
+            "id": "gtceu:computation_receiver_hatch"
+          },
+          {
+            "id": "gtceu:computation_transmitter_hatch",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:advanced_computer_casing"
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 19
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:network_switch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_computation_transmitter_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_computation_transmitter_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5898
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_ingot",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:hsss_nugget",
+            "amount": 44
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/computation_transmitter_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:data_transmitter_hatch"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:luv_emitter"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_filter_sodalite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:sodalite_plate"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fluid_filter"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_sodalite_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:sodalite_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sodalite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_sodalite_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodalite_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sodalite_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_sodalite_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodalite_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sodalite_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_sodalite_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodalite_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 14
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sodalite_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

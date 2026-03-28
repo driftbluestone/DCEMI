@@ -1,0 +1,265 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/frame_ruridit",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_rod"
+          },
+          {
+            "id": "gtceu:ruridit_rod"
+          },
+          {
+            "id": "gtceu:ruridit_rod"
+          },
+          {
+            "id": "gtceu:ruridit_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:ruridit_rod"
+          },
+          {
+            "id": "gtceu:ruridit_rod"
+          },
+          {
+            "id": "gtceu:ruridit_rod"
+          },
+          {
+            "id": "gtceu:ruridit_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_ruridit_frame",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_rod",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_frame"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dual_export_bus_luv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_input_bus"
+          },
+          {
+            "id": "gtceu:luv_input_hatch"
+          },
+          {
+            "id": "gtceu:niobium_titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:ruridit_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1008
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_dual_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_import_bus_luv_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_input_bus"
+          },
+          {
+            "id": "gtceu:luv_input_hatch"
+          },
+          {
+            "id": "gtceu:niobium_titanium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:ruridit_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1008
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_dual_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/empty_tier_2_battery",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_frame"
+          },
+          {
+            "id": "gtceu:ruridit_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:ruridit_screw",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_ii_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ruridit_frame",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_ruridit_frame",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ruridit_frame",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_frame"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 262
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

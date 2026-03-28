@@ -1,0 +1,980 @@
+{
+  "uses": {
+    "gtceu:combustion_generator": [
+      {
+        "id": "gtceu:combustion_generator/toluene",
+        "category": "gtceu:combustion_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:toluene"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_toluene_to_light_fuel",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 30
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/gasoline",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:raw_gasoline",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 11000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/biphenyl_from_toluene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:benzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:biphenyl_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/high_octane_gasoline",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 20000
+          },
+          {
+            "id": "gtceu:octane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitrous_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethyl_tertbutyl_ether",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:high_octane_gasoline",
+            "amount": 32000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/gelled_toluene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 192,
+        "inputs": [
+          {
+            "id": "minecraft:sugar",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_gelled_toluene",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelled_toluene"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ball_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/gasoline",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:raw_gasoline",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 11000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/biphenyl_from_toluene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:benzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:biphenyl_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/gelled_toluene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 192,
+        "inputs": [
+          {
+            "id": "minecraft:sugar",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:polyethylene_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gelled_toluene",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_lightly_steam_cracked_heavy_fuel_to_toluene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 25
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_severely_steam_cracked_light_fuel_to_toluene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_heavy_fuel_to_toluene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 10
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_severely_steam_cracked_naphtha_to_toluene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 20
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_lightly_steam_cracked_naphtha_to_toluene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 40
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_severely_steam_cracked_heavy_fuel_to_toluene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 80
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_lightly_steam_cracked_light_fuel_to_toluene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 40
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_wood_tar_to_toluene",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 75
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_lightly_steam_cracked_light_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 60
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_severely_steam_cracked_naphtha",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 65
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_severely_steam_cracked_heavy_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 80
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 80
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_severely_steam_cracked_light_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:severely_steam_cracked_light_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 250
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 65
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_lightly_steam_cracked_heavy_fuel",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_heavy_fuel",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:naphtha",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_wood_tar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:toluene",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:dimethylbenzene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:phenol",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 350
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_lightly_steam_cracked_naphtha",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:lightly_steam_cracked_naphtha",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ethylene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:methane",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:propane",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:propene",
+            "amount": 200
+          },
+          {
+            "id": "gtceu:ethane",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:benzene",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:butene",
+            "amount": 80
+          },
+          {
+            "id": "gtceu:butadiene",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:heavy_fuel",
+            "amount": 75
+          },
+          {
+            "id": "gtceu:light_fuel",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.11111111
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

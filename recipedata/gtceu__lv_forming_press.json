@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_forming_press",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_piston"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_piston"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_forming_press"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_forming_press",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_forming_press"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_forming_press",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_forming_press"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2254
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_block",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

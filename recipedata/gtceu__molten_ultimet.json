@@ -1,0 +1,116 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/ultimet",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_ultimet",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/ultimet",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:molybdenum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_ultimet",
+            "amount": 1296
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/ultimet_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nickel_dust"
+          },
+          {
+            "id": "gtceu:molybdenum_dust"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 900
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_ultimet",
+            "amount": 1296
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:14}"
+          }
+        ]
+      }
+    ]
+  }
+}

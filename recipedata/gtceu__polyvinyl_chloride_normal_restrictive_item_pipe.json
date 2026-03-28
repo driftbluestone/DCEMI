@@ -1,0 +1,148 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/pipe_normal_restrictive_polyvinyl_chloride",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_normal_item_pipe"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "id": "gtceu:iron_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_normal_restrictive_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_polyvinyl_chloride_pipe_normal_restrictive",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_normal_item_pipe"
+          },
+          {
+            "id": "gtceu:iron_ring",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_normal_restrictive_item_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_polyvinyl_chloride_normal_restrictive_item_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_normal_restrictive_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_iron_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_polyvinyl_chloride_normal_restrictive_item_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_normal_restrictive_item_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:iron_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride",
+            "amount": 432
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_polyvinyl_chloride_normal_restrictive_item_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride_normal_restrictive_item_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 28
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

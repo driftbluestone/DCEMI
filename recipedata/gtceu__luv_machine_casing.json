@@ -1,0 +1,236 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/luv_machine_hull",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene_plate"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene_plate"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          },
+          {
+            "id": "gtceu:luv_machine_casing"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/hull_luv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_casing"
+          },
+          {
+            "id": "gtceu:niobium_titanium_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_machine_hull"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/fusion_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_casing"
+          },
+          {
+            "id": "gtceu:superconducting_coil"
+          },
+          {
+            "id": "gtceu:neutron_reflector"
+          },
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fusion_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_luv_machine_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_luv_machine_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_machine_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 840
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_luv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_machine_casing"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_luv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_machine_casing"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      }
+    ]
+  }
+}

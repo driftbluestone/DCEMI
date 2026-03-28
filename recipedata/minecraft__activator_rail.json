@@ -1,0 +1,93 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/activator_rail",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iron_rod",
+            "amount": 12
+          },
+          {
+            "id": "minecraft:stick",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:redstone_torch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:activator_rail",
+            "amount": 12
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_activator_rail",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:activator_rail"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_iron_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_activator_rail",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:activator_rail"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

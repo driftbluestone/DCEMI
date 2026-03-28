@@ -1,0 +1,167 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_tungsten_steel_pipe",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_tiny_fluid_pipe",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tungsten_steel_to_tiny_pipe",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_tiny_fluid_pipe"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:tiny_pipe_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_tungsten_steel_tiny_pipe",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_tiny_fluid_pipe",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:tiny_pipe_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tungsten_steel_tiny_fluid_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_tiny_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tungsten_steel_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tungsten_steel_tiny_fluid_pipe",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_tiny_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tungsten_steel_tiny_fluid_pipe",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_tiny_fluid_pipe"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 52
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

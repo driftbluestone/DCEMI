@@ -1,0 +1,91 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_hatch_input_to_output_10",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:uev_input_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_output_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fluid_export_hatch_uev_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7864320,
+        "inputs": [
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 396
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/fluid_hatch_output_to_input_10",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:uev_output_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_input_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

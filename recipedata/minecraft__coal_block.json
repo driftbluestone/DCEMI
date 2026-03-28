@@ -1,0 +1,301 @@
+{
+  "uses": {
+    "gtceu:primitive_blast_furnace": [
+      {
+        "id": "gtceu:primitive_blast_furnace/steel_from_coal_block",
+        "category": "gtceu:primitive_blast_furnace",
+        "dimensions": [
+          164,
+          41
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:iron_block"
+          },
+          {
+            "id": "minecraft:coal_block",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_block"
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:primitive_blast_furnace/steel_from_coal_block_wrought",
+        "category": "gtceu:primitive_blast_furnace",
+        "dimensions": [
+          164,
+          41
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_block"
+          },
+          {
+            "id": "minecraft:coal_block",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_block"
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_coal_block",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_coal_block",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_coal_block_to_gem",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:coke_oven": [
+      {
+        "id": "gtceu:coke_oven/coal_to_coke_block",
+        "category": "gtceu:coke_oven",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_block"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 4500
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/coal_block_to_coke_creosote",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 32000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_block_to_coal_gas",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:coal_gas",
+            "amount": 16000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:22}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_block_to_coke_creosote_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_block",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 32000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_coal_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coal_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_coal_gem_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

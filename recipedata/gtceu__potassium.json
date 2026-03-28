@@ -1,0 +1,57 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/potassium_and_fluorine_to_nickel_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:potassium",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_plasma",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_potassium_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

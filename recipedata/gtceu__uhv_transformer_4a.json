@@ -1,0 +1,149 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uhv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_1a"
+          },
+          {
+            "id": "gtceu:europium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:europium_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uhv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_4a"
+          },
+          {
+            "id": "gtceu:iv_electric_pump"
+          },
+          {
+            "id": "gtceu:europium_octal_cable"
+          },
+          {
+            "id": "gtceu:europium_hex_cable"
+          },
+          {
+            "id": "gtceu:small_europium_spring"
+          },
+          {
+            "id": "gtceu:europium_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_transformer_4a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_4a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:small_europium_dust",
+            "amount": 54
+          },
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_transformer_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_transformer_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 10055
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_block"
+          },
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:europium_nugget",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/prospector_luv_luv_vanadium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:luv_sensor"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          },
+          {
+            "id": "gtceu:luv_vanadium_battery"
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.luv",
+            "nbt": "{Charge:0L,MaxCharge:163840000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_luv_vanadium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:luv_vanadium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/vanadium_battery_luv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:luv_battery_hull"
+          },
+          {
+            "id": "gtceu:vanadium_dust",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_vanadium_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

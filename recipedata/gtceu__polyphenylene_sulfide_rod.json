@@ -1,0 +1,131 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_polyphenylene_sulfide",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyphenylene_sulfide_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_polyphenylene_sulfide_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:polyphenylene_sulfide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyphenylene_sulfide_rod"
+          },
+          {
+            "id": "gtceu:small_polyphenylene_sulfide_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_polyphenylene_sulfide_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:polyphenylene_sulfide_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyphenylene_sulfide_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_polyphenylene_sulfide_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:polyphenylene_sulfide_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_polyphenylene_sulfide_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_polyphenylene_sulfide_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:polyphenylene_sulfide_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyphenylene_sulfide",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

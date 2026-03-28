@@ -1,0 +1,90 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/cover_machine_controller",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:lever"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:machine_controller_cover"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_machine_controller_cover",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:machine_controller_cover"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust"
+          },
+          {
+            "id": "gtceu:small_wood_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tiny_stone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_machine_controller_cover",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:machine_controller_cover"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 56
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

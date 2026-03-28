@@ -1,0 +1,78 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/treated_sign_stick",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:treated_wood_planks"
+          },
+          {
+            "id": "gtceu:treated_wood_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_sign",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/treated_sign",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:treated_wood_planks",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:treated_wood_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:treated_wood_sign",
+            "amount": 3
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  }
+}

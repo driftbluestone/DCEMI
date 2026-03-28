@@ -1,0 +1,815 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_indium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_indium_dust"
+          },
+          {
+            "id": "gtceu:small_indium_dust"
+          },
+          {
+            "id": "gtceu:small_indium_dust"
+          },
+          {
+            "id": "gtceu:small_indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_indium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_indium_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_dust"
+          },
+          {
+            "id": "gtceu:tiny_indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__indium_gallium_phosphide",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:gallium_dust"
+          },
+          {
+            "id": "gtceu:phosphorus_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_indium_tin_barium_titanium_cuprate",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 30
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_indium_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:indium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/indium_phosphide_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:indium_phosphide_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:calcium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:calcium_phosphide_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/indium_concentrate_separation_4x",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:indium_concentrate",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_sulfite_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:lead_zinc_solution",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/indium_concentrate_separation_4x",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 600,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:indium_concentrate",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_sulfite_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:lead_zinc_solution",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/indium_phosphide_separation",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:indium_phosphide_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:calcium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:calcium_phosphide_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_indium_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_indium_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_indium_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_indium_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_indium_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:indium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_indium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_indium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_indium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_indium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_indium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_indium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_dust_indium_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/indium_tin_barium_titanium_cuprate",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:mixer/indium_gallium_phosphide",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:gallium_dust"
+          },
+          {
+            "id": "gtceu:phosphorus_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_gallium_phosphide_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/indium_tin_barium_titanium_cuprate",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_indium_tin_barium_titanium_cuprate",
+            "amount": 2304
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/indium_tin_barium_titanium_cuprate_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:barium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 14000
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 800
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_indium_tin_barium_titanium_cuprate",
+            "amount": 2304
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_indium_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_indium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_indium_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_indium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_indium_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_indium_dust",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 114
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_indium_dust_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:indium_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:indium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

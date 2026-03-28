@@ -1,0 +1,118 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/basic_terminal",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_screw"
+          },
+          {
+            "tag": "minecraft:glass_pane"
+          },
+          {
+            "id": "gtceu:wrought_iron_screw"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "minecraft:book"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:red_alloy_single_wire"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:terminal"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_terminal",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:terminal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_wrought_iron_dust",
+            "amount": 38
+          },
+          {
+            "id": "gtceu:paper_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_red_alloy_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_terminal",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:terminal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 276
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 38
+          },
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

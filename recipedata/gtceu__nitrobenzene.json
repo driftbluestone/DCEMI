@@ -1,0 +1,96 @@
+{
+  "uses": {
+    "gtceu:gas_turbine": [
+      {
+        "id": "gtceu:gas_turbine/nitrobenzene",
+        "category": "gtceu:gas_turbine",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nitrobenzene"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/nitrobenzene",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:benzene",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrobenzene",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/nitrobenzene",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:benzene",
+            "amount": 5000
+          },
+          {
+            "id": "gtceu:nitration_mixture",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrobenzene",
+            "amount": 8000
+          },
+          {
+            "id": "gtceu:diluted_sulfuric_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

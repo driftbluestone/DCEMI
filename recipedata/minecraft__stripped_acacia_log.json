@@ -1,0 +1,91 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/acacia_hanging_sign",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:stripped_acacia_log",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:chain",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:acacia_hanging_sign",
+            "amount": 6
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_stripped_acacia_log",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:stripped_acacia_log"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_wood_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/strip_acacia_log",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:acacia_log"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:stripped_acacia_log"
+          },
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

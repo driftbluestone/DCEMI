@@ -1,0 +1,1204 @@
+{
+  "uses": {
+    "gtceu:combustion_generator": [
+      {
+        "id": "gtceu:combustion_generator/methanol",
+        "category": "gtceu:combustion_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 4
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_methanol",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/chloromethane_from_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/raw_gasoline",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naphtha",
+            "amount": 16000
+          },
+          {
+            "id": "gtceu:refinery_gas",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_gasoline",
+            "amount": 20000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/polydimethylsiloxane_from_silicon",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_dust"
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polydimethylsiloxane_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_acid_from_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_seed_oil_methanol_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 54000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 9000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 54000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_seed_oil_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_fish_oil_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/glycerol_from_fish_oil_methanol_9",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 54000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 9000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 9000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 54000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dimethylamine",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:dimethylamine",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/formaldehyde",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:formaldehyde",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dimethylhydrazine_from_methanol",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hypochlorous_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylhydrazine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/methyl_acetate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/glycerol_from_fish_oil_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:fish_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/glycerol_from_seed_oil_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_sodium_hydroxide_dust"
+          },
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycerol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bio_diesel",
+            "amount": 6000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/acetic_acid_from_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/polydimethylsiloxane_from_silicon",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_dust"
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polydimethylsiloxane_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/formaldehyde",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:formaldehyde",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/methyl_acetate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/chloromethane_from_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:chloromethane",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/dimethylhydrazine_from_methanol",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:hypochlorous_acid",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dimethylhydrazine",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:diluted_hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/dimethylamine",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:dimethylamine",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_wood_vinegar_to_methanol",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 30
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_fermented_biomass_to_methanol",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 45,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer"
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 150
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/acetic_acid_from_methyl_acetate",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/methanol_from_dioxide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/methanol_from_carbon",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/methanol_from_monoxide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/methanol_from_dioxide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/methanol_from_carbon",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/acetic_acid_from_methyl_acetate",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:sodium_hydroxide_dust",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/methanol_from_monoxide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 4000
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_wood_vinegar",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methanol",
+            "amount": 300
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:methyl_acetate",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 100
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:distillation_tower/distill_fermented_biomass",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:fermented_biomass",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 600
+          },
+          {
+            "id": "gtceu:methanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 400
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 25
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 375
+          },
+          {
+            "id": "gtceu:ethanol",
+            "amount": 150
+          },
+          {
+            "id": "gtceu:fertilizer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

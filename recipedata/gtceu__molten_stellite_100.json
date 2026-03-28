@@ -1,0 +1,118 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/stellite_100",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_stellite_100",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stellite_100_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/stellite_100_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:molybdenum_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_stellite_100",
+            "amount": 1440
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:14}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/stellite_100",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:molybdenum_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_stellite_100",
+            "amount": 1440
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  }
+}

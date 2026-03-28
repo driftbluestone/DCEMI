@@ -1,0 +1,174 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/hv_diode",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:gold_quadruple_cable"
+          },
+          {
+            "id": "gtceu:smd_diode"
+          },
+          {
+            "id": "gtceu:gold_quadruple_cable"
+          },
+          {
+            "id": "gtceu:smd_diode"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:smd_diode"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:smd_diode"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hv_diode"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:cleanroom",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cleanroom"
+          },
+          {
+            "id": "gtceu:hv_diode"
+          },
+          {
+            "id": "gtceu:lv_fluid_passthrough_hatch"
+          },
+          {
+            "id": "gtceu:lv_item_passthrough_hatch"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:lv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "id": "gtceu:cleanroom_glass",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:sterilizing_filter_casing",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:plascrete",
+            "amount": 75
+          },
+          {
+            "id": "minecraft:iron_door",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cleanroom"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hv_diode",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hv_diode"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hv_diode",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hv_diode"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1539
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 10
+          },
+          {
+            "id": "minecraft:gold_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

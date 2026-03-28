@@ -1,0 +1,185 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/portable_scanner_mv_lithium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:mv_emitter"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_sensor"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_lithium_battery"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:portable_scanner",
+            "nbt": "{Charge:0L,MaxCharge:420000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/electric_jetpack",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:power_thruster"
+          },
+          {
+            "id": "gtceu:mv_lithium_battery"
+          },
+          {
+            "id": "gtceu:power_thruster"
+          },
+          {
+            "id": "gtceu:annealed_copper_double_wire"
+          },
+          {
+            "id": "gtceu:annealed_copper_double_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electric_jetpack",
+            "nbt": "{}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/mv_power_unit_mv_lithium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_screw"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:small_aluminium_gear"
+          },
+          {
+            "id": "gtceu:mv_electric_motor"
+          },
+          {
+            "id": "gtceu:small_aluminium_gear"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_lithium_battery"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_power_unit",
+            "nbt": "{Charge:0L,MaxCharge:420000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_mv_lithium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_lithium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/lithium_battery_mv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:mv_battery_hull"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_lithium_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

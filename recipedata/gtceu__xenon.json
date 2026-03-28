@@ -1,0 +1,121 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/xenon_and_zinc_to_plutonium_239_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 49152,
+        "inputs": [
+          {
+            "id": "gtceu:xenon",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:zinc",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plutonium",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/neutronium_boule",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:silicon_block",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gallium_arsenide_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:xenon",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_boule"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_liquid_ender_air",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:liquid_ender_air",
+            "amount": 200000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tritium",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:krypton",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:xenon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 122000
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 50000
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 15000
+          },
+          {
+            "id": "gtceu:ender_pearl_dust",
+            "chance": 0.1
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

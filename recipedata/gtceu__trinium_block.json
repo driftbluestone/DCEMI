@@ -1,0 +1,404 @@
+{
+  "recipes": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_trinium_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:trinium",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_trinium_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_trinium_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_4096a_laser_target_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_4096a_laser_target_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 61445
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_block",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:europium_block",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:osmiridium_block",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 29
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_network_switch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:network_switch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 53271
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_block",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:osmiridium_ingot",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_world_accelerator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_world_accelerator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 77358
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_block",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_ingot",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 48
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_trinium_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_trinium_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 242
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_trinium_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 60
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_trinium_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 181
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_trinium_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_trinium_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_trinium_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2907
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_trinium_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

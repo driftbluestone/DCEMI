@@ -1,0 +1,232 @@
+{
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/bacterial_sludge",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:biomass",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bacteria",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/stem_cells",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:osmiridium_dust"
+          },
+          {
+            "id": "gtceu:bacteria",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stem_cells",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/bacterial_sludge",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:biomass",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:bacteria",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/stem_cells",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:osmiridium_dust"
+          },
+          {
+            "id": "gtceu:bacteria",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stem_cells",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:brewery": [
+      {
+        "id": "gtceu:brewery/enriched_bacterial_sludge_from_u238",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/enriched_bacterial_sludge_from_u235",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_uranium_235_dust"
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:brewery/enriched_bacterial_sludge_from_naquadria",
+        "category": "gtceu:brewery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_naquadria_dust"
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_bacterial_sludge",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:autoclave": [
+      {
+        "id": "gtceu:autoclave/raw_crystal_chip_from_part_bacterial_sludge",
+        "category": "gtceu:autoclave",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:raw_crystal_chip_parts"
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_crystal_chip",
+            "chance": 0.85
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

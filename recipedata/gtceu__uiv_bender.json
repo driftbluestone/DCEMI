@@ -1,0 +1,116 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uiv_bender",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_electric_piston"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:uiv_electric_piston"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:uiv_electric_motor"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uiv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_bender"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uiv_bender",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_bender"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust"
+          },
+          {
+            "id": "gtceu:iron_dust"
+          },
+          {
+            "id": "gtceu:small_red_alloy_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_bender",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_bender"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 92
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot"
+          },
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

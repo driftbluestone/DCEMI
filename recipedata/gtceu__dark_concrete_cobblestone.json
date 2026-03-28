@@ -1,0 +1,133 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_dark_concrete",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:dark_concrete_cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dark_concrete"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/mossy_dark_concrete_cobblestone_from_vine",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "gtceu:dark_concrete_cobblestone"
+          },
+          {
+            "id": "minecraft:vine"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mossy_dark_concrete_cobblestone"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/mossy_dark_concrete_cobblestone_from_moss_block",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "gtceu:dark_concrete_cobblestone"
+          },
+          {
+            "id": "minecraft:moss_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mossy_dark_concrete_cobblestone"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_dark_concrete",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:dark_concrete_cobblestone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dark_concrete"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_dark_concrete_cobblestone",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:dark_concrete"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dark_concrete_cobblestone"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

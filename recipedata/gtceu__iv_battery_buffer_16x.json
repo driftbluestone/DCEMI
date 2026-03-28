@@ -1,0 +1,114 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/iv_battery_buffer_16x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_hex_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:tungsten_hex_wire"
+          },
+          {
+            "id": "gtceu:tungsten_hex_wire"
+          },
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:tungsten_hex_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_battery_buffer_16x"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_battery_buffer_16x",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_battery_buffer_16x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:platinum_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_battery_buffer_16x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_battery_buffer_16x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7006
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:platinum_ingot"
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/stem_cells",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:osmiridium_dust"
+          },
+          {
+            "id": "gtceu:bacteria",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stem_cells",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/stem_cells",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:osmiridium_dust"
+          },
+          {
+            "id": "gtceu:bacteria",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stem_cells",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:bacterial_sludge",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/neuro_processor",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 80000,
+        "inputs": [
+          {
+            "id": "gtceu:wetware_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:stem_cells",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:polybenzimidazole_small_fluid_pipe",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:electrum_plate",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silicone_rubber_foil",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:hsse_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neuro_processing_unit"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

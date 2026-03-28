@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_autoclave",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_autoclave"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_autoclave",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_autoclave"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:tiny_bronze_dust",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_autoclave",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_autoclave"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1083
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:bronze_nugget",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 31
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

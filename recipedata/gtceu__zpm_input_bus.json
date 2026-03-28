@@ -1,0 +1,256 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_input_to_output_7",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:zpm_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_output_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dual_import_bus_zpm_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          },
+          {
+            "id": "gtceu:zpm_input_hatch"
+          },
+          {
+            "id": "gtceu:iridium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:iridium_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_dual_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembler/dual_export_bus_zpm_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          },
+          {
+            "id": "gtceu:zpm_input_hatch"
+          },
+          {
+            "id": "gtceu:iridium_nonuple_fluid_pipe"
+          },
+          {
+            "id": "gtceu:iridium_frame",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_dual_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:scanner": [
+      {
+        "id": "gtceu:scanner/1_x_gtceu_zpm_input_bus",
+        "category": "gtceu:scanner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:data_stick"
+          },
+          {
+            "id": "gtceu:zpm_input_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:object_holder"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/object_holder",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          },
+          {
+            "id": "gtceu:luv_emitter",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:zpm_robot_arm",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:zpm_electric_motor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_double_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:normal_optical_pipe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:object_holder"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_input_bus\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/item_bus_output_to_input_7",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:zpm_output_bus"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/item_import_bus_zpm_polybenzimidazole",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 122880,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:tungsten_steel_crate"
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_input_bus"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

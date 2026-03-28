@@ -1,0 +1,216 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:large_distillery",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_distillery"
+          },
+          {
+            "id": "gtceu:iv_parallel_hatch"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:iv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:iv_output_hatch"
+          },
+          {
+            "id": "gtceu:iv_input_hatch"
+          },
+          {
+            "id": "gtceu:iv_output_bus"
+          },
+          {
+            "id": "gtceu:steel_pipe_casing"
+          },
+          {
+            "id": "gtceu:watertight_casing",
+            "amount": 43
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_distillery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/energy_hatch_4a_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:tungsten_quadruple_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_energy_input_hatch_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:scanner": [
+      {
+        "id": "gtceu:scanner/1_x_gtceu_iv_energy_input_hatch",
+        "category": "gtceu:scanner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:data_stick"
+          },
+          {
+            "id": "gtceu:iv_energy_input_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_energy_input_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_energy_input_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_energy_input_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1714
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_ingot"
+          },
+          {
+            "id": "gtceu:platinum_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/energy_hatch_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:tungsten_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iv_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_energy_input_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

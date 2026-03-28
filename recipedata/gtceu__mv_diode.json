@@ -1,0 +1,118 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/mv_diode",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:copper_quadruple_cable"
+          },
+          {
+            "tag": "gtceu:diode"
+          },
+          {
+            "id": "gtceu:copper_quadruple_cable"
+          },
+          {
+            "tag": "gtceu:diode"
+          },
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "tag": "gtceu:diode"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          },
+          {
+            "tag": "gtceu:diode"
+          },
+          {
+            "id": "gtceu:aluminium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_diode"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_mv_diode",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:mv_diode"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_mv_diode",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:mv_diode"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 584
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

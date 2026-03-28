@@ -1,0 +1,184 @@
+{
+  "recipes": {
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/weathered_to_oxidized_cut_copper_slab_oxidation",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:weathered_cut_copper_slab"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper_slab"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_oxidized_cut_copper_into_slab",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_oxidized_cut_copper_into_slab_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_oxidized_cut_copper_into_slab_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper_slab",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/waxing_oxidized_cut_copper_slab",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper_slab"
+          },
+          {
+            "id": "gtceu:wax",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:waxed_oxidized_cut_copper_slab"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_oxidized_cut_copper_slab",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_copper_dust",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_oxidized_cut_copper_slab",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:oxidized_cut_copper_slab"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 70
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 10
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

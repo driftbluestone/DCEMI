@@ -1,0 +1,108 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/black_bronze",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_black_bronze",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:black_bronze_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/black_bronze_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:gold_dust"
+          },
+          {
+            "id": "gtceu:silver_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 5000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_black_bronze",
+            "amount": 720
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:13}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/black_bronze",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:gold_dust"
+          },
+          {
+            "id": "gtceu:silver_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_black_bronze",
+            "amount": 720
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ]
+  }
+}

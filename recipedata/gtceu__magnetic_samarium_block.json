@@ -1,0 +1,151 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/demagnetize_magnetic_samarium_block",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_magnetic_samarium_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_magnetic_samarium_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_magnetic_samarium_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1350
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_magnetic_samarium_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:samarium_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:polarizer": [
+      {
+        "id": "gtceu:polarizer/polarize_samarium_block",
+        "category": "gtceu:polarizer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:samarium_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:magnetic_samarium_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "recipes": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/cool_hot_ruthenium_trinium_americium_neutronate_ingot",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:hot_ruthenium_trinium_americium_neutronate_ingot"
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:vacuum_freezer/ruthenium_trinium_americium_neutronate",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_ruthenium_trinium_americium_neutronate",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_ruthenium_trinium_americium_neutronate_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_ruthenium_trinium_americium_neutronate_nugget_to_ingot",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ruthenium_trinium_americium_neutronate_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1998
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ruthenium_trinium_americium_neutronate_hex_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_hex_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1776
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ruthenium_trinium_americium_neutronate_double_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_double_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 222
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ruthenium_trinium_americium_neutronate_octal_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_octal_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 888
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:arc_furnace/arc_ruthenium_trinium_americium_neutronate_quadruple_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 444
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_ruthenium_trinium_americium_neutronate_nugget_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_ruthenium_trinium_americium_neutronate_to_ingot",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_ruthenium_trinium_americium_neutronate_wire_8",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_octal_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_ruthenium_trinium_americium_neutronate_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_ruthenium_trinium_americium_neutronate_wire_4",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_ruthenium_trinium_americium_neutronate_wire_2",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_double_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_ruthenium_trinium_americium_neutronate_wire_16",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_hex_wire"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:16}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_ruthenium_trinium_americium_neutronate_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_ruthenium_trinium_americium_neutronate_wire",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_single_wire",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:wire_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_ruthenium_trinium_americium_neutronate_ingot_to_block",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_ruthenium_trinium_americium_neutronate_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_ruthenium_trinium_americium_neutronate_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_ruthenium_trinium_americium_neutronate_ingot_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_ruthenium_trinium_americium_neutronate_to_nugget",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_trinium_americium_neutronate_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

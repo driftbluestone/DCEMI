@@ -1,0 +1,249 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/electrolytic_cell",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_double_wire"
+          },
+          {
+            "id": "gtceu:platinum_double_wire"
+          },
+          {
+            "id": "gtceu:platinum_double_wire"
+          },
+          {
+            "id": "gtceu:platinum_double_wire"
+          },
+          {
+            "id": "gtceu:nonconducting_casing"
+          },
+          {
+            "id": "gtceu:platinum_double_wire"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:tungsten_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrolytic_cell",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/electrolytic_cell",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:platinum_double_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tungsten_single_cable"
+          },
+          {
+            "id": "gtceu:nonconducting_casing"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrolytic_cell",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:large_electromagnet",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_electromagnet"
+          },
+          {
+            "id": "gtceu:iv_parallel_hatch"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_bus"
+          },
+          {
+            "id": "gtceu:ulv_input_bus"
+          },
+          {
+            "id": "gtceu:electrolytic_cell",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:nonconducting_casing",
+            "amount": 42
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_electromagnet"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_electrolyzer",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_electrolyzer"
+          },
+          {
+            "id": "gtceu:iv_parallel_hatch"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_hatch"
+          },
+          {
+            "id": "gtceu:ulv_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_bus"
+          },
+          {
+            "id": "gtceu:ulv_input_bus"
+          },
+          {
+            "id": "gtceu:electrolytic_cell",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:nonconducting_casing",
+            "amount": 40
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_electrolyzer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_electrolytic_cell",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:electrolytic_cell"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hsla_steel_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_electrolytic_cell",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:electrolytic_cell"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 552
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsla_steel_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

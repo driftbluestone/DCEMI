@@ -1,0 +1,213 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_hydrogen_cyanide",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/glycolonitrile",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:formaldehyde",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycolonitrile",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/calcium_ferrocyanide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_hydroxide_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 6000
+          },
+          {
+            "id": "gtceu:iron_ii_chloride",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 7000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:calcium_ferrocyanide_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/glycolonitrile",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:formaldehyde",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glycolonitrile",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/hydrogen_cyanide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/hydrogen_cyanide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:methane",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ammonia",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hydrogen_cyanide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

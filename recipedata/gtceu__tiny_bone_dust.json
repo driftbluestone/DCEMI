@@ -1,0 +1,662 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_bone_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_bone_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_steak",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:beef"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:meat_dust"
+          },
+          {
+            "id": "gtceu:meat_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_fish",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "tag": "minecraft:cod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:meat_dust"
+          },
+          {
+            "id": "gtceu:meat_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_chicken",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chicken"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:meat_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_pork_chop",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:porkchop"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:meat_dust"
+          },
+          {
+            "id": "gtceu:meat_dust",
+            "chance": 0.65
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_mutton",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:mutton"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:meat_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_rabbit",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:rabbit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:meat_dust"
+          },
+          {
+            "id": "gtceu:meat_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_bone_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_bone_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_bone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          },
+          {
+            "id": "gtceu:tiny_bone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_bone_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_bone_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bone_meal"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

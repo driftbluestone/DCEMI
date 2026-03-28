@@ -1,0 +1,124 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/maraging_steel_300",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_maraging_steel_300",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:maraging_steel_300_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/maraging_steel_300_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 1200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_maraging_steel_300",
+            "amount": 3456
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:15}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/maraging_steel_300",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:titanium_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_maraging_steel_300",
+            "amount": 3456
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      }
+    ]
+  }
+}

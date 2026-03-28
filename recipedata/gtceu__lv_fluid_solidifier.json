@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/lv_fluid_solidifier",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_fluid_solidifier"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lv_fluid_solidifier",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:lv_fluid_solidifier"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_tin_dust",
+            "amount": 52
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lv_fluid_solidifier",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lv_fluid_solidifier"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2464
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_block"
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:tin_nugget",
+            "amount": 38
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

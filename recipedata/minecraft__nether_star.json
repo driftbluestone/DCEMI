@@ -1,0 +1,301 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/field_generator_ev",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uranium_triplatinum_quadruple_wire"
+          },
+          {
+            "id": "gtceu:double_titanium_plate"
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_quadruple_wire"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "minecraft:nether_star"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_quadruple_wire"
+          },
+          {
+            "id": "gtceu:double_titanium_plate"
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_field_generator"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/field_generator_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:nether_star"
+          },
+          {
+            "id": "gtceu:double_titanium_plate",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:micro_processor_computer",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_quadruple_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_field_generator"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/quantum_star",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "minecraft:nether_star"
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 1250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_star"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_nether_star_gem_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:nether_star",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_star_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_nether_star",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:nether_star"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nether_star_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_nether_star_block_to_gem",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:nether_star_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_star",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:implosion_compressor": [
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_star_dynamite",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nether_star_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:dynamite",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_star",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_star_itnt",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nether_star_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:industrial_tnt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_star",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_star_powderbarrel",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nether_star_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:powderbarrel",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_star",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:implosion_compressor/implode_dust_nether_star_tnt",
+        "category": "gtceu:implosion_compressor",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nether_star_dust",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:tnt",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_star",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.25
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

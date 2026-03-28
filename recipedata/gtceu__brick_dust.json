@@ -1,0 +1,1055 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_brick",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_brick_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_brick",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_brick_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_brick",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_brick_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_brick",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_brick_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/fireclay_dust",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:brick_dust"
+          },
+          {
+            "id": "gtceu:clay_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fireclay_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__brick",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_brick_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_brick_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_brick_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_brick_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_brick",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_brick_dust"
+          },
+          {
+            "id": "gtceu:small_brick_dust"
+          },
+          {
+            "id": "gtceu:small_brick_dust"
+          },
+          {
+            "id": "gtceu:small_brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shapeless/brick_block_to_dust",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:invar_mortar"
+          },
+          {
+            "id": "minecraft:bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_brick",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_brick_dust"
+          },
+          {
+            "id": "gtceu:tiny_brick_dust"
+          },
+          {
+            "id": "gtceu:tiny_brick_dust"
+          },
+          {
+            "id": "gtceu:tiny_brick_dust"
+          },
+          {
+            "id": "gtceu:tiny_brick_dust"
+          },
+          {
+            "id": "gtceu:tiny_brick_dust"
+          },
+          {
+            "id": "gtceu:tiny_brick_dust"
+          },
+          {
+            "id": "gtceu:tiny_brick_dust"
+          },
+          {
+            "id": "gtceu:tiny_brick_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__fireclay",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fireclay_dust",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust"
+          },
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_brick",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:brick"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_brick_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_brick_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_brick_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_brick_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_steel_brick_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:steel_brick_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_furnace",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_furnace"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tin_alloy_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_solid_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_solid_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_furnace",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_furnace"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 12
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_alloy_smelter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_alloy_smelter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 11
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_solar_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_solar_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:glass_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_alloy_smelter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_alloy_smelter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:steel_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_steam_grinder",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:steam_grinder"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:potin_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_bronze_multiblock_tank",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_multiblock_tank"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_bronze_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_bronze_tank_valve",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_tank_valve"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_bronze_dust",
+            "amount": 29
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_miner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_miner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:diamond_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_bronze_brick_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_brick_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_bricks",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_steam_machine_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:steam_machine_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_steam_oven",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:steam_oven"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:invar_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin_alloy_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_solar_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_solar_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:glass_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_liquid_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_liquid_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:glass_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_charcoal_pile_igniter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_pile_igniter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_brick_stairs",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:brick_stairs"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_brick_slab",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:brick_slab"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_liquid_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_liquid_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:glass_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_solid_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_solid_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_miner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_miner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:tin_alloy_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:diamond_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_brick_wall",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:brick_wall"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

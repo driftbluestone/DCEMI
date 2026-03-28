@@ -1,0 +1,102 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/pickaxe_iron",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "minecraft:iron_ingot"
+          },
+          {
+            "id": "minecraft:iron_ingot"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "minecraft:stick"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_pickaxe",
+            "nbt": "{Damage:0,DisallowContainerItem:0,GT.Behaviours:{TorchPlacing:1},GT.Tool:{DefaultEnchantments:[],HarvestLevel:2,MaxDamage:255,ToolSpeed:6.0f},HideFlags:2}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:/macerator/tool_decomp/iron",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:iron_pickaxe",
+            "nbt": "{Damage:79,GT.Tool:{},display:{Name:'{\"translate\":\"gtceu.auto_decomp.tool\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_iron_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:/arc_furnace/tool_decomp/iron",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:iron_pickaxe",
+            "nbt": "{Damage:79,GT.Tool:{},display:{Name:'{\"translate\":\"gtceu.auto_decomp.tool\"}'}}"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 230
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

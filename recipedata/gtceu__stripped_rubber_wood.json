@@ -1,0 +1,89 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stripped_rubber_wood",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          },
+          {
+            "id": "gtceu:stripped_rubber_log"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stripped_rubber_wood",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/strip_rubber_wood",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:rubber_wood"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stripped_rubber_wood"
+          },
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_stripped_rubber_wood",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:stripped_rubber_wood"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_wood_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:wood_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

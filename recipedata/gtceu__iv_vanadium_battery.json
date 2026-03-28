@@ -1,0 +1,98 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/iv_power_unit_iv_vanadium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tungsten_steel_screw"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:small_tungsten_steel_gear"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:small_tungsten_steel_gear"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          },
+          {
+            "id": "gtceu:iv_vanadium_battery"
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_power_unit",
+            "nbt": "{Charge:0L,MaxCharge:40960000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/unpackage_iv_vanadium_battery",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:iv_vanadium_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_battery_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/vanadium_battery_iv",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1024,
+        "inputs": [
+          {
+            "id": "gtceu:iv_battery_hull"
+          },
+          {
+            "id": "gtceu:vanadium_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_vanadium_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

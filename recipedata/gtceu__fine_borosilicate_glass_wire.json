@@ -1,0 +1,185 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/optical_pipe",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:fine_borosilicate_glass_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:silver_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:normal_optical_pipe"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_bath": [
+      {
+        "id": "gtceu:chemical_bath/reinforced_epoxy_sheet_glass",
+        "category": "gtceu:chemical_bath",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:fine_borosilicate_glass_wire"
+          },
+          {
+            "id": "gtceu:epoxy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:reinforced_epoxy_resin_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_borosilicate_glass_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fine_borosilicate_glass_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_borosilicate_glass_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_borosilicate_glass_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_borosilicate_glass_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_borosilicate_glass_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_borosilicate_glassingot_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_borosilicate_glass_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/borosilicate_glass_fine_wire",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_borosilicate_glass_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:wire_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

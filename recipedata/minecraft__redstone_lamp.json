@@ -1,0 +1,87 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/redstone_lamp",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1,
+        "inputs": [
+          {
+            "id": "minecraft:redstone",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:glowstone_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:redstone_lamp"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_redstone_lamp",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:redstone_lamp"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:redstone",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:glowstone_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_redstone_lamp",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:redstone_lamp"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 392
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:glowstone_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

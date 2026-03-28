@@ -1,0 +1,202 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ulv_transformer_1a",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_transformer_1a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/ulv_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_transformer_1a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/ulv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_transformer_1a"
+          },
+          {
+            "id": "gtceu:tin_quadruple_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_quadruple_cable",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/ulv_hi_amp_2a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_transformer_1a"
+          },
+          {
+            "id": "gtceu:tin_double_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_double_cable",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_transformer_2a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ulv_transformer_1a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_transformer_1a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_tin_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ulv_transformer_1a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_transformer_1a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 749
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tin_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

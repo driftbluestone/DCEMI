@@ -1,0 +1,120 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_1a_energy_converter",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_1a_energy_converter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_1a_energy_converter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_1a_energy_converter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:vanadium_gallium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_red_alloy_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_1a_energy_converter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_1a_energy_converter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3337
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

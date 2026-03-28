@@ -1,0 +1,399 @@
+{
+  "uses": {
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bismuth_bronze_block",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 1296
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bismuth_bronze_to_plate",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:plate_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bismuth_bronze_to_ingot",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:fluid_solidifier/solidify_bismuth_bronze_to_nugget",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze_nugget",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:nugget_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/bismuth_bronze_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_dust"
+          },
+          {
+            "id": "gtceu:zinc_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 5000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 720
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:13}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/bismuth_bronze",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_dust"
+          },
+          {
+            "id": "gtceu:zinc_dust"
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 720
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_bismuth_bronze_ingot",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_bronze_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_bronze_screw",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze_screw"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_double_bismuth_bronze_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:double_bismuth_bronze_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_bronze_plate",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_bronze_nugget",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze_nugget"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_long_bismuth_bronze_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:long_bismuth_bronze_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_bronze_bolt",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze_bolt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_bronze_block",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 1296
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:extractor/extract_bismuth_bronze_turbine_blade",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:bismuth_bronze_turbine_blade"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bismuth_bronze",
+            "amount": 1440
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

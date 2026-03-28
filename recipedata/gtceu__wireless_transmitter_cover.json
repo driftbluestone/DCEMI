@@ -1,0 +1,113 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/wireless_transmitter_cover",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_plate"
+          },
+          {
+            "id": "gtceu:annealed_copper_foil"
+          },
+          {
+            "id": "gtceu:mv_emitter"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wireless_transmitter_cover"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_wireless_transmitter_cover",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:wireless_transmitter_cover"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:electrum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:emerald_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:copper_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_wireless_transmitter_cover",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:wireless_transmitter_cover"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 406
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:annealed_copper_nugget",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:platinum_nugget"
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

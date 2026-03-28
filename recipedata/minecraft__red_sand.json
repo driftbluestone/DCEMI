@@ -1,0 +1,122 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/red_sand_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:red_sand"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:diamond_dust",
+            "chance": 0.0035
+          },
+          {
+            "id": "minecraft:sand",
+            "chance": 0.85
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/red_sandstone",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:red_sand",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_sandstone"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/red_sandstone_to_red_sand",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:red_sandstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_sand"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/smooth_red_sandstone_to_red_sand",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:smooth_red_sandstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_sand"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_red_sandstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_sand"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

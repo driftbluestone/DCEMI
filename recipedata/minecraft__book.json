@@ -1,0 +1,211 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/basic_terminal",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_screw"
+          },
+          {
+            "tag": "minecraft:glass_pane"
+          },
+          {
+            "id": "gtceu:wrought_iron_screw"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "minecraft:book"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:red_alloy_single_wire"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:terminal"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/bookshelf",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "tag": "minecraft:oak_planks",
+            "amount": 6
+          },
+          {
+            "id": "minecraft:book",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:bookshelf"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/enchanting_table",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:obsidian",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:diamond",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:book"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:enchanting_table"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_book",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:book"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:paper_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/book_from_pvc",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:paper",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:polyvinyl_chloride_foil"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:book"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/book_from_leather",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:paper",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:leather"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 20
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:book"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/bookshelf_extraction",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:bookshelf"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:book",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

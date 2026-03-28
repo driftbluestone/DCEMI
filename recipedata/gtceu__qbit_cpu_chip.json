@@ -1,0 +1,257 @@
+{
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_qbit_cpu_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_chip",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_qbit_cpu_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_chip",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_qbit_cpu",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:qbit_cpu_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:qbit_cpu_chip",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_asmd_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:qbit_cpu_chip"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:qbit_cpu_chip"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:smd_transistor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:qbit_cpu_chip"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:smd_capacitor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:smd_transistor",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_asmd",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:qbit_cpu_chip"
+          },
+          {
+            "id": "gtceu:nano_cpu_chip"
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

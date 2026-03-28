@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/iv_packer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:iv_robot_arm"
+          },
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:iv_conveyor_module"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:platinum_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_packer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_packer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_packer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 13
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_packer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_packer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5232
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:neodymium_nugget",
+            "amount": 22
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/energy_hatch_16a_max",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2013265920,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_4a"
+          },
+          {
+            "id": "gtceu:max_energy_input_hatch_4a"
+          },
+          {
+            "id": "gtceu:lead_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_energy_input_hatch_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_max",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 2013265920,
+        "inputs": [
+          {
+            "id": "gtceu:opv_transformer_16a"
+          },
+          {
+            "id": "gtceu:max_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:lead_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iron_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_max_energy_input_hatch_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:max_energy_input_hatch_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 30
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:lead_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_max_energy_input_hatch_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:max_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 5805
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 25
+          },
+          {
+            "id": "gtceu:lead_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 15
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uhv_gas_collector",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:iron_bars"
+          },
+          {
+            "id": "gtceu:fluid_filter"
+          },
+          {
+            "id": "minecraft:iron_bars"
+          },
+          {
+            "id": "gtceu:uhv_electric_pump"
+          },
+          {
+            "id": "gtceu:uhv_machine_hull"
+          },
+          {
+            "id": "gtceu:uhv_electric_pump"
+          },
+          {
+            "id": "minecraft:iron_bars"
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe"
+          },
+          {
+            "id": "minecraft:iron_bars"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_gas_collector"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_gas_collector",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_gas_collector"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:zinc_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_iron_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_gas_collector",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_gas_collector"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8361
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:zinc_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:wrought_iron_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:europium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/data_access_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ev_input_bus"
+          },
+          {
+            "id": "gtceu:data_stick",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:micro_processor_computer",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_access_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:scanner": [
+      {
+        "id": "gtceu:scanner/1_x_gtceu_data_access_hatch",
+        "category": "gtceu:scanner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:data_stick"
+          },
+          {
+            "id": "gtceu:data_access_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_bank"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

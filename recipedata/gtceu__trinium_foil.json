@@ -1,0 +1,447 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/foil_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_trinium_ingot_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_trinium_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/sensor_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_frame"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:osmiridium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_sensor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_sensor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_frame"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:osmiridium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_sensor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_sensor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/research_station",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:data_bank"
+          },
+          {
+            "id": "gtceu:luv_sensor",
+            "amount": 8
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:luv_field_generator",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:zpm_electric_motor",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_double_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:normal_optical_pipe",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:vanadium_gallium",
+            "amount": 1152
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:research_station"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_scanner\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/emitter_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_frame"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:long_osmiridium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_emitter\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/emitter_zpm",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 24000,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_alloy_frame"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:long_osmiridium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:quantum_star",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:trinium_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_luv_emitter\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_trinium_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_trinium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_trinium_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_trinium_foil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_foil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 71
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

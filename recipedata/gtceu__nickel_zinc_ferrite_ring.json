@@ -1,0 +1,252 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ring_nickel_zinc_ferrite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:nickel_zinc_ferrite_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_nickel_zinc_ferrite_ingot_to_ring",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 42,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ring_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/inductor_nzf",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 36
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:inductor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/inductor_tantalum",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          },
+          {
+            "id": "gtceu:fine_tantalum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/inductor_nzf_annealed",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          },
+          {
+            "id": "gtceu:fine_annealed_copper_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 36
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:inductor",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/smd_inductor",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          },
+          {
+            "id": "gtceu:fine_cupronickel_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:smd_inductor",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_nickel_zinc_ferrite_ring",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_nickel_zinc_ferrite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_nickel_zinc_ferrite_ring",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_nickel_zinc_ferrite_ring",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_ring"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_zinc_ferrite_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

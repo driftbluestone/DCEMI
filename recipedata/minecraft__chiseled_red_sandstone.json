@@ -1,0 +1,73 @@
+{
+  "recipes": {
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/form_red_sandstone_slab_into_pillar",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:red_sandstone_slab",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chiseled_red_sandstone"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_red_sandstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_sand"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_chiseled_red_sandstone",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_red_sandstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quartz_sand_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

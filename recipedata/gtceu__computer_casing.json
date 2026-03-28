@@ -1,0 +1,571 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:high_performance_computation_array",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          },
+          {
+            "id": "gtceu:hpca_heat_sink_component",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:hpca_computation_component"
+          },
+          {
+            "id": "gtceu:hpca_empty_component",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_hatch"
+          },
+          {
+            "id": "gtceu:computer_heat_vent",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:advanced_computer_casing",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:research_station",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:research_station"
+          },
+          {
+            "id": "gtceu:computation_receiver_hatch"
+          },
+          {
+            "id": "gtceu:object_holder"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:computer_heat_vent",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:advanced_computer_casing",
+            "amount": 23
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 58
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:research_station"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:data_bank",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:data_bank"
+          },
+          {
+            "id": "gtceu:basic_data_access_hatch",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:data_receiver_hatch"
+          },
+          {
+            "id": "gtceu:data_transmitter_hatch"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:high_power_casing",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:computer_heat_vent",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 13
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_bank"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:network_switch",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:network_switch"
+          },
+          {
+            "id": "gtceu:computation_receiver_hatch"
+          },
+          {
+            "id": "gtceu:computation_transmitter_hatch",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:luv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:advanced_computer_casing"
+          },
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 19
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:network_switch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/data_receiver_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "id": "gtceu:luv_input_bus"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_sensor"
+          },
+          {
+            "id": "gtceu:normal_optical_pipe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_receiver_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/data_transmitter_hatch",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "id": "gtceu:luv_output_bus"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:iv_emitter"
+          },
+          {
+            "id": "gtceu:normal_optical_pipe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_transmitter_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/advanced_computer_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe"
+          },
+          {
+            "id": "gtceu:fine_cobalt_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_single_wire",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_computer_casing"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/hpca_empty_component",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe"
+          },
+          {
+            "id": "gtceu:data_stick"
+          },
+          {
+            "id": "gtceu:pcb_coolant",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hpca_empty_component"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/network_switch",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "id": "gtceu:zpm_emitter",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:zpm_sensor",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_double_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:tritanium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:tritanium_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:normal_optical_pipe",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:network_switch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_normal_optical_pipe\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/data_bank",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:data_orb"
+          },
+          {
+            "id": "gtceu:fine_cobalt_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:normal_optical_pipe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_double_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_bank"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_stick",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_data_access_hatch\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_computer_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_vanadium_gallium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_computer_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:computer_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1036
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cobalt_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:annealed_copper_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:vanadium_gallium_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/computer_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_frame"
+          },
+          {
+            "id": "gtceu:iridium_plate",
+            "amount": 6
+          },
+          {
+            "tag": "gtceu:nano_processor_mainframe"
+          },
+          {
+            "id": "gtceu:fine_cobalt_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:fine_copper_wire",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:vanadium_gallium_single_wire",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:computer_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

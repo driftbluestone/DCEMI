@@ -1,0 +1,126 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/ev_packer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:ev_robot_arm"
+          },
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:ev_conveyor_module"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          },
+          {
+            "tag": "gtceu:micro_processor_computer"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_packer"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_packer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_packer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:kanthal_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:titanium_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 15
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_packer",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_packer"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2534
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:kanthal_ingot",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:titanium_ingot",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:aluminium_ingot",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:neodymium_nugget",
+            "amount": 22
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

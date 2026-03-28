@@ -1,0 +1,1716 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/crushed_ore_to_dust_lepidolite",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_washer": [
+      {
+        "id": "gtceu:ore_washer/wash_lepidolite_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_lepidolite_crushed_ore_to_purified_ore_distilled",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:ore_washer/wash_lepidolite_crushed_ore_to_purified_ore_fast",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:thermal_centrifuge": [
+      {
+        "id": "gtceu:thermal_centrifuge/centrifuge_lepidolite_crushed_ore_to_refined_ore",
+        "category": "gtceu:thermal_centrifuge",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_lepidolite_crushed_ore_to_impure_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_lepidolite_crushed_ore_to_impure_dust",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:lepidolite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:raw_lepidolite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lepidolite_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:boron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:lepidolite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:raw_lepidolite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lepidolite_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:boron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_raw_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:raw_lepidolite"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_blackstone_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:blackstone_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:blackstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_gravel_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:gravel_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:flint_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_basalt_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:basalt_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_diorite_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:diorite_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:diorite_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_granite_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:granite_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:granite_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_deepslate_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:deepslate_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:deepslate_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_sand_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:sand_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_red_granite_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:granite_red_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_netherrack_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:netherrack_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_marble_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:marble_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:marble_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_tuff_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tuff_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:tuff_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_andesite_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:andesite_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:andesite_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_red_sand_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:red_sand_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_tuff_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:tuff_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_basalt_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_marble_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:marble_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_red_granite_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_raw_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:raw_lepidolite"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_netherrack_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_deepslate_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:deepslate_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_granite_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:granite_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_sand_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:sand_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_blackstone_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:blackstone_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_gravel_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:gravel_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_andesite_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:andesite_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_diorite_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:diorite_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_endstone_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_red_sand_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:red_sand_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:lepidolite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:raw_lepidolite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lepidolite_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:boron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:lepidolite",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "tag": "gtceu:andesite_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:raw_lepidolite"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lepidolite_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:boron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:purified_lepidolite_ore"
+          },
+          {
+            "id": "gtceu:impure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          },
+          {
+            "id": "gtceu:pure_lepidolite_dust"
+          },
+          {
+            "id": "gtceu:lepidolite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

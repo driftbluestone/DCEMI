@@ -1,0 +1,1088 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/purified_ore_to_dust_green_sapphire",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/green_sapphire_slurry_from_washed_green_sapphire",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:purified_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aqua_regia",
+            "amount": 3000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_slurry",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:sifter": [
+      {
+        "id": "gtceu:sifter/sift_green_sapphire_purified_ore_to_gems",
+        "category": "gtceu:sifter",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:exquisite_green_sapphire_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_green_sapphire_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:green_sapphire_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_green_sapphire_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_green_sapphire_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:thermal_centrifuge": [
+      {
+        "id": "gtceu:thermal_centrifuge/centrifuge_green_sapphire_purified_ore_to_refined_ore",
+        "category": "gtceu:thermal_centrifuge",
+        "dimensions": [
+          164,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.33333334
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_green_sapphire_crushed_ore_to_dust",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_green_sapphire_crushed_ore_to_dust",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:green_sapphire",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:raw_green_sapphire"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_gem"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:exquisite_green_sapphire_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_green_sapphire_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:green_sapphire_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_green_sapphire_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_green_sapphire_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:green_sapphire",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:raw_green_sapphire"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_gem"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:exquisite_green_sapphire_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_green_sapphire_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:green_sapphire_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_green_sapphire_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_green_sapphire_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:ore_washer": [
+      {
+        "id": "gtceu:ore_washer/wash_green_sapphire_crushed_ore_to_purified_ore_fast",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:ore_washer/wash_green_sapphire_crushed_ore_to_purified_ore_distilled",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:ore_washer/wash_green_sapphire_crushed_ore_to_purified_ore",
+        "category": "gtceu:ore_washer",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.33333334
+          },
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:green_sapphire",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:raw_green_sapphire"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_gem"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:exquisite_green_sapphire_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_green_sapphire_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:green_sapphire_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_green_sapphire_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_green_sapphire_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:green_sapphire",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "tag": "gtceu:red_granite_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:raw_green_sapphire"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:green_sapphire_gem"
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:sapphire_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:purified_green_sapphire_ore"
+          },
+          {
+            "id": "gtceu:impure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:green_sapphire_dust"
+          },
+          {
+            "id": "gtceu:exquisite_green_sapphire_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_green_sapphire_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:green_sapphire_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_green_sapphire_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_green_sapphire_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_green_sapphire_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

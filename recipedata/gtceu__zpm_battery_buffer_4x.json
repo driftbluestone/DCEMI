@@ -1,0 +1,107 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_battery_buffer_4x",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_wire"
+          },
+          {
+            "tag": "minecraft:chest"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_wire"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_wire"
+          },
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_battery_buffer_4x"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_battery_buffer_4x",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_battery_buffer_4x"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_battery_buffer_4x",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_battery_buffer_4x"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3626
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:vanadium_gallium_block"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:small_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

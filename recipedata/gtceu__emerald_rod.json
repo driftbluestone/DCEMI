@@ -1,0 +1,55 @@
+{
+  "recipes": {
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_emerald_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:emerald"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:emerald_rod"
+          },
+          {
+            "id": "gtceu:small_emerald_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_emerald_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_emerald_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

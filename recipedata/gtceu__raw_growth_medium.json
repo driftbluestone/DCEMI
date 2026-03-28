@@ -1,0 +1,76 @@
+{
+  "recipes": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/raw_growth_medium",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:meat_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:calcium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:agar_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:mutagen",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_growth_medium",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:fluid_heater": [
+      {
+        "id": "gtceu:fluid_heater/sterile_growth_medium",
+        "category": "gtceu:fluid_heater",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:raw_growth_medium",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sterilized_growth_medium",
+            "amount": 100
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/gem_to_gem_chipped_gem_glass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:flawed_glass_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_glass_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_glass_flawed_gem_to_chipped_gem",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_glass_gem"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_glass_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_glass_flawed_gem_to_chipped_gem_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_glass_gem"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_glass_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_glass_flawed_gem_to_chipped_gem_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_glass_gem"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_glass_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_glass_flawed_gem_to_chipped_gem",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:chipped_glass_gem",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_glass_gem"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_chipped_glass_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:chipped_glass_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_glass_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_chipped_glass_gem",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:chipped_glass_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:glass",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

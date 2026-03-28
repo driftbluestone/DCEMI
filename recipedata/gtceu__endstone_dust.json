@@ -1,0 +1,3568 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_endstone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          },
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          },
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          },
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          },
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          },
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          },
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          },
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          },
+          {
+            "id": "gtceu:tiny_endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_assembling_endstone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_endstone_dust"
+          },
+          {
+            "id": "gtceu:small_endstone_dust"
+          },
+          {
+            "id": "gtceu:small_endstone_dust"
+          },
+          {
+            "id": "gtceu:small_endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_endstone_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_endstone_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_endstone_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_endstone_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_end_stone_brick_wall",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:end_stone_brick_wall"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_end_stone",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:end_stone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_end_stone_bricks",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:end_stone_bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_endstone_lead_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_lead_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lead_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_neodymium_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_neodymium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_neodymium_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:rare_earth_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_pyrope_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_pyrope_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_pyrope_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:red_garnet_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_oilsands_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_oilsands_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_oilsands_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:oilsands_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_tricalcium_phosphate_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_tricalcium_phosphate_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_tricalcium_phosphate_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:apatite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_sphalerite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_sphalerite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_sphalerite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:yellow_garnet_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_pentlandite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_pentlandite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_pentlandite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_graphite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_graphite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_graphite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:carbon_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_naquadah_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_naquadah_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_naquadah_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_garnet_sand_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_garnet_sand_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_garnet_sand_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:red_garnet_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_zeolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_zeolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_zeolite_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:calcium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_topaz_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_topaz_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_topaz_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:blue_topaz_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_ilmenite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_ilmenite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_ilmenite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_tantalite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_tantalite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_tantalite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_electrotine_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_electrotine_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_electrotine_ore",
+            "amount": 20
+          },
+          {
+            "id": "minecraft:redstone",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_hematite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_hematite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_hematite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_green_sapphire_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_green_sapphire_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_green_sapphire_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_trona_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_trona_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_trona_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:sodium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_vanadium_magnetite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_vanadium_magnetite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_vanadium_magnetite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:magnetite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_almandine_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_almandine_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_almandine_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:red_garnet_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_chalcopyrite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_chalcopyrite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_chalcopyrite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_thorium_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_thorium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_thorium_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uraninite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_pitchblende_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_pitchblende_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_pitchblende_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_saltpeter_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_saltpeter_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_saltpeter_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:saltpeter_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_lapis_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_lapis_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lapis_ore",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:lazurite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_cassiterite_sand_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_cassiterite_sand_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_cassiterite_sand_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_spodumene_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_spodumene_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_spodumene_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_spessartine_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_spessartine_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_spessartine_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:red_garnet_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_galena_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_galena_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_galena_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_platinum_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_platinum_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_platinum_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_grossular_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_grossular_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_grossular_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:yellow_garnet_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_ruby_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_ruby_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_ruby_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:chromium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_pyrochlore_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_pyrochlore_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_pyrochlore_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:apatite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_gold_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_gold_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_gold_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:copper_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_soapstone_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_soapstone_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_soapstone_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_lazurite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_lazurite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lazurite_ore",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:sodalite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_scheelite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_scheelite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_scheelite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_iron_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_iron_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_iron_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_cinnabar_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_cinnabar_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_cinnabar_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:redstone",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_talc_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_talc_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_talc_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:clay_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_salt_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_salt_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_salt_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rock_salt_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_emerald_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_emerald_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_emerald_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:beryllium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_tetrahedrite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_tetrahedrite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_tetrahedrite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:antimony_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_malachite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_malachite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_malachite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:goethite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_redstone_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_redstone_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_redstone_ore",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:cinnabar_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_cobalt_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_cobalt_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_cobalt_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cobalt_oxide_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_nickel_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_nickel_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_nickel_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_bornite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_bornite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_bornite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:pyrite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_asbestos_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_asbestos_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_asbestos_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:diatomite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_glauconite_sand_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_glauconite_sand_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_glauconite_sand_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:sodium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_goethite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_goethite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_goethite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:malachite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_granitic_mineral_sand_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_granitic_mineral_sand_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_granitic_mineral_sand_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:deepslate_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_yellow_limonite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_yellow_limonite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_yellow_limonite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_magnesite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_magnesite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_magnesite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:magnesium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_molybdenum_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_molybdenum_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_molybdenum_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:molybdenum_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_nether_quartz_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_nether_quartz_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_nether_quartz_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:quartzite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_aluminium_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_aluminium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_aluminium_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:bauxite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_diamond_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_diamond_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_diamond_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:graphite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_plutonium_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_plutonium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_plutonium_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uraninite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_lepidolite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_lepidolite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lepidolite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_beryllium_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_beryllium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_beryllium_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:emerald",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_cassiterite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_cassiterite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_cassiterite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_monazite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_monazite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_monazite_ore",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_gypsum_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_gypsum_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_gypsum_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_molybdenite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_molybdenite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_molybdenite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:molybdenum_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_bastnasite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_bastnasite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_bastnasite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:neodymium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_sapphire_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_sapphire_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_sapphire_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_red_garnet_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_red_garnet_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_red_garnet_ore",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:spessartine_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_opal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_opal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_opal_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:opal_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_sodalite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_sodalite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_sodalite_ore",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:lazurite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_bauxite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_bauxite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_bauxite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:grossular_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_barite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_barite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_barite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:barite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_stibnite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_stibnite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_stibnite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:antimony_trioxide_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_mica_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_mica_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_mica_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:potassium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_alunite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_alunite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_alunite_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:alunite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_calcite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_calcite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_calcite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:calcium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_yellow_garnet_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_yellow_garnet_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_yellow_garnet_ore",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:andradite_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_certus_quartz_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_certus_quartz_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_certus_quartz_ore",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:quartz",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_pyrite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_pyrite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_pyrite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_chalcocite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_chalcocite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_chalcocite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_copper_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_copper_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_copper_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_quartzite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_quartzite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_quartzite_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:certus_quartz_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_kyanite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_kyanite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_kyanite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:talc_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_garnierite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_garnierite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_garnierite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_amethyst_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_amethyst_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_amethyst_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:amethyst_shard",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_palladium_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_palladium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_palladium_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:palladium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_silver_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_silver_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_silver_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lead_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_cobaltite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_cobaltite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_cobaltite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_lithium_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_lithium_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_lithium_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:lithium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_bentonite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_bentonite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_bentonite_ore",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_wulfenite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_wulfenite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_wulfenite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_realgar_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_realgar_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_realgar_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_diatomite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_diatomite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_diatomite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:hematite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_pyrolusite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_pyrolusite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_pyrolusite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_olivine_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_olivine_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_olivine_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:pyrope_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_blue_topaz_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_blue_topaz_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_blue_topaz_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:topaz_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_basaltic_mineral_sand_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_basaltic_mineral_sand_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_basaltic_mineral_sand_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:basalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_powellite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_powellite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_powellite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_cooperite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_cooperite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_cooperite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_uraninite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_uraninite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_uraninite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uraninite_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_rock_salt_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_rock_salt_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_rock_salt_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:salt_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_chromite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_chromite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_chromite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_sulfur_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_sulfur_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_sulfur_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:sulfur_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_pollucite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_pollucite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_pollucite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:caesium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_magnetite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_magnetite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_magnetite_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_tungstate_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_tungstate_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_tungstate_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:manganese_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_apatite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_apatite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_apatite_ore",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tricalcium_phosphate_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_fullers_earth_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_fullers_earth_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_fullers_earth_ore",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_tin_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_tin_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_tin_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_endstone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_endstone_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_endstone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_endstone_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_endstone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_endstone_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_endstone",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_endstone_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/endstone_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 20,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand",
+            "chance": 0.9
+          },
+          {
+            "id": "gtceu:tungstate_dust",
+            "chance": 0.0445
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.008
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 120
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_endstone_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_endstone_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_endstone_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_endstone_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/scythe_diamond",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "gtceu:diamond_plate"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "minecraft:stick"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:diamond_scythe",
+            "nbt": "{Damage:0,DisallowContainerItem:0,GT.Behaviours:{AoEColumn:2,AoELayer:2,AoERow:2,MaxAoEColumn:2,MaxAoELayer:2,MaxAoERow:2},GT.Tool:{AttackDamage:12.0f,AttackSpeed:-2.9f,DefaultEnchantments:[],HarvestLevel:3,MaxDamage:2303,ToolSpeed:10.0f},HideFlags:2}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:smithing": [
+      {
+        "id": "gtceu:netherite_scythe_smithing_transform_from_diamond",
+        "category": "minecraft:smithing",
+        "dimensions": [
+          112,
+          18
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:netherite_upgrade_smithing_template"
+          },
+          {
+            "id": "gtceu:diamond_scythe",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:netherite_scythe",
+            "nbt": "{Damage:0,GT.Behaviours:{},GT.Tool:{AttackDamage:9.0f,AttackSpeed:-3.0f,DefaultEnchantments:[],HarvestLevel:4,MaxDamage:6096,ToolSpeed:14.0f}}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

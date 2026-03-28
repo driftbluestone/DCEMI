@@ -1,0 +1,104 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_netherrack_copper_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_copper_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:copper_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:blasting": [
+      {
+        "id": "gtceu:blasting/smelt_netherrack_copper_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_copper_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:copper_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_netherrack_copper_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_copper_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_copper_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:netherrack_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_netherrack_copper_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_copper_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_copper_ore",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

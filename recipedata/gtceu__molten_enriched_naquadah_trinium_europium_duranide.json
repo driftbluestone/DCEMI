@@ -1,0 +1,126 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/enriched_naquadah_trinium_europium_duranide",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_enriched_naquadah_trinium_europium_duranide",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:liquid_helium",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_ingot"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 250
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/enriched_naquadah_trinium_europium_duranide_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:duranium_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_enriched_naquadah_trinium_europium_duranide",
+            "amount": 1440
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:14}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/enriched_naquadah_trinium_europium_duranide",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:enriched_naquadah_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:trinium_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:duranium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_enriched_naquadah_trinium_europium_duranide",
+            "amount": 1440
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  }
+}

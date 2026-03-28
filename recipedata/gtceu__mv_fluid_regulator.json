@@ -1,0 +1,36 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fluid_regulator_mv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:mv_electric_pump"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:mv_fluid_regulator"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

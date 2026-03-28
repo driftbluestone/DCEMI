@@ -1,0 +1,235 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/voltage_coil_uv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_samarium_rod"
+          },
+          {
+            "id": "gtceu:fine_tritanium_wire",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_voltage_coil"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fusion_casing_mk3",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_machine_casing"
+          },
+          {
+            "id": "gtceu:fusion_coil"
+          },
+          {
+            "id": "gtceu:uv_voltage_coil",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:zpm_field_generator"
+          },
+          {
+            "id": "gtceu:americium_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fusion_casing_mk3",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/energy_hatch_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_voltage_coil",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 2880
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_energy_input_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_energy_input_hatch\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/dynamo_hatch_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_spring",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_chip",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_voltage_coil",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 2880
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_energy_output_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_energy_output_hatch\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_voltage_coil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_voltage_coil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_samarium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_voltage_coil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_voltage_coil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 660
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:samarium_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

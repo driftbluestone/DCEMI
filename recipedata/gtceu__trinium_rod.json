@@ -1,0 +1,612 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/stick_long_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:long_trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/stick_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:trinium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:lathe": [
+      {
+        "id": "gtceu:lathe/lathe_trinium_to_rod",
+        "category": "gtceu:lathe",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:small_trinium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_trinium_to_rod",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 180,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rod_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_trinium_long_rod_to_rod_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_trinium_rod"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_trinium_long_rod_to_rod_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_trinium_rod"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_trinium_long_rod_to_rod",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:long_trinium_rod"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_rod",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/gear_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gear_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:trinium_plate"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_gear"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/stick_long_stick_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_trinium_rod"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/stick_long_stick_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_trinium_rod"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/bolt_saw_trinium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_buzzsaw"
+          },
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_bolt",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_trinium_rod_to_long_rod",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:long_trinium_rod"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_trinium_rod_to_bolt_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_trinium_rod_to_bolt_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_trinium_rod_to_bolt",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_bolt",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_trinium_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_trinium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_trinium_rod",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium",
+            "amount": 72
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_trinium_rod",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:trinium_rod"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 143
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:trinium_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

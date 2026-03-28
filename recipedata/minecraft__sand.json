@@ -1,0 +1,454 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/quartz_sand",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:sand"
+          },
+          {
+            "tag": "gtceu:invar_mortar"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quartz_sand_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/fertilizer",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:dirt"
+          },
+          {
+            "id": "gtceu:wood_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:sand",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/sand_electrolysis",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 25,
+        "inputs": [
+          {
+            "id": "minecraft:sand",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicon_dioxide_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/quartz_sand_from_sand",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:sand"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quartz_sand_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/sandstone",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:sand",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sandstone"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/mycelium_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:mycelium"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_mushroom",
+            "chance": 0.28
+          },
+          {
+            "id": "minecraft:brown_mushroom",
+            "chance": 0.28
+          },
+          {
+            "id": "minecraft:sand",
+            "chance": 0.62
+          },
+          {
+            "id": "gtceu:clay_dust",
+            "chance": 0.055
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/grass_block_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:grass_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plant_ball",
+            "chance": 0.35
+          },
+          {
+            "id": "minecraft:sand",
+            "chance": 0.55
+          },
+          {
+            "id": "gtceu:clay_dust",
+            "chance": 0.055
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/endstone_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 20,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand",
+            "chance": 0.9
+          },
+          {
+            "id": "gtceu:tungstate_dust",
+            "chance": 0.0445
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "chance": 0.008
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 120
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/oilsands_ore_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "tag": "gtceu:diorite_oilsands_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand",
+            "chance": 0.75
+          },
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/red_sand_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:red_sand"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:diamond_dust",
+            "chance": 0.0035
+          },
+          {
+            "id": "minecraft:sand",
+            "chance": 0.85
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/soul_sand_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 80,
+        "inputs": [
+          {
+            "id": "minecraft:soul_sand"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand",
+            "chance": 0.925
+          },
+          {
+            "id": "gtceu:saltpeter_dust",
+            "chance": 0.225
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.0225
+          },
+          {
+            "id": "gtceu:oil",
+            "amount": 80
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/dirt_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:dirt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plant_ball",
+            "chance": 0.14
+          },
+          {
+            "id": "minecraft:sand",
+            "chance": 0.6
+          },
+          {
+            "id": "gtceu:clay_dust",
+            "chance": 0.055
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:centrifuge/oilsands_dust_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:oilsands_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand",
+            "chance": 0.75
+          },
+          {
+            "id": "gtceu:oil_heavy",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/chiseled_sandstone_to_sand",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_sandstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/smooth_sandstone_to_sand",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:smooth_sandstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/gravel_to_sand",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:gravel"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/sandstone_to_sand",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:sandstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:sand"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

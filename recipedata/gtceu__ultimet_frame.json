@@ -1,0 +1,185 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/frame_ultimet",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_rod"
+          },
+          {
+            "id": "gtceu:ultimet_rod"
+          },
+          {
+            "id": "gtceu:ultimet_rod"
+          },
+          {
+            "id": "gtceu:ultimet_rod"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:ultimet_rod"
+          },
+          {
+            "id": "gtceu:ultimet_rod"
+          },
+          {
+            "id": "gtceu:ultimet_rod"
+          },
+          {
+            "id": "gtceu:ultimet_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_frame",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assemble_ultimet_frame",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_rod",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_frame"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/empty_tier_1_battery",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_frame"
+          },
+          {
+            "id": "gtceu:ultimet_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:ultimet_screw",
+            "amount": 24
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_i_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ultimet_frame",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_ultimet_frame",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet",
+            "amount": 288
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ultimet_frame",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ultimet_frame"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 122
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

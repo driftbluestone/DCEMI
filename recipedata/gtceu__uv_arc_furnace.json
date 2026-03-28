@@ -1,0 +1,121 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uv_arc_furnace",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_cable"
+          },
+          {
+            "id": "gtceu:graphite_dust"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_quadruple_cable"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:uv_machine_hull"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe"
+          },
+          {
+            "id": "gtceu:darmstadtium_plate"
+          },
+          {
+            "id": "gtceu:darmstadtium_plate"
+          },
+          {
+            "id": "gtceu:darmstadtium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_arc_furnace"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_arc_furnace",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_arc_furnace"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:graphite_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_arc_furnace",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_arc_furnace"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3355
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dynamo_hatch_16a_uv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_1a"
+          },
+          {
+            "id": "gtceu:uv_energy_output_hatch_4a"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_octal_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:darmstadtium_plate",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_energy_output_hatch_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_uv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:uv_transformer_16a"
+          },
+          {
+            "id": "gtceu:uv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:darmstadtium_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uv_energy_output_hatch_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uv_energy_output_hatch_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:darmstadtium_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:europium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uv_energy_output_hatch_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4970
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:yttrium_barium_cuprate_ingot",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:darmstadtium_ingot",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:europium_ingot"
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

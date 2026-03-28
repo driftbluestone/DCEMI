@@ -1,0 +1,229 @@
+{
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_asoc_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_soc_wafer"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 750
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_soc",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_asoc_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_soc_wafer"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_soc",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_asoc",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_soc_wafer"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_soc",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_soc",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:niobium_titanium_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_hv_soc_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 9600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:platinum_bolt",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/quantum_processor_ev_soc_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 38400,
+        "inputs": [
+          {
+            "id": "gtceu:fiber_reinforced_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:niobium_titanium_bolt",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quantum_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/nano_processor_hv_soc",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 9600,
+        "inputs": [
+          {
+            "id": "gtceu:epoxy_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:advanced_soc"
+          },
+          {
+            "id": "gtceu:fine_electrum_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:platinum_bolt",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nano_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uev_diode",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_quadruple_cable"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:red_alloy_quadruple_cable"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:iron_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_diode"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uev_diode",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uev_diode"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uev_diode",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uev_diode"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 438
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

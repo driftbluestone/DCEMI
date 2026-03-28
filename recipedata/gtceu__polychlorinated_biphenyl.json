@@ -1,0 +1,98 @@
+{
+  "uses": {
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/pcb_coolant",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:polychlorinated_biphenyl",
+            "amount": 750
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 250
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:pcb_coolant",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/polychlorinated_biphenyl",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:biphenyl_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polychlorinated_biphenyl",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/polychlorinated_biphenyl",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 256,
+        "inputs": [
+          {
+            "id": "gtceu:biphenyl_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chlorine",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polychlorinated_biphenyl",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:hydrochloric_acid",
+            "amount": 2000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

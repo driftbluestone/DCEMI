@@ -1,0 +1,672 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_borosilicate_glass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_borosilicate_glass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_borosilicate_glass_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_borosilicate_glass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_borosilicate_glass_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_borosilicate_glass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_dust_borosilicate_glass_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_borosilicate_glass",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:boron_dust"
+          },
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_borosilicate_glass_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_borosilicate_glass_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_borosilicate_glass_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_borosilicate_glass_dust",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_borosilicate_glass_dust",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_borosilicate_glass_dust_to_block",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 28,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_block"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:block_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_borosilicate_glass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:small_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:small_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:small_borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_borosilicate_glass",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          },
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/borosilicate_dust",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:boron_dust"
+          },
+          {
+            "id": "gtceu:glass_dust",
+            "amount": 7
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_borosilicate_glass_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_borosilicate_glass_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_borosilicate_glass_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_borosilicate_glass_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_borosilicate_glass_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_data_receiver_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:data_receiver_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_iridium_dust",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_data_transmitter_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:data_transmitter_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_borosilicate_glass_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:borosilicate_glass_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_high_performance_computation_array",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:high_performance_computation_array"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_normal_optical_pipe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:normal_optical_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:borosilicate_glass_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_research_station",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:research_station"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:uranium_rhodium_dinaquadide_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 20
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_computation_receiver_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:computation_receiver_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_iridium_dust",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:borosilicate_glass_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,714 @@
+{
+  "uses": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/air_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 3900
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/liquid_air",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 4000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:liquid_air",
+            "amount": 4000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/polyethylene_from_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/raw_sbr_from_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:butadiene",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:styrene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 15000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_styrene_butadiene_rubber_dust",
+            "amount": 27
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/radon_from_uranium_238",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:plutonium_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:uranium_dust"
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 10000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plutonium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:radon",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/polyvinyl_chloride_from_tetrachloride_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 7500
+          },
+          {
+            "id": "gtceu:vinyl_chloride",
+            "amount": 2160
+          },
+          {
+            "id": "gtceu:titanium_tetrachloride",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride",
+            "amount": 3240
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/raw_rubber_from_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:isoprene",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_rubber_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/pva_from_tetrachloride_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 7500
+          },
+          {
+            "id": "gtceu:vinyl_acetate",
+            "amount": 2160
+          },
+          {
+            "id": "gtceu:titanium_tetrachloride",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_acetate",
+            "amount": 3240
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/ptfe_from_tetrachloride_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 7500
+          },
+          {
+            "id": "gtceu:tetrafluoroethylene",
+            "amount": 2160
+          },
+          {
+            "id": "gtceu:titanium_tetrachloride",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 3240
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/ptfe_from_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tetrafluoroethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/pva_from_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:vinyl_acetate",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_acetate",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/polyvinyl_chloride_from_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:vinyl_chloride",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/polyethylene_from_tetrachloride_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 7500
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 2160
+          },
+          {
+            "id": "gtceu:titanium_tetrachloride",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 3240
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/polyphenylene_sulfide_from_air",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 360,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_sulfide_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dichlorobenzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 16000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/polyethylene_from_air",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/polyvinyl_chloride_from_air",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:vinyl_chloride",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_chloride",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/pva_from_air",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:vinyl_acetate",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polyvinyl_acetate",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/polyphenylene_sulfide_from_air",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 360,
+        "inputs": [
+          {
+            "id": "gtceu:sodium_sulfide_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:dichlorobenzene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 16000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:salt_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polyphenylene_sulfide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/raw_rubber_from_air",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:isoprene",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_rubber_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/raw_sbr_from_air",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:butadiene",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:styrene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:air",
+            "amount": 15000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:raw_styrene_butadiene_rubber_dust",
+            "amount": 27
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/ptfe_from_air",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tetrafluoroethylene",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 144
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:gas_collector": [
+      {
+        "id": "gtceu:gas_collector/air",
+        "category": "gtceu:gas_collector",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:overworld_marker"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:air",
+            "amount": 10000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

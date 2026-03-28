@@ -1,0 +1,122 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_boiler_solar_bronze",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:glass"
+          },
+          {
+            "id": "minecraft:glass"
+          },
+          {
+            "id": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:silver_plate"
+          },
+          {
+            "id": "gtceu:silver_plate"
+          },
+          {
+            "id": "gtceu:silver_plate"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:bronze_brick_casing"
+          },
+          {
+            "id": "gtceu:bronze_small_fluid_pipe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lp_steam_solar_boiler"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_lp_steam_solar_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_solar_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:glass_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:silver_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_lp_steam_solar_boiler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:lp_steam_solar_boiler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 857
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:silver_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

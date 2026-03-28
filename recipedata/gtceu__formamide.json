@@ -1,0 +1,129 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/decomposition_electrolyzing_formamide",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:formamide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:carbon_dust"
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/potassium_cyanide",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_hydroxide_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:formamide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_cyanide_dust",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/potassium_cyanide",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:potassium_hydroxide_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:formamide",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:potassium_cyanide_dust",
+            "amount": 3
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:fluid_heater": [
+      {
+        "id": "gtceu:fluid_heater/formamide",
+        "category": "gtceu:fluid_heater",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ammonium_formate",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:formamide",
+            "amount": 100
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

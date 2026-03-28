@@ -1,0 +1,110 @@
+{
+  "uses": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/deuterium_and_tritium_to_helium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:deuterium",
+            "amount": 125
+          },
+          {
+            "id": "gtceu:tritium",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:helium_plasma",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/deuterium_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 80,
+        "inputs": [
+          {
+            "id": "gtceu:deuterium",
+            "amount": 160
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritium",
+            "amount": 40
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_liquid_ender_air",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:liquid_ender_air",
+            "amount": 200000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:radon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:tritium",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:krypton",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:xenon",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:nitrogen_dioxide",
+            "amount": 122000
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 50000
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 15000
+          },
+          {
+            "id": "gtceu:ender_pearl_dust",
+            "chance": 0.1
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

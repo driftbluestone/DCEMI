@@ -1,0 +1,120 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_boiler_lava_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_brick_casing"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hp_steam_liquid_boiler"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_liquid_boiler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_liquid_boiler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:glass_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hp_steam_liquid_boiler",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_liquid_boiler"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 673
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

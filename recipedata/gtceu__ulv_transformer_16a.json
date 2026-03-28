@@ -1,0 +1,119 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/ulv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_transformer_4a"
+          },
+          {
+            "id": "gtceu:lv_electric_pump"
+          },
+          {
+            "id": "gtceu:tin_octal_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_hex_cable"
+          },
+          {
+            "id": "gtceu:small_red_alloy_spring"
+          },
+          {
+            "id": "gtceu:tin_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ulv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ulv_transformer_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_transformer_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:small_tin_dust",
+            "amount": 52
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ulv_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ulv_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3571
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_ingot",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:tin_block"
+          },
+          {
+            "id": "gtceu:wrought_iron_block"
+          },
+          {
+            "id": "gtceu:tin_nugget",
+            "amount": 37
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tag_filter_olivine",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:olivine_plate"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          },
+          {
+            "id": "gtceu:zinc_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:item_tag_filter"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/engraved_crystal_chip_from_olivine",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:olivine_plate"
+          },
+          {
+            "id": "gtceu:raw_crystal_chip"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:engraved_crystal_chip"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_olivine_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:olivine_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:olivine_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_olivine_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:olivine_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 5
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:olivine_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_olivine_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:olivine_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 22
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:olivine_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_olivine_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:olivine_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:olivine_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

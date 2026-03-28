@@ -1,0 +1,76 @@
+{
+  "recipes": {
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_melon_block",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:melon"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:melon_slice",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:melon_seeds",
+            "chance": 0.85
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_melon_slice",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:melon_slice"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:melon_seeds"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/seed_oil_from_melon",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:melon_seeds"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:seed_oil",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

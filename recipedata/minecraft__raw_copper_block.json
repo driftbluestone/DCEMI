@@ -1,0 +1,52 @@
+{
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_copper_to_raw_ore_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:raw_copper",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:raw_copper_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/decompress_copper_to_raw_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:raw_copper_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:raw_copper",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

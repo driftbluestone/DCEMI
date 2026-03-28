@@ -1,0 +1,565 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_red_alloy",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:red_alloy_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_red_alloy_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_red_alloy_wire_fine",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:wiremill/mill_red_alloy_wire_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:red_alloy_single_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/text_module",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:steel_foil",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:text_module"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/monitor_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:mv_machine_hull"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "id": "gtceu:glass_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:glowstone",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:monitor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:circuit_assembler": [
+      {
+        "id": "gtceu:circuit_assembler/processor_mv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:cpu_chip"
+          },
+          {
+            "tag": "gtceu:resistor",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:capacitor",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:transistor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/processor_assembly_hv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:micro_processor",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:inductor",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/processor_mv_soc",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:soc"
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_bolt",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/processor_assembly_hv_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:micro_processor",
+            "amount": 2
+          },
+          {
+            "tag": "gtceu:inductor",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:capacitor",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor_assembly",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/data_stick",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 90,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:cpu_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nand_memory_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:polyethylene_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/data_stick_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 90,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:cpu_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:nand_memory_chip",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:ram_chip",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:polyethylene_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:data_stick"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/processor_mv",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:cpu_chip"
+          },
+          {
+            "tag": "gtceu:resistor",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:capacitor",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:transistor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tin",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:circuit_assembler/processor_mv_soc_soldering_alloy",
+        "category": "gtceu:circuit_assembler",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 2400,
+        "inputs": [
+          {
+            "id": "gtceu:plastic_printed_circuit_board"
+          },
+          {
+            "id": "gtceu:soc"
+          },
+          {
+            "id": "gtceu:fine_red_alloy_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:annealed_copper_bolt",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 72
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:micro_processor",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_red_alloy_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:fine_red_alloy_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_red_alloy_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_red_alloy_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_red_alloy_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_red_alloy_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_red_alloy_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/potassium_and_fluorine_to_nickel_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:potassium",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:fluorine",
+            "amount": 125
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel_plasma",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:plasma_generator": [
+      {
+        "id": "gtceu:plasma_generator/nickel",
+        "category": "gtceu:plasma_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nickel_plasma"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nickel"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

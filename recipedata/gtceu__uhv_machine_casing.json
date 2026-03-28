@@ -1,0 +1,198 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_uhv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_machine_casing"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_uhv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:neutronium_plate",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_machine_casing"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uhv_machine_hull",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:polybenzimidazole_plate"
+          },
+          {
+            "id": "gtceu:neutronium_plate"
+          },
+          {
+            "id": "gtceu:polybenzimidazole_plate"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          },
+          {
+            "id": "gtceu:uhv_machine_casing"
+          },
+          {
+            "id": "gtceu:europium_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_machine_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/hull_uhv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_machine_casing"
+          },
+          {
+            "id": "gtceu:europium_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_machine_hull"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uhv_machine_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_machine_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uhv_machine_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_machine_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:neutronium_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

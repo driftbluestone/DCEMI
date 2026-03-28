@@ -1,0 +1,168 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/voltage_coil_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:magnetic_neodymium_rod"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_voltage_coil"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/energy_hatch_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:aluminium_single_cable",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:mpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ev_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_energy_input_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/dynamo_hatch_ev",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ev_machine_hull"
+          },
+          {
+            "id": "gtceu:aluminium_spring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:mpic_chip",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ev_voltage_coil"
+          },
+          {
+            "id": "gtceu:sodium_potassium",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_energy_output_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_voltage_coil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:ev_voltage_coil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_neodymium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_voltage_coil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_voltage_coil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 454
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:neodymium_nugget",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

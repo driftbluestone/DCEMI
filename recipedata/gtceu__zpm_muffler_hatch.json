@@ -1,0 +1,111 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:zpm_electric_motor"
+          },
+          {
+            "id": "gtceu:iridium_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_muffler_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_muffler_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tiny_osmiridium_dust",
+            "amount": 53
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_muffler_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_muffler_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 8204
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:europium_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:osmiridium_nugget",
+            "amount": 53
+          },
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

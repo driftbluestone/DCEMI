@@ -1,0 +1,123 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/steam_alloy_smelter_steel",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:lp_steam_alloy_smelter"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          },
+          {
+            "id": "gtceu:tin_alloy_small_fluid_pipe"
+          },
+          {
+            "id": "gtceu:wrought_iron_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hp_steam_alloy_smelter"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_hp_steam_alloy_smelter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_alloy_smelter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:brick_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:wrought_iron_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:steel_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_hp_steam_alloy_smelter",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:hp_steam_alloy_smelter"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1315
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:wrought_iron_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:steel_ingot"
+          },
+          {
+            "id": "gtceu:tin_alloy_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

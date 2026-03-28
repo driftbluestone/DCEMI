@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/plutonium_241_and_hydrogen_gas_to_americium_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 98304,
+        "inputs": [
+          {
+            "id": "gtceu:plutonium_241",
+            "amount": 144
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium_plasma",
+            "amount": 144
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:plasma_generator": [
+      {
+        "id": "gtceu:plasma_generator/americium",
+        "category": "gtceu:plasma_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:americium_plasma"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:americium"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

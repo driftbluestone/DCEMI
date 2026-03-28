@@ -1,0 +1,140 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/green_banner",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:stick"
+          },
+          {
+            "id": "minecraft:green_wool",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:green_banner"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_green_wool_to_carpet_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:green_wool"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:green_carpet",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_green_wool_to_carpet_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:green_wool"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:green_carpet",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_green_wool_to_carpet",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:green_wool"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:green_carpet",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:chem_dyes": [
+      {
+        "id": "gtceu:chemical_bath/dye_wool_to_green",
+        "category": "gtceu:chem_dyes",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:white_wool"
+          },
+          {
+            "id": "gtceu:green_dye",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:green_wool"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "recipes": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/luv_lapotronic_battery",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_ii_battery"
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:luv_lapotronic_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_luv_lapotronic_battery",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:luv_lapotronic_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_ii_battery"
+          },
+          {
+            "id": "gtceu:lapotronic_energy_orb_cluster"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "recipes": {
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/engraved_crystal_chip_from_olivine",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:olivine_plate"
+          },
+          {
+            "id": "gtceu:raw_crystal_chip"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:engraved_crystal_chip"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/engraved_crystal_chip_from_emerald",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:emerald_plate"
+          },
+          {
+            "id": "gtceu:raw_crystal_chip"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:engraved_crystal_chip"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/crystal_cpu",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 10000,
+        "inputs": [
+          {
+            "id": "gtceu:engraved_crystal_chip"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crystal_cpu"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:lime_glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

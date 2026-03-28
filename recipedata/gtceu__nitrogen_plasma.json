@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "gtceu:fusion_reactor": [
+      {
+        "id": "gtceu:fusion_reactor/beryllium_and_deuterium_to_nitrogen_plasma",
+        "category": "gtceu:fusion_reactor",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 16384,
+        "inputs": [
+          {
+            "id": "gtceu:beryllium",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:deuterium",
+            "amount": 375
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen_plasma",
+            "amount": 125
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:plasma_generator": [
+      {
+        "id": "gtceu:plasma_generator/nitrogen",
+        "category": "gtceu:plasma_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:nitrogen_plasma"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:nitrogen"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

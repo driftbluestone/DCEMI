@@ -1,0 +1,106 @@
+{
+  "recipes": {
+    "gtceu:alloy_smelter": [
+      {
+        "id": "gtceu:alloy_smelter/form_nether_brick",
+        "category": "gtceu:alloy_smelter",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_brick"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/nether_bricks_extraction",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:nether_bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_brick",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:alloy_smelter": [
+      {
+        "id": "gtceu:alloy_smelter/red_nether_bricks",
+        "category": "gtceu:alloy_smelter",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:nether_brick",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:nether_wart",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:red_nether_bricks"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/nether_bricks",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:nether_brick",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:nether_bricks"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

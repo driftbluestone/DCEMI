@@ -1,0 +1,77 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/lodestone",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_stone_bricks",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:netherite_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:lodestone"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_chiseled_stone_bricks",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_stone_bricks"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stone_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/form_stone_brick_slab_into_pillar",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:stone_brick_slab",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chiseled_stone_bricks"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

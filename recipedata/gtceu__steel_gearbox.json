@@ -1,0 +1,232 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_steel_gearbox",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:steel_gear"
+          },
+          {
+            "id": "gtceu:steel_frame"
+          },
+          {
+            "id": "gtceu:steel_gear"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_gearbox",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/steel_gearbox_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:steel_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_gear",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_gearbox",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:steam_large_turbine",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steam_large_turbine"
+          },
+          {
+            "id": "gtceu:iv_rotor_holder"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_output_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_hatch"
+          },
+          {
+            "id": "gtceu:ulv_input_hatch"
+          },
+          {
+            "id": "gtceu:steel_turbine_casing",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:steel_gearbox",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steam_large_turbine"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_material_press",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_material_press"
+          },
+          {
+            "id": "gtceu:iv_parallel_hatch"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_bus"
+          },
+          {
+            "id": "gtceu:ulv_input_bus"
+          },
+          {
+            "id": "gtceu:steel_gearbox",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:stress_proof_casing",
+            "amount": 50
+          },
+          {
+            "id": "gtceu:tempered_glass",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_material_press"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_steel_gearbox",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:steel_gearbox"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_steel_gearbox",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:steel_gearbox"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 392
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

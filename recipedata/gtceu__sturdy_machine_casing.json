@@ -1,0 +1,142 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_hsse_sturdy",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hsse_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:hsse_plate"
+          },
+          {
+            "id": "gtceu:hsse_plate"
+          },
+          {
+            "id": "gtceu:europium_frame"
+          },
+          {
+            "id": "gtceu:hsse_plate"
+          },
+          {
+            "id": "gtceu:hsse_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:hsse_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sturdy_machine_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/casing_hsse_sturdy",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:hsse_plate",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:europium_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:sturdy_machine_casing",
+            "amount": 2
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_sturdy_machine_casing",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:sturdy_machine_casing"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsse_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:europium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_sturdy_machine_casing",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:sturdy_machine_casing"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 394
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsse_ingot",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:europium_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/coil_naquadah",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:osmium_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_coil_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_naquadah_coil_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_coil_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:osmium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_naquadah_coil_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:naquadah_coil_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4588
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:osmium_ingot",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

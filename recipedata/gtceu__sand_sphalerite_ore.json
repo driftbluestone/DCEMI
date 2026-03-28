@@ -1,0 +1,101 @@
+{
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_sand_sphalerite_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sand_sphalerite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:blasting": [
+      {
+        "id": "gtceu:blasting/smelt_sand_sphalerite_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sand_sphalerite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zinc_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_sand_sphalerite_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:sand_sphalerite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_sphalerite_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:yellow_garnet_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_sand_sphalerite_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:sand_sphalerite_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_sphalerite_ore"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

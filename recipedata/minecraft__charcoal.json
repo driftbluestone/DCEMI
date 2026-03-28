@@ -1,0 +1,766 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/gem_to_dust_charcoal_gem",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "tag": "gtceu:invar_mortar"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:primitive_blast_furnace": [
+      {
+        "id": "gtceu:primitive_blast_furnace/steel_from_charcoal_gem_wrought",
+        "category": "gtceu:primitive_blast_furnace",
+        "dimensions": [
+          164,
+          41
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot"
+          },
+          {
+            "id": "minecraft:charcoal",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot"
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:primitive_blast_furnace/steel_from_charcoal_gem",
+        "category": "gtceu:primitive_blast_furnace",
+        "dimensions": [
+          164,
+          41
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:iron_ingot"
+          },
+          {
+            "id": "minecraft:charcoal",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot"
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_charcoal",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_charcoal",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_monoxide_from_charcoal_gem",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_dioxide_from_charcoal_gem",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/carbon_monoxide_from_charcoal_gem",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_dioxide_from_charcoal_gem",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:extractor": [
+      {
+        "id": "gtceu:extractor/charcoal_extraction",
+        "category": "gtceu:extractor",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 100
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_charcoal_gem_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:charcoal_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/charcoal_to_coal_tar",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 32
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_charcoal",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:charcoal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:charcoal_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_charcoal_block_to_gem",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:coke_oven": [
+      {
+        "id": "gtceu:coke_oven/log_to_charcoal",
+        "category": "gtceu:coke_oven",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 250
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_creosote",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_wood_vinegar_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_wood_tar",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 1500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:9}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_wood_gas_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 1500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:6}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_charcoal_byproducts",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:charcoal_byproducts",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:4}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_creosote_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_wood_tar_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:wood_tar",
+            "amount": 1500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_coal_gas",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:coal_gas",
+            "amount": 2000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:20}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_wood_gas",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:wood_gas",
+            "amount": 1500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/log_to_wood_vinegar",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "tag": "minecraft:dark_oak_log",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:charcoal",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:wood_vinegar",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:7}"
+          }
+        ]
+      }
+    ]
+  }
+}

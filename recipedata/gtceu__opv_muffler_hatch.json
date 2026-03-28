@@ -1,0 +1,95 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/opv_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:opv_electric_motor"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_opv_muffler_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:opv_muffler_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:bronze_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_opv_muffler_hatch",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:opv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 700
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:bronze_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

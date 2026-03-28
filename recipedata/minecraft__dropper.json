@@ -1,0 +1,64 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/dropper",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "tag": "minecraft:cobblestone",
+            "amount": 7
+          },
+          {
+            "id": "minecraft:redstone"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:dropper"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_dropper",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:dropper"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stone_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:redstone"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

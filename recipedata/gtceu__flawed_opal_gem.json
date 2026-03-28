@@ -1,0 +1,536 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/gem_to_gem_chipped_gem_opal",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:flawed_opal_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_opal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_opal_gem_to_flawed_gem",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_opal_gem",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opal_gem"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_opal_flawed_gem_to_chipped_gem_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_opal_gem"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_opal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_opal_flawed_gem_to_chipped_gem",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_opal_gem"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_opal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_opal_flawed_gem_to_chipped_gem_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_opal_gem"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:chipped_opal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_flawed_opal_gem",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_opal_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_opal_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/gem_to_gem_flawed_gem_opal",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:opal_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_opal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:sifter": [
+      {
+        "id": "gtceu:sifter/sift_opal_purified_ore_to_gems",
+        "category": "gtceu:sifter",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:purified_opal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:exquisite_opal_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_opal_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:opal_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_opal_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_opal_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_opal_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_opal_flawed_gem_to_chipped_gem",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:chipped_opal_gem",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_opal_gem"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_opal_gem_to_flawed_gem",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:opal_gem"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_opal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_opal_gem_to_flawed_gem_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:opal_gem"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_opal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_opal_gem_to_flawed_gem_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:opal_gem"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_opal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:opal",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:gravel_opal_ore"
+          },
+          {
+            "tag": "gtceu:gravel_opal_ore"
+          },
+          {
+            "tag": "gtceu:gravel_opal_ore"
+          },
+          {
+            "tag": "gtceu:gravel_opal_ore"
+          },
+          {
+            "id": "gtceu:raw_opal"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_opal_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_opal_dust"
+          },
+          {
+            "id": "gtceu:purified_opal_ore"
+          },
+          {
+            "id": "gtceu:refined_opal_ore"
+          },
+          {
+            "id": "gtceu:pure_opal_dust"
+          },
+          {
+            "id": "gtceu:crushed_opal_ore"
+          },
+          {
+            "id": "gtceu:purified_opal_ore"
+          },
+          {
+            "id": "gtceu:impure_opal_dust"
+          },
+          {
+            "id": "gtceu:pure_opal_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opal_gem"
+          },
+          {
+            "id": "gtceu:crushed_opal_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:opal_gem",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_opal_dust"
+          },
+          {
+            "id": "gtceu:opal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:opal_dust"
+          },
+          {
+            "id": "gtceu:opal_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_opal_ore"
+          },
+          {
+            "id": "gtceu:opal_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_opal_ore"
+          },
+          {
+            "id": "gtceu:opal_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:opal_dust"
+          },
+          {
+            "id": "gtceu:opal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_opal_dust"
+          },
+          {
+            "id": "gtceu:opal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:opal_dust"
+          },
+          {
+            "id": "gtceu:opal_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_opal_ore"
+          },
+          {
+            "id": "gtceu:purified_opal_ore"
+          },
+          {
+            "id": "gtceu:impure_opal_dust"
+          },
+          {
+            "id": "gtceu:opal_dust"
+          },
+          {
+            "id": "gtceu:pure_opal_dust"
+          },
+          {
+            "id": "gtceu:opal_dust"
+          },
+          {
+            "id": "gtceu:exquisite_opal_gem",
+            "chance": 0.05
+          },
+          {
+            "id": "gtceu:flawless_opal_gem",
+            "chance": 0.15
+          },
+          {
+            "id": "gtceu:opal_gem",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:pure_opal_dust",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:flawed_opal_gem",
+            "chance": 0.2
+          },
+          {
+            "id": "gtceu:chipped_opal_gem",
+            "chance": 0.3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

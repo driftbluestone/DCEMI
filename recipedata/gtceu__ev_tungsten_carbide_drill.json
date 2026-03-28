@@ -1,0 +1,98 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/tungsten_carbide_ev_drill",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:tungsten_carbide_drill_head"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:ev_power_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ev_tungsten_carbide_drill",
+            "nbt": "{Charge:0L,Damage:0,DisallowContainerItem:0,GT.Behaviours:{AoEColumn:3,AoELayer:6,AoERow:3,MaxAoEColumn:3,MaxAoELayer:6,MaxAoERow:3,TorchPlacing:1},GT.Tool:{DefaultEnchantments:[],HarvestLevel:4,MaxDamage:6143,ToolSpeed:64.0f},HideFlags:2,MaxCharge:6400000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ev_tungsten_carbide_drill",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ev_tungsten_carbide_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_carbide_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_ev_tungsten_carbide_drill",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ev_tungsten_carbide_drill",
+            "nbt": "{Damage:0,GT.Tool:{}}"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 612
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tungsten_carbide_ingot",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

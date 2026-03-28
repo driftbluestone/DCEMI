@@ -1,0 +1,454 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/foil_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_naquadria_plate_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:bender/bend_naquadria_ingot_to_foil",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:10}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_naquadria",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:naquadria_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_naquadria_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/coil_tritanium",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 491520,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_double_wire",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:trinium",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tritanium_coil_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/emitter_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:long_tritanium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_emitter\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/emitter_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:long_tritanium_rod",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_emitter"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_emitter\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_sensor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_sensor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:assembly_line/sensor_uv",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 100000,
+        "inputs": [
+          {
+            "id": "gtceu:tritanium_frame"
+          },
+          {
+            "id": "gtceu:uv_electric_motor"
+          },
+          {
+            "id": "gtceu:tritanium_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:gravi_star"
+          },
+          {
+            "tag": "gtceu:crystal_processor_mainframe",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:naquadria_foil",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:yttrium_barium_cuprate_single_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 1152
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uv_sensor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_zpm_sensor\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_naquadria_foil",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_naquadria_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_naquadria_foil",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria",
+            "amount": 36
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_naquadria_foil",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:naquadria_foil"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 116
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadria_nugget",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

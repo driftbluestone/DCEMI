@@ -1,0 +1,110 @@
+{
+  "uses": {
+    "gtceu:electrolyzer": [
+      {
+        "id": "gtceu:electrolyzer/rhodium_sulfate_separation",
+        "category": "gtceu:electrolyzer",
+        "dimensions": [
+          164,
+          115
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:rhodium_sulfate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:sulfur_trioxide",
+            "amount": 3000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/inert_metal_mixture_separation",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:rhodium_sulfate",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/inert_metal_mixture_separation",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:inert_metal_mixture_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:sulfuric_acid",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_tetroxide_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:rhodium_sulfate",
+            "amount": 500
+          },
+          {
+            "id": "gtceu:hydrogen",
+            "amount": 3000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

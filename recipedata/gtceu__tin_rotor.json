@@ -1,0 +1,1834 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/rotor_tin",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_plate"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:tin_plate"
+          },
+          {
+            "id": "gtceu:tin_screw"
+          },
+          {
+            "id": "gtceu:tin_ring"
+          },
+          {
+            "tag": "gtceu:tungsten_carbide_file"
+          },
+          {
+            "id": "gtceu:tin_plate"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:tin_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_tin_to_rotor",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 20,
+        "inputs": [
+          {
+            "id": "gtceu:tin",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rotor_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_tin_ingot_to_rotor",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:rotor_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uxv_mixer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:uxv_electric_motor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_mixer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:opv_electric_motor"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_mixer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_mixer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uev_electric_motor"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_mixer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:opv_electric_motor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_mixer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uxv_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uxv_electric_motor"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/electric_pump_lv_styrene_butadiene_rubber",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_screw"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber_ring"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber_ring"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_electric_pump"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/steam_turbine_lv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_steam_turbine"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/steam_turbine_lv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_steam_turbine"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/electric_pump_lv_rubber",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_screw"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:rubber_ring"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:rubber_ring"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_electric_pump"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_mixer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:uiv_electric_motor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_mixer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          },
+          {
+            "id": "gtceu:uev_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          },
+          {
+            "id": "gtceu:uev_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uxv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          },
+          {
+            "id": "gtceu:uxv_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uxv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          },
+          {
+            "id": "gtceu:uxv_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:opv_electric_motor"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_item_collector",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_item_collector"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_item_collector",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_item_collector"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_item_collector",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_item_collector"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:uiv_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:uiv_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uxv_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "gtceu:uxv_electric_motor"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gas_turbine_lv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_gas_turbine"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gas_turbine_lv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_gas_turbine"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gas_turbine_lv",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_gas_turbine"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/lv_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          },
+          {
+            "id": "gtceu:lv_machine_hull"
+          },
+          {
+            "tag": "gtceu:basic_electronic_circuit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:opv_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/opv_ore_washer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:opv_electric_motor"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/opv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:opv_machine_hull"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:opv_ore_washer"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_chemical_reactor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uiv_electric_motor"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          },
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uiv\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_chemical_reactor"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/electric_pump_lv_silicone_rubber",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tin_screw"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:silicone_rubber_ring"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:silicone_rubber_ring"
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          },
+          {
+            "id": "gtceu:tin_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_electric_pump"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uiv_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_machine_hull"
+          },
+          {
+            "id": "gtceu:uiv_electric_motor"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_muffler_hatch",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "gtceu:uev_electric_motor"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_muffler_hatch"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/uev_mixer",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "gtceu:uev_electric_motor"
+          },
+          {
+            "tag": "minecraft:glass"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          },
+          {
+            "id": "gtceu:uev_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uev\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uev_mixer"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/electric_pump_lv_rubber",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_screw"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:rubber_ring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_electric_pump"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/electric_pump_lv_styrene_butadiene_rubber",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_screw"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:styrene_butadiene_rubber_ring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_electric_pump"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/electric_pump_lv_silicone_rubber",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tin_single_cable"
+          },
+          {
+            "id": "gtceu:bronze_normal_fluid_pipe"
+          },
+          {
+            "id": "gtceu:tin_screw"
+          },
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:silicone_rubber_ring",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:lv_electric_pump"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_tin_rotor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_tin_rotor",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_tin_rotor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:tin_rotor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 472
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tin_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

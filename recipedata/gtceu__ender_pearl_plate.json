@@ -1,0 +1,251 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/wireless_transmitter_cover",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_plate"
+          },
+          {
+            "id": "gtceu:annealed_copper_foil"
+          },
+          {
+            "id": "gtceu:mv_emitter"
+          },
+          {
+            "id": "gtceu:fine_platinum_wire"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:wireless_transmitter_cover"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_ender_fluid_link",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_plate",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:double_stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_sensor"
+          },
+          {
+            "id": "gtceu:hv_emitter"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:polyethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ender_fluid_link_cover"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_ender_redstone_link",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:double_aluminium_plate"
+          },
+          {
+            "id": "gtceu:mv_sensor"
+          },
+          {
+            "id": "gtceu:mv_emitter"
+          },
+          {
+            "tag": "gtceu:good_electronic_circuit"
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ender_redstone_link_cover"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/cover_ender_item_link",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_plate",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:double_stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_sensor"
+          },
+          {
+            "id": "gtceu:hv_emitter"
+          },
+          {
+            "id": "gtceu:hv_conveyor_module"
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene",
+            "amount": 288
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ender_item_link_cover"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ender_pearl_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ender_pearl_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_ender_pearl_block_to_plate",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_block"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ender_pearl_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_ender_pearl_block_to_plate_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_block"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ender_pearl_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_ender_pearl_block_to_plate_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ender_pearl_block"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 17
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ender_pearl_plate",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

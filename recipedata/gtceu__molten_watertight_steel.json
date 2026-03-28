@@ -1,0 +1,124 @@
+{
+  "uses": {
+    "gtceu:vacuum_freezer": [
+      {
+        "id": "gtceu:vacuum_freezer/watertight_steel",
+        "category": "gtceu:vacuum_freezer",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:molten_watertight_steel",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:watertight_steel_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:ingot_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:alloy_blast_smelter": [
+      {
+        "id": "gtceu:alloy_blast_smelter/watertight_steel",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_watertight_steel",
+            "amount": 2160
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:5}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:alloy_blast_smelter/watertight_steel_gas",
+        "category": "gtceu:alloy_blast_smelter",
+        "dimensions": [
+          164,
+          135
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:iron_dust",
+            "amount": 7
+          },
+          {
+            "id": "gtceu:aluminium_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:chromium_dust"
+          },
+          {
+            "id": "gtceu:sulfur_dust"
+          },
+          {
+            "id": "gtceu:helium",
+            "amount": 1500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:molten_watertight_steel",
+            "amount": 2160
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:15}"
+          }
+        ]
+      }
+    ]
+  }
+}

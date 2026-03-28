@@ -1,0 +1,353 @@
+{
+  "uses": {
+    "gtceu:distillery": [
+      {
+        "id": "gtceu:distillery/distill_dissolved_calcium_acetate_to_water",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quicklime_dust"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:3}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_dissolved_calcium_acetate_to_carbon_dioxide",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quicklime_dust"
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:distillery/distill_dissolved_calcium_acetate_to_acetone",
+        "category": "gtceu:distillery",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 500
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:quicklime_dust"
+          },
+          {
+            "id": "gtceu:acetone",
+            "amount": 500
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:distillation_tower": [
+      {
+        "id": "gtceu:distillation_tower/distill_dissolved_calcium_acetate",
+        "category": "gtceu:distillation_tower",
+        "dimensions": [
+          150,
+          131
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetone",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_heater": [
+      {
+        "id": "gtceu:fluid_heater/acetone",
+        "category": "gtceu:fluid_heater",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 200
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acetone",
+            "amount": 200
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/dissolved_calcium_acetate_from_calcite",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dissolved_calcium_acetate_from_quicklime",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 380,
+        "inputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/dissolved_calcium_acetate_from_calcium",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 380,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_dust"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/dissolved_calcium_acetate_from_calcite",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:calcite_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/dissolved_calcium_acetate_from_calcium",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 380,
+        "inputs": [
+          {
+            "id": "gtceu:calcium_dust"
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:chemical_reactor/dissolved_calcium_acetate_from_quicklime",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 380,
+        "inputs": [
+          {
+            "id": "gtceu:quicklime_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:acetic_acid",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dissolved_calcium_acetate",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

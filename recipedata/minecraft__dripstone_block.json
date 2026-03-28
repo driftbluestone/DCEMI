@@ -1,0 +1,52 @@
+{
+  "uses": {
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/pointed_dripstone_from_dripstone_block",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:dripstone_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:pointed_dripstone",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/dripstone_block_from_pointed_dripstone",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:pointed_dripstone",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:dripstone_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

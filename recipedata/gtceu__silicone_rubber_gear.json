@@ -1,0 +1,235 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/gear_silicone_rubber",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber_rod"
+          },
+          {
+            "id": "gtceu:silicone_rubber_plate"
+          },
+          {
+            "id": "gtceu:silicone_rubber_rod"
+          },
+          {
+            "id": "gtceu:silicone_rubber_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:silicone_rubber_plate"
+          },
+          {
+            "id": "gtceu:silicone_rubber_rod"
+          },
+          {
+            "id": "gtceu:silicone_rubber_plate"
+          },
+          {
+            "id": "gtceu:silicone_rubber_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicone_rubber_gear"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_silicone_rubber_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicone_rubber_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_silicone_rubber_ingot_to_gear",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicone_rubber_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      },
+      {
+        "id": "gtceu:extruder/extrude_silicone_rubber_dust_to_gear",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicone_rubber_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_silicone_rubber_ingot_to_gear",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicone_rubber_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_silicone_rubber_gear",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicone_rubber_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_silicone_rubber_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:silicone_rubber",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_silicone_rubber_gear",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:silicone_rubber_gear"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/cracking_unit",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cupronickel_coil_block"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:cupronickel_coil_block"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:hv_machine_hull"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:cupronickel_coil_block"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:cupronickel_coil_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cracker"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:cracker",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cracker"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:lv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:lv_energy_input_hatch",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lv_output_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_bus"
+          },
+          {
+            "id": "gtceu:cupronickel_coil_block",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:clean_machine_casing",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cracker"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:cracker",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:cracker"
+          },
+          {
+            "id": "gtceu:maintenance_hatch"
+          },
+          {
+            "id": "gtceu:lv_muffler_hatch"
+          },
+          {
+            "id": "gtceu:lv_energy_input_hatch",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:lv_output_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_hatch"
+          },
+          {
+            "id": "gtceu:lv_input_bus"
+          },
+          {
+            "id": "gtceu:cupronickel_coil_block",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:clean_machine_casing",
+            "amount": 18
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cracker"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_cracker",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:cracker"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 9
+          },
+          {
+            "id": "gtceu:small_steel_dust",
+            "amount": 32
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_cracker",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:cracker"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4512
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:cupronickel_ingot",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:steel_block"
+          },
+          {
+            "id": "gtceu:electrum_ingot",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

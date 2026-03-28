@@ -1,0 +1,2889 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/gem_to_gem_flawed_gem_coal",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "minecraft:coal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/gem_to_dust_coal_gem",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "tag": "gtceu:invar_mortar"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coal_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:primitive_blast_furnace": [
+      {
+        "id": "gtceu:primitive_blast_furnace/steel_from_coal_gem_wrought",
+        "category": "gtceu:primitive_blast_furnace",
+        "dimensions": [
+          164,
+          41
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:wrought_iron_ingot"
+          },
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot"
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:primitive_blast_furnace/steel_from_coal_gem",
+        "category": "gtceu:primitive_blast_furnace",
+        "dimensions": [
+          164,
+          41
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:iron_ingot"
+          },
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot"
+          },
+          {
+            "id": "gtceu:tiny_dark_ash_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_boiler": [
+      {
+        "id": "gtceu:large_boiler/minecraft_coal",
+        "category": "gtceu:large_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:steam_boiler": [
+      {
+        "id": "gtceu:steam_boiler/minecraft_coal",
+        "category": "gtceu:steam_boiler",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_coal_flawless_gem_to_gem",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawless_coal_gem"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_dioxide_from_coal_gem",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:large_chemical_reactor/carbon_monoxide_from_coal_gem",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/carbon_monoxide_from_coal_gem",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_monoxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:chemical_reactor/carbon_dioxide_from_coal_gem",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ash_dust",
+            "chance": 0.11111111
+          },
+          {
+            "id": "gtceu:carbon_dioxide",
+            "amount": 1000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:coke_oven": [
+      {
+        "id": "gtceu:coke_oven/coal_to_coke",
+        "category": "gtceu:coke_oven",
+        "dimensions": [
+          150,
+          59
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_gem"
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 500
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_coal_gem_to_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_coal_gem_to_flawed_gem_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_coal_gem_to_flawed_gem",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_coal_gem_to_flawed_gem_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:pyrolyse_oven": [
+      {
+        "id": "gtceu:pyrolyse_oven/coal_to_coal_tar",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 12
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dark_ash_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:coal_tar",
+            "amount": 3000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:8}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_to_coal_gas",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:steam",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_gem",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:coal_gas",
+            "amount": 4000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:22}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_to_coke_creosote",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 64,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 16
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_gem",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 8000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:pyrolyse_oven/coal_to_coke_creosote_nitrogen",
+        "category": "gtceu:pyrolyse_oven",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:nitrogen",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_gem",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:creosote",
+            "amount": 8000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_coal",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:coal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coal_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/gem_to_gem_gem_coal",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "id": "gtceu:flawless_coal_gem"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/smelt_endstone_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_red_sand_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_sand_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_deepslate_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:deepslate_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_sand_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sand_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_basalt_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_marble_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:marble_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_tuff_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tuff_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_raw_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:raw_coal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_andesite_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:andesite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_red_granite_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_gravel_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:gravel_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_netherrack_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_diorite_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:diorite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_granite_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:granite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:smelting/smelt_blackstone_coal_ore_to_ingot",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:blackstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "minecraft:blasting": [
+      {
+        "id": "gtceu:blasting/smelt_netherrack_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_sand_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:sand_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_blackstone_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:blackstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_red_sand_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_sand_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_endstone_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_red_granite_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_marble_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:marble_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_gravel_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:gravel_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_basalt_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_tuff_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tuff_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_granite_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:granite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_andesite_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:andesite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_deepslate_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:deepslate_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_raw_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:raw_coal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:blasting/smelt_diorite_coal_ore_to_ingot",
+        "category": "minecraft:blasting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:diorite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:sifter": [
+      {
+        "id": "gtceu:sifter/sift_coal_purified_ore_to_gems",
+        "category": "gtceu:sifter",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:purified_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:exquisite_coal_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_coal_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_coal_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_coal_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:laser_engraver": [
+      {
+        "id": "gtceu:laser_engraver/engrave_coal_gem_to_flawed_gem",
+        "category": "gtceu:laser_engraver",
+        "dimensions": [
+          150,
+          71
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:glass_lens",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:forge_hammer": [
+      {
+        "id": "gtceu:forge_hammer/hammer_coal_block_to_gem",
+        "category": "gtceu:forge_hammer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 24,
+        "inputs": [
+          {
+            "id": "minecraft:coal_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:cutter": [
+      {
+        "id": "gtceu:cutter/cut_coal_flawless_gem_to_gem_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawless_coal_gem"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_coal_flawless_gem_to_gem",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawless_coal_gem"
+          },
+          {
+            "id": "gtceu:lubricant"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:cutter/cut_coal_flawless_gem_to_gem_distilled_water",
+        "category": "gtceu:cutter",
+        "dimensions": [
+          150,
+          89
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:flawless_coal_gem"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_tuff_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:tuff_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:tuff_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_andesite_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:andesite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:andesite_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:stone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_basalt_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:basalt_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_deepslate_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:deepslate_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:deepslate_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_sand_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:sand_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_granite_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:granite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:granite_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_blackstone_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:blackstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:blackstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_endstone_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:endstone_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_raw_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:raw_coal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_gravel_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:gravel_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:flint_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_red_granite_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:granite_red_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_netherrack_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 8
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:netherrack_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_marble_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:marble_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:marble_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_diorite_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:diorite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:diorite_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_red_sand_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:red_sand_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:silicon_dioxide_dust",
+            "chance": 0.67
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_red_sand_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:red_sand_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_gravel_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:gravel_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_andesite_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:andesite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_tuff_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:tuff_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_endstone_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:endstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_blackstone_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:blackstone_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_basalt_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:basalt_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_netherrack_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:netherrack_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_raw_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:raw_coal"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_red_granite_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:red_granite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_diorite_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:diorite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_sand_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:sand_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_deepslate_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:deepslate_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_marble_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:marble_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:forge_hammer/hammer_granite_coal_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:granite_coal_ore"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:coal",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "id": "gtceu:raw_coal"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:refined_coal_ore"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:crushed_coal_ore"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_coal_ore"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_coal_ore"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:exquisite_coal_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_coal_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_coal_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_coal_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:coal",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "id": "gtceu:raw_coal"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:refined_coal_ore"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:crushed_coal_ore"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_coal_ore"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_coal_ore"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:exquisite_coal_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_coal_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_coal_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_coal_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:coal",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "tag": "minecraft:coal_ore"
+          },
+          {
+            "id": "gtceu:raw_coal"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_sifter"
+          },
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:refined_coal_ore"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:crushed_coal_ore"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coal",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:crushed_coal_ore",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_coal_ore"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:thorium_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_coal_ore"
+          },
+          {
+            "id": "gtceu:purified_coal_ore"
+          },
+          {
+            "id": "gtceu:impure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:pure_coal_dust"
+          },
+          {
+            "id": "gtceu:coal_dust"
+          },
+          {
+            "id": "gtceu:exquisite_coal_gem",
+            "chance": 0.03
+          },
+          {
+            "id": "gtceu:flawless_coal_gem",
+            "chance": 0.1
+          },
+          {
+            "id": "minecraft:coal",
+            "chance": 0.35
+          },
+          {
+            "id": "gtceu:pure_coal_dust",
+            "chance": 0.5
+          },
+          {
+            "id": "gtceu:flawed_coal_gem",
+            "chance": 0.25
+          },
+          {
+            "id": "gtceu:chipped_coal_gem",
+            "chance": 0.35
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

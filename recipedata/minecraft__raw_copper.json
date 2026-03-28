@@ -1,0 +1,295 @@
+{
+  "uses": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_copper_to_raw_ore_block",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:raw_copper",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:raw_copper_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_crushing": [
+      {
+        "id": "gtceu:macerator/macerate_raw_copper_ore_to_crushed_ore",
+        "category": "gtceu:ore_crushing",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:raw_copper"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_copper_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/hammer_raw_copper_ore_to_crushed_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "minecraft:raw_copper"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushed_copper_ore"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:ore_processing_diagram": [
+      {
+        "id": "gtceu:copper",
+        "category": "gtceu:ore_processing_diagram",
+        "dimensions": [
+          176,
+          166
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:copper_ore"
+          },
+          {
+            "tag": "minecraft:copper_ore"
+          },
+          {
+            "tag": "minecraft:copper_ore"
+          },
+          {
+            "tag": "minecraft:copper_ore"
+          },
+          {
+            "id": "minecraft:raw_copper"
+          },
+          {
+            "id": "minecraft:furnace"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_ore_washer"
+          },
+          {
+            "id": "gtceu:lv_thermal_centrifuge"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_macerator"
+          },
+          {
+            "id": "gtceu:lv_centrifuge"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "tag": "minecraft:cauldron"
+          },
+          {
+            "id": "gtceu:lv_chemical_bath"
+          },
+          {
+            "id": "gtceu:crushed_copper_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:impure_copper_dust"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:refined_copper_ore"
+          },
+          {
+            "id": "gtceu:pure_copper_dust"
+          },
+          {
+            "id": "gtceu:crushed_copper_ore"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:impure_copper_dust"
+          },
+          {
+            "id": "gtceu:pure_copper_dust"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:distilled_water",
+            "amount": 100
+          },
+          {
+            "id": "gtceu:mercury",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:copper_ingot"
+          },
+          {
+            "id": "gtceu:crushed_copper_ore",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:impure_copper_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:cobalt_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:refined_copper_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.3333
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:nickel_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:pure_copper_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.14
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.1111
+          },
+          {
+            "id": "gtceu:crushed_copper_ore"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:impure_copper_dust"
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:pure_copper_dust"
+          },
+          {
+            "id": "gtceu:copper_dust"
+          },
+          {
+            "id": "gtceu:purified_copper_ore"
+          },
+          {
+            "id": "gtceu:gold_dust",
+            "chance": 0.7
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:ore_forging": [
+      {
+        "id": "gtceu:forge_hammer/decompress_copper_to_raw_ore",
+        "category": "gtceu:ore_forging",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:raw_copper_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:raw_copper",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

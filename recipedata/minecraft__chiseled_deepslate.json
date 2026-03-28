@@ -1,0 +1,51 @@
+{
+  "recipes": {
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:forming_press/form_cobbled_deepslate_slab_into_pillar",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "minecraft:cobbled_deepslate_slab",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:chiseled_deepslate"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_chiseled_deepslate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:chiseled_deepslate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:deepslate_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

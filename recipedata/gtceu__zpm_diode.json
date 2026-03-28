@@ -1,0 +1,118 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/zpm_diode",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:vanadium_gallium_quadruple_cable"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:zpm_machine_hull"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_plate"
+          },
+          {
+            "id": "gtceu:advanced_smd_diode"
+          },
+          {
+            "id": "gtceu:naquadah_alloy_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:zpm_diode"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_zpm_diode",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_diode"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:vanadium_gallium_dust",
+            "amount": 5
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_zpm_diode",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:zpm_diode"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 4194
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:naquadah_alloy_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:vanadium_gallium_ingot",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:small_ash_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

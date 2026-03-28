@@ -1,0 +1,79 @@
+{
+  "recipes": {
+    "gtceu:compressor": [
+      {
+        "id": "gtceu:compressor/compress_plate_dust_obsidian",
+        "category": "gtceu:compressor",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:obsidian_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:obsidian_plate"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:bender": [
+      {
+        "id": "gtceu:bender/bend_obsidian_plate_to_dense_plate",
+        "category": "gtceu:bender",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 96,
+        "inputs": [
+          {
+            "id": "gtceu:obsidian_plate",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:dense_obsidian_plate"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:9}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_obsidian_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:obsidian_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:obsidian_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/gear_iridium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "id": "gtceu:iridium_plate"
+          },
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "id": "gtceu:iridium_plate"
+          },
+          {
+            "tag": "gtceu:lv_tungsten_carbide_wrench"
+          },
+          {
+            "id": "gtceu:iridium_plate"
+          },
+          {
+            "id": "gtceu:iridium_rod"
+          },
+          {
+            "id": "gtceu:iridium_plate"
+          },
+          {
+            "id": "gtceu:iridium_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_gear"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:fluid_solidifier": [
+      {
+        "id": "gtceu:fluid_solidifier/solidify_iridium_gear",
+        "category": "gtceu:fluid_solidifier",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:iridium",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:extruder": [
+      {
+        "id": "gtceu:extruder/extrude_iridium_ingot_to_gear",
+        "category": "gtceu:extruder",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 240,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_extruder_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ],
+    "gtceu:ingot_molding": [
+      {
+        "id": "gtceu:alloy_smelter/alloy_smelt_iridium_ingot_to_gear",
+        "category": "gtceu:ingot_molding",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 60,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 8
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_gear"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:gear_casting_mold",
+            "chance": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/iv_large_miner",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_machine_hull"
+          },
+          {
+            "id": "gtceu:tungsten_steel_frame",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iv_electric_motor",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iv_electric_pump",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iv_conveyor_module",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iridium_gear",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_large_miner"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iridium_gear",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_iridium_gear",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium",
+            "amount": 576
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iridium_gear",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iridium_gear"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 768
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iridium_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

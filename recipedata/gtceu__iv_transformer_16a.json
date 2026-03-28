@@ -1,0 +1,184 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/iv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_4a"
+          },
+          {
+            "id": "gtceu:hv_electric_pump"
+          },
+          {
+            "id": "gtceu:niobium_titanium_octal_cable"
+          },
+          {
+            "id": "gtceu:platinum_hex_cable"
+          },
+          {
+            "id": "gtceu:small_platinum_spring"
+          },
+          {
+            "id": "gtceu:niobium_titanium_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/substation_energy_hatch_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_16a"
+          },
+          {
+            "id": "gtceu:iv_energy_input_hatch_16a"
+          },
+          {
+            "id": "gtceu:tungsten_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_substation_input_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:assembler/substation_dynamo_hatch_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_16a"
+          },
+          {
+            "id": "gtceu:iv_energy_output_hatch_16a"
+          },
+          {
+            "id": "gtceu:tungsten_hex_wire",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_steel_plate",
+            "amount": 6
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_substation_output_hatch_64a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_iv_transformer_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:platinum_dust",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:small_niobium_titanium_dust",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_iv_transformer_16a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:iv_transformer_16a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 7891
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:platinum_ingot",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:niobium_titanium_block"
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:steel_nugget",
+            "amount": 41
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

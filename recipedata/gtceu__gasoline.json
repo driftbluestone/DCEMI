@@ -1,0 +1,126 @@
+{
+  "uses": {
+    "gtceu:combustion_generator": [
+      {
+        "id": "gtceu:combustion_generator/gasoline",
+        "category": "gtceu:combustion_generator",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:gasoline"
+          }
+        ],
+        "outputs": [],
+        "catalysts": []
+      }
+    ],
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/high_octane_gasoline",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 20000
+          },
+          {
+            "id": "gtceu:octane",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:nitrous_oxide",
+            "amount": 2000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          },
+          {
+            "id": "gtceu:ethyl_tertbutyl_ether",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:high_octane_gasoline",
+            "amount": 32000
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:24}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:large_chemical_reactor": [
+      {
+        "id": "gtceu:large_chemical_reactor/gasoline",
+        "category": "gtceu:large_chemical_reactor",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:raw_gasoline",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 11000
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:chemical_reactor": [
+      {
+        "id": "gtceu:chemical_reactor/gasoline",
+        "category": "gtceu:chemical_reactor",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 480,
+        "inputs": [
+          {
+            "id": "gtceu:raw_gasoline",
+            "amount": 10000
+          },
+          {
+            "id": "gtceu:toluene",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:gasoline",
+            "amount": 11000
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

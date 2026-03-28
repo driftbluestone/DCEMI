@@ -1,0 +1,217 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/casing_assembly_line",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:ruridit_gear"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:iv_robot_arm"
+          },
+          {
+            "id": "gtceu:tungsten_steel_frame"
+          },
+          {
+            "id": "gtceu:iv_robot_arm"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          },
+          {
+            "id": "gtceu:ruridit_gear"
+          },
+          {
+            "id": "gtceu:steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:assembly_line_unit",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/assembly_line_casing",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_gear",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:steel_plate",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:iv_robot_arm",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:tungsten_steel_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:assembly_line_unit",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:assembly_line",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:assembly_line"
+          },
+          {
+            "id": "gtceu:basic_data_access_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_bus"
+          },
+          {
+            "id": "gtceu:ulv_input_bus",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:assembly_line_unit",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:laminated_glass",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:assembly_line_casing",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:assembly_line_grating",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:solid_machine_casing",
+            "amount": 14
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:assembly_line"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_assembly_line_unit",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:assembly_line_unit"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:small_tungsten_dust",
+            "amount": 34
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_assembly_line_unit",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:assembly_line_unit"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 3322
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:tungsten_steel_ingot",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:tungsten_ingot",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ruridit_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

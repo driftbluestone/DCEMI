@@ -1,0 +1,36 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/fluid_regulator_iv",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:iv_electric_pump"
+          },
+          {
+            "tag": "gtceu:micro_processor_mainframe",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:iv_fluid_regulator"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  }
+}

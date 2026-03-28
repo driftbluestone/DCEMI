@@ -1,0 +1,204 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/crushing_wheels",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_carbide_gear"
+          },
+          {
+            "id": "gtceu:small_tungsten_carbide_gear"
+          },
+          {
+            "id": "gtceu:small_tungsten_carbide_gear"
+          },
+          {
+            "id": "gtceu:ultimet_gear"
+          },
+          {
+            "id": "gtceu:secure_maceration_casing"
+          },
+          {
+            "id": "gtceu:ultimet_gear"
+          },
+          {
+            "id": "gtceu:ultimet_gear"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          },
+          {
+            "id": "gtceu:ultimet_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushing_wheels",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/crushing_wheels",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 16,
+        "inputs": [
+          {
+            "id": "gtceu:small_tungsten_carbide_gear",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ultimet_gear",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:secure_maceration_casing"
+          },
+          {
+            "id": "gtceu:iv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:crushing_wheels",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:large_maceration_tower",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:large_maceration_tower"
+          },
+          {
+            "id": "gtceu:iv_parallel_hatch"
+          },
+          {
+            "id": "gtceu:auto_maintenance_hatch"
+          },
+          {
+            "id": "gtceu:ulv_energy_input_hatch"
+          },
+          {
+            "id": "gtceu:ulv_output_bus"
+          },
+          {
+            "id": "gtceu:ulv_input_bus"
+          },
+          {
+            "id": "gtceu:crushing_wheels",
+            "amount": 18
+          },
+          {
+            "id": "gtceu:secure_maceration_casing",
+            "amount": 67
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:large_maceration_tower"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_crushing_wheels",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:crushing_wheels"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:graphene_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:small_zeron_100_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:tungsten_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_crushing_wheels",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:crushing_wheels"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 679
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ultimet_ingot",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:graphene_ingot",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:zeron_100_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:tungsten_ingot"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

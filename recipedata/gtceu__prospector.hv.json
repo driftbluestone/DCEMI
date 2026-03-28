@@ -1,0 +1,238 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/prospector_hv_hv_cadmium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_emitter"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_sensor"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_cadmium_battery"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.hv",
+            "nbt": "{Charge:0L,MaxCharge:1600000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/prospector_hv_hv_lithium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_emitter"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_sensor"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_lithium_battery"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.hv",
+            "nbt": "{Charge:0L,MaxCharge:1800000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/prospector_hv_energy_crystal",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_emitter"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_sensor"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:energy_crystal"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.hv",
+            "nbt": "{Charge:0L,MaxCharge:6400000L}"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/prospector_hv_hv_sodium_battery",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:hv_emitter"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_sensor"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:computer_monitor_cover"
+          },
+          {
+            "tag": "gtceu:advanced_integrated_circuit"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          },
+          {
+            "id": "gtceu:hv_sodium_battery"
+          },
+          {
+            "id": "gtceu:stainless_steel_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:prospector.hv",
+            "nbt": "{Charge:0L,MaxCharge:1200000L}"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_prospector.hv",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:prospector.hv"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_prospector.hv",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:prospector.hv"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 165
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:stainless_steel_ingot",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

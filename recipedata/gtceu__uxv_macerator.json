@@ -1,0 +1,118 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/uxv_macerator",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_electric_piston"
+          },
+          {
+            "id": "gtceu:uxv_electric_motor"
+          },
+          {
+            "id": "minecraft:diamond"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          },
+          {
+            "id": "gtceu:uxv_machine_hull"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          },
+          {
+            "id": "minecraft:barrier",
+            "nbt": "{display:{Name:'{\"text\":\"Empty Tag: gtceu:circuits/uxv\"}'}}"
+          },
+          {
+            "id": "gtceu:red_alloy_single_cable"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uxv_macerator"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uxv_macerator",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_macerator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:small_red_alloy_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:diamond_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uxv_macerator",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uxv_macerator"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 120
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 13
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 3
+          },
+          {
+            "id": "gtceu:tiny_carbon_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

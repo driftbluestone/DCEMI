@@ -1,0 +1,141 @@
+{
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uiv_power_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 31457280,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_4a"
+          },
+          {
+            "id": "gtceu:luv_electric_pump"
+          },
+          {
+            "id": "gtceu:red_alloy_octal_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_hex_cable"
+          },
+          {
+            "id": "gtceu:small_red_alloy_spring"
+          },
+          {
+            "id": "gtceu:tin_spring"
+          },
+          {
+            "id": "gtceu:lubricant",
+            "amount": 2000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_uiv_transformer_4a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_4a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:small_red_alloy_dust",
+            "amount": 50
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_uiv_transformer_4a",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_4a"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 1016
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:red_alloy_block"
+          },
+          {
+            "id": "gtceu:red_alloy_nugget",
+            "amount": 31
+          },
+          {
+            "id": "gtceu:tiny_ash_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/uiv_hi_amp_4a_transformer",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 31457280,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_1a"
+          },
+          {
+            "id": "gtceu:red_alloy_quadruple_cable"
+          },
+          {
+            "id": "gtceu:red_alloy_quadruple_cable",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ulpic_chip",
+            "amount": 2
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uiv_transformer_4a"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,2519 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_ruridit",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ruridit_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/small_dust_disassembling_3x3_ruridit",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ruridit_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_3x3_ruridit",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ruridit_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_disassembling_ruridit",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ruridit_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/decomposition_centrifuging__ruridit",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 3
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruthenium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iridium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:electric_blast_furnace": [
+      {
+        "id": "gtceu:electric_blast_furnace/blast_ruridit_gas",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          },
+          {
+            "id": "gtceu:argon",
+            "amount": 50
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_ruridit_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:electric_blast_furnace/blast_ruridit",
+        "category": "gtceu:electric_blast_furnace",
+        "dimensions": [
+          164,
+          99
+        ],
+        "eu_t": 1920,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hot_ruridit_ingot"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_ruridit_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_ruridit_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/unpackage_ruridit_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_ruridit_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/small_dust_assembling_ruridit",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:small_ruridit_dust"
+          },
+          {
+            "id": "gtceu:small_ruridit_dust"
+          },
+          {
+            "id": "gtceu:small_ruridit_dust"
+          },
+          {
+            "id": "gtceu:small_ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:shaped/tiny_dust_assembling_ruridit",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          },
+          {
+            "id": "gtceu:tiny_ruridit_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/ruridit",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 4096,
+        "inputs": [
+          {
+            "id": "gtceu:ruthenium_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:iridium_dust"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/macerate_ruridit_ingot",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/package_ruridit_small_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:small_ruridit_dust",
+            "amount": 4
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:packer/package_ruridit_tiny_dust",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 12,
+        "inputs": [
+          {
+            "id": "gtceu:tiny_ruridit_dust",
+            "amount": 9
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_ruridit_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_4096a_laser_target_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_4096a_laser_target_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 21
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_autoclave",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_autoclave"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_lathe",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_lathe"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:vanadium_steel_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_computation_transmitter_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:computation_transmitter_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_electric_motor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_motor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tiny_hsss_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:samarium_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_field_generator",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_field_generator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_gas_collector",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_gas_collector"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hpca_advanced_computation_component",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_advanced_computation_component"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_neutron_reflector",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:neutron_reflector"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tungsten_carbide_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uev_transformer_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uev_transformer_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 27
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_electromagnetic_separator",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electromagnetic_separator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_wiremill",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_wiremill"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 47
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_forming_press",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_forming_press"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_extractor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_extractor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 27
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_quantum_tank",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_quantum_tank"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:uranium_triplatinum_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_1024a_laser_source_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_1024a_laser_source_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 29
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_scanner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_scanner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_fermenter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_fermenter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_advanced_quarktech_chestplate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:advanced_quarktech_chestplate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:iridium_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:tungsten_dust",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_long_ruridit_rod",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:long_ruridit_rod"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_ore_washer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_ore_washer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_ruridit_frame",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_frame"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_rock_crusher",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_rock_crusher"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:vanadium_steel_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_256a_laser_source_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_256a_laser_source_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 10
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_electric_piston",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_piston"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_compressor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_compressor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_256a_laser_target_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_256a_laser_target_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 59
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_circuit_assembler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_circuit_assembler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 61
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 34
+          },
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 24
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_fluid_heater",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_fluid_heater"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_fisher",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_fisher"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 54
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 11
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_assembler",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_assembler"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 27
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_emitter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_emitter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:tiny_hsss_dust",
+            "amount": 44
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_robot_arm",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_robot_arm"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 34
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_packer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_packer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 45
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 22
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 11
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_chemical_bath",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_chemical_bath"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:small_niobium_titanium_dust",
+            "amount": 42
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_distillery",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_distillery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_double_ruridit_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:double_ruridit_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_centrifuge",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_centrifuge"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tiny_hsss_dust",
+            "amount": 53
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_4096a_laser_source_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_4096a_laser_source_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 21
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_world_accelerator",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_world_accelerator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:indium_tin_barium_titanium_cuprate_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 51
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 48
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_uiv_transformer_16a",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:uiv_transformer_16a"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 42
+          },
+          {
+            "id": "gtceu:red_alloy_dust",
+            "amount": 37
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_mixer",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_mixer"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:tiny_hsss_dust",
+            "amount": 26
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_ruridit_plate",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_plate"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust"
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_brewery",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_brewery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_fusion_glass",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_glass"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:beryllium_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:tungsten_carbide_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:naquadah_dust",
+            "amount": 2
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_sensor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_sensor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:tiny_hsss_dust",
+            "amount": 44
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_macerator",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_macerator"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 20
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 11
+          },
+          {
+            "id": "gtceu:vanadium_steel_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_electric_pump",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_electric_pump"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_extruder",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_extruder"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 17
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:hssg_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_ruridit_gear",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ruridit_gear"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_fluid_solidifier",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_fluid_solidifier"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_ev_fluid_drilling_rig",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:ev_fluid_drilling_rig"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 51
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 17
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_1024a_laser_target_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_1024a_laser_target_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 19
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 14
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 11
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_fusion_casing_mk2",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:fusion_casing_mk2"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 26
+          },
+          {
+            "id": "gtceu:tungsten_steel_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:samarium_iron_arsenic_oxide_dust",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_laser_engraver",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_laser_engraver"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 40
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 28
+          },
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_thermal_centrifuge",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_thermal_centrifuge"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:tiny_hsss_dust",
+            "amount": 53
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_object_holder",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:object_holder"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:europium_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 64
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_sifter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_sifter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 35
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_cutter",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_cutter"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 56
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_hpca_computation_component",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:hpca_computation_component"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_dust",
+            "amount": 48
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 24
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_bender",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_bender"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:hsss_dust",
+            "amount": 41
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 32
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 15
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 9
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_canner",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_canner"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 39
+          },
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_conveyor_module",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_conveyor_module"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:small_hsss_dust",
+            "amount": 44
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_chemical_reactor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_chemical_reactor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 6
+          },
+          {
+            "id": "gtceu:polytetrafluoroethylene_dust",
+            "amount": 6
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:macerator/macerate_luv_muffler_hatch",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 32,
+        "inputs": [
+          {
+            "id": "gtceu:luv_muffler_hatch"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:rhodium_plated_palladium_dust",
+            "amount": 12
+          },
+          {
+            "id": "gtceu:ruridit_dust",
+            "amount": 8
+          },
+          {
+            "id": "gtceu:niobium_titanium_dust",
+            "amount": 5
+          },
+          {
+            "id": "gtceu:rubber_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

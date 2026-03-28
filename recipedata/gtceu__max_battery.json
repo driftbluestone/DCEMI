@@ -1,0 +1,175 @@
+{
+  "recipes": {
+    "gtceu:research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_energy_cluster",
+        "category": "gtceu:research_station",
+        "dimensions": [
+          150,
+          117
+        ],
+        "eu_t": 1966080,
+        "inputs": [
+          {
+            "id": "gtceu:data_module"
+          },
+          {
+            "id": "gtceu:energy_cluster"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:packer": [
+      {
+        "id": "gtceu:packer/unpackage_uhv_ultimate_battery",
+        "category": "gtceu:packer",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:uhv_ultimate_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:2}"
+          }
+        ]
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/ultimate_battery",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 300000,
+        "inputs": [
+          {
+            "id": "gtceu:double_darmstadtium_plate",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:wetware_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:energy_cluster",
+            "amount": 16
+          },
+          {
+            "id": "gtceu:uv_field_generator",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:uhpic_wafer",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:uhpic_wafer",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_diode",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_capacitor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_resistor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_transistor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:neutronium_bolt",
+            "amount": 64
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 5760
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 2304
+          },
+          {
+            "id": "gtceu:naquadria",
+            "amount": 2592
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_module",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_energy_cluster\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:canner": [
+      {
+        "id": "gtceu:canner/uhv_ultimate_battery",
+        "category": "gtceu:canner",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 7680,
+        "inputs": [
+          {
+            "id": "gtceu:empty_tier_iii_battery"
+          },
+          {
+            "id": "gtceu:max_battery"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:uhv_ultimate_battery"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

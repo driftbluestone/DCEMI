@@ -1,0 +1,72 @@
+{
+  "recipes": {
+    "gtceu:research_station": [
+      {
+        "id": "gtceu:research_station/1x_gtceu_data_bank",
+        "category": "gtceu:research_station",
+        "dimensions": [
+          150,
+          117
+        ],
+        "eu_t": 30720,
+        "inputs": [
+          {
+            "id": "gtceu:data_orb"
+          },
+          {
+            "id": "gtceu:data_bank"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_data_access_hatch"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:assembly_line": [
+      {
+        "id": "gtceu:assembly_line/advanced_data_access_hatch",
+        "category": "gtceu:assembly_line",
+        "dimensions": [
+          154,
+          125
+        ],
+        "eu_t": 6000,
+        "inputs": [
+          {
+            "id": "gtceu:luv_input_bus"
+          },
+          {
+            "id": "gtceu:data_orb",
+            "amount": 4
+          },
+          {
+            "tag": "gtceu:quantum_processor_mainframe",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:soldering_alloy",
+            "amount": 576
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 576
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_data_access_hatch"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:data_orb",
+            "nbt": "{assembly_line_research:{research_id:\"1x_gtceu_data_bank\",research_type:\"gtceu:assembly_line\"}}"
+          }
+        ]
+      }
+    ]
+  }
+}

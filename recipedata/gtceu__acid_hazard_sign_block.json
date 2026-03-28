@@ -1,0 +1,106 @@
+{
+  "uses": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/acid_hazard_to_steel_solid_casing",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:acid_hazard_sign_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:solid_machine_casing"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_acid_hazard_sign_block",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:acid_hazard_sign_block"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_dust",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_acid_hazard_sign_block",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:acid_hazard_sign_block"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 224
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:steel_ingot",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/warning_sign_acid_hazard",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "minecraft:yellow_dye"
+          },
+          {
+            "id": "gtceu:solid_machine_casing"
+          },
+          {
+            "tag": "minecraft:black_dye"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:acid_hazard_sign_block"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

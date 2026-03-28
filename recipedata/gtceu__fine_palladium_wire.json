@@ -1,0 +1,156 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shapeless/fine_wire_palladium",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:iv_tungsten_carbide_wire_cutter"
+          },
+          {
+            "id": "gtceu:palladium_foil"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_palladium_wire"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:wiremill": [
+      {
+        "id": "gtceu:wiremill/mill_palladiumingot_to_fine_wire",
+        "category": "gtceu:wiremill",
+        "dimensions": [
+          150,
+          61
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "gtceu:palladium_ingot"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fine_palladium_wire",
+            "amount": 8
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/asmd_inductor",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 3840,
+        "inputs": [
+          {
+            "id": "gtceu:hsse_ring"
+          },
+          {
+            "id": "gtceu:fine_palladium_wire",
+            "amount": 4
+          },
+          {
+            "id": "gtceu:polybenzimidazole",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:advanced_smd_inductor",
+            "amount": 16
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_fine_palladium_wire",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 8,
+        "inputs": [
+          {
+            "id": "gtceu:fine_palladium_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_palladium_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:extractor_recycling": [
+      {
+        "id": "gtceu:extractor/extract_fine_palladium_wire",
+        "category": "gtceu:extractor_recycling",
+        "dimensions": [
+          150,
+          79
+        ],
+        "eu_t": 120,
+        "inputs": [
+          {
+            "id": "gtceu:fine_palladium_wire"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium",
+            "amount": 18
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_fine_palladium_wire",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "gtceu:fine_palladium_wire"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 11
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:palladium_nugget"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

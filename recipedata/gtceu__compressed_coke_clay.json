@@ -1,0 +1,97 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/compressed_coke_clay",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "minecraft:clay_ball"
+          },
+          {
+            "id": "minecraft:clay_ball"
+          },
+          {
+            "id": "minecraft:clay_ball"
+          },
+          {
+            "tag": "minecraft:sand"
+          },
+          {
+            "id": "gtceu:brick_wooden_form"
+          },
+          {
+            "tag": "minecraft:sand"
+          },
+          {
+            "tag": "minecraft:sand"
+          },
+          {
+            "tag": "minecraft:sand"
+          },
+          {
+            "tag": "minecraft:sand"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:compressed_coke_clay",
+            "amount": 3
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "minecraft:smelting": [
+      {
+        "id": "gtceu:smelting/coke_oven_brick",
+        "category": "minecraft:smelting",
+        "dimensions": [
+          82,
+          38
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:compressed_coke_clay"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:coke_oven_brick"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_compressed_coke_clay",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "gtceu:compressed_coke_clay"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:clay_dust"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

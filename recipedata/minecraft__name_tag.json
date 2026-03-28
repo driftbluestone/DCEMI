@@ -1,0 +1,95 @@
+{
+  "recipes": {
+    "gtceu:assembler": [
+      {
+        "id": "gtceu:assembler/name_tag",
+        "category": "gtceu:assembler",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 7,
+        "inputs": [
+          {
+            "id": "minecraft:leather"
+          },
+          {
+            "id": "minecraft:lead"
+          },
+          {
+            "id": "gtceu:glue",
+            "amount": 100
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:name_tag"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:/forming_press/name_item",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:name_tag",
+            "nbt": "{display:{Name:'{\"translate\":\"gtceu.forming_press.naming.to_name\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:name_tag",
+            "nbt": "{display:{Name:'{\"translate\":\"gtceu.forming_press.naming.named\"}'}}"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:name_casting_mold",
+            "chance": 0.0,
+            "nbt": "{display:{Name:'{\"translate\":\"gtceu.forming_press.naming.press\"}'}}"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:forming_press": [
+      {
+        "id": "gtceu:/forming_press/name_item",
+        "category": "gtceu:forming_press",
+        "dimensions": [
+          164,
+          79
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:name_tag",
+            "nbt": "{display:{Name:'{\"translate\":\"gtceu.forming_press.naming.to_name\"}'}}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:name_tag",
+            "nbt": "{display:{Name:'{\"translate\":\"gtceu.forming_press.naming.named\"}'}}"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:name_casting_mold",
+            "chance": 0.0,
+            "nbt": "{display:{Name:'{\"translate\":\"gtceu.forming_press.naming.press\"}'}}"
+          }
+        ]
+      }
+    ]
+  }
+}

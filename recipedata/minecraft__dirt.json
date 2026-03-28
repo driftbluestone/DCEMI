@@ -1,0 +1,182 @@
+{
+  "uses": {
+    "gtceu:multiblock_info": [
+      {
+        "id": "gtceu:charcoal_pile_igniter",
+        "category": "gtceu:multiblock_info",
+        "dimensions": [
+          160,
+          160
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "id": "gtceu:charcoal_pile_igniter"
+          },
+          {
+            "id": "minecraft:bricks",
+            "amount": 9
+          },
+          {
+            "id": "minecraft:oak_log",
+            "amount": 27
+          },
+          {
+            "id": "minecraft:dirt",
+            "amount": 44
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:charcoal_pile_igniter"
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:mixer": [
+      {
+        "id": "gtceu:mixer/coarse_dirt",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:gravel"
+          },
+          {
+            "id": "minecraft:dirt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:coarse_dirt",
+            "amount": 2
+          }
+        ],
+        "catalysts": []
+      },
+      {
+        "id": "gtceu:mixer/mud",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "minecraft:dirt"
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 144
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:mud"
+          }
+        ],
+        "catalysts": [
+          {
+            "id": "gtceu:programmed_circuit",
+            "chance": 0.0,
+            "nbt": "{Configuration:1}"
+          }
+        ]
+      },
+      {
+        "id": "gtceu:mixer/fertilizer",
+        "category": "gtceu:mixer",
+        "dimensions": [
+          164,
+          107
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:dirt"
+          },
+          {
+            "id": "gtceu:wood_dust",
+            "amount": 2
+          },
+          {
+            "id": "minecraft:sand",
+            "amount": 4
+          },
+          {
+            "id": "minecraft:water",
+            "amount": 1000
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:fertilizer",
+            "amount": 4
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:centrifuge": [
+      {
+        "id": "gtceu:centrifuge/dirt_separation",
+        "category": "gtceu:centrifuge",
+        "dimensions": [
+          164,
+          125
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:dirt"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:plant_ball",
+            "chance": 0.14
+          },
+          {
+            "id": "minecraft:sand",
+            "chance": 0.6
+          },
+          {
+            "id": "gtceu:clay_dust",
+            "chance": 0.055
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "recipes": {
+    "gtceu:macerator": [
+      {
+        "id": "gtceu:macerator/dirt_from_bio_chaff",
+        "category": "gtceu:macerator",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 4,
+        "inputs": [
+          {
+            "id": "gtceu:bio_chaff"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:dirt"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}

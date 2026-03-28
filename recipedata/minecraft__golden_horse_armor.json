@@ -1,0 +1,106 @@
+{
+  "recipes": {
+    "minecraft:crafting": [
+      {
+        "id": "gtceu:shaped/golden_horse_armor",
+        "category": "minecraft:crafting",
+        "dimensions": [
+          118,
+          54
+        ],
+        "eu_t": 0,
+        "inputs": [
+          {
+            "tag": "gtceu:tungsten_carbide_hammer"
+          },
+          {
+            "tag": "gtceu:hv_tungsten_carbide_screwdriver"
+          },
+          {
+            "id": "minecraft:golden_helmet",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "gtceu:gold_plate"
+          },
+          {
+            "id": "minecraft:golden_chestplate",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "gtceu:gold_plate"
+          },
+          {
+            "id": "minecraft:golden_leggings",
+            "nbt": "{Damage:0}"
+          },
+          {
+            "id": "gtceu:gold_screw"
+          },
+          {
+            "id": "minecraft:golden_leggings",
+            "nbt": "{Damage:0}"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:golden_horse_armor"
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  },
+  "uses": {
+    "gtceu:macerator_recycling": [
+      {
+        "id": "gtceu:macerator/macerate_golden_horse_armor",
+        "category": "gtceu:macerator_recycling",
+        "dimensions": [
+          164,
+          89
+        ],
+        "eu_t": 2,
+        "inputs": [
+          {
+            "id": "minecraft:golden_horse_armor"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "gtceu:tiny_gold_dust",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ],
+    "gtceu:arc_furnace_recycling": [
+      {
+        "id": "gtceu:arc_furnace/arc_golden_horse_armor",
+        "category": "gtceu:arc_furnace_recycling",
+        "dimensions": [
+          164,
+          97
+        ],
+        "eu_t": 30,
+        "inputs": [
+          {
+            "id": "minecraft:golden_horse_armor"
+          },
+          {
+            "id": "gtceu:oxygen",
+            "amount": 413
+          }
+        ],
+        "outputs": [
+          {
+            "id": "minecraft:gold_nugget",
+            "amount": 19
+          }
+        ],
+        "catalysts": []
+      }
+    ]
+  }
+}
