@@ -18,3 +18,8 @@ for d in data:
 for k, v in materials.items():
     with open(f"{DIR}/../materialdata/{k}.json", "w") as file:
         json.dump(v, file, indent=2)
+materials = []
+for file in os.listdir(f"{DIR}/../materialdata"):
+    materials.append(file[:-5])
+with open(f"{DIR}/../materialdata/_materials.json", "w") as file:
+    json.dump(materials, file, indent=2)
