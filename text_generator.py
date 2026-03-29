@@ -4,6 +4,7 @@ from pathlib import Path
 DIR = Path(__file__).resolve().parent
 
 text_replace = {
+    "_":"underscore",
     "/":"slash",
     ".":"period",
     "-":"dash",
@@ -23,7 +24,6 @@ text_replace = {
     "}":"close_curly",
     "{":"open_curly",
     "`":"backtick",
-    "_":"underscore",
     "^":"carat",
     "]":"close_square",
     "[":"open_square",
@@ -34,7 +34,8 @@ text_replace = {
     "=":"equal",
     "<":"less_than",
     ";":"semicolon",
-    ":":"colon"
+    ":":"colon",
+    "|":"pipe"
 }
 
 def generate_text(text: str) -> Image.Image:
@@ -48,24 +49,31 @@ def generate_text(text: str) -> Image.Image:
         text_array.append(i)
     horizontal = 0
     vertical = 10
+    space = 0
     text_image = Image.new("RGBA", (1, vertical), (0, 0, 0, 0))
     for i in text_array:
-        if i == "\n" or i == "backslashn2":
+        if i == "\n":
             horizontal = 0
             vertical += 10
+            continue
+        if i == " ":
+            horizontal +=5
+            space += 5
             continue
         with Image.open(f"{DIR}/gui/font/{i}.png") as im:
             bbox = im.getbbox()
             im = im.crop((bbox[0], 0, bbox[2], im.height))
-            im_width = im.width + text_image.width + 1
+            im_width = im.width + text_image.width + 1 + space
             new_text_image = Image.new('RGBA', (im_width, vertical), (0, 0, 0, 0))
             new_text_image.paste(text_image, (0, 0))
             text_image = new_text_image
             text_image.paste(im, (horizontal, vertical-10))
             horizontal += im.width + 1
+    bbox = text_image.getbbox()
+    text_image = text_image.crop((bbox[0], 0, bbox[2], text_image.height))
     return text_image
 
-text = "w awa\n123\newe we\nw ewe123123"
+text = "i cant have malt bc gluten"
 im = generate_text(text)
 im = im.resize((8*im.width, 8*im.height), resample= Image.BOX)
 im.show()
