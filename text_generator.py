@@ -57,8 +57,8 @@ def generate_text(text: str) -> Image.Image:
             vertical += 10
             continue
         if i == " ":
-            horizontal +=5
-            space += 5
+            horizontal += 4
+            space += 4
             continue
         with Image.open(f"{DIR}/gui/font/{i}.png") as im:
             bbox = im.getbbox()
