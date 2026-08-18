@@ -13,5 +13,6 @@ class DCEMI(commands.Cog):
     async def emi(self, interaction: discord.Interaction, search: typing.Optional[str]):
         if not search:
             pass
+        return await interaction.response.send_message("notImplemented")
         return await interaction.response.send_message(view=None)
 
